@@ -9,10 +9,17 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('plates', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('restaurant_id')->constrained();
+            $table->string('name', 255);
+            $table->text('description')->nullable();
+            $table->decimal('price', 10, 2);
+            $table->boolean('visible');
+            $table->text('ingredients');
+            $table->string('image', 255)->nullable();
             $table->timestamps();
         });
     }

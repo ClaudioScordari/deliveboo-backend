@@ -9,11 +9,12 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('restaurant_type', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->foreignId('restaurant_id')->constrained()->onDelete('cascade');
+            $table->foreignId('type_id')->constrained()->onDelete('cascade');
+            $table->primary(['restaurant_id', 'type_id']);
         });
     }
 
