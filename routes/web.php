@@ -5,6 +5,11 @@ use Illuminate\Support\Facades\Route;
 // Controllers
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\Admin\MainController as AdminMainController;
+use App\Http\Controllers\Admin\RestaurantController as AdminRestaurantController;
+use App\Http\Controllers\Admin\PlateController as AdminPlateController;
+use App\Http\Controllers\Admin\OrderController as AdminOrderController;
+use App\Http\Controllers\Admin\TypeController as AdminTypeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +30,11 @@ Route::prefix('admin')
     ->group(function () {
 
     Route::get('/dashboard', [AdminMainController::class, 'dashboard'])->name('dashboard');
+    //rotta che gestisce i progetti
+    Route::resource('restaurants', AdminRestaurantController::class);
+    Route::resource('plates', AdminPlateController::class);
+    Route::resource('orders', AdminOrderController::class);
+    Route::resource('types', AdminTypeController::class);
 
 });
 
