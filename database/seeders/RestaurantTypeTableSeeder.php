@@ -13,15 +13,12 @@ class RestaurantTypeTableSeeder extends Seeder
      */
     public function run()
     {
-        $restaurants = DB::table('restaurants')->pluck('id');
-        $types = DB::table('types')->pluck('id');
+        $associations = config('restaurantTypes');
 
-        foreach ($restaurants as $restaurantId) {
-            // Each restaurant will have between 1 and 3 types randomly
-            $typesToAttach = $types->random(rand(1, 3));
-            foreach ($typesToAttach as $typeId) {
+        foreach ($associations as $association) {
+            foreach ($association['type_ids'] as $typeId) {
                 DB::table('restaurant_type')->insert([
-                    'restaurant_id' => $restaurantId,
+                    'restaurant_id' => $association['restaurant_id'],
                     'type_id' => $typeId,
                 ]);
             }
