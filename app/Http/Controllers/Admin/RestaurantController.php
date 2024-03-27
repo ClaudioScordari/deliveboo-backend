@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 // Models
 use App\Models\Restaurant;
 use App\Models\Type;
+use App\Models\User;
 
 // Request
 use App\Http\Requests\StoreRestaurantRequest;
@@ -103,51 +104,58 @@ class RestaurantController extends Controller
         // Prendo i dati validati
         $validDatas = $request->validated();
 
-        // Setto il percorso dell'img con quello originale, anche se era null
-        $imgPath = $restaurant->image;
+        // Controllo se l'user esiste
+        $user = User::where('name', $validDatas['user_name'])->first();
 
-        // Se l'input del file è pieno...
-        if (isset($validDatas['img'])) {
+        // Se l'utente è stato trovato
+        if ($user) {
 
-            // Controllo se l'img dell'istanza è piena...
-            if ($restaurant->image != null) {
-                // Elimino il percorso corrente
+            // Setto il percorso dell'img con quello originale, anche se era null
+            $imgPath = $restaurant->image;
+
+            // Se l'input del file è pieno...
+            if (isset($validDatas['img'])) {
+
+                // Controllo se l'img dell'istanza è piena...
+                if ($restaurant->image != null) {
+                    // Elimino il percorso corrente
+                    Storage::disk('public')->delete($restaurant->image);
+                }
+
+                // E setto il nuovo percorso
+                $imgPath = Storage::disk('public')->put('image', $validDatas['img']);
+            }
+            // Altrimenti se è vuoto (l'input), e megari mi spunta la checkbox (remove_file), vuole eliminare l'img 
+            else if (isset($validDatas['remove_file'])) {
+
+                // elimino il percorso
                 Storage::disk('public')->delete($restaurant->image);
+                
+                // Mi riempio la var del percorso a null 
+                $imgPath = null;
+            }
+            
+            // Faccio update della nuova istanza di restaurant
+            $restaurant->update([
+                'name' => $validDatas['name'],
+                'VAT_number' => $validDatas['VAT_number'],
+                'address' => $validDatas['address'],
+                'image' => $imgPath,
+                'description' => $validDatas['description'],
+            ]);
+
+            // Se l'array dei tipi è pieno
+            if (isset($validDatas['types'])) {
+                // Faccio la sincronizzazione con il nuovo array
+                $restaurant->types()->sync($validDatas['types']);
+            } 
+            else {
+                // Altrimenti tolgo i tipi dall'istanza
+                $restaurant->types()->detach();
             }
 
-            // E setto il nuovo percorso
-            $imgPath = Storage::disk('public')->put('image', $validDatas['img']);
+            return redirect()->route('admin.restaurants.show', compact('restaurant'));
         }
-        // Altrimenti se è vuoto (l'input), e megari mi spunta la checkbox (remove_file), vuole eliminare l'img 
-        else if (isset($validDatas['remove_file'])) {
-
-            // elimino il percorso
-            Storage::disk('public')->delete($restaurant->image);
-            
-            // Mi riempio la var del percorso a null 
-            $imgPath = null;
-        }
-        
-        // Faccio update della nuova istanza di restaurant
-        $restaurant->update([
-            'activity_name' => $validDatas['activity_name'],
-            'VAT_number' => $validDatas['VAT_number'],
-            'address' => $validDatas['address'],
-            'image' => $imgPath,
-            'description' => $validDatas['description'],
-        ]);
-
-        // Se l'array dei tipi è pieno
-        if (isset($validDatas['types'])) {
-            // Faccio la sincronizzazione con il nuovo array
-            $restaurant->types()->sync($validDatas['types']);
-        } 
-        else {
-            // Altrimenti tolgo i tipi dall'istanza
-            $restaurant->types()->detach();
-        }
-    
-        return redirect()->route('admin.restaurant.show', compact('restaurant'));
     }
 
     /**

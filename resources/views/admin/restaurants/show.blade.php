@@ -8,12 +8,17 @@
             <div class="card">
                 <div class="card-body">
                     <h1 class="my-2">
-                        {{  $restaurant->activity_name }}
+                        {{ $restaurant->activity_name }}
                     </h1>
 
+                    {{-- Proprietario --}}
                     <h2>
-                        Sono la parte privata!!!
+                        Ecco il ristorante di {{ $restaurant->user->name }}
                     </h2>
+
+                    <h3>
+                        Sono la parte privata!!!
+                    </h3>
 
                     {{-- Tipi --}}
                     <div class="my-3">
@@ -22,9 +27,9 @@
                         </h2>
 
                         <ul>
-                            @forelse ( $restaurant->types as $type )
+                            @forelse ( /* $restaurants->types as $type */)
                                 <li>
-                                    {{-- {{ $type->name }} --}}
+                                    {{ $type->name }}
                                 </li>
                             @empty
                                 -
@@ -38,9 +43,9 @@
                             Immagine:
                         </h2>
 
-                        @if ($restaurant->image != null)
+                        {{-- @if ($restaurant->image != null) --}}
                             <div>
-                                <img src="/storage/{{ $restaurant->image }}" alt="image1">
+                                <img style="width: 300px" src="/storage/{{ /* $restaurant->image */ }}" alt="image1">
                             </div>
                         @else
                             -
@@ -48,13 +53,13 @@
                     </div>
 
                     <p>
-                        {{-- {{ $restaurant->description }} --}}
+                        {{ $restaurant->description }}
                     </p>
 
                     {{-- Ristoranti --}}
                     <div>
                         <a class="btn btn-primary" 
-                            {{-- href="{{ route('restaurants.index') }}" --}}
+                            href="{{ route('restaurants.index') }}"
                             >
                             Torna ai Ristoranti
                         </a>

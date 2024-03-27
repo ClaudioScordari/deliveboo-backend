@@ -28,6 +28,7 @@
 
                     <form action="{{ route('admin.restaurants.update', ['restaurant' => $restaurant->id]) }}" method="POST" enctype="multipart/form-data" >
                         @csrf
+                        @method('PUT')
                         
                         {{-- Nome attività --}}
                         <div class="mb-3">
@@ -45,6 +46,28 @@
 
                             {{-- Barra errore --}}
                             @error('activity_name')
+                                <div class="alert alert-danger">	
+                                    {{ $message }} 
+                                </div>
+                            @enderror
+                        </div>
+
+                        {{-- Nome proprietario --}}
+                        <div class="mb-3">
+                            <label class="d-block" for="user_name">Inserisci il nome e cognome del proprietario: <span class="text-danger">*</span></label>
+
+                            <input class="@error('user_name') is-invalid @enderror" 
+                                value="{{ old('user_name', $restaurant->user->name) }}" 
+                                maxlength="255" 
+                                id="user_name" 
+                                name="user_name" 
+                                type="text" 
+                                placeholder="Nome proprietario..." 
+                                required
+                                >
+
+                            {{-- Barra errore --}}
+                            @error('user_name')
                                 <div class="alert alert-danger">	
                                     {{ $message }} 
                                 </div>
