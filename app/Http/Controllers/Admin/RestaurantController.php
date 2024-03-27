@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 // Models
 use App\Models\Restaurant;
 use App\Models\Type;
+use App\Models\User;
 
 // Request
 use App\Http\Requests\StoreRestaurantRequest;
@@ -53,30 +54,38 @@ class RestaurantController extends Controller
         // Prendere dati validati
         $validDatas = $request->validated();
 
-        // Settare img a null se l'image nella colonna dell'istanza non c'è
-        $imgPath = null;
+        // Controllo se l'user esiste
+        $user = User::where('name', $validDatas['user_name'])->first();
 
-        // Se l'input del file è pieno, riempio il percorso
-        if (isset($validDatas['img'])) {
-            // Assegno il percorso
-            $imgPath = Storage::disk('public')->put('image', $validDatas['img']);
-        }
-
-        // Creazione dell'istanza restaurant
-        $restaurant = Restaurant::create([
-            'name' => $validDatas['name'],
-            'VAT_number' => $validDatas['VAT_number'],
-            'address' => $validDatas['address'],
-            'image' => $imgPath,
-            'description' => $validDatas['description'],
-        ]);
-
-        // Se l'array dei tipi è pieno, scorrere array delle checkbox per creare associazioni
-        if (isset($validDatas['types'])) {
-
-            // Scorro l'array delle checkbox e creo associazione con la nuova istanza di restaurant
-            foreach ($validDatas['types'] as $oneTypeId) {
-                $restaurant->types()->attach($oneTypeId);
+        // Se l'utente è stato trovato
+        if ($user) {
+            
+            // Settare img a null se l'image nella colonna dell'istanza non c'è
+            $imgPath = null;
+    
+            // Se l'input del file è pieno, riempio il percorso
+            if (isset($validDatas['img'])) {
+                // Assegno il percorso
+                $imgPath = Storage::disk('public')->put('image', $validDatas['img']);
+            }
+    
+            // Creazione dell'istanza restaurant
+            $restaurant = Restaurant::create([
+                'user_id' => $user->id,
+                'activity_name' => $validDatas['name'],
+                'VAT_number' => $validDatas['VAT_number'],
+                'address' => $validDatas['address'],
+                'image' => $imgPath,
+                'description' => $validDatas['description'],
+            ]);
+    
+            // Se l'array dei tipi è pieno, scorrere array delle checkbox per creare associazioni
+            if (isset($validDatas['types'])) {
+    
+                // Scorro l'array delle checkbox e creo associazione con la nuova istanza di restaurant
+                foreach ($validDatas['types'] as $oneTypeId) {
+                    $restaurant->types()->attach($oneTypeId);
+                }
             }
         }
 
@@ -101,51 +110,59 @@ class RestaurantController extends Controller
         // Prendo i dati validati
         $validDatas = $request->validated();
 
-        // Setto il percorso dell'img con quello originale, anche se era null
-        $imgPath = $restaurant->image;
+        // Controllo se l'user esiste
+        $user = User::where('name', $validDatas['user_name'])->first();
 
-        // Se l'input del file è pieno...
-        if (isset($validDatas['img'])) {
+        // Se l'utente è stato trovato
+        if ($user) {
 
-            // Controllo se l'img dell'istanza è piena...
-            if ($restaurant->image != null) {
-                // Elimino il percorso corrente
-                Storage::disk('public')->delete($restaurant->image);
-            }
-
-            // E setto il nuovo percorso
-            $imgPath = Storage::disk('public')->put('image', $validDatas['img']);
-        }
-        // Altrimenti se è vuoto (l'input), e megari mi spunta la checkbox (remove_file), vuole eliminare l'img 
-        else if (isset($validDatas['remove_file'])) {
-
-            // elimino il percorso
-            Storage::disk('public')->delete($restaurant->image);
-            
-            // Mi riempio la var del percorso a null 
-            $imgPath = null;
-        }
-        
-        // Faccio update della nuova istanza di restaurant
-        $restaurant->update([
-            'name' => $validDatas['name'],
-            'VAT_number' => $validDatas['VAT_number'],
-            'address' => $validDatas['address'],
-            'image' => $imgPath,
-            'description' => $validDatas['description'],
-        ]);
-
-        // Se l'array dei tipi è pieno
-        if (isset($validDatas['types'])) {
-            // Faccio la sincronizzazione con il nuovo array
-            $restaurant->types()->sync($validDatas['types']);
-        } 
-        else {
-            // Altrimenti tolgo i tipi dall'istanza
-            $restaurant->types()->detach();
-        }
+            // Setto il percorso dell'img con quello originale, anche se era null
+            $imgPath = $restaurant->image;
     
-        return redirect()->route('admin.restaurant.show', compact('restaurant'));
+            // Se l'input del file è pieno...
+            if (isset($validDatas['img'])) {
+    
+                // Controllo se l'img dell'istanza è piena...
+                if ($restaurant->image != null) {
+                    // Elimino il percorso corrente
+                    Storage::disk('public')->delete($restaurant->image);
+                }
+    
+                // E setto il nuovo percorso
+                $imgPath = Storage::disk('public')->put('image', $validDatas['img']);
+            }
+            // Altrimenti se è vuoto (l'input), e megari mi spunta la checkbox (remove_file), vuole eliminare l'img 
+            else if (isset($validDatas['remove_file'])) {
+    
+                // elimino il percorso
+                Storage::disk('public')->delete($restaurant->image);
+                
+                // Mi riempio la var del percorso a null 
+                $imgPath = null;
+            }
+            
+            // Faccio update della nuova istanza di restaurant
+            $restaurant->update([
+                'user_id' => $user->id,
+                'activity_name' => $validDatas['name'],
+                'VAT_number' => $validDatas['VAT_number'],
+                'address' => $validDatas['address'],
+                'image' => $imgPath,
+                'description' => $validDatas['description'],
+            ]);
+    
+            // Se l'array dei tipi è pieno
+            if (isset($validDatas['types'])) {
+                // Faccio la sincronizzazione con il nuovo array
+                $restaurant->types()->sync($validDatas['types']);
+            } 
+            else {
+                // Altrimenti tolgo i tipi dall'istanza
+                $restaurant->types()->detach();
+            }
+        }
+
+        return redirect()->route('admin.restaurants.show', compact('restaurant'));
     }
 
     /**

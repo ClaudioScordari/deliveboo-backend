@@ -23,6 +23,7 @@ class StoreRestaurantRequest extends FormRequest
     {
         return [
             'name' => 'required|max:255', 
+            'user_name' => 'required|max:255', 
             'VAT_number' => 'required|max:50', 
             'address' => 'required|max:255', 
             'img' => 'nullable|image',
