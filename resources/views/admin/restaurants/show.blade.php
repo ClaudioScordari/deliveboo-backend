@@ -27,7 +27,7 @@
                         </h2>
 
                         <ul>
-                            @forelse ( /* $restaurants->types as $type */)
+                            @forelse ( $restaurant->types as $type )
                                 <li>
                                     {{ $type->name }}
                                 </li>
@@ -43,9 +43,9 @@
                             Immagine:
                         </h2>
 
-                        {{-- @if ($restaurant->image != null) --}}
+                        @if ($restaurant->image != null)
                             <div>
-                                <img style="width: 300px" src="/storage/{{ /* $restaurant->image */ }}" alt="image1">
+                                <img src="/storage/{{ $restaurant->image }}" alt="image1">
                             </div>
                         @else
                             -
@@ -59,7 +59,7 @@
                     {{-- Ristoranti --}}
                     <div>
                         <a class="btn btn-primary" 
-                            href="{{ route('restaurants.index') }}"
+                            href="{{ route('admin.restaurants.index') }}"
                             >
                             Torna ai Ristoranti
                         </a>

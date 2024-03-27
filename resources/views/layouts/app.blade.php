@@ -28,6 +28,10 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('admin.restaurants.create') }}">Crea un ristorante</a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('admin.restaurants.index') }}">Ristoranti</a>
+                                </li>
                             @endauth
                             
                             @guest
@@ -40,9 +44,6 @@
                                 </li>
                             @endguest
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link 3</a>
-                            </li>
                         </ul>
                         
                         @auth

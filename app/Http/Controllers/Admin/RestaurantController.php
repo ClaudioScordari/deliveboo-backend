@@ -137,7 +137,7 @@ class RestaurantController extends Controller
             
             // Faccio update della nuova istanza di restaurant
             $restaurant->update([
-                'name' => $validDatas['name'],
+                'activity_name' => $validDatas['activity_name'],
                 'VAT_number' => $validDatas['VAT_number'],
                 'address' => $validDatas['address'],
                 'image' => $imgPath,
