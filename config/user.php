@@ -1,0 +1,23 @@
+<?php
+    return [
+        ['email' => 'alessandro.bianchi@example.com', 'password' => bcrypt('secret'), 'name' => 'Alessandro Bianchi'],
+        ['email' => 'luca.rossi@example.com', 'password' => bcrypt('secret'), 'name' => 'Luca Rossi'],
+        ['email' => 'matteo.ferrari@example.com', 'password' => bcrypt('secret'), 'name' => 'Matteo Ferrari'],
+        ['email' => 'sofia.romano@example.com', 'password' => bcrypt('secret'), 'name' => 'Sofia Romano'],
+        ['email' => 'giulia.russo@example.com', 'password' => bcrypt('secret'), 'name' => 'Giulia Russo'],
+        ['email' => 'francesco.greco@example.com', 'password' => bcrypt('secret'), 'name' => 'Francesco Greco'],
+        ['email' => 'giorgia.bianchi@example.com', 'password' => bcrypt('secret'), 'name' => 'Giorgia Bianchi'],
+        ['email' => 'davide.colombo@example.com', 'password' => bcrypt('secret'), 'name' => 'Davide Colombo'],
+        ['email' => 'alessia.monti@example.com', 'password' => bcrypt('secret'), 'name' => 'Alessia Monti'],
+        ['email' => 'federico.fontana@example.com', 'password' => bcrypt('secret'), 'name' => 'Federico Fontana'],
+        ['email' => 'chiara.rossi@example.com', 'password' => bcrypt('secret'), 'name' => 'Chiara Rossi'],
+        ['email' => 'lorenzo.mancini@example.com', 'password' => bcrypt('secret'), 'name' => 'Lorenzo Mancini'],
+        ['email' => 'simone.ferrara@example.com', 'password' => bcrypt('secret'), 'name' => 'Simone Ferrara'],
+        ['email' => 'marta.brambilla@example.com', 'password' => bcrypt('secret'), 'name' => 'Marta Brambilla'],
+        ['email' => 'gabriele.moretti@example.com', 'password' => bcrypt('secret'), 'name' => 'Gabriele Moretti'],
+        ['email' => 'sara.rinaldi@example.com', 'password' => bcrypt('secret'), 'name' => 'Sara Rinaldi'],
+        ['email' => 'valentina.marino@example.com', 'password' => bcrypt('secret'), 'name' => 'Valentina Marino'],
+        ['email' => 'daniele.gallo@example.com', 'password' => bcrypt('secret'), 'name' => 'Daniele Gallo'],
+        ['email' => 'elena.conti@example.com', 'password' => bcrypt('secret'), 'name' => 'Elena Conti'],
+        ['email' => 'marco.costantini@example.com', 'password' => bcrypt('secret'), 'name' => 'Marco Costantini'],    
+    ];
