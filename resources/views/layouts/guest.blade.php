@@ -37,6 +37,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">Register</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('restaurants.index') }}">Ristoranti</a>
+                                </li>
                             @endauth
                         </ul>
 

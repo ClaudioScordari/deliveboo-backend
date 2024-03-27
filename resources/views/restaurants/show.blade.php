@@ -12,7 +12,7 @@
                     </h1>
 
                     <h2>
-                        Sono la parte privata!!!
+                        Sono la parte pubblica!!!
                     </h2>
 
                     {{-- Tipi --}}

@@ -10,6 +10,9 @@ use App\Http\Controllers\Admin\PlateController as AdminPlateController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\Admin\TypeController as AdminTypeController;
 
+// Pubblico
+use App\Http\Controllers\RestaurantController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,17 +27,22 @@ use App\Http\Controllers\Admin\TypeController as AdminTypeController;
 
 Route::get('/', [MainController::class, 'index'])->name('home');
 
+// Ristoranti (pubblici)
+Route::resource('restaurants', RestaurantController::class)->only(['index', 'show']);
+
 Route::prefix('admin')
     ->name('admin.')
     ->middleware('auth')
     ->group(function () {
 
     Route::get('/dashboard', [AdminMainController::class, 'dashboard'])->name('dashboard');
-    //rotta che gestisce i progetti
+
+    // Ristoranti (protetti)
     Route::resource('restaurants', AdminRestaurantController::class);
-    Route::resource('plates', AdminPlateController::class);
-    Route::resource('orders', AdminOrderController::class);
-    Route::resource('types', AdminTypeController::class);
+
+    // Route::resource('plates', AdminPlateController::class);
+    // Route::resource('orders', AdminOrderController::class);
+    // Route::resource('types', AdminTypeController::class);
 
 });
 

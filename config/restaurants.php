@@ -4,6 +4,7 @@
 
 return [
     [
+        'id' => 1,
         'user_id' => 1,
         'activity_name' => 'The Italian Kitchen',
         'VAT_number' => 'IT123456789',
@@ -12,6 +13,7 @@ return [
         'description' => 'Authentic Italian cuisine from the heart of Rome.',
     ],
     [
+        'id' => 2,
         'user_id' => 2,
         'activity_name' => 'Sushi Sama',
         'VAT_number' => 'JP123456789',
@@ -20,6 +22,7 @@ return [
         'description' => 'Fresh sushi and sashimi from master chefs.',
     ],
     [
+        'id' => 3,
         'user_id' => 3,
         'activity_name' => 'Curry Corner',
         'VAT_number' => 'IN123456789',
@@ -28,6 +31,7 @@ return [
         'description' => 'Spicy and flavorful Indian curries and breads.',
     ],
     [
+        'id' => 4,
         'user_id' => 4,
         'activity_name' => 'American Burgers',
         'VAT_number' => 'US123456789',
@@ -36,6 +40,7 @@ return [
         'description' => 'Juicy burgers and crispy fries for the soul.',
     ],
     [
+        'id' => 5,
         'user_id' => 5,
         'activity_name' => 'Beijing Duck House',
         'VAT_number' => 'CN123456789',
@@ -44,6 +49,7 @@ return [
         'description' => 'Crispy Peking duck with traditional accompaniments.',
     ],
     [
+        'id' => 6,
         'user_id' => 6,
         'activity_name' => 'The Pizza Masters',
         'VAT_number' => '123456789',
@@ -52,6 +58,7 @@ return [
         'description' => 'Authentic Italian pizza with homemade sauce and dough.',
     ],
     [
+        'id' => 7,
         'user_id' => 7,
         'activity_name' => 'Sushi Delight',
         'VAT_number' => '987654321',
@@ -60,6 +67,7 @@ return [
         'description' => 'Fresh sushi and sashimi from the best local fish.',
     ],
     [
+        'id' => 8,
         'user_id' => 8,
         'activity_name' => 'Delicious Eats',
         'VAT_number' => 'VAT1001',
@@ -68,6 +76,7 @@ return [
         'description' => 'A modern twist on classic dishes.',
     ],
     [
+        'id' => 9,
         'user_id' => 9,
         'activity_name' => 'Burger Hub',
         'VAT_number' => 'VAT1002',
@@ -76,6 +85,7 @@ return [
         'description' => 'Home of the gourmet burger.',
     ],
     [
+        'id' => 10,
         'user_id' => 10,
         'activity_name' => 'Sushi Dreams',
         'VAT_number' => 'VAT1020',
@@ -84,6 +94,7 @@ return [
         'description' => 'Traditional and innovative sushi creations.',
     ],
     [
+        'id' => 11,
         'user_id' => 11,
         'activity_name' => 'Sushi Zen',
         'VAT_number' => 'JP987654321',
@@ -92,6 +103,7 @@ return [
         'description' => 'Minimalist sushi setting with a focus on zen flavors.',
     ],
     [
+        'id' => 12,
         'user_id' => 12,
         'activity_name' => 'Tacos Fiesta',
         'VAT_number' => 'MX987654321',
@@ -100,6 +112,7 @@ return [
         'description' => 'Traditional Mexican tacos with a variety of fillings.',
     ],
     [
+        'id' => 13,
         'user_id' => 13,
         'activity_name' => 'BBQ Smokehouse',
         'VAT_number' => 'US123987654',
@@ -108,6 +121,7 @@ return [
         'description' => 'Smoky, savory BBQ meats slow-cooked to perfection.',
     ],
     [
+        'id' => 14,
         'user_id' => 14,
         'activity_name' => 'Dragon Noodles',
         'VAT_number' => 'CN321654987',
@@ -116,6 +130,7 @@ return [
         'description' => 'Hearty bowls of noodle soup with fresh, vibrant toppings.',
     ],
     [
+        'id' => 15,
         'user_id' => 15,
         'activity_name' => 'Greek Gyros',
         'VAT_number' => 'GR123456700',
@@ -124,6 +139,7 @@ return [
         'description' => 'Authentic Greek gyros with tzatziki and fresh vegetables.',
     ],
     [
+        'id' => 16,
         'user_id' => 16,
         'activity_name' => 'Tapas Bar',
         'VAT_number' => 'ES123456789',
@@ -132,14 +148,16 @@ return [
         'description' => 'Small plates bursting with the flavors of Spain.',
     ],
     [
-       'user_id' => 17,
+        'id' => 17,
+        'user_id' => 17,
         'activity_name' => 'Vegan Delights',
-       'VAT_number' => 'VEG1234567',
+        'VAT_number' => 'VEG1234567',
         'address' => '17 Green Leaf Blvd, Portland',
         'image' => 'vegan-delights.jpg',
         'description' => 'Innovative plant-based dishes for a sustainable future.',
     ],
     [
+        'id' => 18,
         'user_id' => 18,
         'activity_name' => 'Steak House',
         'VAT_number' => 'US765432109',
@@ -148,6 +166,7 @@ return [
         'description' => 'Premium cuts and fine wines for a classic dining experience.',
     ],
     [
+        'id' => 19,
         'user_id' => 19,
         'activity_name' => 'Soul Food Cafe',
         'VAT_number' => 'US987654321',
@@ -156,6 +175,7 @@ return [
         'description' => 'Hearty soul food that feels like a warm hug.',
     ],
     [
+        'id' => 20,
         'user_id' => 20,
         'activity_name' => 'Parisian Bistro',
         'VAT_number' => 'FR123456789',

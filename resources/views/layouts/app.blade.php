@@ -23,20 +23,31 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('admin.dashboard') }}">Dashboard</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link 2</a>
-                            </li>
+                            
+                            @guest
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">Login</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">Register</a>
+                                </li>
+                            @endguest
+
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Link 3</a>
                             </li>
                         </ul>
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
+                        
+                        @auth
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
 
-                            <button type="submit" class="btn btn-outline-danger">
-                                Log Out
-                            </button>
-                        </form>
+                                <button type="submit" class="btn btn-outline-danger">
+                                    Log Out
+                                </button>
+                            </form>
+                        @endauth
                     </div>
                 </div>
             </nav>
