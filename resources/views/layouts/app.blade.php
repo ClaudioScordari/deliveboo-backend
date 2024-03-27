@@ -23,6 +23,12 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('admin.dashboard') }}">Dashboard</a>
                             </li>
+
+                            @auth
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('admin.restaurants.create') }}">Crea un ristorante</a>
+                                </li>
+                            @endauth
                             
                             @guest
                                 <li class="nav-item">

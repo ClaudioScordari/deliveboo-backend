@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', 'Crea un ristorante')
+@section('page-title', 'Modifica il ristorante ' . $restaurant->activity_name)
 
 @section('main-content')
     <div class="row">
@@ -26,7 +26,7 @@
 
                     <br>
 
-                    <form action="{{ route('admin.restaurants.update') }}" method="POST" enctype="multipart/form-data" >
+                    <form action="{{ route('admin.restaurants.update', ['restaurant' => $restaurant->id]) }}" method="POST" enctype="multipart/form-data" >
                         @csrf
                         
                         {{-- Nome attività --}}
@@ -34,7 +34,7 @@
                             <label class="d-block" for="name">Nome ristorante: <span class="text-danger">*</span></label>
 
                             <input class="@error('name') is-invalid @enderror" 
-                                value="{{ old('name', /* $restaurant->activity_name */) }}" 
+                                value="{{ old('name', $restaurant->activity_name) }}" 
                                 maxlength="255" 
                                 id="name" 
                                 name="name" 
@@ -56,7 +56,7 @@
                             <label class="d-block" for="VAT_number">Partita IVA: <span class="text-danger">*</span></label>
 
                             <input class="@error('VAT_number') is-invalid @enderror" 
-                                value="{{ old('VAT_number', /* $restaurant->VAT_number */) }}" 
+                                value="{{ old('VAT_number', $restaurant->VAT_number) }}" 
                                 maxlength="50" 
                                 id="VAT_number" 
                                 name="VAT_number" 
@@ -78,7 +78,7 @@
                             <label class="d-block" for="address">Indirizzo: <span class="text-danger">*</span></label>
 
                             <input class="@error('address') is-invalid @enderror" 
-                                value="{{ old('address', /* $restaurant->address */) }}" 
+                                value="{{ old('address', $restaurant->address) }}" 
                                 maxlength="255" 
                                 id="address" 
                                 name="address" 
@@ -125,7 +125,7 @@
                         --}}
 
                         {{-- Checkbox se voglio rimuovere l'img --}}
-                        @if ( /* $project->image_src != null */ )
+                        @if ($restaurant->image != null)
                             <div>
                                 <input value="1" type="checkbox" name="remove_file" id="remove_file">
 
@@ -137,24 +137,22 @@
                         <div class="my-4">
                             <label class="d-block" for="types">Scegli il tipo:</label>
 
-                            {{-- @foreach ($types as $type) --}}
+                            @foreach ($types as $type)
                                 <div class="form-check">
                                     <input 
                                         class="form-check-input" 
                                         type="checkbox"
-                                        {{-- name="types[]" --}}
-                                        {{-- value="{{ $type->id }}" --}}
-                                        {{-- id="type-{{ $type->id }}" --}}
-                                        {{-- {{ in_array($type->id, old('types', [])) ? 'checked' : ''}} --}}
+                                        name="types[]"
+                                        value="{{ $type->id }}"
+                                        id="type-{{ $type->id }}"
+                                        {{ $restaurant->types->contains($type->id) ? 'checked' : ''}}
                                     >
-
-                                    {{-- 
-                                        <label class="form-check-label" for="{{ $type->id }}">
-                                            {{ $type->name }}
-                                        </label> 
-                                    --}}
+                        
+                                    <label class="form-check-label" for="{{ $type->id }}">
+                                        {{ $type->name }}
+                                    </label> 
                                 </div>
-                            {{-- @endforeach --}}
+                            @endforeach
                         </div>
                         
                         {{-- Descrizione --}}
@@ -169,7 +167,7 @@
                                 id="description" 
                                 placeholder="Scrivi una descrizione"
                                 >
-                                {{-- {{ old('description', $restaurant->description) }} --}}
+                                {{ old('description', $restaurant->description) }}
                             </textarea>
 
                             {{-- Barra errore --}}
@@ -181,7 +179,7 @@
                         </div>
             
                         <div>
-                            <button type="submit" class="btn btn-primary">Aggiungi attività</button>
+                            <button type="submit" class="btn btn-primary">Aggiorna attività</button>
                         </div>
                         <br>
                     </form>
