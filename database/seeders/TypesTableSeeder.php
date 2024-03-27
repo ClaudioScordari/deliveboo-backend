@@ -13,7 +13,7 @@ class TypesTableSeeder extends Seeder
      */
     public function run()
     {
-        $types = config('restaurant_types');
+        $types = config('types');
         
         foreach ($types as $type) {
             DB::table('types')->insert([
