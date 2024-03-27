@@ -8,7 +8,7 @@
             <div class="card">
                 <div class="card-body">
                     <h1 class="my-2">
-                        {{ /* $restaurant->activity_name */ }}
+                        {{  $restaurant->activity_name }}
                     </h1>
 
                     <h2>
@@ -22,7 +22,7 @@
                         </h2>
 
                         <ul>
-                            @forelse ( /* $restaurants->types as $type */)
+                            @forelse ( $restaurant->types as $type )
                                 <li>
                                     {{-- {{ $type->name }} --}}
                                 </li>
@@ -38,9 +38,9 @@
                             Immagine:
                         </h2>
 
-                        {{-- @if ($restaurant->image != null) --}}
+                        @if ($restaurant->image != null)
                             <div>
-                                <img style="width: 300px" src="/storage/{{ /* $restaurant->image */ }}" alt="image1">
+                                <img src="/storage/{{ $restaurant->image }}" alt="image1">
                             </div>
                         @else
                             -

@@ -6,7 +6,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Restaurant extends Model
-{
+{   
+    protected $fillable = [
+        'user_id','activity_name', 'VAT_number', 'address', 'image', 'description'
+    ];
+
     use HasFactory;
 
     public function user()

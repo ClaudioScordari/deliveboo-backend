@@ -31,20 +31,20 @@
                         
                         {{-- Nome attività --}}
                         <div class="mb-3">
-                            <label class="d-block" for="name">Nome ristorante: <span class="text-danger">*</span></label>
+                            <label class="d-block" for="activity_name">Nome ristorante: <span class="text-danger">*</span></label>
 
-                            <input class="@error('name') is-invalid @enderror" 
-                                value="{{ old('name', $restaurant->activity_name) }}" 
+                            <input class="@error('activity_name') is-invalid @enderror" 
+                                value="{{ old('activity_name', $restaurant->activity_name) }}" 
                                 maxlength="255" 
-                                id="name" 
-                                name="name" 
+                                id="activity_name" 
+                                name="activity_name" 
                                 type="text" 
                                 placeholder="Scrivi il nome..." 
                                 required
                                 >
 
                             {{-- Barra errore --}}
-                            @error('name')
+                            @error('activity_name')
                                 <div class="alert alert-danger">	
                                     {{ $message }} 
                                 </div>

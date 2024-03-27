@@ -15,6 +15,7 @@ use App\Http\Requests\UpdateRestaurantRequest;
 
 // Facades
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
 class RestaurantController extends Controller
 {
     /**
@@ -64,7 +65,8 @@ class RestaurantController extends Controller
 
         // Creazione dell'istanza restaurant
         $restaurant = Restaurant::create([
-            'name' => $validDatas['name'],
+            'user_id' => Auth::id(), // Ottieni l'ID dell'utente autenticato
+            'activity_name' => $validDatas['activity_name'],
             'VAT_number' => $validDatas['VAT_number'],
             'address' => $validDatas['address'],
             'image' => $imgPath,
@@ -128,7 +130,7 @@ class RestaurantController extends Controller
         
         // Faccio update della nuova istanza di restaurant
         $restaurant->update([
-            'name' => $validDatas['name'],
+            'activity_name' => $validDatas['activity_name'],
             'VAT_number' => $validDatas['VAT_number'],
             'address' => $validDatas['address'],
             'image' => $imgPath,
