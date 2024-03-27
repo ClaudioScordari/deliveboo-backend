@@ -97,7 +97,7 @@
 
                         {{-- Img da aggiungere --}}
                         <div class="mb-3">
-                            <label for="dataFile" class="form-label">Scegli un'immagine da assegnare al tuo ristorante:</label>
+                            <label for="img" class="form-label">Scegli un'immagine da assegnare al tuo ristorante:</label>
 
                             <input 
                                 style="width: 25%" 
@@ -119,24 +119,22 @@
                         <div class="my-4">
                             <label class="d-block" for="types">Scegli il tipo:</label>
 
-                            {{-- @foreach ($types as $type) --}}
+                            @foreach ($types as $type)
                                 <div class="form-check">
                                     <input 
                                         class="form-check-input" 
                                         type="checkbox"
-                                        {{-- name="types[]" --}}
-                                        {{-- value="{{ $type->id }}" --}}
-                                        {{-- id="type-{{ $type->id }}" --}}
-                                        {{-- {{ in_array($type->id, old('types', [])) ? 'checked' : ''}} --}}
+                                        name="types[]"
+                                        value="{{ $type->id }}"
+                                        id="type-{{ $type->id }}"
+                                        {{ in_array($type->id, old('types', [])) ? 'checked' : ''}}
                                     >
 
-                                    {{-- 
-                                        <label class="form-check-label" for="{{ $type->id }}">
-                                            {{ $type->name }}
-                                        </label> 
-                                    --}}
+                                    <label class="form-check-label" for="{{ $type->id }}">
+                                        {{ $type->name }}
+                                    </label>
                                 </div>
-                            {{-- @endforeach --}}
+                            @endforeach
                         </div>
                         
                         {{-- Descrizione --}}
@@ -151,7 +149,7 @@
                                 id="description" 
                                 placeholder="Scrivi una descrizione"
                                 >
-                                {{-- {{ old('description') }} --}}
+                                {{ old('description') }}
                             </textarea>
 
                             {{-- Barra errore --}}

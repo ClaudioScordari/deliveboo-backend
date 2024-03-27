@@ -21,13 +21,13 @@
                         @foreach ($restaurants as $restaurant)
                             <li class="mb-5">
                                 <h2>
-                                    Nome ristorante: {{ $restaurant['activity_name'] }}
+                                    Nome ristorante: {{ $restaurant->activity_name }}
                                 </h2>
 
                                 {{-- Show --}}
                                 <div class="pb-2 border-bottom border-3 border-dark d-inline-block">
                                     <a class="btn btn-primary" 
-                                        {{-- href="{{ route('restaurants.show', ['restaurant' => $restaurant->id]) }}" --}}
+                                        href="{{ route('restaurants.show', ['restaurant' => $restaurant->id]) }}"
                                         >
                                         Vedi il ristorante
                                     </a> 

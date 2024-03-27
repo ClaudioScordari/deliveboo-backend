@@ -15,7 +15,7 @@ class RestaurantController extends Controller
      */
     public function index()
     {
-        $restaurants = config('restaurants');
+        $restaurants = Restaurant::all();
 
         return view('restaurants.index', compact('restaurants'));
     }
@@ -25,11 +25,6 @@ class RestaurantController extends Controller
      */
     public function show(Restaurant $restaurant)
     {
-        /*
-            Qui da prendere istanze dei ristoranti.
-            Dati per adesso da un array associativo
-        */
-
         return view('restaurants.show', compact('restaurant'));
     }
 }

@@ -7,6 +7,14 @@ use Illuminate\Http\Request;
 
 // Models
 use App\Models\Restaurant;
+use App\Models\Type;
+
+// Request
+use App\Http\Requests\StoreRestaurantRequest;
+use App\Http\Requests\UpdateRestaurantRequest;
+
+// Facades
+use Illuminate\Support\Facades\Storage;
 class RestaurantController extends Controller
 {
     /**
@@ -14,7 +22,7 @@ class RestaurantController extends Controller
      */
     public function index()
     {
-        $restaurants = config('restaurants');
+        $restaurants = Restaurant::all();
 
         return view('admin.restaurants.index', compact('restaurants'));
     }
@@ -24,11 +32,6 @@ class RestaurantController extends Controller
      */
     public function show(Restaurant $restaurant)
     {
-        /*
-            Qui da prendere istanze dei ristoranti.
-            Dati per adesso da un array associativo
-        */
-
         return view('admin.restaurants.show', compact('restaurant'));
     }
 
@@ -37,31 +40,47 @@ class RestaurantController extends Controller
      */
     public function create()
     {
-        /*
-            Qui passare tutti i tipi 
-            per costruire il ristorante
-        */
+        $types = Type::all();
 
-        return view('admin.restaurants.create');
+        return view('admin.restaurants.create', compact('types'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreRestaurantRequest $request)
     {
         // Prendere dati validati
+        $validDatas = $request->validated();
 
-        // Settare img a null se l'img nella colonna dell'istanza non c'è
+        // Settare img a null se l'image nella colonna dell'istanza non c'è
+        $imgPath = null;
 
-        // Ambito img - se l'input del file è pieno, riempio il percorso
+        // Se l'input del file è pieno, riempio il percorso
+        if (isset($validDatas['img'])) {
+            // Assegno il percorso
+            $imgPath = Storage::disk('public')->put('image', $validDatas['img']);
+        }
 
         // Creazione dell'istanza restaurant
+        $restaurant = Restaurant::create([
+            'name' => $validDatas['name'],
+            'VAT_number' => $validDatas['VAT_number'],
+            'address' => $validDatas['address'],
+            'image' => $imgPath,
+            'description' => $validDatas['description'],
+        ]);
 
         // Se l'array dei tipi è pieno, scorrere array delle checkbox per creare associazioni
+        if (isset($validDatas['types'])) {
 
-        // Restituzione dello show
-        return redirect()->route('admin.projects.show', compact('project'));
+            // Scorro l'array delle checkbox e creo associazione con la nuova istanza di restaurant
+            foreach ($validDatas['types'] as $oneTypeId) {
+                $restaurant->types()->attach($oneTypeId);
+            }
+        }
+
+        return redirect()->route('admin.restaurants.show', compact('restaurant'));
     }
 
     /**
@@ -69,40 +88,63 @@ class RestaurantController extends Controller
      */
     public function edit(Restaurant $restaurant)
     {
-        return view('admin.restaurants.edit', compact('restaurant'));
+        $types = Type::all();
+
+        return view('admin.restaurants.edit', compact('restaurant', 'types'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Restaurant $restaurant)
+    public function update(UpdateRestaurantRequest $request, Restaurant $restaurant)
     {
         // Prendo i dati validati
+        $validDatas = $request->validated();
 
         // Setto il percorso dell'img con quello originale, anche se era null
+        $imgPath = $restaurant->image;
 
-        // Se l'input è pieno...
+        // Se l'input del file è pieno...
+        if (isset($validDatas['img'])) {
 
             // Controllo se l'img dell'istanza è piena...
-
+            if ($restaurant->image != null) {
                 // Elimino il percorso corrente
-            
-            // Setto il nuovo percorso dell'img
+                Storage::disk('public')->delete($restaurant->image);
+            }
 
-        // Altrimenti se è vuoto (l'input), e megari mi spunta la checkbox, vuole eliminare l'img 
+            // E setto il nuovo percorso
+            $imgPath = Storage::disk('public')->put('image', $validDatas['img']);
+        }
+        // Altrimenti se è vuoto (l'input), e megari mi spunta la checkbox (remove_file), vuole eliminare l'img 
+        else if (isset($validDatas['remove_file'])) {
 
             // elimino il percorso
+            Storage::disk('public')->delete($restaurant->image);
             
-            // mi riempio la var del percorso a null
+            // Mi riempio la var del percorso a null 
+            $imgPath = null;
+        }
         
         // Faccio update della nuova istanza di restaurant
+        $restaurant->update([
+            'name' => $validDatas['name'],
+            'VAT_number' => $validDatas['VAT_number'],
+            'address' => $validDatas['address'],
+            'image' => $imgPath,
+            'description' => $validDatas['description'],
+        ]);
 
         // Se l'array dei tipi è pieno
-            
-            // faccio la sincronizzazione con il nuovo array
-
-            // altrimenti tolgo i tipi dall'istanza con il detach
-
+        if (isset($validDatas['types'])) {
+            // Faccio la sincronizzazione con il nuovo array
+            $restaurant->types()->sync($validDatas['types']);
+        } 
+        else {
+            // Altrimenti tolgo i tipi dall'istanza
+            $restaurant->types()->detach();
+        }
+    
         return redirect()->route('admin.restaurant.show', compact('restaurant'));
     }
 
@@ -114,10 +156,14 @@ class RestaurantController extends Controller
         /*
             Se elimino il ristorante:
             devo controllare se ha img associate, quindi
-            svuotare la riga della sua img se è piena
+            svuotare la riga della sua image se è piena
         */
+        if ($restaurant->image != null) {
+            Storage::disk('public')->delete($restaurant->image);
+        }
 
-        // e poi elimino il progetto
+        // E poi elimino il progetto
+        $restaurant->delete();
 
         return redirect()->route('admin.restaurants.index');
     }
