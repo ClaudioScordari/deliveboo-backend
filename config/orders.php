@@ -6,7 +6,7 @@ return [
         'name' => 'Marco Rossi',
         'phone' => '02 1234567',
         'address' => 'Via dei Fiori 10, Milano',
-        'notes' => 'Leave at front door.',
+        'notes' => 'Lasciare di fronte alla porta.',
     ],
     [
         'payment_status' => 'pending',
@@ -14,7 +14,7 @@ return [
         'name' => 'Francesca Bianchi',
         'phone' => '02 9876543',
         'address' => 'Corso Vittorio Emanuele II, 45, Milano',
-        'notes' => 'Ring the bell upon arrival.',
+        'notes' => 'Suonare il campanello.',
     ],
     [
         'payment_status' => 'failed',
@@ -22,7 +22,7 @@ return [
         'name' => 'Giovanni Romano',
         'phone' => '02 3344556',
         'address' => 'Piazza Duomo, 1, Milano',
-        'notes' => 'Contact for a new payment method.',
+        'notes' => 'Chiamami per capire come pagare.',
     ],
     [
         'payment_status' => 'completed',
@@ -30,7 +30,7 @@ return [
         'name' => 'Alessandra Russo',
         'phone' => '02 8765432',
         'address' => 'Via Dante Alighieri, 20, Milano',
-        'notes' => '',
+        'notes' => 'Attenti al cane.',
     ],
     [
         'payment_status' => 'completed',
@@ -38,7 +38,7 @@ return [
         'name' => 'Luca Ferrari',
         'phone' => '02 1122334',
         'address' => 'Via Montenapoleone, 15, Milano',
-        'notes' => 'Call on arrival.',
+        'notes' => 'Chiamami quando arrivi.',
     ],
     [
         'payment_status' => 'completed',
@@ -46,7 +46,7 @@ return [
         'name' => 'Sofia Martini',
         'phone' => '02 4455667',
         'address' => 'Corso Buenos Aires, 80, Milano',
-        'notes' => 'Please leave in the mailbox if not home.',
+        'notes' => 'Lascialo pure in portineria.',
     ],
     [
         'payment_status' => 'pending',
@@ -54,7 +54,7 @@ return [
         'name' => 'Matteo Esposito',
         'phone' => '02 7788990',
         'address' => 'Via della Moscova, 25, Milano',
-        'notes' => 'Call when outside, gate is tricky.',
+        'notes' => 'Il campanello non funziona, chiamami.',
     ],
     [
         'payment_status' => 'completed',
@@ -62,7 +62,7 @@ return [
         'name' => 'Chiara Moretti',
         'phone' => '02 3456789',
         'address' => 'Via Larga, 35, Milano',
-        'notes' => '',
+        'notes' => 'Non citofonare, Chiamami.',
     ],
     [
         'payment_status' => 'failed',
@@ -70,7 +70,7 @@ return [
         'name' => 'Lorenzo Conti',
         'phone' => '02 8901234',
         'address' => 'Viale Abruzzi, 30, Milano',
-        'notes' => 'Please retry payment.',
+        'notes' => 'Pago in contanti alla consegna.',
     ],
     [
         'payment_status' => 'completed',
@@ -78,7 +78,7 @@ return [
         'name' => 'Elena Barbieri',
         'phone' => '02 4567890',
         'address' => 'Via Padova, 55, Milano',
-        'notes' => 'If not home, leave with neighbor.',
+        'notes' => 'Terzo portone a destra.',
     ],
     [
         'payment_status' => 'completed',
@@ -86,7 +86,7 @@ return [
         'name' => 'Andrea Colombo',
         'phone' => '02 6789012',
         'address' => 'Corso Magenta, 70, Milano',
-        'notes' => 'Special delivery instructions will follow.',
+        'notes' => 'Mandami un messaggio quando arrivi.',
     ],
     [
         'payment_status' => 'completed',
@@ -94,6 +94,6 @@ return [
         'name' => 'Giulia De Luca',
         'phone' => '02 2345678',
         'address' => 'Piazza San Babila, 10, Milano',
-        'notes' => 'Deliver to the main gate security.',
+        'notes' => 'Terza scala secondo piano a sinistra.',
     ],
 ];
