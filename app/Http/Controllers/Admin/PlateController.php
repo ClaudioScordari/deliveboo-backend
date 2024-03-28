@@ -47,24 +47,30 @@ class PlateController extends Controller
             $imgPath = Storage::disk('public')->put('image', $validDatas['img']);
         }
 
+        // Se è piena la spunta visible
+        if (isset($validDatas['visible'])) {
+
+            // Mi riempio la colonna visible 
+            $visible = $validDatas['visible'];
+        } else {
+            $visible = 0;
+        } 
+
         $plate = Plate::create([
             'restaurant_id' => auth()->user()->restaurant->id,
             'name' => $validDatas['name'],
             'price' => $validDatas['price'],
-            'address' => $validDatas['address'],
+            'visible' => $visible,
+            'ingredients' => $validDatas['ingredients'],
             'image' => $imgPath,
             'description' => $validDatas['description'],
         ]);
 
-        // Se l'array dei tipi è pieno, scorrere array delle checkbox per creare associazioni
-        if (isset($validDatas['types'])) {
+        return redirect()->route('admin.plates.show', compact('plate'));
+    }
 
-            // Scorro l'array delle checkbox e creo associazione con la nuova istanza di restaurant
-            foreach ($validDatas['types'] as $oneTypeId) {
-                $restaurant->types()->attach($oneTypeId);
-            }
-        }
-
-        return redirect()->route('admin.restaurants.show', compact('restaurant'));
+    public function edit(Plate $plate)
+    {
+        return view('admin.plates.edit', compact('plate'));
     }
 }

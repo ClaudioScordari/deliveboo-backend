@@ -139,13 +139,11 @@
                         </div>
 
                         {{-- Immagine corrente --}}
-                        {{-- 
-                            @if ($restaurant->image != null)
-                                <div class="my-3">
-                                    <img style="width: 300px" src="/storage/{{ $restaurant->image }}" alt="{{ $restaurant->activity_name }}">
-                                </div>
-                            @endif 
-                        --}}
+                        @if ($restaurant->image != null)
+                            <div class="my-3">
+                                <img style="width: 300px" src="/storage/{{ $restaurant->image }}" alt="{{ $restaurant->activity_name }}">
+                            </div>
+                        @endif 
 
                         {{-- Checkbox se voglio rimuovere l'img --}}
                         @if ($restaurant->image != null)

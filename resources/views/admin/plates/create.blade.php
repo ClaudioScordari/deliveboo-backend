@@ -58,6 +58,7 @@
                             <input 
                                 type="number" 
                                 min="0" 
+                                step="0.01"
                                 name="price" 
                                 id="price" 
                                 class="form-control" 
@@ -73,7 +74,7 @@
 
                         {{-- Visibile --}}
                         <div class="mb-3">
-                            <input value="1" type="checkbox" name="visible" id="visible" required>
+                            <input value="1" type="checkbox" name="visible" id="visible">
                             <label for="visible" class="form-label">- <span class="fw-bold">Spunta se vuoi che il tuo piatto appaia nel Menù</span></label>
                         </div>
 
@@ -81,7 +82,7 @@
                         <div class="mb-3">
                             <label class="d-block" for="ingredients">Ingredienti: <span class="text-danger">*</span></label>
 
-                            <p class="fw-bold">Scrivi gli ingredienti con un Nome separato da una virgola</p>
+                            <p class="fw-bold">Scrivi gli ingredienti con un Nome separato da una virgola e da uno spazio</p>
 
                             <textarea 
                                 cols="23" 

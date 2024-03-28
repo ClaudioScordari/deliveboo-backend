@@ -11,7 +11,7 @@ class UpdatePlateRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,12 @@ class UpdatePlateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => 'required|string|max:255',
+            'price' => 'required|numeric|min:0',
+            'visible' => 'nullable|boolean',
+            'ingredients' => 'nullable|string|max:4096',
+            'img' => 'nullable|image|max:2048', 
+            'description' => 'nullable|string|max:4096',
         ];
     }
 }
