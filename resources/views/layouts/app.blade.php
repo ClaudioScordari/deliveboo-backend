@@ -28,10 +28,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('admin.restaurants.create') }}">Crea un ristorante</a>
                                 </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('admin.restaurants.index') }}">Ristoranti</a>
-                                </li>
                             @endauth
                             
                             @guest
@@ -43,6 +39,12 @@
                                     <a class="nav-link" href="{{ route('register') }}">Register</a>
                                 </li>
                             @endguest
+
+                            @auth
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('admin.restaurants.index') }}">Vedi la mia attività</a>
+                                </li>
+                            @endauth
 
                         </ul>
                         

@@ -25,7 +25,8 @@ use App\Http\Controllers\RestaurantController;
 |
 */
 
-Route::get('/', [MainController::class, 'index'])->name('home');
+// Al caricamento della pagina vedo tutti i ristoranti
+Route::get('/', [RestaurantController::class, 'index'])->name('home');
 
 // Ristoranti (pubblici)
 Route::resource('restaurants', RestaurantController::class)->only(['index', 'show']);
