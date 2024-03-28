@@ -104,7 +104,7 @@
                         
                         {{-- Img da aggiungere --}}
                         <div class="mb-3">
-                            <label for="img" class="form-label">Scegli un'immagine da assegnare al tuo ristorante:</label>
+                            <label for="img" class="form-label">Scegli un'immagine da assegnare al tuo piatto:</label>
 
                             <input 
                                 style="width: 25%" 

@@ -28,6 +28,7 @@ class UpdatePlateRequest extends FormRequest
             'ingredients' => 'nullable|string|max:4096',
             'img' => 'nullable|image|max:2048', 
             'description' => 'nullable|string|max:4096',
+            'remove_file' => 'nullable|boolean',
         ];
     }
 }

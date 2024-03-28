@@ -73,4 +73,43 @@ class PlateController extends Controller
     {
         return view('admin.plates.edit', compact('plate'));
     }
+
+    public function update(UpdatePlateRequest $request, Plate $plate)
+    {
+        $validDatas = $request->validated();
+
+        $imgPath = $plate->image;
+
+        if (isset($validDatas['img'])) {
+            if ($plate->image != null) {
+                Storage::disk('public')->delete($plate->image);
+            }
+
+            $imgPath = Storage::disk('public')->put('image', $validDatas['img']);
+        }
+        else if (isset($validDatas['remove_file'])) {
+
+            Storage::disk('public')->delete($plate->image);
+                
+            $imgPath = null;
+        }
+
+        if (isset($validDatas['visible'])) {
+            $visible = $validDatas['visible'];
+        } else {
+            $visible = 0;
+        } 
+            
+        $plate->update([
+            'name' => $validDatas['name'],
+            'description' => $validDatas['description'],
+            'price' => $validDatas['price'],
+            'visible' => $visible,
+            'ingredients' => $validDatas['ingredients'],
+            'image' => $imgPath,
+        ]);
+
+        return redirect()->route('admin.plates.show', compact('plate'));
+    }
 }
+
