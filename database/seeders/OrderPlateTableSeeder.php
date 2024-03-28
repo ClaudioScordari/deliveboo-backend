@@ -14,19 +14,24 @@ class OrderPlateTableSeeder extends Seeder
      */
     public function run()
     {
-        $orders = DB::table('orders')->pluck('id');
-        $plates = DB::table('plates')->pluck('id');
+        $orders = DB::table('orders')->get(); // Recupera tutti gli ordini con i loro dettagli
 
-        foreach ($orders as $orderId) {
-            // Decide on the number of plates per order
+        foreach ($orders as $order) {
+            // Recupera i piatti per il ristorante specifico dell'ordine
+            $plates = DB::table('plates')
+                        ->where('restaurant_id', $order->restaurant_id)
+                        ->pluck('id');
+
+            // Decidi il numero di piatti per ordine
             $platesToAttach = $plates->random(rand(1, 5))->unique();
 
             foreach ($platesToAttach as $plateId) {
-                // Assign a random quantity for each plate, e.g., between 1 and 4
+                // Assegna una quantità casuale per ogni piatto, es. tra 1 e 4
                 $quantity = rand(1, 4);
 
+                // Inserisci la relazione nella tabella pivot
                 DB::table('order_plate')->insert([
-                    'order_id' => $orderId,
+                    'order_id' => $order->id,
                     'plate_id' => $plateId,
                     'quantity' => $quantity,
                 ]);

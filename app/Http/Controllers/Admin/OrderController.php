@@ -22,7 +22,12 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $orders = Order::all();
+    // Ottiene l'ID del ristorante dell'utente autenticato
+    $restaurantId = auth()->user()->restaurant->id;
+
+    // Ottiene gli ordini che appartengono al ristorante dell'utente autenticato
+    $orders = Order::where('restaurant_id', $restaurantId)->with('plates')->get();
+    
         return view('admin.orders.index', compact('orders'));
     }
 
