@@ -46,6 +46,10 @@
                                 </li>
 
                                 <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('admin.plates.index') }}">Vedi i miei piatti</a>
+                                </li>
+
+                                <li class="nav-item">
                                     <a class="nav-link" href="{{ route('admin.orders.index') }}">Vedi i miei ordini</a>
                                 </li>
                             @endauth

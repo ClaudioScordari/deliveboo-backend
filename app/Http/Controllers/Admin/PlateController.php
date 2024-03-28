@@ -7,14 +7,16 @@ use Illuminate\Http\Request;
 
 // Models
 use App\Models\Plate;
-use App\Models\Restaurant;
 
 class PlateController extends Controller
 {
-    public function index(Restaurant $restaurant)
+    public function index()
     {
-        $plates = Plate::where('restaurant_id', $restaurant->id)->get();
-
-        return view('admin.plates.index', compact('plates', 'restaurant'));
+        // Ottiene l'ID del ristorante dell'utente autenticato
+        $restaurantId = auth()->user()->restaurant->id;
+        
+        $plates = Plate::where('restaurant_id', $restaurantId)->get();
+        return view('admin.plates.index', compact('plates'));
     }
+    
 }
