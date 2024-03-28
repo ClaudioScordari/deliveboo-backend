@@ -15,6 +15,7 @@
                         @foreach ($plates as $plate)
                             <li class="mb-5">
                                 <h2>Nome piatto: {{ $plate->name }}</h2>
+                                <img src="{{ asset('storage/' . $plate->image) }}" alt="immagine piatto">
                                 <p>Descrizione: {{ $plate->description ?? 'Nessuna descrizione disponibile' }}</p>
                                 <p>Prezzo: €{{ number_format($plate->price, 2) }}</p>
                                 <p>Disponibile: {{ $plate->visible ? 'Sì' : 'No' }}</p>
