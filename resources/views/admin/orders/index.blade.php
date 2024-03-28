@@ -18,10 +18,8 @@
                             <th>address</th>
                             <th>price</th>
                             <th>status</th>
-                            <th>plates</th>
-                            <th>quantity</th>
+                            <th>plates (quantity)</th>
                             <th>note</th>
-                            <th class="text-center">Azioni</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -31,14 +29,14 @@
                                 <td>{{ $order -> name }}</td>
                                 <td>{{ $order -> phone }}</td>
                                 <td>{{ $order -> address }}</td>
-                                <td>{{ $order -> total_price }}</td>
+                                <td>{{ $order -> total_price }}€</td>
                                 <td>{{ $order -> payment_status }}</td>
-                                <td>{{ $order -> plate_id }}</td>
-                                <td>{{ $order -> quantity }}</td>
-                                <td>{{ $order -> notes }}</td>
-                                <td class="text-center">
-
+                                <td>
+                                    @foreach ($order->plates as $plate)
+                                        <div>{{ $plate->name }} (x{{ $plate->pivot->quantity }})</div>
+                                    @endforeach
                                 </td>
+                                <td>{{ $order -> notes }}</td>
                             </tr>
                         @endforeach
                     </tbody>
