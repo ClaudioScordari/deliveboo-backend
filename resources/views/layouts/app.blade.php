@@ -44,6 +44,10 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('admin.restaurants.index') }}">Vedi la mia attività</a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('admin.orders.index') }}">Vedi i miei ordini</a>
+                                </li>
                             @endauth
 
                         </ul>
