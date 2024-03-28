@@ -40,6 +40,15 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">Register</a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('guest.restaurants.index') }}">Vedi le attività</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('guest.plates.index') }}">Vedi i piatti</a>
+                                </li>
+
                             @endguest
 
                             @auth

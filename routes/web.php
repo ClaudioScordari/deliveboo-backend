@@ -9,6 +9,8 @@ use App\Http\Controllers\Admin\RestaurantController as AdminRestaurantController
 use App\Http\Controllers\Admin\PlateController as AdminPlateController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\Admin\TypeController as AdminTypeController;
+use App\Http\Controllers\Guest\RestaurantController as GuestRestaurantController;
+use App\Http\Controllers\Guest\PlateController as GuestPlateController;
 
 // Pubblico
 use App\Http\Controllers\RestaurantController;
@@ -29,7 +31,18 @@ use App\Http\Controllers\RestaurantController;
 Route::get('/', [RestaurantController::class, 'index'])->name('home');
 
 // Ristoranti (pubblici)
-Route::resource('restaurants', RestaurantController::class)->only(['index', 'show']);
+Route::prefix('restaurants')->name('guest.restaurants.')->group(function () {
+    Route::get('/', [GuestRestaurantController::class, 'index'])->name('index');
+    Route::get('/{restaurant}', [GuestRestaurantController::class, 'show'])->name('show');
+});
+
+// Piatti (pubblici)
+Route::prefix('plates')->name('guest.plates.')->group(function () {
+    Route::get('/', [GuestPlateController::class, 'index'])->name('index');
+
+    Route::get('/{plate}', [GuestPlateController::class, 'show'])->name('show');
+});
+
 
 Route::prefix('admin')
     ->name('admin.')

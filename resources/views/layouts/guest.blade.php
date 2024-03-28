@@ -40,7 +40,10 @@
                                     <a class="nav-link" href="{{ route('register') }}">Register</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('restaurants.index') }}">Ristoranti</a>
+                                    <a class="nav-link" href="{{ route('guest.restaurants.index') }}">Ristoranti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('guest.plates.index') }}">Ristoranti</a>
                                 </li>
                             @endauth
                         </ul>
