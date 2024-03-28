@@ -18,6 +18,8 @@
                             <th>address</th>
                             <th>price</th>
                             <th>status</th>
+                            <th>plates</th>
+                            <th>quantity</th>
                             <th>note</th>
                             <th class="text-center">Azioni</th>
                         </tr>
@@ -31,6 +33,8 @@
                                 <td>{{ $order -> address }}</td>
                                 <td>{{ $order -> total_price }}</td>
                                 <td>{{ $order -> payment_status }}</td>
+                                <td>{{ $order -> plate_id }}</td>
+                                <td>{{ $order -> quantity }}</td>
                                 <td>{{ $order -> notes }}</td>
                                 <td class="text-center">
 

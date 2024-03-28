@@ -16,7 +16,8 @@ class OrdersTableSeeder extends Seeder
         $orders = config('orders');
         
         foreach ($orders as $order) {
-            DB::table('orders')->insert([
+            $orderId = DB::table('orders')->insertGetId([
+                'restaurant_id' => $order['restaurant_id'],
                 'payment_status' => $order['payment_status'],
                 'total_price' => $order['total_price'],
                 'name' => $order['name'],
@@ -26,6 +27,16 @@ class OrdersTableSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
+
+            // Per ogni ordine, aggiungi piatti coerenti con il ristorante
+            $restaurantPlates = DB::table('plates')->where('restaurant_id', $order['restaurant_id'])->pluck('id');
+            foreach ($order['plates'] as $plate) {
+                DB::table('order_plate')->insert([
+                    'order_id' => $orderId,
+                    'plate_id' => $plate['plate_id'],
+                    'quantity' => $plate['quantity'],
+                ]);
+            }
         }
     }
 }
