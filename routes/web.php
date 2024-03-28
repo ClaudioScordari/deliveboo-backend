@@ -42,7 +42,10 @@ Route::prefix('admin')
     Route::resource('restaurants', AdminRestaurantController::class);
 
     // Route::resource('plates', AdminPlateController::class);
-    // Route::resource('orders', AdminOrderController::class);
+
+    // Ordini (protetti)
+    Route::resource('orders', AdminOrderController::class);
+    
     // Route::resource('types', AdminTypeController::class);
 
 });
