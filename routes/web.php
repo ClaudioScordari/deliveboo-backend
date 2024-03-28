@@ -41,7 +41,8 @@ Route::prefix('admin')
     // Ristoranti (protetti)
     Route::resource('restaurants', AdminRestaurantController::class);
 
-    // Route::resource('plates', AdminPlateController::class);
+    // Piatti (protetti)
+    Route::resource('plates', AdminPlateController::class);
 
     // Ordini (protetti)
     Route::resource('orders', AdminOrderController::class);
