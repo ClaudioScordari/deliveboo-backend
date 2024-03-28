@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', /* $restaurant->activity_name */)
+@section('page-title', $restaurant->activity_name)
 
 @section('main-content')
     <div class="row">

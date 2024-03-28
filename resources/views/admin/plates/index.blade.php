@@ -11,6 +11,15 @@
                         I miei piatti
                     </h1>
 
+                    {{-- Aggungi piatto --}}
+                    <div class="pb-2 border-bottom border-3 border-dark d-inline-block w-100">
+                        <a class="btn btn-success w-100 fw-bold fs-4" 
+                            href="{{ route('admin.plates.create') }}"
+                            >
+                            Aggiungi un piatto al tuo Menù
+                        </a> 
+                    </div>
+
                     <ul>
                         @foreach ($plates as $plate)
                             <li class="mb-5">

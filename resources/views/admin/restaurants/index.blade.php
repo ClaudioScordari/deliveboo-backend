@@ -27,7 +27,7 @@
                                 {{-- Show --}}
                                 <div class="pb-2 border-bottom border-3 border-dark d-inline-block">
                                     <a class="btn btn-primary" 
-                                        href="{{ route('admin.restaurants.index', ['restaurant' => $restaurant->id]) }}"
+                                        href="{{ route('admin.restaurants.show', ['restaurant' => $restaurant->id]) }}"
                                         >
                                         Vedi il ristorante
                                     </a> 
