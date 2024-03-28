@@ -20,6 +20,7 @@
                             <th>status</th>
                             <th>plates (quantity)</th>
                             <th>note</th>
+                            <th>info</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -37,6 +38,7 @@
                                     @endforeach
                                 </td>
                                 <td>{{ $order -> notes }}</td>
+                                <td><a href="{{ route('admin.orders.show', $order->id) }}" class="btn btn-sm btn-primary me-2">Info <i class="fa-solid fa-circle-info"></i></a></td>
                             </tr>
                         @endforeach
                     </tbody>

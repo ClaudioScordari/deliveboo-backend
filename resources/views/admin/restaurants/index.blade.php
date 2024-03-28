@@ -11,18 +11,17 @@
                         Ristoranti
                     </h1>
 
-                    <h2>
-                        Sono la parte privata!!!
-                    </h2>
-
-                    <br>
-
                     <ul>
                         @foreach ($restaurants as $restaurant)
                             <li class="mb-5">
                                 <h2>
                                     Nome ristorante: {{ $restaurant->activity_name }}
                                 </h2>
+
+                                <img src="{{ asset('storage/' . $restaurant->image) }}" alt="immagine ristorante">
+                                <p>Indirizzo: {{ $restaurant->address }}</p>
+                                <p>Partita IVA: {{ $restaurant->VAT_number }}</p>
+                                <p>Descrizione: {{ $restaurant->description }}</p>
 
                                 {{-- Show --}}
                                 <div class="pb-2 border-bottom border-3 border-dark d-inline-block">
@@ -69,11 +68,9 @@
                                 </div>
                             </li>
                         @endforeach
+
                     </ul>
 
-                    <br>
-
-                    La dashboard è una pagina privata (protetta dal middleware)
                 </div>
             </div>
         </div>

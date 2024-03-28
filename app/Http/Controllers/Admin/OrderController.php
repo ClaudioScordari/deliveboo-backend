@@ -27,9 +27,14 @@ class OrderController extends Controller
 
     // Ottiene gli ordini che appartengono al ristorante dell'utente autenticato
     $orders = Order::where('restaurant_id', $restaurantId)->with('plates')->get();
-    
+
         return view('admin.orders.index', compact('orders'));
     }
 
+    public function show($id)
+    {
+        $order = Order::with('plates')->findOrFail($id);
+        return view('admin.orders.show', compact('order'));
+    }
 
 }
