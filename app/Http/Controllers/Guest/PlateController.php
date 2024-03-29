@@ -14,11 +14,11 @@ class PlateController extends Controller
     {
         
         $plates = Plate::all();
-        return view('admin.plates.index', compact('plates'));
+        return view('guest.plates.index', compact('plates'));
     }
 
     public function show(Plate $plate)
     {
-        return view('admin.plates.show', compact('plate'));
+        return view('guest.plates.show', compact('plate'));
     }
 }

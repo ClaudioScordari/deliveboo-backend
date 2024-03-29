@@ -12,11 +12,11 @@
         <!-- Scripts -->
         @vite('resources/js/app.js')
     </head>
-    <body>
+    <body class="bg-success-subtle">
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container">
-                    <a class="navbar-brand" href="/">Template</a>
+                    <a class="navbar-brand text-success" href="/">Deliveboo</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>

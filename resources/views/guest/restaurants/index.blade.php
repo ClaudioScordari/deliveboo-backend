@@ -3,76 +3,40 @@
 @section('page-title', 'Tutti i ristoranti')
 
 @section('main-content')
+<div class="container mt-3">
     <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h1>
-                        Ristoranti
-                    </h1>
-
-                    <ul>
-                        @foreach ($restaurants as $restaurant)
-                            <li class="mb-5">
-                                <h2>
-                                    Nome ristorante: {{ $restaurant->activity_name }}
-                                </h2>
-
-                                <img src="{{ asset('storage/' . $restaurant->image) }}" alt="immagine ristorante">
-                                <p>Indirizzo: {{ $restaurant->address }}</p>
-                                <p>Partita IVA: {{ $restaurant->VAT_number }}</p>
-                                <p>Descrizione: {{ $restaurant->description }}</p>
-
-                                {{-- Show --}}
-                                <div class="pb-2 border-bottom border-3 border-dark d-inline-block">
-                                    <a class="btn btn-primary" 
-                                        href="{{ route('admin.restaurants.show', ['restaurant' => $restaurant->id]) }}"
-                                        >
-                                        Vedi il ristorante
-                                    </a> 
-                                </div>
-
-                                {{-- Piatti --}}
-                                <div class="pb-2 border-bottom border-3 border-dark d-inline-block">
-                                    <a class="btn btn-info" 
-                                        href="{{ route('guest.plates.index', ['restaurant' => $restaurant->id]) }}"
-                                        >
-                                        Vedi il Menù
-                                    </a> 
-                                </div>
-
-                                {{-- Edit --}}
-                                <div class="pb-2 border-bottom border-3 border-dark d-inline-block">
-                                    <a 
-                                        class="btn btn-warning ms-2" 
-                                        href="{{ route('admin.restaurants.edit', ['restaurant' => $restaurant->id]) }}"
-                                        >
-                                        Modifica questo ristorante
-                                    </a>
-                                </div>
-
-                                {{-- Delete --}}
-                                <div class="pb-2 border-bottom border-3 border-dark d-inline-block">
-                                    <form 
-                                        onsubmit="return confirm('Sicuro che vuoi eliminare il ristorante?')" 
-                                        action="{{ route('admin.restaurants.destroy', ['restaurant' => $restaurant->id]) }}"
-                                        method="POST"
-                                        >
-                                        @csrf
-                                        @method('DELETE')
-
-                                        <button type="submit" class="btn btn-danger w-100">
-                                            Elimina il ristorante
-                                        </button>
-                                    </form>
-                                </div>
-                            </li>
-                        @endforeach
-
-                    </ul>
-
+        <div class="col-12">
+            <h1 class="text-center text-success mb-4">Ristoranti</h1>
+            <div class="row">
+                @foreach ($restaurants as $restaurant)
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 border-0">
+                        @if($restaurant->image)
+                        <img src="{{ asset('storage/' . $restaurant->image) }}" class="card-img-top" alt="{{ $restaurant->activity_name }}">
+                        @endif
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $restaurant->activity_name }}</h5>
+                            <p class="card-text">{{ $restaurant->address }}</p>
+                            <div class="mb-3">
+                                @forelse ( $restaurant->types as $type )
+                                    <span class="badge rounded-pill text-bg-success">
+                                        {{ $type->name }}
+                                    </span>
+                                @empty
+                                    -
+                                @endforelse
+                            </div>
+                            <p class="card-text">{{ $restaurant->description }}</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="{{ route('guest.restaurants.show', ['restaurant' => $restaurant->id]) }}" class="btn btn-primary btn-sm">Info <i class="fa-solid fa-circle-info"></i></a>
+                            <a href="{{ route('guest.plates.index', ['restaurant' => $restaurant->id]) }}" class="btn btn-primary btn-sm">Menù <i class="fa-solid fa-book"></i></a>
+                        </div>
+                    </div>
                 </div>
+                @endforeach
             </div>
         </div>
     </div>
+</div>
 @endsection
