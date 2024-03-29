@@ -111,5 +111,16 @@ class PlateController extends Controller
 
         return redirect()->route('admin.plates.show', compact('plate'));
     }
+
+    public function destroy(Plate $plate)
+    {
+        if ($plate->image != null) {
+            Storage::disk('public')->delete($plate->image);
+        }
+
+        $plate->delete();
+
+        return redirect()->route('admin.plates.index');
+    }
 }
 
