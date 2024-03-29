@@ -19,7 +19,7 @@
                             <p class="card-text">{{ $restaurant->address }}</p>
                             <div class="mb-3">
                                 @forelse ( $restaurant->types as $type )
-                                    <span class="badge rounded-pill text-bg-secondary">
+                                    <span class="badge rounded-pill text-bg-success">
                                         {{ $type->name }}
                                     </span>
                                 @empty

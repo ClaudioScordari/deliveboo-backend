@@ -23,7 +23,7 @@
                                 <span class="text-danger"><del>Non Disponibile</del></span>
                             @endif
                         </div>
-                        <div class="card-footer bg-white text-center">
+                        <div class="card-footer text-center">
                             <a href="{{ route('guest.restaurants.plates.show', ['plate' => $plate->id]) }}" class="btn btn-secondary btn-sm">Ingredienti <i class="fa-solid fa-utensils"></i></a>
                         </div>
                     </div>
