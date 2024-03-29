@@ -3,173 +3,132 @@
 @section('page-title', 'Modifica il piatto')
 
 @section('main-content')
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h1>
-                        Modifica il piatto
-                    </h1>
-                    
-                    {{-- Errors --}}
-                    @if ($errors->any())
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>
-                                        {{ $error }}
-                                    </li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
+<section class="container-form-section">
+    <div class="container-form w-75 px-5">
+        <h1 class="text-center text-light">MODIFICA IL TUO PIATTO</h1>
 
-                    <br>
-
-                    <form action="{{ route('admin.plates.update', ['plate' => $plate->id]) }}" method="POST" enctype="multipart/form-data" >
-                        @csrf
-                        @method('PUT')
-                        
-                        {{-- Nome piatto --}}
-                        <div class="mb-3">
-                            <label class="d-block" for="name">Nome piatto: <span class="text-danger">*</span></label>
-
-                            <input class="@error('name') is-invalid @enderror" 
-                                value="{{ old('name', $plate->name) }}" 
-                                maxlength="255" 
-                                id="name" 
-                                name="name" 
-                                type="text" 
-                                placeholder="Nome del piatto..." 
-                                required
-                                >
-
-                            {{-- Barra errore --}}
-                            @error('name')
-                                <div class="alert alert-danger">	
-                                    {{ $message }} 
-                                </div>
-                            @enderror
-                        </div>
-
-                        {{-- Prezzo --}}
-                        <div class="mb-3" style="width: 15%">
-                            <label for="price" class="form-label">Prezzo : <span class="text-danger">*</span></label>
-
-                            <input 
-                                type="number" 
-                                min="0" 
-                                step="0.01"
-                                name="price" 
-                                id="price" 
-                                class="form-control" 
-                                value="{{ old('price', $plate->price) }}" 
-                                placeholder="Prezzo"
-                                required
-                            >
-
-                            @error('price')
-                                <div class="alert alert-danger">{{ $message }}</div>
-                            @enderror
-                        </div>
-
-                        {{-- Visibile --}}
-                        <div class="mb-3">
-                            <input value="1" type="checkbox" name="visible" id="visible">
-                            <label for="visible" class="form-label">- <span class="fw-bold">Spunta se vuoi che il tuo piatto appaia nel Menù</span></label>
-                        </div>
-
-                        {{-- Ingredienti --}}
-                        <div class="mb-3">
-                            <label class="d-block" for="ingredients">Ingredienti: <span class="text-danger">*</span></label>
-
-                            <textarea 
-                                cols="23" 
-                                class="@error('ingredients') is-invalid @enderror" 
-                                maxlength="4096" 
-                                name="ingredients" 
-                                id="ingredients" 
-                                placeholder="Scrivi gli ingredienti"
-                                >
-                                {{ old('ingredients', $plate->ingredients) }}
-                            </textarea>
-
-                            {{-- Barra errore --}}
-                            @error('ingredients')
-                                <div class="alert alert-danger">	
-                                    {{ $message }} 
-                                </div>
-                            @enderror
-                        </div>
-                        
-                        {{-- Img da aggiungere --}}
-                        <div class="mb-3">
-                            <label for="img" class="form-label">Scegli un'immagine da assegnare al tuo piatto:</label>
-
-                            <input 
-                                style="width: 25%" 
-                                class="@error('img') is-invalid @enderror form-control" 
-                                type="file" 
-                                id="img" 
-                                name="img"
-                                >
-
-                            {{-- Barra errore --}}
-                            @error('img')
-                                <div class="alert alert-danger">	
-                                    {{ $message }} 
-                                </div>
-                            @enderror
-                        </div>
-
-                        {{-- Immagine corrente --}}
-                        @if ($plate->image != null)
-                            <div class="my-3">
-                                <img style="width: 300px" src="/storage/{{ $plate->image }}" alt="{{ $plate->name }}">
-                            </div>
-                        @endif 
-
-                        {{-- Checkbox se voglio rimuovere l'img --}}
-                        @if ($plate->image != null)
-                            <div>
-                                <input value="1" type="checkbox" name="remove_file" id="remove_file">
-
-                                <label for="remove_file" class="form-label">- Rimuovi immagine</label>
-                            </div>
-                        @endif
-
-                        {{-- Descrizione --}}
-                        <div class="mb-3">
-                            <label class="d-block" for="description">Descrizione:</label>
-
-                            <textarea 
-                                cols="23" 
-                                class="@error('description') is-invalid @enderror" 
-                                maxlength="4096" 
-                                name="description" 
-                                id="description" 
-                                placeholder="Scrivi una descrizione"
-                                >
-                                {{ old('description', $plate->description) }}
-                            </textarea>
-
-                            {{-- Barra errore --}}
-                            @error('description')
-                                <div class="alert alert-danger">	
-                                    {{ $message }} 
-                                </div>
-                            @enderror
-                        </div>
-            
-                        <div>
-                            <button type="submit" class="btn btn-primary">Aggiorna piatto</button>
-                        </div>
-                        <br>
-                    </form>
-
-                    La dashboard è una pagina privata (protetta dal middleware)
-                </div>
+        <p class="fw-bold">I campi con <span class="text-danger fw-bold">*</span> sono obbligatori</p>
+    
+        {{-- Errors --}}
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>
+                            {{ $error }}
+                        </li>
+                    @endforeach
+                </ul>
             </div>
-        </div>
+        @endif
+    
+        <form action="{{ route('admin.plates.update', ['plate' => $plate->id]) }}" method="POST" enctype="multipart/form-data">
+            @csrf
+            @method('PUT')
+    
+            {{-- Nome piatto --}}
+            <div class="mb-3 form-group">
+                <label class="d-block" for="name">Nome piatto: <span class="text-danger">*</span></label>
+    
+                <input class="form-control @error('name') is-invalid @enderror" value="{{ old('name', $plate->name) }}" maxlength="255"
+                    id="name" name="name" type="text" placeholder="Nome del piatto..." required>
+    
+                {{-- Barra errore --}}
+                @error('name')
+                    <div class="alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+    
+            {{-- Prezzo --}}
+            <div class="mb-3 form-group" style="width: 15%">
+                <label for="price" class="form-label">Prezzo : <span class="text-danger">*</span></label>
+    
+                <input type="number" min="0" step="0.01" name="price" id="price" class="form-control"
+                    value="{{ old('price', $plate->price) }}" placeholder="Prezzo" required>
+    
+                @error('price')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+            </div>
+    
+            {{-- Visibile --}}
+            <div class="mb-3">
+                <input value="1" type="checkbox" name="visible" id="visible">
+                <label for="visible" class="form-label">- <span class="fw-bold">Spunta se vuoi che il tuo piatto appaia nel
+                        Menù</span></label>
+            </div>
+    
+            {{-- Ingredienti --}}
+            <div class="mb-3 form-group">
+                <label class="d-block" for="ingredients">Ingredienti: <span class="text-danger">*</span></label>
+    
+                <textarea cols="23" class="form-control @error('ingredients') is-invalid @enderror" maxlength="4096" name="ingredients" id="ingredients" placeholder="Scrivi gli ingredienti">
+                    {{ old('ingredients', $plate->ingredients) }}
+                </textarea>
+    
+                {{-- Barra errore --}}
+                @error('ingredients')
+                    <div class="alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+    
+            {{-- Img da aggiungere --}}
+            <div class="mb-3 form-group">
+                <label for="img" class="form-label">Scegli un'immagine da assegnare al tuo piatto:</label>
+    
+                <input class="form-control @error('img') is-invalid @enderror form-control" type="file" id="img" name="img">
+    
+                {{-- Barra errore --}}
+                @error('img')
+                    <div class="alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+    
+            {{-- Immagine corrente --}}
+            @if ($plate->image != null)
+                <div class="my-3">
+                    <img style="width: 300px" src="/storage/{{ $plate->image }}" alt="{{ $plate->name }}">
+                </div>
+            @endif
+    
+            {{-- Checkbox se voglio rimuovere l'img --}}
+            @if ($plate->image != null)
+                <div>
+                    <input value="1" type="checkbox" name="remove_file" id="remove_file">
+    
+                    <label for="remove_file" class="form-label">- Rimuovi immagine</label>
+                </div>
+            @endif
+    
+            {{-- Descrizione --}}
+            <div class="mb-3 form-group">
+                <label class="d-block" for="description">Descrizione:</label>
+    
+                <textarea cols="23" class="form-control @error('description') is-invalid @enderror" maxlength="4096" name="description" id="description" placeholder="Scrivi una descrizione">
+                    {{ old('description', $plate->description) }}
+                </textarea>
+    
+                {{-- Barra errore --}}
+                @error('description')
+                    <div class="alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+    
+            <div>
+                <button type="submit" class="btn btn-success">Aggiorna piatto</button>
+            </div>
+            <br>
+        </form>
+    
+        La dashboard è una pagina privata (protetta dal middleware)
     </div>
+</section>
 @endsection
