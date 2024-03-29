@@ -10,16 +10,16 @@
             <div class="row">
                 @foreach ($restaurants as $restaurant)
                 <div class="col-md-3 mb-4">
-                    <div class="card bg-secondary-subtle h-100 border-0">
+                    <div class="card h-100 border-1">
                         @if($restaurant->image)
                         <img src="{{ asset('storage/' . $restaurant->image) }}" class="card-img-top" alt="{{ $restaurant->activity_name }}">
                         @endif
                         <div class="card-body">
-                            <h5 class="card-title">{{ $restaurant->activity_name }}</h5>
+                            <h5 class="card-title text-success">{{ $restaurant->activity_name }}</h5>
                             <p class="card-text">{{ $restaurant->address }}</p>
                             <div class="mb-3">
                                 @forelse ( $restaurant->types as $type )
-                                    <span class="badge rounded-pill text-bg-success">
+                                    <span class="badge rounded-pill text-bg-secondary">
                                         {{ $type->name }}
                                     </span>
                                 @empty

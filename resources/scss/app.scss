@@ -2,6 +2,19 @@ $secondary: #EAA932;
 
 @import "~bootstrap/scss/bootstrap";
 
+#sidebar-wrapper {
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    z-index: 1000;
+}
+
+#page-content-wrapper {
+    flex-grow: 1;
+    margin-left: 200px;
+}
+
+
 main{
     // ...
 

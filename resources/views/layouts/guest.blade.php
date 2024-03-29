@@ -12,58 +12,30 @@
         <!-- Scripts -->
         @vite('resources/js/app.js')
     </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container">
-                    <a class="navbar-brand" href="/">Deliveboo</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            @auth
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link 3</a>
-                                </li>
-                            @else
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('guest.restaurants.index') }}">Ristoranti</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">Login</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">Register</a>
-                                </li>
-
-                            @endauth
-                        </ul>
-
-                        @auth
-                            <form method="POST" action="{{ route('logout') }}">
-                                @csrf
-
-                                <button type="submit" class="btn btn-outline-danger">
-                                    Log Out
-                                </button>
-                            </form>
-                        @endauth
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main class="py-4">
-            <div class="container">
-                @yield('main-content')
+    <body class="d-flex">
+        <!-- Sidebar -->
+        <div class="bg-light text-success text-center p-3" id="sidebar-wrapper">
+            <div class="sidebar-heading">Deliveboo</div>
+            <div class="list-group list-group-flush">
+                <a href="/" class="list-group-item list-group-item-action bg-light">Home</a>
+                @auth
+                    <a href="{{ route('dashboard') }}" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+                    <!-- Aggiungi ulteriori link per autenticati qui -->
+                @else
+                    <a href="{{ route('guest.restaurants.index') }}" class="list-group-item list-group-item-action bg-light">Ristoranti</a>
+                    <a href="{{ route('login') }}" class="list-group-item list-group-item-action bg-light">Login</a>
+                    <a href="{{ route('register') }}" class="list-group-item list-group-item-action bg-light">Register</a>
+                @endauth
             </div>
-        </main>
-    </body>
+        </div>
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <main class="container py-4">
+                @yield('main-content')
+            </main>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>>
 </html>

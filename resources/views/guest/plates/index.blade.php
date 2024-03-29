@@ -6,7 +6,7 @@
 <div class="container mt-4">
     <div class="row">
         <div class="col-12">
-            <h1 class="text-center mb-4 text-success">Menù</h1>
+            <h1 class="text-center mb-3 text-success">Menù</h1>
             <div class="row">
                 @foreach ($plates as $plate)
                 <div class="col-md-4 mb-4">
@@ -15,7 +15,7 @@
                         <img src="{{ asset('storage/' . $plate->image) }}" class="card-img-top" alt="{{ $plate->name }}">
                         @endif
                         <div class="card-body">
-                            <h5 class="card-title">{{ $plate->name }}</h5>
+                            <h5 class="card-title text-success">{{ $plate->name }}</h5>
                             <p>Prezzo: <span class="fw-bold">{{ number_format($plate->price, 2) }}€</span></p>
                             @if($plate->visible)
                                 <span class="text-success">Disponibile <i class="fa-solid fa-check"></i></span>
@@ -24,12 +24,15 @@
                             @endif
                         </div>
                         <div class="card-footer bg-white text-center">
-                            <a href="{{ route('guest.restaurants.plates.show', ['plate' => $plate->id]) }}" class="btn btn-primary btn-sm">Ingredienti <i class="fa-solid fa-utensils"></i></a>
+                            <a href="{{ route('guest.restaurants.plates.show', ['plate' => $plate->id]) }}" class="btn btn-secondary btn-sm">Ingredienti <i class="fa-solid fa-utensils"></i></a>
                         </div>
                     </div>
                 </div>
                 @endforeach
             </div>
+            <a class="btn btn-secondary mb-3" href="{{ route('guest.restaurants.index') }}">
+                <i class="fa-solid fa-left-long"></i> Ristoranti
+            </a>
         </div>
     </div>
 </div>

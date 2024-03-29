@@ -38,7 +38,7 @@
 
                 <!-- Footer della Card -->
                 <div class="card-footer text-center">
-                    <a class="btn btn-primary" href="{{ route('guest.restaurants.plates.index', ['restaurantId' => $restaurant->id]) }}">
+                    <a class="btn btn-secondary" href="{{ route('guest.restaurants.plates.index', ['restaurantId' => $restaurant->id]) }}">
                         <i class="fa-solid fa-left-long"></i> Menù
                     </a>
                 </div>
