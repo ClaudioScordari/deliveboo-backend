@@ -1,4 +1,7 @@
+$secondary: #EAA932;
+
 @import "~bootstrap/scss/bootstrap";
+
 main{
     // ...
 
@@ -12,7 +15,7 @@ main{
             width: 50%;
             margin: 0 auto;
             padding: 50px 30px;
-            background-color: rgb(234, 169, 50);
+            background-color: #EAA932;
             border-radius: 20px;
             // debug
             color: white;

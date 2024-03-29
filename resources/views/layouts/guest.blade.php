@@ -16,7 +16,7 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container">
-                    <a class="navbar-brand" href="/">Template</a>
+                    <a class="navbar-brand" href="/">Deliveboo</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -34,14 +34,15 @@
                                 </li>
                             @else
                                 <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('guest.restaurants.index') }}">Ristoranti</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">Login</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">Register</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('guest.restaurants.index') }}">Ristoranti</a>
-                                </li>
+
                             @endauth
                         </ul>
 

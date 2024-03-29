@@ -10,7 +10,7 @@
             <div class="row">
                 @foreach ($restaurants as $restaurant)
                 <div class="col-md-3 mb-4">
-                    <div class="card h-100 border-0">
+                    <div class="card bg-secondary-subtle h-100 border-0">
                         @if($restaurant->image)
                         <img src="{{ asset('storage/' . $restaurant->image) }}" class="card-img-top" alt="{{ $restaurant->activity_name }}">
                         @endif
@@ -28,9 +28,9 @@
                             </div>
                             <p class="card-text">{{ $restaurant->description }}</p>
                         </div>
-                        <div class="card-footer bg-white text-center">
-                            <a href="{{ route('guest.restaurants.show', ['restaurant' => $restaurant->id]) }}" class="btn btn-primary btn-sm">Info <i class="fa-solid fa-circle-info"></i></a>
-                            <a href="{{ route('guest.restaurants.plates.index', ['restaurantId' => $restaurant->id]) }}" class="btn btn-primary btn-sm">Menù <i class="fa-solid fa-book"></i></a>
+                        <div class="card-footer text-center">
+                            <a href="{{ route('guest.restaurants.show', ['restaurant' => $restaurant->id]) }}" class="btn btn-secondary btn-sm">Info <i class="fa-solid fa-circle-info"></i></a>
+                            <a href="{{ route('guest.restaurants.plates.index', ['restaurantId' => $restaurant->id]) }}" class="btn btn-secondary btn-sm">Menù <i class="fa-solid fa-book"></i></a>
                         </div>
                     </div>
                 </div>
