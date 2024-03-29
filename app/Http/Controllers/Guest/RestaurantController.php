@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers\Guest;
 
-use App\Models\Restaurants;
+use App\Models\Restaurant;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Exception;
-
-use App\Models\Restaurant;
 
 class RestaurantController extends Controller
 {
@@ -19,7 +17,6 @@ class RestaurantController extends Controller
         $restaurants = Restaurant::all();
 
         return view('guest.restaurants.index', compact('restaurants'));
-        
     }
     
     /**
@@ -27,8 +24,8 @@ class RestaurantController extends Controller
      */
     public function show(Restaurant $restaurant)
     {
-        return view('guest.restaurants.show', compact('restaurants'));
+        // Nota il cambio di variabile da 'restaurants' a 'restaurant'
+        return view('guest.restaurants.show', compact('restaurant'));
     }
-
 
 }

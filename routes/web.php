@@ -27,8 +27,8 @@ use App\Http\Controllers\RestaurantController;
 |
 */
 
-// Al caricamento della pagina vedo tutti i ristoranti
-Route::get('/', [RestaurantController::class, 'index'])->name('home');
+// Al caricamento della pagina
+Route::get('/', [MainController::class, 'index'])->name('home');
 
 // Ristoranti (pubblici)
 Route::prefix('restaurants')->name('guest.restaurants.')->group(function () {
