@@ -37,10 +37,13 @@ Route::prefix('restaurants')->name('guest.restaurants.')->group(function () {
 });
 
 // Piatti (pubblici)
-Route::prefix('plates')->name('guest.plates.')->group(function () {
-    Route::get('/', [GuestPlateController::class, 'index'])->name('index');
+Route::prefix('restaurants')->name('guest.restaurants.')->group(function () {
+    // Aggiunta di una nuova rotta per visualizzare i piatti di un ristorante specifico
+    Route::get('/{restaurantId}/plates', [GuestPlateController::class, 'index'])->name('plates.index');
 
-    Route::get('/{plate}', [GuestPlateController::class, 'show'])->name('show');
+    // Modifica della rotta per la visualizzazione dei dettagli di un piatto
+    // Assicurati che questa rotta sia ancora logica con la tua nuova struttura
+    Route::get('/plates/{plate}', [GuestPlateController::class, 'show'])->name('plates.show');
 });
 
 

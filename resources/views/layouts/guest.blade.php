@@ -42,9 +42,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('guest.restaurants.index') }}">Ristoranti</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('guest.plates.index') }}">Piatti</a>
-                                </li>
                             @endauth
                         </ul>
 
