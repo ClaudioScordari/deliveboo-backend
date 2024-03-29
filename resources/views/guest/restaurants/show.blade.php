@@ -3,63 +3,53 @@
 @section('page-title', $restaurant->activity_name)
 
 @section('main-content')
-    <div class="row">
-        <div class="col-6 m-auto">
+<div class="container mt-2">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
             <div class="card">
-                <div class="card-body py-3 px-5">
-                    <h1 class="my-2 text-center">
-                        {{ $restaurant->activity_name }}
-                    </h1>
+                <!-- Header della Card con il nome del ristorante -->
+                <div class="card-header text-success text-center">
+                    <h1 class="mb-0">{{ $restaurant->activity_name }}</h1>
+                </div>
+                
+                <!-- Corpo della Card -->
+                <div class="card-body">
+                    
 
-                    <span>di:</span>
-                    <span class="fs-4">{{ $restaurant->user->name }}</span>
-
-                    {{-- Immagine associata --}}
-                    <div class="my-3 text-center">
-                        @if ($restaurant->image != null)
-                            <div class="bg-success p-3 rounded-3">
-                                <img src="/storage/{{ $restaurant->image }}" alt="image1">
-                            </div>
+                    <!-- Sezione Immagine -->
+                    <div class="text-center my-1">
+                        @if ($restaurant->image)
+                            <img src="{{ asset('storage/' . $restaurant->image) }}" class="img-fluid rounded" alt="Immagine di {{ $restaurant->activity_name }}">
                         @else
-                            -
+                            <p class="text-muted">Nessuna immagine disponibile</p>
                         @endif
                     </div>
 
-                    {{-- Tipi --}}
-                    <div class="my-3">
-                        <span class="fs-3 fw-bold">
-                            Cucina
-                        </span>
-
-                        <span>
-                            @forelse ( $restaurant->types as $type )
-                                <span class="badge rounded-pill text-bg-success">
-                                    {{ $type->name }}
-                                </span>
-                            @empty
-                                -
-                            @endforelse
-                        </span>
+                    <h5>di: <span class="fs-4">{{ $restaurant->user->name }}</span></h5>
+                    
+                    <!-- Tipi di cucina -->
+                    <div class="my-1">
+                        <h5 class="d-inline">Cucina:</h5>
+                        @forelse ($restaurant->types as $type)
+                            <span class="badge rounded-pill bg-success">{{ $type->name }}</span>
+                        @empty
+                            <span class="text-muted">Nessuna tipologia specificata</span>
+                        @endforelse
                     </div>
 
-                    <p>
-                        {{ $restaurant->description }}
-                    </p>
+                    <!-- Descrizione e Partita IVA -->
+                    <p>{{ $restaurant->description }}</p>
+                    <p>P.IVA: {{ $restaurant->VAT_number }}</p>
+                </div>
 
-                    <p>
-                        P.IVA: {{ $restaurant ->VAT_number }}
-                    </p>
-
-                    {{-- Ristoranti --}}
-                    <div>
-                        <a class="btn btn-primary" 
-                            href="{{ route('guest.restaurants.index') }}"
-                            >
-                            <i class="fa-solid fa-left-long"></i> ai Ristoranti
-                        </a>
-                    </div>
+                <!-- Footer della Card -->
+                <div class="card-footer text-center">
+                    <a class="btn btn-primary" href="{{ route('guest.restaurants.index') }}">
+                        <i class="fa-solid fa-left-long"></i> Ristoranti
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 @endsection
