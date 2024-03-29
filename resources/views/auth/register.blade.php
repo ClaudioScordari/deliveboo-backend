@@ -3,7 +3,7 @@
 @section('main-content')
     <section class="container-form-section">
         <div class="container-form">
-            <h1 class="text-center">REGISTER</h1>
+            <h1 class="text-center text-light">REGISTER</h1>
 
             <form method="POST" action="{{ route('register') }}">
                 @csrf
@@ -45,7 +45,7 @@
                         {{ __('Already registered?') }}
                     </a>
         
-                    <button class="btn btn-primary mt-3 btn btn-success d-block" type="submit">
+                    <button class="mt-3 btn btn-success d-block" type="submit">
                         Register
                     </button>
                 </div>
