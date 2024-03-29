@@ -25,13 +25,13 @@
                         @endif
                     </div>
 
-                    <h5>di: <span class="fs-4">{{ $restaurant->user->name }}</span></h5>
+                    <p>di: <span class="fs-4 text-success">{{ $restaurant->user->name }}</span></p>
                     
                     <!-- Tipi di cucina -->
                     <div class="my-1">
-                        <h5 class="d-inline">Cucina:</h5>
+                        <p class="d-inline fw-bolder">Cucina tipica:</p>
                         @forelse ($restaurant->types as $type)
-                            <span class="badge rounded-pill bg-success">{{ $type->name }}</span>
+                            <span class="badge rounded-pill text-black bg-secondary">{{ $type->name }}</span>
                         @empty
                             <span class="text-muted">Nessuna tipologia specificata</span>
                         @endforelse
@@ -39,12 +39,12 @@
 
                     <!-- Descrizione e Partita IVA -->
                     <p>{{ $restaurant->description }}</p>
-                    <p>P.IVA: {{ $restaurant->VAT_number }}</p>
+                    <p><span class="fw-bolder">P.IVA:</span> {{ $restaurant->VAT_number }}</p>
                 </div>
 
                 <!-- Footer della Card -->
                 <div class="card-footer text-center">
-                    <a class="btn btn-primary" href="{{ route('guest.restaurants.index') }}">
+                    <a class="btn btn-secondary" href="{{ route('guest.restaurants.index') }}">
                         <i class="fa-solid fa-left-long"></i> Ristoranti
                     </a>
                 </div>
