@@ -19,27 +19,34 @@
         <div class="sidebar-heading">
             <img src="{{ Vite::asset('resources/img/deliveboo.png') }}" alt="deliveboo" class="w-100">
         </div>
-        <div class="list-group list-group-flush">
-            <a href="/" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Home <i class="fa-solid fa-house"></i></a>
-            @auth
-                <a href="{{ route('admin.dashboard') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Dashboard <i class="fa-solid fa-house"></i></a>
-                <a href="{{ route('admin.restaurants.create') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Nuovo Ristorante <i class="fa-solid fa-plus"></i></a>
-                <a href="{{ route('admin.restaurants.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Il mio Ristorante <i class="fa-solid fa-utensils"></i></a>
-                <a href="{{ route('admin.plates.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Piatti <i class="fa-solid fa-bowl-food"></i></a>
-                <a href="{{ route('admin.orders.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Ordini <i class="fa-solid fa-receipt"></i></a>
-                <form method="POST" action="{{ route('logout') }}" class="list-group-item bg-light">
-                    @csrf
-                    <button type="submit" class="btn btn-outline-warning fw-bolder w-100">
-                        Log Out <i class="fa-solid fa-right-from-bracket"></i>
-                    </button>
-                </form>
-            @endauth
-            @guest
-                <a href="{{ route('guest.restaurants.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Ristoranti <i class="fa-solid fa-utensils"></i></a>
-                <a href="{{ route('login') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Login <i class="fa-solid fa-right-to-bracket"></i></a>
-                <a href="{{ route('register') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Register <i class="fa-solid fa-address-card"></i></a>
-            @endguest
+        <div class="d-flex d-column justify-content-between">
+            <div class="list-group list-group-flush">
+                @auth
+                    <a href="{{ route('admin.dashboard') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Dashboard <i class="fa-solid fa-house"></i></a>
+                    <a href="{{ route('admin.restaurants.create') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Nuovo Ristorante <i class="fa-solid fa-plus"></i></a>
+                    <a href="{{ route('admin.restaurants.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Il mio Ristorante <i class="fa-solid fa-utensils"></i></a>
+                    <a href="{{ route('admin.plates.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Piatti <i class="fa-solid fa-bowl-food"></i></a>
+                    <a href="{{ route('admin.orders.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Ordini <i class="fa-solid fa-receipt"></i></a>
+                @endauth
+                @auth
+                <div id="logout-wrapper">
+                    <form method="POST" action="{{ route('logout') }}" class="bg-light">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-warning fw-bolder w-100">
+                            Log Out <i class="fa-solid fa-right-from-bracket"></i>
+                        </button>
+                    </form>
+                </div>
+                @endauth
+                @guest
+                <a href="/" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Home <i class="fa-solid fa-house"></i></a>
+                    <a href="{{ route('guest.restaurants.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Ristoranti <i class="fa-solid fa-utensils"></i></a>
+                    <a href="{{ route('login') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="{{ route('register') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Register <i class="fa-solid fa-address-card"></i></a>
+                @endguest
+            </div>
         </div>
+
     </div>
 
     <!-- Page Content -->
