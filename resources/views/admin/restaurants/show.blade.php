@@ -1,75 +1,42 @@
 @extends('layouts.app')
 
-@section('page-title', $restaurant->activity_name)
+@section('page-title', auth()->user()->restaurant->activity_name)
 
 @section('main-content')
-    <div class="row">
-        <div class="col">
+<div class="container mt-2">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
             <div class="card">
+                <div class="card-header text-success text-center">
+                    <h1 class="mb-0">{{ $restaurant->activity_name }}</h1>
+                </div>
                 <div class="card-body">
-                    <h1 class="my-2">
-                        {{ $restaurant->activity_name }}
-                    </h1>
-
-                    {{-- Proprietario --}}
-                    <h2>
-                        Ecco il ristorante di {{ $restaurant->user->name }}
-                    </h2>
-
-                    <h3>
-                        Sono la parte privata!!!
-                    </h3>
-
-                    {{-- Tipi --}}
-                    <div class="my-3">
-                        <h2>
-                            Tipi:
-                        </h2>
-
-                        <ul>
-                            @forelse ( $restaurant->types as $type )
-                                <li>
-                                    {{ $type->name }}
-                                </li>
-                            @empty
-                                -
-                            @endforelse
-                        </ul>
-                    </div>
-
-                    {{-- Immagine associata --}}
-                    <div class="my-3">
-                        <h2>
-                            Immagine:
-                        </h2>
-
-                        @if ($restaurant->image != null)
-                            <div>
-                                <img src="/storage/{{ $restaurant->image }}" alt="image1">
-                            </div>
+                    <div class="text-center my-1">
+                        @if ($restaurant->image)
+                            <img src="{{ asset('storage/' . $restaurant->image) }}" class="img-fluid rounded" alt="Immagine di {{ $restaurant->activity_name }}">
                         @else
-                            -
+                            <p class="text-muted">Nessuna immagine disponibile</p>
                         @endif
                     </div>
-
-                    <p>
-                        {{ $restaurant->description }}
-                    </p>
-
-                    {{-- Ristoranti --}}
-                    <div>
-                        <a class="btn btn-primary" 
-                            href="{{ route('admin.restaurants.index') }}"
-                            >
-                            Torna ai Ristoranti
-                        </a>
+                    <p>di: <span class="fs-4 text-success">{{ $restaurant->user->name }}</span></p>
+                    <div class="my-1">
+                        <p class="d-inline fw-bolder">Cucina tipica:</p>
+                        @forelse ($restaurant->types as $type)
+                            <span class="badge rounded-pill bg-secondary">{{ $type->name }}</span>
+                        @empty
+                            <span class="text-muted">Nessuna tipologia specificata</span>
+                        @endforelse
                     </div>
-
-                    <br>
-
-                    La dashboard è una pagina privata (protetta dal middleware)
+                    <p>{{ $restaurant->description }}</p>
+                    <p><span class="fw-bolder">P.IVA:</span> {{ $restaurant->VAT_number }}</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a class="btn btn-secondary text-light" href="{{ route('admin.restaurants.index') }}">
+                        <i class="fa-solid fa-left-long"></i> Ristoranti
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 @endsection
