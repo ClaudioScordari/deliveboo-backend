@@ -3,76 +3,80 @@
 @section('page-title', 'Tutti i ristoranti')
 
 @section('main-content')
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h1>
-                        Ristoranti
-                    </h1>
+    <section class="rounded-4 p-4 container-form-section">
+        @foreach ($restaurants as $restaurant)
+            <h1 class="text-center tex-dark mb-4">{{ $restaurant->activity_name }}</h1>
 
-                    <ul>
-                        @foreach ($restaurants as $restaurant)
-                            <li class="mb-5">
-                                <h2>
-                                    Nome ristorante: {{ $restaurant->activity_name }}
-                                </h2>
+            <div class="mb-3 d-flex">
+                <div class="container-img" style="width: 500px; height: 500px;">
+                    <img class="w-100" src="{{ asset('storage/' . $restaurant->image) }}" alt="immagine ristorante">
+                </div>
 
-                                <img src="{{ asset('storage/' . $restaurant->image) }}" alt="immagine ristorante">
-                                <p>Indirizzo: {{ $restaurant->address }}</p>
-                                <p>Partita IVA: {{ $restaurant->VAT_number }}</p>
-                                <p>Descrizione: {{ $restaurant->description }}</p>
+                <div class="info-restaurants p-2 w-50 ms-auto">
+                    <div class="container-info">
+                        <ul>
+                            <li>
+                                <h3>Descrizione</h3>
 
-                                {{-- Show --}}
-                                <div class="pb-2 border-bottom border-3 border-dark d-inline-block">
-                                    <a class="btn btn-primary" 
-                                        href="{{ route('admin.restaurants.show', ['restaurant' => $restaurant->id]) }}"
-                                        >
-                                        Vedi il ristorante
-                                    </a> 
-                                </div>
-
-                                {{-- Piatti --}}
-                                <div class="pb-2 border-bottom border-3 border-dark d-inline-block">
-                                    <a class="btn btn-info" 
-                                        href="{{ route('admin.plates.index', ['restaurant' => $restaurant->id]) }}"
-                                        >
-                                        Vedi il Menù
-                                    </a> 
-                                </div>
-
-                                {{-- Edit --}}
-                                <div class="pb-2 border-bottom border-3 border-dark d-inline-block">
-                                    <a 
-                                        class="btn btn-warning ms-2" 
-                                        href="{{ route('admin.restaurants.edit', ['restaurant' => $restaurant->id]) }}"
-                                        >
-                                        Modifica questo ristorante
-                                    </a>
-                                </div>
-
-                                {{-- Delete --}}
-                                <div class="pb-2 border-bottom border-3 border-dark d-inline-block">
-                                    <form 
-                                        onsubmit="return confirm('Sicuro che vuoi eliminare il ristorante?')" 
-                                        action="{{ route('admin.restaurants.destroy', ['restaurant' => $restaurant->id]) }}"
-                                        method="POST"
-                                        >
-                                        @csrf
-                                        @method('DELETE')
-
-                                        <button type="submit" class="btn btn-danger w-100">
-                                            Elimina il ristorante
-                                        </button>
-                                    </form>
-                                </div>
+                                <p>{{ $restaurant->description }}</p>
                             </li>
-                        @endforeach
+                            <li>
+                                <h3>Indirizzo</h3>
 
-                    </ul>
+                                <p>{{ $restaurant->address }}</p>
+                            </li>
+                            <li>
+                                <h3>Partita IVA</h3>
 
+                                <p>{{ $restaurant->VAT_number }}</p>
+                            </li>
+                        </ul>
+
+                        {{-- Buttons --}}
+                        <div class="d-flex flex-column px-3">
+                            {{-- Piatti --}}
+                            <div class="d-inline-block">
+                                <a class="text-decoration-none fw-bold text-success py-3 d-inline-block fs-5 text-center"
+                                    href="{{ route('admin.plates.index', ['restaurant' => $restaurant->id]) }}">
+                                    Vedi il Menù del ristorante
+                                </a>
+                            </div>
+
+                            {{-- Edit --}}
+                            <div class="d-inline-block">
+                                <a class="text-decoration-none fw-bold text-secondary py-3 d-inline-block border-top border-bottom border-1 border-dark fs-5 text-center"
+                                    href="{{ route('admin.restaurants.edit', ['restaurant' => $restaurant->id]) }}">
+                                    Modifica il ristorante
+                                </a>
+                            </div>
+
+                            {{-- Delete --}}
+                            <div class="d-inline-block">
+                                <form onsubmit="return confirm('Sicuro che vuoi eliminare il ristorante?')"
+                                    action="{{ route('admin.restaurants.destroy', ['restaurant' => $restaurant->id]) }}"
+                                    method="POST">
+                                    @csrf
+                                    @method('DELETE')
+
+                                    <button type="submit" style="background-color: #D1E7DD"
+                                        class="px-0 border-0 text-decoration-none fw-bold text-danger py-3 d-inline-block fs-5 text-center">
+                                        Elimina il ristorante
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+            {{-- Show --}}
+            {{-- 
+                <div class="d-inline-block">
+                    <a class="btn btn-primary" href="{{ route('admin.restaurants.show', ['restaurant' => $restaurant->id]) }}">
+                        Vedi il ristorante
+                    </a>
+                </div>
+            --}}
+        @endforeach
+    </section>
 @endsection
