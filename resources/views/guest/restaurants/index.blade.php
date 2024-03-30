@@ -29,8 +29,8 @@
                             <p class="card-text">{{ $restaurant->description }}</p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="{{ route('guest.restaurants.show', ['restaurant' => $restaurant->id]) }}" class="btn btn-secondary btn-sm">Info <i class="fa-solid fa-circle-info"></i></a>
-                            <a href="{{ route('guest.restaurants.plates.index', ['restaurantId' => $restaurant->id]) }}" class="btn btn-secondary btn-sm">Menù <i class="fa-solid fa-book"></i></a>
+                            <a href="{{ route('guest.restaurants.show', ['restaurant' => $restaurant->id]) }}" class="btn text-light btn-secondary btn-sm">Info <i class="fa-solid fa-circle-info"></i></a>
+                            <a href="{{ route('guest.restaurants.plates.index', ['restaurantId' => $restaurant->id]) }}" class="btn text-light btn-secondary btn-sm">Menù <i class="fa-solid fa-book"></i></a>
                         </div>
                     </div>
                 </div>

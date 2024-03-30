@@ -24,13 +24,13 @@
                             @endif
                         </div>
                         <div class="card-footer text-center">
-                            <a href="{{ route('guest.restaurants.plates.show', ['plate' => $plate->id]) }}" class="btn btn-secondary btn-sm">Ingredienti <i class="fa-solid fa-utensils"></i></a>
+                            <a href="{{ route('guest.restaurants.plates.show', ['plate' => $plate->id]) }}" class="btn text-light btn-secondary btn-sm">Ingredienti <i class="fa-solid fa-utensils"></i></a>
                         </div>
                     </div>
                 </div>
                 @endforeach
             </div>
-            <a class="btn btn-secondary mb-3" href="{{ route('guest.restaurants.index') }}">
+            <a class="btn text-light btn-secondary mb-3" href="{{ route('guest.restaurants.index') }}">
                 <i class="fa-solid fa-left-long"></i> Ristoranti
             </a>
         </div>

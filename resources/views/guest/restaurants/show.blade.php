@@ -31,7 +31,7 @@
                     <div class="my-1">
                         <p class="d-inline fw-bolder">Cucina tipica:</p>
                         @forelse ($restaurant->types as $type)
-                            <span class="badge rounded-pill text-black bg-secondary">{{ $type->name }}</span>
+                            <span class="badge rounded-pill bg-secondary">{{ $type->name }}</span>
                         @empty
                             <span class="text-muted">Nessuna tipologia specificata</span>
                         @endforelse
@@ -44,7 +44,7 @@
 
                 <!-- Footer della Card -->
                 <div class="card-footer text-center">
-                    <a class="btn btn-secondary" href="{{ route('guest.restaurants.index') }}">
+                    <a class="btn text-light btn-secondary" href="{{ route('guest.restaurants.index') }}">
                         <i class="fa-solid fa-left-long"></i> Ristoranti
                     </a>
                 </div>
