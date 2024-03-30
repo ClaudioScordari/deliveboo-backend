@@ -5,7 +5,7 @@ return [
 
     [
         'restaurant_id' => 1,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 59.99,
         'name' => 'Marco Rossi',
         'phone' => '02 1234567',
@@ -15,7 +15,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 23.75,
         'name' => 'Francesca Bianchi',
         'phone' => '02 9876543',
@@ -25,7 +25,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Giovanni Romano',
         'phone' => '02 3344556',
@@ -35,7 +35,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 45.00,
         'name' => 'Alessandra Russo',
         'phone' => '02 8765432',
@@ -45,7 +45,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 89.95,
         'name' => 'Luca Ferrari',
         'phone' => '02 1122334',
@@ -55,7 +55,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 75.20,
         'name' => 'Sofia Martini',
         'phone' => '02 4455667',
@@ -65,7 +65,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 48.50,
         'name' => 'Matteo Esposito',
         'phone' => '02 7788990',
@@ -75,7 +75,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 65.00,
         'name' => 'Chiara Moretti',
         'phone' => '02 3456789',
@@ -85,7 +85,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Lorenzo Conti',
         'phone' => '02 8901234',
@@ -95,7 +95,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 55.75,
         'name' => 'Elena Barbieri',
         'phone' => '02 4567890',
@@ -105,7 +105,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 82.99,
         'name' => 'Andrea Colombo',
         'phone' => '02 6789012',
@@ -115,7 +115,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 120.50,
         'name' => 'Giulia De Luca',
         'phone' => '02 2345678',
@@ -125,7 +125,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 87.20,
         'name' => 'Sofia Martini',
         'phone' => '02 4455667',
@@ -135,7 +135,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 64.50,
         'name' => 'Matteo Esposito',
         'phone' => '02 7788990',
@@ -145,7 +145,7 @@ return [
     ],
     [
         'restaurant_id' => 1,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 79.00,
         'name' => 'Chiara Moretti',
         'phone' => '02 3456789',
@@ -158,7 +158,7 @@ return [
 
     [
         'restaurant_id' => 2,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 67.80,
         'name' => 'Antonio Bianchi',
         'phone' => '02 9988776',
@@ -168,7 +168,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 34.10,
         'name' => 'Laura Neri',
         'phone' => '02 8765432',
@@ -178,7 +178,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Sergio Gialli',
         'phone' => '02 5544332',
@@ -188,7 +188,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 49.90,
         'name' => 'Carmela Rossi',
         'phone' => '02 6677889',
@@ -198,7 +198,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 78.00,
         'name' => 'Francesco Verde',
         'phone' => '02 2244668',
@@ -208,7 +208,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 88.25,
         'name' => 'Silvia Azzurri',
         'phone' => '02 1231234',
@@ -218,7 +218,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 65.50,
         'name' => 'Luigi Marroni',
         'phone' => '02 9876543',
@@ -228,7 +228,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 55.60,
         'name' => 'Anna Gialli',
         'phone' => '02 3334445',
@@ -238,7 +238,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Giorgio Blu',
         'phone' => '02 4445556',
@@ -248,7 +248,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 73.20,
         'name' => 'Elena Viola',
         'phone' => '02 5566778',
@@ -258,7 +258,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 92.10,
         'name' => 'Valerio Rossi',
         'phone' => '02 9988776',
@@ -268,7 +268,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 102.75,
         'name' => 'Isabella Neri',
         'phone' => '02 2233445',
@@ -278,7 +278,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 94.00,
         'name' => 'Giorgio Blu',
         'phone' => '02 4445556',
@@ -288,7 +288,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 74.20,
         'name' => 'Elena Viola',
         'phone' => '02 5566778',
@@ -298,7 +298,7 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 82.10,
         'name' => 'Valerio Rossi',
         'phone' => '02 9988776',
@@ -311,7 +311,7 @@ return [
 
     [
         'restaurant_id' => 3,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 110.20,
         'name' => 'Claudio Verdi',
         'phone' => '02 1472583',
@@ -321,7 +321,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 50.75,
         'name' => 'Beatrice Bianco',
         'phone' => '02 3698521',
@@ -331,7 +331,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Federico Nero',
         'phone' => '02 9638527',
@@ -341,7 +341,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 95.00,
         'name' => 'Simona Rosso',
         'phone' => '02 9517538',
@@ -351,7 +351,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 83.50,
         'name' => 'Daniele Giallo',
         'phone' => '02 1472589',
@@ -361,7 +361,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 60.30,
         'name' => 'Elisa Verde',
         'phone' => '02 7539514',
@@ -371,7 +371,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 49.90,
         'name' => 'Marco Blu',
         'phone' => '02 1597534',
@@ -381,7 +381,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 77.65,
         'name' => 'Sara Marrone',
         'phone' => '02 4561237',
@@ -391,7 +391,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Luigi Viola',
         'phone' => '02 7531594',
@@ -401,7 +401,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 100.00,
         'name' => 'Alessia Grigio',
         'phone' => '02 9513574',
@@ -411,7 +411,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 87.40,
         'name' => 'Roberto Celeste',
         'phone' => '02 8642135',
@@ -421,7 +421,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 115.20,
         'name' => 'Giorgia Rosa',
         'phone' => '02 9874563',
@@ -431,7 +431,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 48.50,
         'name' => 'Daniele Giallo',
         'phone' => '02 1472589',
@@ -441,7 +441,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 65.30,
         'name' => 'Elisa Verde',
         'phone' => '02 7539514',
@@ -451,7 +451,7 @@ return [
     ],
     [
         'restaurant_id' => 3,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 89.90,
         'name' => 'Marco Blu',
         'phone' => '02 1597534',
@@ -464,7 +464,7 @@ return [
 
     [
         'restaurant_id' => 4,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 68.00,
         'name' => 'Valentina Moro',
         'phone' => '02 9101112',
@@ -474,7 +474,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 32.50,
         'name' => 'Nicola Bianchi',
         'phone' => '02 9134567',
@@ -484,7 +484,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Simone Rossi',
         'phone' => '02 9876543',
@@ -494,7 +494,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 50.25,
         'name' => 'Laura Verdi',
         'phone' => '02 9988776',
@@ -504,7 +504,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 79.90,
         'name' => 'Marta Gialli',
         'phone' => '02 9246807',
@@ -514,7 +514,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 65.00,
         'name' => 'Giovanni Grigio',
         'phone' => '02 9246808',
@@ -524,7 +524,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 47.00,
         'name' => 'Federica Azzurra',
         'phone' => '02 9246809',
@@ -534,7 +534,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 85.50,
         'name' => 'Alberto Neri',
         'phone' => '02 9246810',
@@ -544,7 +544,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Chiara Celeste',
         'phone' => '02 9246811',
@@ -554,7 +554,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 90.75,
         'name' => 'Davide Marrone',
         'phone' => '02 9246812',
@@ -564,7 +564,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 105.00,
         'name' => 'Elisabetta Rosso',
         'phone' => '02 9246813',
@@ -574,7 +574,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 120.30,
         'name' => 'Luca Viola',
         'phone' => '02 9246814',
@@ -584,7 +584,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 62.50,
         'name' => 'Nicola Bianchi',
         'phone' => '02 9134567',
@@ -594,7 +594,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 39.00,
         'name' => 'Simone Rossi',
         'phone' => '02 9876543',
@@ -604,7 +604,7 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 85.25,
         'name' => 'Laura Verdi',
         'phone' => '02 9988776',
@@ -617,7 +617,7 @@ return [
 
     [
         'restaurant_id' => 5,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 110.50,
         'name' => 'Sara Ricci',
         'phone' => '02 4567890',
@@ -627,7 +627,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 48.75,
         'name' => 'Marco Taddei',
         'phone' => '02 1234567',
@@ -637,7 +637,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Giulia Fabbri',
         'phone' => '02 7654321',
@@ -647,7 +647,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 93.20,
         'name' => 'Luigi Pellegrini',
         'phone' => '02 9988776',
@@ -657,7 +657,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 85.00,
         'name' => 'Alessandro Brambilla',
         'phone' => '02 1122334',
@@ -667,7 +667,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 76.30,
         'name' => 'Francesca Cattaneo',
         'phone' => '02 2233445',
@@ -677,7 +677,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 64.90,
         'name' => 'Stefano Moretti',
         'phone' => '02 3344556',
@@ -687,7 +687,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 99.50,
         'name' => 'Daniela Russo',
         'phone' => '02 6677889',
@@ -697,7 +697,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Roberto Sartori',
         'phone' => '02 5566778',
@@ -707,7 +707,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 105.75,
         'name' => 'Simona Galli',
         'phone' => '02 1231234',
@@ -717,7 +717,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 88.45,
         'name' => 'Luca Bernardi',
         'phone' => '02 9876543',
@@ -727,7 +727,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 120.00,
         'name' => 'Elena Ferrari',
         'phone' => '02 2468101',
@@ -737,7 +737,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 83.00,
         'name' => 'Alessandro Brambilla',
         'phone' => '02 1122334',
@@ -747,7 +747,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 67.30,
         'name' => 'Francesca Cattaneo',
         'phone' => '02 2233445',
@@ -757,7 +757,7 @@ return [
     ],
     [
         'restaurant_id' => 5,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 86.90,
         'name' => 'Stefano Moretti',
         'phone' => '02 3344556',
@@ -769,7 +769,7 @@ return [
     // Restaurant 6
     [
         'restaurant_id' => 6,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 97.50,
         'name' => 'Martina Conti',
         'phone' => '02 9876543',
@@ -779,7 +779,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 52.25,
         'name' => 'Giacomo Martelli',
         'phone' => '02 1122334',
@@ -789,7 +789,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Valeria Farina',
         'phone' => '02 2233445',
@@ -799,7 +799,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 84.90,
         'name' => 'Davide Mancini',
         'phone' => '02 3344556',
@@ -809,7 +809,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 60.75,
         'name' => 'Elisabetta Ferrara',
         'phone' => '02 4455667',
@@ -819,7 +819,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 75.00,
         'name' => 'Federico Naldi',
         'phone' => '02 5566778',
@@ -829,7 +829,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 43.20,
         'name' => 'Simona Greco',
         'phone' => '02 6677889',
@@ -839,7 +839,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 98.50,
         'name' => 'Alessio Bianco',
         'phone' => '02 7788990',
@@ -849,7 +849,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Giorgio Melone',
         'phone' => '02 1122445',
@@ -859,7 +859,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 89.95,
         'name' => 'Luca Marini',
         'phone' => '02 8899776',
@@ -869,7 +869,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 101.75,
         'name' => 'Cristina Galli',
         'phone' => '02 9988776',
@@ -879,7 +879,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 120.30,
         'name' => 'Giuseppe Verdi',
         'phone' => '02 3456789',
@@ -889,7 +889,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 68.50,
         'name' => 'Alessio Bianco',
         'phone' => '02 7788990',
@@ -899,7 +899,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 132.00,
         'name' => 'Giorgio Melone',
         'phone' => '02 1122445',
@@ -909,7 +909,7 @@ return [
     ],
     [
         'restaurant_id' => 6,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 89.95,
         'name' => 'Luca Marini',
         'phone' => '02 8899776',
@@ -923,7 +923,7 @@ return [
 
     [
         'restaurant_id' => 7,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 103.20,
         'name' => 'Lorenzo Caruso',
         'phone' => '02 4848484',
@@ -933,7 +933,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 57.75,
         'name' => 'Marta Ricci',
         'phone' => '02 4848485',
@@ -943,7 +943,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Pietro Ferrari',
         'phone' => '02 4848486',
@@ -953,7 +953,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 92.50,
         'name' => 'Chiara Mazzini',
         'phone' => '02 4848487',
@@ -963,7 +963,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 89.30,
         'name' => 'Andrea Bellini',
         'phone' => '02 4848488',
@@ -973,7 +973,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 77.40,
         'name' => 'Giorgia Vitali',
         'phone' => '02 4848489',
@@ -983,7 +983,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 45.90,
         'name' => 'Simone Rossi',
         'phone' => '02 4848480',
@@ -993,7 +993,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 110.75,
         'name' => 'Elena Galli',
         'phone' => '02 4848481',
@@ -1003,7 +1003,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Marco Brunetti',
         'phone' => '02 4848482',
@@ -1013,7 +1013,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 96.00,
         'name' => 'Alessia Conti',
         'phone' => '02 4848483',
@@ -1023,7 +1023,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 104.25,
         'name' => 'Davide Mariani',
         'phone' => '02 4848484',
@@ -1033,7 +1033,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 113.50,
         'name' => 'Serena De Luca',
         'phone' => '02 4848485',
@@ -1043,7 +1043,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 85.40,
         'name' => 'Giorgia Vitali',
         'phone' => '02 4848489',
@@ -1053,7 +1053,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 54.90,
         'name' => 'Simone Rossi',
         'phone' => '02 4848480',
@@ -1063,7 +1063,7 @@ return [
     ],
     [
         'restaurant_id' => 7,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 102.75,
         'name' => 'Elena Galli',
         'phone' => '02 4848481',
@@ -1076,7 +1076,7 @@ return [
 
     [
         'restaurant_id' => 8,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 95.20,
         'name' => 'Giulio De Angelis',
         'phone' => '02 2345678',
@@ -1086,7 +1086,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 50.75,
         'name' => 'Caterina Fumagalli',
         'phone' => '02 8765432',
@@ -1096,7 +1096,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Andrea Bertoli',
         'phone' => '02 5647382',
@@ -1106,7 +1106,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 105.00,
         'name' => 'Silvia Carbone',
         'phone' => '02 9988776',
@@ -1116,7 +1116,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 80.30,
         'name' => 'Paolo Negrini',
         'phone' => '02 1122334',
@@ -1126,7 +1126,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 73.45,
         'name' => 'Elisa Martini',
         'phone' => '02 2233445',
@@ -1136,7 +1136,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 44.90,
         'name' => 'Marco Valenti',
         'phone' => '02 3344556',
@@ -1146,7 +1146,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 88.60,
         'name' => 'Sofia Galliani',
         'phone' => '02 6677889',
@@ -1156,7 +1156,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Luca Orsini',
         'phone' => '02 5566778',
@@ -1166,7 +1166,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 60.25,
         'name' => 'Federica Sartori',
         'phone' => '02 1231234',
@@ -1176,7 +1176,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 110.75,
         'name' => 'Alessandro Messina',
         'phone' => '02 9876543',
@@ -1186,7 +1186,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 99.95,
         'name' => 'Chiara Lombardi',
         'phone' => '02 2468101',
@@ -1196,7 +1196,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 80.25,
         'name' => 'Federica Sartori',
         'phone' => '02 1231234',
@@ -1206,7 +1206,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 123.75,
         'name' => 'Alessandro Messina',
         'phone' => '02 9876543',
@@ -1216,7 +1216,7 @@ return [
     ],
     [
         'restaurant_id' => 8,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 105.95,
         'name' => 'Chiara Lombardi',
         'phone' => '02 2468101',
@@ -1229,7 +1229,7 @@ return [
 
     [
         'restaurant_id' => 9,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 102.30,
         'name' => 'Daniele Baroni',
         'phone' => '02 9876543',
@@ -1239,7 +1239,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 58.50,
         'name' => 'Sara Colombo',
         'phone' => '02 1234567',
@@ -1249,7 +1249,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Giulio Ferrari',
         'phone' => '02 2233445',
@@ -1259,7 +1259,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 89.75,
         'name' => 'Laura Bianchi',
         'phone' => '02 3344556',
@@ -1269,7 +1269,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 76.20,
         'name' => 'Marco Viscardi',
         'phone' => '02 6677889',
@@ -1279,7 +1279,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 65.55,
         'name' => 'Chiara Mastroianni',
         'phone' => '02 7788990',
@@ -1289,7 +1289,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 47.95,
         'name' => 'Antonio Russo',
         'phone' => '02 5566778',
@@ -1299,7 +1299,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 90.40,
         'name' => 'Elisa Monti',
         'phone' => '02 1122334',
@@ -1309,7 +1309,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Luca Martini',
         'phone' => '02 1231234',
@@ -1319,7 +1319,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 110.00,
         'name' => 'Francesca Romano',
         'phone' => '02 9876543',
@@ -1329,7 +1329,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 99.10,
         'name' => 'Simone Greco',
         'phone' => '02 2468101',
@@ -1339,7 +1339,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 104.50,
         'name' => 'Valentina Serra',
         'phone' => '02 1357911',
@@ -1349,7 +1349,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 94.00,
         'name' => 'Luca Martini',
         'phone' => '02 1231234',
@@ -1359,7 +1359,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 65.00,
         'name' => 'Francesca Romano',
         'phone' => '02 9876543',
@@ -1369,7 +1369,7 @@ return [
     ],
     [
         'restaurant_id' => 9,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 78.10,
         'name' => 'Simone Greco',
         'phone' => '02 2468101',
@@ -1382,7 +1382,7 @@ return [
 
     [
         'restaurant_id' => 10,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 101.25,
         'name' => 'Giorgia Lorenzi',
         'phone' => '02 3456789',
@@ -1392,7 +1392,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 55.90,
         'name' => 'Matteo Giuliani',
         'phone' => '02 9876543',
@@ -1402,7 +1402,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Alessandra Amati',
         'phone' => '02 1234567',
@@ -1412,7 +1412,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 88.75,
         'name' => 'Luigi De Santis',
         'phone' => '02 2244668',
@@ -1422,7 +1422,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 79.30,
         'name' => 'Sara Caputo',
         'phone' => '02 5566778',
@@ -1432,7 +1432,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 64.50,
         'name' => 'Francesco Villa',
         'phone' => '02 6677889',
@@ -1442,7 +1442,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 46.20,
         'name' => 'Claudia Marchetti',
         'phone' => '02 7788990',
@@ -1452,7 +1452,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 93.45,
         'name' => 'Antonio Russo',
         'phone' => '02 9988776',
@@ -1462,7 +1462,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Elisa Ferretti',
         'phone' => '02 1122334',
@@ -1472,7 +1472,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 107.00,
         'name' => 'Simone Marini',
         'phone' => '02 2233445',
@@ -1482,7 +1482,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 99.80,
         'name' => 'Marco Bruni',
         'phone' => '02 3344556',
@@ -1492,7 +1492,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 112.50,
         'name' => 'Laura Nobile',
         'phone' => '02 4455667',
@@ -1502,7 +1502,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 75.45,
         'name' => 'Antonio Russo',
         'phone' => '02 9988776',
@@ -1512,7 +1512,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 65.00,
         'name' => 'Elisa Ferretti',
         'phone' => '02 1122334',
@@ -1522,7 +1522,7 @@ return [
     ],
     [
         'restaurant_id' => 10,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 101.50,
         'name' => 'Simone Marini',
         'phone' => '02 2233445',
@@ -1535,7 +1535,7 @@ return [
 
     [
         'restaurant_id' => 11,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 105.50,
         'name' => 'Giuliana Moretti',
         'phone' => '02 3456789',
@@ -1545,7 +1545,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 60.75,
         'name' => 'Roberto Serra',
         'phone' => '02 9876543',
@@ -1555,7 +1555,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Simona Bianchi',
         'phone' => '02 1234567',
@@ -1565,7 +1565,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 90.20,
         'name' => 'Davide Gatti',
         'phone' => '02 2244668',
@@ -1575,7 +1575,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 82.40,
         'name' => 'Lucia Ferraro',
         'phone' => '02 6677889',
@@ -1585,7 +1585,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 68.55,
         'name' => 'Marco Pirelli',
         'phone' => '02 7788990',
@@ -1595,7 +1595,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 49.30,
         'name' => 'Elisabetta Mazza',
         'phone' => '02 5566778',
@@ -1605,7 +1605,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 94.75,
         'name' => 'Francesco Medici',
         'phone' => '02 1122334',
@@ -1615,7 +1615,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Anna Ricci',
         'phone' => '02 1231234',
@@ -1625,7 +1625,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 112.00,
         'name' => 'Luigi Fontana',
         'phone' => '02 2233445',
@@ -1635,7 +1635,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 100.10,
         'name' => 'Sofia Galli',
         'phone' => '02 3344556',
@@ -1645,7 +1645,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 116.85,
         'name' => 'Giacomo Rossi',
         'phone' => '02 4455667',
@@ -1655,7 +1655,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 86.55,
         'name' => 'Marco Pirelli',
         'phone' => '02 7788990',
@@ -1665,7 +1665,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 94.30,
         'name' => 'Elisabetta Mazza',
         'phone' => '02 5566778',
@@ -1675,7 +1675,7 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 69.75,
         'name' => 'Francesco Medici',
         'phone' => '02 1122334',
@@ -1688,7 +1688,7 @@ return [
 
     [
         'restaurant_id' => 12,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 78.50,
         'name' => 'Claudio Marchesi',
         'phone' => '02 3456789',
@@ -1698,7 +1698,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 62.30,
         'name' => 'Alessia Bertoni',
         'phone' => '02 9876543',
@@ -1708,7 +1708,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Marco Valenti',
         'phone' => '02 1234567',
@@ -1718,7 +1718,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 84.20,
         'name' => 'Serena Fumagalli',
         'phone' => '02 2244668',
@@ -1728,7 +1728,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 90.75,
         'name' => 'Luca Neri',
         'phone' => '02 6677889',
@@ -1738,7 +1738,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 69.40,
         'name' => 'Giorgia Palumbo',
         'phone' => '02 7788990',
@@ -1748,7 +1748,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 56.10,
         'name' => 'Elena Grasso',
         'phone' => '02 5566778',
@@ -1758,7 +1758,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 95.00,
         'name' => 'Simone Conti',
         'phone' => '02 1122334',
@@ -1768,7 +1768,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Roberta Bianchi',
         'phone' => '02 1231234',
@@ -1778,7 +1778,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 103.50,
         'name' => 'Andrea Mancini',
         'phone' => '02 2233445',
@@ -1788,7 +1788,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 97.80,
         'name' => 'Valeria Rossi',
         'phone' => '02 3344556',
@@ -1798,7 +1798,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 112.25,
         'name' => "Giovanni D'Angelo",
         'phone' => '02 4455667',
@@ -1808,7 +1808,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 96.10,
         'name' => 'Elena Grasso',
         'phone' => '02 5566778',
@@ -1818,7 +1818,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 68.00,
         'name' => 'Simone Conti',
         'phone' => '02 1122334',
@@ -1828,7 +1828,7 @@ return [
     ],
     [
         'restaurant_id' => 12,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 85.00,
         'name' => 'Roberta Bianchi',
         'phone' => '02 1231234',
@@ -1841,7 +1841,7 @@ return [
 
     [
         'restaurant_id' => 13,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 110.75,
         'name' => 'Simona Piras',
         'phone' => '02 3456789',
@@ -1851,7 +1851,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 54.20,
         'name' => 'Davide Martelli',
         'phone' => '02 9876543',
@@ -1861,7 +1861,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Giulia Bianco',
         'phone' => '02 1234567',
@@ -1871,7 +1871,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 98.50,
         'name' => 'Lorenzo Gatti',
         'phone' => '02 2244668',
@@ -1881,7 +1881,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 76.40,
         'name' => 'Alessia Ferraro',
         'phone' => '02 6677889',
@@ -1891,7 +1891,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 64.30,
         'name' => 'Francesco Mariani',
         'phone' => '02 7788990',
@@ -1901,7 +1901,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 45.85,
         'name' => 'Elisabetta Costa',
         'phone' => '02 5566778',
@@ -1911,7 +1911,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 93.60,
         'name' => 'Giorgio Sala',
         'phone' => '02 1122334',
@@ -1921,7 +1921,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Carla Ricci',
         'phone' => '02 1231234',
@@ -1931,7 +1931,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 105.00,
         'name' => 'Marco Vitali',
         'phone' => '02 2233445',
@@ -1941,7 +1941,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 87.75,
         'name' => 'Serena Rossi',
         'phone' => '02 3344556',
@@ -1951,7 +1951,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 119.20,
         'name' => 'Andrea Belli',
         'phone' => '02 4455667',
@@ -1961,7 +1961,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 79.60,
         'name' => 'Giorgio Sala',
         'phone' => '02 1122334',
@@ -1971,7 +1971,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 86.00,
         'name' => 'Carla Ricci',
         'phone' => '02 1231234',
@@ -1981,7 +1981,7 @@ return [
     ],
     [
         'restaurant_id' => 13,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 105.00,
         'name' => 'Marco Vitali',
         'phone' => '02 2233445',
@@ -1994,7 +1994,7 @@ return [
 
     [
         'restaurant_id' => 14,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 108.50,
         'name' => 'Claudio Verdi',
         'phone' => '02 5467890',
@@ -2004,7 +2004,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 67.20,
         'name' => 'Giulia Neri',
         'phone' => '02 5987654',
@@ -2014,7 +2014,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Simone Bianchi',
         'phone' => '02 2345678',
@@ -2024,7 +2024,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 95.00,
         'name' => 'Alessandro Martini',
         'phone' => '02 8877665',
@@ -2034,7 +2034,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 77.30,
         'name' => 'Laura Rossi',
         'phone' => '02 6644223',
@@ -2044,7 +2044,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 69.45,
         'name' => 'Marco Gialli',
         'phone' => '02 4455667',
@@ -2054,7 +2054,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 56.95,
         'name' => 'Elisa Ferrari',
         'phone' => '02 9988776',
@@ -2064,7 +2064,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 89.75,
         'name' => 'Stefano Bianco',
         'phone' => '02 1234567',
@@ -2074,7 +2074,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Daniela Verde',
         'phone' => '02 7654321',
@@ -2084,7 +2084,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 104.60,
         'name' => 'Luca Moro',
         'phone' => '02 5566778',
@@ -2094,7 +2094,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 80.20,
         'name' => 'Sara Colombo',
         'phone' => '02 3344556',
@@ -2104,7 +2104,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 112.00,
         'name' => 'Giuseppe Mazzini',
         'phone' => '02 2233445',
@@ -2114,7 +2114,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 128.50,
         'name' => 'Claudio Verdi',
         'phone' => '02 5467890',
@@ -2124,7 +2124,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 86.20,
         'name' => 'Giulia Neri',
         'phone' => '02 5987654',
@@ -2134,7 +2134,7 @@ return [
     ],
     [
         'restaurant_id' => 14,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 65.00,
         'name' => 'Simone Bianchi',
         'phone' => '02 2345678',
@@ -2147,7 +2147,7 @@ return [
 
     [
         'restaurant_id' => 15,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 92.75,
         'name' => 'Beatrice Ferrara',
         'phone' => '02 4567890',
@@ -2157,7 +2157,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 61.50,
         'name' => 'Emanuele Russo',
         'phone' => '02 9876543',
@@ -2167,7 +2167,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Sofia Gallo',
         'phone' => '02 2345678',
@@ -2177,7 +2177,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 85.20,
         'name' => 'Alessandro Conti',
         'phone' => '02 8765432',
@@ -2187,7 +2187,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 73.95,
         'name' => 'Giorgia Martini',
         'phone' => '02 5647382',
@@ -2197,7 +2197,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 69.00,
         'name' => 'Luca Bianchi',
         'phone' => '02 9988776',
@@ -2207,7 +2207,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 58.30,
         'name' => 'Marco Neri',
         'phone' => '02 1122334',
@@ -2217,7 +2217,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 97.45,
         'name' => 'Valentina Rossi',
         'phone' => '02 2233445',
@@ -2227,7 +2227,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Davide Greco',
         'phone' => '02 3344556',
@@ -2237,7 +2237,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 105.50,
         'name' => 'Simone Lombardo',
         'phone' => '02 4455667',
@@ -2247,7 +2247,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 80.75,
         'name' => 'Laura Caputo',
         'phone' => '02 5566778',
@@ -2257,7 +2257,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 114.25,
         'name' => 'Andrea Fiori',
         'phone' => '02 6677889',
@@ -2267,7 +2267,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 78.50,
         'name' => 'Simone Lombardo',
         'phone' => '02 4455667',
@@ -2277,7 +2277,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 96.75,
         'name' => 'Laura Caputo',
         'phone' => '02 5566778',
@@ -2287,7 +2287,7 @@ return [
     ],
     [
         'restaurant_id' => 15,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 128.25,
         'name' => 'Andrea Fiori',
         'phone' => '02 6677889',
@@ -2300,7 +2300,7 @@ return [
 
     [
         'restaurant_id' => 16,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 103.00,
         'name' => 'Cristina Farina',
         'phone' => '02 9876543',
@@ -2310,7 +2310,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 59.75,
         'name' => 'Giovanni Amato',
         'phone' => '02 1234567',
@@ -2320,7 +2320,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Anna Ricci',
         'phone' => '02 2345678',
@@ -2330,7 +2330,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 88.50,
         'name' => 'Luca Bianchi',
         'phone' => '02 3456789',
@@ -2340,7 +2340,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 76.25,
         'name' => 'Marco Neri',
         'phone' => '02 4567890',
@@ -2350,7 +2350,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 65.40,
         'name' => 'Sofia Verdi',
         'phone' => '02 5678901',
@@ -2360,7 +2360,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 57.90,
         'name' => 'Elena Grasso',
         'phone' => '02 6789012',
@@ -2370,7 +2370,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 90.05,
         'name' => 'Davide Ferraro',
         'phone' => '02 7890123',
@@ -2380,7 +2380,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Giorgia Martini',
         'phone' => '02 8901234',
@@ -2390,7 +2390,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 110.00,
         'name' => 'Stefano Gialli',
         'phone' => '02 9012345',
@@ -2400,7 +2400,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 102.30,
         'name' => 'Francesca Rossi',
         'phone' => '02 9123456',
@@ -2410,7 +2410,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 115.75,
         'name' => 'Giuseppe Bianco',
         'phone' => '02 9234567',
@@ -2420,7 +2420,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 96.05,
         'name' => 'Davide Ferraro',
         'phone' => '02 7890123',
@@ -2430,7 +2430,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 75.00,
         'name' => 'Giorgia Martini',
         'phone' => '02 8901234',
@@ -2440,7 +2440,7 @@ return [
     ],
     [
         'restaurant_id' => 16,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 116.00,
         'name' => 'Stefano Gialli',
         'phone' => '02 9012345',
@@ -2453,7 +2453,7 @@ return [
 
     [
         'restaurant_id' => 17,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 95.50,
         'name' => 'Serena Loi',
         'phone' => '02 1234567',
@@ -2463,7 +2463,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 60.20,
         'name' => 'Michele Ferri',
         'phone' => '02 2345678',
@@ -2473,7 +2473,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Anna Pirelli',
         'phone' => '02 3456789',
@@ -2483,7 +2483,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 110.75,
         'name' => 'Giorgio Brambilla',
         'phone' => '02 4567890',
@@ -2493,7 +2493,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 78.40,
         'name' => 'Laura Moroni',
         'phone' => '02 5678901',
@@ -2503,7 +2503,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 84.30,
         'name' => 'Carlo Rossi',
         'phone' => '02 6789012',
@@ -2513,7 +2513,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 63.25,
         'name' => 'Roberta Gallo',
         'phone' => '02 7890123',
@@ -2523,7 +2523,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 102.00,
         'name' => 'Simona Marchetti',
         'phone' => '02 8901234',
@@ -2533,7 +2533,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Daniele Bianchi',
         'phone' => '02 9012345',
@@ -2543,7 +2543,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 89.95,
         'name' => 'Valentina Serra',
         'phone' => '02 9123456',
@@ -2553,7 +2553,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 97.50,
         'name' => 'Matteo Verdi',
         'phone' => '02 9234567',
@@ -2563,7 +2563,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 115.20,
         'name' => 'Elena Conti',
         'phone' => '02 9345678',
@@ -2573,7 +2573,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 98.40,
         'name' => 'Laura Moroni',
         'phone' => '02 5678901',
@@ -2583,7 +2583,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 74.30,
         'name' => 'Carlo Rossi',
         'phone' => '02 6789012',
@@ -2593,7 +2593,7 @@ return [
     ],
     [
         'restaurant_id' => 17,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 95.25,
         'name' => 'Roberta Gallo',
         'phone' => '02 7890123',
@@ -2606,7 +2606,7 @@ return [
 
     [
         'restaurant_id' => 18,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 110.00,
         'name' => 'Francesca Marino',
         'phone' => '02 9876543',
@@ -2616,7 +2616,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 58.75,
         'name' => 'Antonio Grimaldi',
         'phone' => '02 2345678',
@@ -2626,7 +2626,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Giulia Bianco',
         'phone' => '02 3456789',
@@ -2636,7 +2636,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 87.20,
         'name' => 'Luca Savino',
         'phone' => '02 4567890',
@@ -2646,7 +2646,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 64.50,
         'name' => 'Elisa Martini',
         'phone' => '02 5678901',
@@ -2656,7 +2656,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 75.30,
         'name' => 'Marco Gentile',
         'phone' => '02 6789012',
@@ -2666,7 +2666,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 53.45,
         'name' => 'Sara Ricci',
         'phone' => '02 7890123',
@@ -2676,7 +2676,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 92.00,
         'name' => 'Davide Ferraro',
         'phone' => '02 8901234',
@@ -2686,7 +2686,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Lorenzo De Luca',
         'phone' => '02 9012345',
@@ -2696,7 +2696,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 103.75,
         'name' => 'Marta Ferrari',
         'phone' => '02 9123456',
@@ -2706,7 +2706,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 98.60,
         'name' => 'Andrea Pellegrini',
         'phone' => '02 9234567',
@@ -2716,7 +2716,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 105.85,
         'name' => 'Giorgia Milano',
         'phone' => '02 9345678',
@@ -2726,7 +2726,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 95.45,
         'name' => 'Sara Ricci',
         'phone' => '02 7890123',
@@ -2736,7 +2736,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 102.00,
         'name' => 'Davide Ferraro',
         'phone' => '02 8901234',
@@ -2746,7 +2746,7 @@ return [
     ],
     [
         'restaurant_id' => 18,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Lorenzo De Luca',
         'phone' => '02 9012345',
@@ -2759,7 +2759,7 @@ return [
 
     [
         'restaurant_id' => 19,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 99.90,
         'name' => 'Elena Fabbri',
         'phone' => '02 9988776',
@@ -2769,7 +2769,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 55.75,
         'name' => 'Paolo Bianchi',
         'phone' => '02 8866442',
@@ -2779,7 +2779,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Giorgia Moretti',
         'phone' => '02 7744553',
@@ -2789,7 +2789,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 88.30,
         'name' => 'Andrea Conti',
         'phone' => '02 6655443',
@@ -2799,7 +2799,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 76.50,
         'name' => 'Marco Rossi',
         'phone' => '02 5533221',
@@ -2809,7 +2809,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 65.20,
         'name' => 'Lucia Esposito',
         'phone' => '02 1122334',
@@ -2819,7 +2819,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 54.40,
         'name' => 'Simone Ferrari',
         'phone' => '02 4433221',
@@ -2829,7 +2829,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 93.75,
         'name' => 'Alessandro Greco',
         'phone' => '02 3344556',
@@ -2839,7 +2839,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Francesca Gallo',
         'phone' => '02 7788990',
@@ -2849,7 +2849,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 102.00,
         'name' => 'Giulia Martini',
         'phone' => '02 5566778',
@@ -2859,7 +2859,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 97.60,
         'name' => 'Luca Sala',
         'phone' => '02 6688776',
@@ -2869,7 +2869,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 115.95,
         'name' => 'Valeria Nobile',
         'phone' => '02 9876543',
@@ -2879,7 +2879,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 79.00,
         'name' => 'Elena Fabbri',
         'phone' => '02 9988776',
@@ -2889,7 +2889,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 85.75,
         'name' => 'Paolo Bianchi',
         'phone' => '02 8866442',
@@ -2899,7 +2899,7 @@ return [
     ],
     [
         'restaurant_id' => 19,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 100.00,
         'name' => 'Giorgia Moretti',
         'phone' => '02 7744553',
@@ -2912,7 +2912,7 @@ return [
 
     [
         'restaurant_id' => 20,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 104.00,
         'name' => 'Daniele Ricci',
         'phone' => '02 9876543',
@@ -2922,7 +2922,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 56.50,
         'name' => 'Chiara Ferraro',
         'phone' => '02 2345678',
@@ -2932,7 +2932,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Luca Martini',
         'phone' => '02 3456789',
@@ -2942,7 +2942,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 89.75,
         'name' => 'Giorgia Bellini',
         'phone' => '02 4567890',
@@ -2952,7 +2952,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 77.20,
         'name' => 'Simone Bianco',
         'phone' => '02 5678901',
@@ -2962,7 +2962,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 68.40,
         'name' => 'Andrea Neri',
         'phone' => '02 6789012',
@@ -2972,7 +2972,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'pending',
+        'payment_status' => 'In Attesa',
         'total_price' => 60.95,
         'name' => 'Sara Colombo',
         'phone' => '02 7890123',
@@ -2982,7 +2982,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 95.00,
         'name' => 'Marco Giordano',
         'phone' => '02 8901234',
@@ -2992,7 +2992,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'failed',
+        'payment_status' => 'Fallito',
         'total_price' => 0.00,
         'name' => 'Laura Verdi',
         'phone' => '02 9012345',
@@ -3002,7 +3002,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 110.25,
         'name' => 'Francesco Greco',
         'phone' => '02 9123456',
@@ -3012,7 +3012,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 102.75,
         'name' => 'Giulia Rossi',
         'phone' => '02 9234567',
@@ -3022,7 +3022,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 118.50,
         'name' => 'Emanuele Fiori',
         'phone' => '02 9345678',
@@ -3032,7 +3032,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 160.25,
         'name' => 'Francesco Greco',
         'phone' => '02 9123456',
@@ -3042,7 +3042,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 120.75,
         'name' => 'Giulia Rossi',
         'phone' => '02 9234567',
@@ -3052,7 +3052,7 @@ return [
     ],
     [
         'restaurant_id' => 20,
-        'payment_status' => 'completed',
+        'payment_status' => 'Completato',
         'total_price' => 182.00,
         'name' => 'Emanuele Fiori',
         'phone' => '02 9345678',

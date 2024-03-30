@@ -19,7 +19,7 @@
                     <p class="card-text"><strong>Indirizzo:</strong> {{ $order->address }}</p>
                     <p class="card-text">
                         <strong>Stato Pagamento:</strong> 
-                        @if($order->payment_status == 'completed')
+                        @if($order->payment_status == 'Completato')
                             <span class="text-success">Completato <i class="fa fa-check"></i></span>
                         @else
                             {{ ucfirst($order->payment_status) }}
