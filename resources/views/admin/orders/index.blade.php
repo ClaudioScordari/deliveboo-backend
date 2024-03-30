@@ -1,50 +1,42 @@
 @extends('layouts.app')
 
-@section('page-title', 'Tutti gli ordini')
+@section('page-title', 'I miei Ordini')
 
 @section('main-content')
-
     <div class="container mt-4">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-primary py-3">Ordini</h2> 
+        <h1 class="text-center text-success mb-3">Ordini</h1> 
     
-                <table class="table table-bordered table-striped table-primary table-hover">
-                    <thead>
-                        <tr>
-                            <th>id</th>
-                            <th>name</th>
-                            <th>phone</th>
-                            <th>address</th>
-                            <th>price</th>
-                            <th>status</th>
-                            <th>plates (quantity)</th>
-                            <th>note</th>
-                            <th>info</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($orders as $order)
-                            <tr>
-                                <td>{{ $order -> id }}</td>
-                                <td>{{ $order -> name }}</td>
-                                <td>{{ $order -> phone }}</td>
-                                <td>{{ $order -> address }}</td>
-                                <td>{{ $order -> total_price }}€</td>
-                                <td>{{ $order -> payment_status }}</td>
-                                <td>
-                                    @foreach ($order->plates as $plate)
-                                        <div>{{ $plate->name }} (x{{ $plate->pivot->quantity }})</div>
-                                    @endforeach
-                                </td>
-                                <td>{{ $order -> notes }}</td>
-                                <td><a href="{{ route('admin.orders.show', $order->id) }}" class="btn btn-sm btn-primary me-2">Info <i class="fa-solid fa-circle-info"></i></a></td>
-                            </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        <table class="table table-sm table-hover">
+            <thead>
+                <tr>
+                    <th class="text-success" scope="col" style="width: 13%;">Nome</th>
+                    <th class="text-success" scope="col" style="width: 10%;">Telefono</th>
+                    <th class="text-success" scope="col" style="width: 20%;">Indirizzo</th>
+                    <th class="text-success" scope="col" style="width: 5%;">Totale</th>
+                    <th class="text-success" scope="col" style="width: 10%;">Pagamento</th>
+                    <th class="text-success" scope="col" style="width: 20%;">Piatti (Quantità)</th>
+                    <th class="text-success" scope="col" style="width: 15%;">Note</th>
+                    <th class="text-success" scope="col" style="width: 22%;">Azioni</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @foreach ($orders as $order)
+                    <tr>
+                        <td class="small">{{ $order -> name }}</td>
+                        <td class="small">{{ $order -> phone }}</td>
+                        <td class="small">{{ $order -> address }}</td>
+                        <td class="small">{{ $order -> total_price }}€</td>
+                        <td class="small">{{ $order -> payment_status }}</td>
+                        <td class="small">
+                            @foreach ($order->plates as $plate)
+                                <div>{{ $plate->name }} (x{{ $plate->pivot->quantity }})</div>
+                            @endforeach
+                        </td>
+                        <td class="small">{{ $order -> notes }}</td>
+                        <td><a href="{{ route('admin.orders.show', $order->id) }}" class="btn btn-sm btn-secondary text-light">Info <i class="fa-solid fa-circle-info"></i></a></td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
     </div>
-
 @endsection

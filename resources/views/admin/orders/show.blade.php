@@ -1,31 +1,46 @@
 @extends('layouts.app')
 
-@section('page-title', 'Tutti gli ordini')
+@section('page-title', 'Dettaglio Ordine')
 
 @section('main-content')
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card text-center">
+                <!-- Header della Card -->
+                <div class="card-header text-success">
+                    <h3>Dettagli dell'Ordine #{{ $order->id }}</h3>
+                </div>
 
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-primary py-3">Ordine</h2> 
-    
-                <div class="container">
-                    <h1>Dettagli dell'Ordine #{{ $order->id }}</h1>
-                    <p>Nome Cliente: {{ $order->name }}</p>
-                    <p>Telefono: {{ $order->phone }}</p>
-                    <p>Indirizzo: {{ $order->address }}</p>
-                    <p>Stato Pagamento: {{ $order->payment_status }}</p>
-                    <p>Note: {{ $order->notes }}</p>
-                    
-                    <h3>Piatti nell'ordine:</h3>
-                    <ul>
+                <!-- Corpo della Card -->
+                <div class="card-body p-4">
+                    <p class="card-text"><strong>Nome Cliente:</strong> {{ $order->name }}</p>
+                    <p class="card-text"><strong>Telefono:</strong> {{ $order->phone }}</p>
+                    <p class="card-text"><strong>Indirizzo:</strong> {{ $order->address }}</p>
+                    <p class="card-text">
+                        <strong>Stato Pagamento:</strong> 
+                        @if($order->payment_status == 'completed')
+                            <span class="text-success">Completato <i class="fa fa-check"></i></span>
+                        @else
+                            {{ ucfirst($order->payment_status) }}
+                        @endif
+                    </p>
+                    <h6 class="card-subtitle fw-bolder">Piatti Ordinati:</h6>
+                    <ul class="list-group list-group-flush w-50 m-auto">
                         @foreach ($order->plates as $plate)
-                            <li>{{ $plate->name }} - Quantità: {{ $plate->pivot->quantity }}</li>
+                            <li class="list-group-item">{{ $plate->name }} - Quantità: {{ $plate->pivot->quantity }}x</li>
                         @endforeach
                     </ul>
+                    <p class="card-text"><strong>Prezzo Totale:</strong> {{ $order->total_price }} €</p>
+                    <p class="card-text"><strong>Note:</strong> {{ $order->notes }}</p>
+                </div>
+
+                <!-- Footer della Card -->
+                <div class="card-footer text-muted text-center">
+                    <a href="{{ route('admin.orders.index') }}" class="btn btn-secondary text-light"><i class="fa-solid fa-left-long"></i> Torna agli ordini</a>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
 @endsection
