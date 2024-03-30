@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', 'Tutti i ristoranti')
+@section('page-title', auth()->user()->restaurant->activity_name)
 
 @section('main-content')
     <section class="rounded-4 p-4 container-form-section">
