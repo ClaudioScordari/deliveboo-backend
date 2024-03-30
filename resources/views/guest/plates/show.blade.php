@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', 'Piatto')
+@section('page-title', $plate->name)
 
 @section('main-content')
 <div class="container mt-2">

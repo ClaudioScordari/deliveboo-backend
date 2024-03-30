@@ -30,12 +30,6 @@
                         
                         <div class="card-footer text-center">
                             <a href="{{ route('admin.plates.show', ['plate' => $plate->id]) }}" class="btn btn-secondary text-light btn-sm">Info <i class="fa-solid fa-circle-info"></i></a>
-                            <a href="{{ route('admin.plates.edit', ['plate' => $plate->id]) }}" class="btn btn-secondary text-light btn-sm">Modifica <i class="fa-solid fa-pencil"></i></a>
-                            <form class="d-inline" action="{{ route('admin.plates.destroy', ['plate' => $plate->id]) }}" method="POST" onsubmit="return confirm('Sei sicuro di voler eliminare questo piatto?')">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-secondary text-light btn-sm">Elimina <i class="fa-solid fa-trash"></i></button>
-                            </form>
                         </div>
                     </div>
                 </div>
