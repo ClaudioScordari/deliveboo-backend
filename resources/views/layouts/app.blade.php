@@ -34,7 +34,7 @@
                 <div id="logout-wrapper">
                     <form method="POST" action="{{ route('logout') }}" class="bg-light">
                         @csrf
-                        <button type="submit" class="btn btn-outline-warning fw-bolder w-100">
+                        <button type="submit" class="btn btn-secondary text-light fw-bolder w-100">
                             Log Out <i class="fa-solid fa-right-from-bracket"></i>
                         </button>
                     </form>

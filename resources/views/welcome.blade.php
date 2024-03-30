@@ -17,7 +17,7 @@
                         </p>
                     </div>
                     <div class="text-center mb-3">
-                        <a href="{{ route('register') }}" class="btn btn-secondary btn-lg">Unisciti alla Famiglia! <i class="fa-solid fa-user-group"></i></a>
+                        <a href="{{ route('register') }}" class="btn text-light btn-secondary btn-lg">Unisciti alla Famiglia! <i class="fa-solid fa-user-group"></i></a>
                     </div>
                     <div class="text-center mb-3">
                         <img src="{{ Vite::asset('resources/img/jumbotron.webp') }}" alt="Jumbotron" class="w-50">
@@ -28,7 +28,7 @@
                         </p>
                     </div>
                     <div class="text-center">
-                        <a href="{{ route('guest.restaurants.index') }}" class="btn btn-secondary btn-lg">Esplora i Ristoranti <i class="fa-solid fa-utensils"></i></a>
+                        <a href="{{ route('guest.restaurants.index') }}" class="btn text-light btn-secondary btn-lg">Esplora i Ristoranti <i class="fa-solid fa-utensils"></i></a>
                     </div>
                 </div>
             </div>
