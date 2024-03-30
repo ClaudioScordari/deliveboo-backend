@@ -5,35 +5,35 @@ return [
         [
             'restaurant_id' => 1,
             'name' => 'Pizza Margherita La Dolce Vita',
-            'description' => 'Classic Margherita with fresh mozzarella and basil.',
+            'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
             'price' => 9.50, 'visible' => true,
-            'ingredients' => 'Tomato sauce, mozzarella cheese,
-            fresh basil', 'image' => 'margherita-pizza.jpg'
+            'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
+            'image' => 'margherita-pizza.jpg'
         ],
         [
             'restaurant_id' => 1,
             'name' => 'Pasta Carbonara La Dolce Vita',
-            'description' => 'Traditional Roman pasta dish with eggs, pecorino cheese, pancetta, and pepper.',
+            'description' => 'La carbonara è un piatto di pasta cremoso, ricco e pieno di sapore, un classico della cucina romana.',
             'price' => 12.00,
             'visible' => true,
-            'ingredients' => 'Spaghetti, eggs, pecorino romano, pancetta, black pepper',
+            'ingredients' => 'Spaghetti, Uova, Pecorino Romano, Guanciale, Pepe Nero',
             'image' => 'pasta-carbonara.jpg'
         ],
         [
             'restaurant_id' => 1, 
             'name' => 'Tiramisù La Dolce Vita', 
-            'description' => 'Classic Italian coffee-flavored dessert.', 
+            'description' => 'Classico dessert Italiano al gusto di caffè.', 
             'price' => 6.50, 'visible' => true, 
-            'ingredients' => 'Mascarpone, espresso, ladyfingers, cocoa', 
+            'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
             'image' => 'tiramisu.jpg'
         ],
         [
             'restaurant_id' => 1, 
             'name' => 'Gnocchi La Dolce Vita', 
-            'description' => 'Potato dumplings served with a sage and butter sauce.', 
+            'description' => 'Gli gnocchi di patate sono un piatto tradizionale italiano costituito da piccole palline di impasto di patate, farina e uova.', 
             'price' => 11.00, 
             'visible' => true, 
-            'ingredients' => 'Potatoes, flour, eggs, sage, butter', 
+            'ingredients' => 'Patate, Farina, Uova, Salvia, Burro', 
             'image' => 'gnocchi.jpg'
         ],
         [
@@ -77,35 +77,35 @@ return [
         [
             'restaurant_id' => 2,
             'name' => 'Pizza Margherita del Borgo',
-            'description' => 'Classic Margherita with fresh mozzarella and basil.',
+            'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
             'price' => 9.50, 'visible' => true,
-            'ingredients' => 'Tomato sauce, mozzarella cheese,
-            fresh basil', 'image' => 'margherita-pizza.jpg'
+            'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
+            'image' => 'margherita-pizza.jpg'
         ],
         [
             'restaurant_id' => 2,
             'name' => 'Pasta Carbonara del Borgo',
-            'description' => 'Traditional Roman pasta dish with eggs, pecorino cheese, pancetta, and pepper.',
+            'description' => 'La carbonara è un piatto di pasta cremoso, ricco e pieno di sapore, un classico della cucina romana.',
             'price' => 12.00,
             'visible' => true,
-            'ingredients' => 'Spaghetti, eggs, pecorino romano, pancetta, black pepper',
+            'ingredients' => 'Spaghetti, Uova, Pecorino Romano, Guanciale, Pepe Nero',
             'image' => 'pasta-carbonara.jpg'
         ],
         [
             'restaurant_id' => 2, 
             'name' => 'Tiramisù del Borgo', 
-            'description' => 'Classic Italian coffee-flavored dessert.', 
+            'description' => 'Classico dessert Italiano al gusto di caffè.', 
             'price' => 6.50, 'visible' => true, 
-            'ingredients' => 'Mascarpone, espresso, ladyfingers, cocoa', 
+            'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
             'image' => 'tiramisu.jpg'
         ],
         [
             'restaurant_id' => 2, 
             'name' => 'Gnocchi del Borgo', 
-            'description' => 'Potato dumplings served with a sage and butter sauce.', 
+            'description' => 'Gli gnocchi di patate sono un piatto tradizionale italiano costituito da piccole palline di impasto di patate, farina e uova.', 
             'price' => 11.00, 
             'visible' => true, 
-            'ingredients' => 'Potatoes, flour, eggs, sage, butter', 
+            'ingredients' => 'Patate, Farina, Uova, Salvia, Burro', 
             'image' => 'gnocchi.jpg'
         ],
         [
@@ -149,35 +149,35 @@ return [
         [
             'restaurant_id' => 3,
             'name' => 'Pizza Margherita del Gondoliere',
-            'description' => 'Classic Margherita with fresh mozzarella and basil.',
+            'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
             'price' => 9.50, 'visible' => true,
-            'ingredients' => 'Tomato sauce, mozzarella cheese,
-            fresh basil', 'image' => 'margherita-pizza.jpg'
+            'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
+            'image' => 'margherita-pizza.jpg'
         ],
         [
             'restaurant_id' => 3,
             'name' => 'Pasta Carbonara del Gondoliere',
-            'description' => 'Traditional Roman pasta dish with eggs, pecorino cheese, pancetta, and pepper.',
+            'description' => 'La carbonara è un piatto di pasta cremoso, ricco e pieno di sapore, un classico della cucina romana.',
             'price' => 12.00,
             'visible' => true,
-            'ingredients' => 'Spaghetti, eggs, pecorino romano, pancetta, black pepper',
+            'ingredients' => 'Spaghetti, Uova, Pecorino Romano, Guanciale, Pepe Nero',
             'image' => 'pasta-carbonara.jpg'
         ],
         [
             'restaurant_id' => 3, 
             'name' => 'Tiramisù del Gondoliere', 
-            'description' => 'Classic Italian coffee-flavored dessert.', 
+            'description' => 'Classico dessert Italiano al gusto di caffè.',  
             'price' => 6.50, 'visible' => true, 
-            'ingredients' => 'Mascarpone, espresso, ladyfingers, cocoa', 
+            'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
             'image' => 'tiramisu.jpg'
         ],
         [
             'restaurant_id' => 3, 
             'name' => 'Gnocchi del Gondoliere', 
-            'description' => 'Potato dumplings served with a sage and butter sauce.', 
+            'description' => 'Gli gnocchi di patate sono un piatto tradizionale italiano costituito da piccole palline di impasto di patate, farina e uova.', 
             'price' => 11.00, 
             'visible' => true, 
-            'ingredients' => 'Potatoes, flour, eggs, sage, butter', 
+            'ingredients' => 'Patate, Farina, Uova, Salvia, Burro', 
             'image' => 'gnocchi.jpg'
         ],
         [
@@ -220,35 +220,35 @@ return [
         [
             'restaurant_id' => 4,
             'name' => 'Pizza Margherita',
-            'description' => 'Classic Margherita with fresh mozzarella and basil.',
+            'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
             'price' => 9.50, 'visible' => true,
-            'ingredients' => 'Tomato sauce, mozzarella cheese,
-            fresh basil', 'image' => 'margherita-pizza.jpg'
+            'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
+            'image' => 'margherita-pizza.jpg'
         ],
         [
             'restaurant_id' => 4,
             'name' => 'Pasta Carbonara',
-            'description' => 'Traditional Roman pasta dish with eggs, pecorino cheese, pancetta, and pepper.',
+            'description' => 'La carbonara è un piatto di pasta cremoso, ricco e pieno di sapore, un classico della cucina romana.',
             'price' => 12.00,
             'visible' => true,
-            'ingredients' => 'Spaghetti, eggs, pecorino romano, pancetta, black pepper',
+            'ingredients' => 'Spaghetti, Uova, Pecorino Romano, Guanciale, Pepe Nero',
             'image' => 'pasta-carbonara.jpg'
         ],
         [
             'restaurant_id' => 4, 
             'name' => 'Tiramisu', 
-            'description' => 'Classic Italian coffee-flavored dessert.', 
+            'description' => 'Classico dessert Italiano al gusto di caffè.', 
             'price' => 6.50, 'visible' => true, 
-            'ingredients' => 'Mascarpone, espresso, ladyfingers, cocoa', 
+            'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
             'image' => 'tiramisu.jpg'
         ],
         [
             'restaurant_id' => 4, 
             'name' => 'Gnocchi', 
-            'description' => 'Potato dumplings served with a sage and butter sauce.', 
+            'description' => 'Gli gnocchi di patate sono un piatto tradizionale italiano costituito da piccole palline di impasto di patate, farina e uova.', 
             'price' => 11.00, 
             'visible' => true, 
-            'ingredients' => 'Potatoes, flour, eggs, sage, butter', 
+            'ingredients' => 'Patate, Farina, Uova, Salvia, Burro', 
             'image' => 'gnocchi.jpg'
         ],
         [
@@ -291,35 +291,35 @@ return [
         [
             'restaurant_id' => 5,
             'name' => 'Pizza Margherita del Giardino',
-            'description' => 'Classic Margherita with fresh mozzarella and basil.',
+            'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
             'price' => 9.50, 'visible' => true,
-            'ingredients' => 'Tomato sauce, mozzarella cheese,
-            fresh basil', 'image' => 'margherita-pizza.jpg'
+            'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
+            'image' => 'margherita-pizza.jpg'
         ],
         [
             'restaurant_id' => 5,
             'name' => 'Pasta Carbonara del Giardino',
-            'description' => 'Traditional Roman pasta dish with eggs, pecorino cheese, pancetta, and pepper.',
+            'description' => 'La carbonara è un piatto di pasta cremoso, ricco e pieno di sapore, un classico della cucina romana.',
             'price' => 12.00,
             'visible' => true,
-            'ingredients' => 'Spaghetti, eggs, pecorino romano, pancetta, black pepper',
+            'ingredients' => 'Spaghetti, Uova, Pecorino Romano, Guanciale, Pepe Nero',
             'image' => 'pasta-carbonara.jpg'
         ],
         [
             'restaurant_id' => 5, 
             'name' => 'Tiramisù del Giardino', 
-            'description' => 'Classic Italian coffee-flavored dessert.', 
+            'description' => 'Classico dessert Italiano al gusto di caffè.',  
             'price' => 6.50, 'visible' => true, 
-            'ingredients' => 'Mascarpone, espresso, ladyfingers, cocoa', 
+            'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
             'image' => 'tiramisu.jpg'
         ],
         [
             'restaurant_id' => 5, 
             'name' => 'Gnocchi del Giardino', 
-            'description' => 'Potato dumplings served with a sage and butter sauce.', 
+            'description' => 'Gli gnocchi di patate sono un piatto tradizionale italiano costituito da piccole palline di impasto di patate, farina e uova.', 
             'price' => 11.00, 
             'visible' => true, 
-            'ingredients' => 'Potatoes, flour, eggs, sage, butter', 
+            'ingredients' => 'Patate, Farina, Uova, Salvia, Burro', 
             'image' => 'gnocchi.jpg'
         ],
         [
@@ -689,18 +689,18 @@ return [
         [
             'restaurant_id' => 9, 
             'name' => 'Tiramisu Bolliwood', 
-            'description' => 'Classic Italian coffee-flavored dessert.', 
+            'description' => 'Classico dessert Italiano al gusto di caffè.', 
             'price' => 6.50, 'visible' => true, 
-            'ingredients' => 'Mascarpone, espresso, ladyfingers, cocoa', 
+            'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
             'image' => 'tiramisu.jpg'
         ],
         [
             'restaurant_id' => 9, 
             'name' => 'Gnocchi Bolliwood', 
-            'description' => 'Potato dumplings served with a sage and butter sauce.', 
+            'description' => 'Gli gnocchi di patate sono un piatto tradizionale italiano costituito da piccole palline di impasto di patate, farina e uova.', 
             'price' => 11.00, 
             'visible' => true, 
-            'ingredients' => 'Potatoes, flour, eggs, sage, butter', 
+            'ingredients' => 'Patate, Farina, Uova, Salvia, Burro', 
             'image' => 'gnocchi.jpg'
         ],
         [
@@ -1186,26 +1186,26 @@ return [
         [
             'restaurant_id' => 15,
             'name' => 'Margherita Pizza Golden',
-            'description' => 'Classic Margherita with fresh mozzarella and basil.',
+            'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
             'price' => 9.50, 'visible' => true,
-            'ingredients' => 'Tomato sauce, mozzarella cheese,
-            fresh basil', 'image' => 'margherita-pizza.jpg'
+            'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
+            'image' => 'margherita-pizza.jpg'
         ],
         [
             'restaurant_id' => 15,
             'name' => 'Pasta Carbonara Golden',
-            'description' => 'Traditional Roman pasta dish with eggs, pecorino cheese, pancetta, and pepper.',
+            'description' => 'La carbonara è un piatto di pasta cremoso, ricco e pieno di sapore, un classico della cucina romana.',
             'price' => 12.00,
             'visible' => true,
-            'ingredients' => 'Spaghetti, eggs, pecorino romano, pancetta, black pepper',
+            'ingredients' => 'Spaghetti, Uova, Pecorino Romano, Guanciale, Pepe Nero',
             'image' => 'pasta-carbonara.jpg'
         ],
         [
             'restaurant_id' => 15, 
             'name' => 'Tiramisu Golden', 
-            'description' => 'Classic Italian coffee-flavored dessert.', 
+            'description' => 'Classico dessert Italiano al gusto di caffè.', 
             'price' => 6.50, 'visible' => true, 
-            'ingredients' => 'Mascarpone, espresso, ladyfingers, cocoa', 
+            'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
             'image' => 'tiramisu.jpg'
         ],
 
@@ -1549,26 +1549,27 @@ return [
         [
             'restaurant_id' => 20,
             'name' => 'Margherita Pizza Cactus',
-            'description' => 'Classic Margherita with fresh mozzarella and basil.',
+            'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
             'price' => 9.50, 'visible' => true,
-            'ingredients' => 'Tomato sauce, mozzarella cheese,
-            fresh basil', 'image' => 'margherita-pizza.jpg'
+            'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
+            'image' => 'margherita-pizza.jpg',
+
         ],
         [
             'restaurant_id' => 20,
             'name' => 'Pasta Carbonara Cactus',
-            'description' => 'Traditional Roman pasta dish with eggs, pecorino cheese, pancetta, and pepper.',
+            'description' => 'La carbonara è un piatto di pasta cremoso, ricco e pieno di sapore, un classico della cucina romana.',
             'price' => 12.00,
             'visible' => true,
-            'ingredients' => 'Spaghetti, eggs, pecorino romano, pancetta, black pepper',
+            'ingredients' => 'Spaghetti, Uova, Pecorino Romano, Guanciale, Pepe Nero',
             'image' => 'pasta-carbonara.jpg'
         ],
         [
             'restaurant_id' => 20, 
             'name' => 'Tiramisu Cactus', 
-            'description' => 'Classic Italian coffee-flavored dessert.', 
+            'description' => 'Classico dessert Italiano al gusto di caffè.', 
             'price' => 6.50, 'visible' => true, 
-            'ingredients' => 'Mascarpone, espresso, ladyfingers, cocoa', 
+            'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
             'image' => 'tiramisu.jpg'
         ],
     ];

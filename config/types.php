@@ -2,27 +2,27 @@
 
 return [
     [
-        'name' => 'Italian', 
+        'name' => 'Italiana', 
         'icon' => 'italian.png'
     ],
     [
-        'name' => 'Chinese', 
+        'name' => 'Cinese', 
         'icon' => 'chinese.png'
     ],
     [
-        'name' => 'Japanese', 
+        'name' => 'Giapponese', 
         'icon' => 'japanese.png'
     ],
     [
-        'name' => 'American', 
+        'name' => 'Americana', 
         'icon' => 'american.png'
     ],
     [
-        'name' => 'Mexican', 
+        'name' => 'Messicana', 
         'icon' => 'mexican.png'
     ],
     [
-        'name' => 'Indian', 
+        'name' => 'Indiana', 
         'icon' => 'indian.png'
     ],
 ];
