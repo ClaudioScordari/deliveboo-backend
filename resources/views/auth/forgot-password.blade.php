@@ -2,10 +2,10 @@
 
 @section('main-content')
     <section class="container-form-section">
-        <div class="container-form">
-            <h1 class="text-center text-light">FORGOT PASSWORD</h1>
+        <div class="container-form w-50 m-auto card p-5 mt-5 bg-light">
+            <h1 class="text-center text-success">FORGOT PASSWORD</h1>
             
-            <div class="bg-light rounded p-2">
+            <div class="bg-secondary-subtle text-center rounded p-3 m-2">
                 {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
             </div>
         
@@ -21,8 +21,8 @@
                 </div>
         
                 <div>
-                    <button class="btn btn-success d-block" type="submit">
-                        Email Password Reset Link
+                    <button class="btn text-light btn-secondary d-block" type="submit">
+                        Email Password Reset Link <i class="fa-solid fa-power-off"></i>
                     </button>
                 </div>
             </form>

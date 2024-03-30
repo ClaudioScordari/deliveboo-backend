@@ -2,8 +2,8 @@
 
 @section('main-content')
     <section class="container-form-section">
-        <div class="container-form">
-            <h1 class="text-center text-light">REGISTER</h1>
+        <div class="container-form w-50 m-auto card p-5 mt-5 bg-light">
+            <h1 class="text-center text-success">REGISTER</h1>
 
             <form method="POST" action="{{ route('register') }}">
                 @csrf
@@ -41,12 +41,12 @@
                 </div>
         
                 <div class="mt-3 form-group">
-                    <a class="text-light" href="{{ route('login') }}">
+                    <a class="text-success" href="{{ route('login') }}">
                         {{ __('Already registered?') }}
                     </a>
         
-                    <button class="mt-3 btn btn-success d-block" type="submit">
-                        Register
+                    <button class="mt-3 btn btn-secondary text-light d-block" type="submit">
+                        Register <i class="fa-solid fa-address-card"></i>
                     </button>
                 </div>
             </form>

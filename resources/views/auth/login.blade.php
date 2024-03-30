@@ -2,8 +2,8 @@
 
 @section('main-content')
     <section class="container-form-section">
-        <div class="container-form">
-            <h1 class="text-center text-light">LOGIN</h1>
+        <div class="container-form w-50 m-auto card p-5 mt-5 bg-light">
+            <h1 class="text-center text-success">LOGIN</h1>
             
             <form method="POST" action="{{ route('login') }}">
                 @csrf
@@ -35,13 +35,13 @@
                 {{-- Forgot password --}}
                 <div class="form-group">
                     @if (Route::has('password.request'))
-                        <a class="text-light" href="{{ route('password.request') }}">
+                        <a class="text-success" href="{{ route('password.request') }}">
                             {{ __('Forgot your password?') }}
                         </a>
                     @endif
         
-                    <button class="btn btn-success d-block mt-3" type="submit">
-                        Log in
+                    <button class="btn text-light btn-secondary d-block mt-3" type="submit">
+                        Login <i class="fa-solid fa-right-to-bracket"></i>
                     </button>
                 </div>
             </form>
