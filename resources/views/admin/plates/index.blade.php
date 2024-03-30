@@ -8,7 +8,7 @@
         <div class="col-12">
             <h1 class="text-center mb-3 text-success">I miei Piatti</h1>
             <div class="d-flex justify-content-end mb-4">
-                <a href="{{ route('admin.plates.create') }}" class="btn btn-success">Nuovo piatto <i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i></a>
+                <a href="{{ route('admin.plates.create') }}" class="btn btn-secondary text-light">Nuovo piatto <i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i></a>
             </div>
             <div class="row">
                 @foreach ($plates as $plate)
