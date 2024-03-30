@@ -4,8 +4,8 @@
 
 @section('main-content')
     <section class="container-form-section">
-        <div class="container-form w-75 px-5">
-            <h1 class="text-center text-light">MODIFICA L'ATTIVITA'</h1>
+        <div class="container-form bg-light m-auto w-50 px-5 py-4">
+            <h1 class="text-center text-success">MODIFICA L'ATTIVITA'</h1>
     
             <p class="fw-bold">I campi con <span class="text-danger fw-bold">*</span> sono obbligatori</p>
 
@@ -29,7 +29,7 @@
     
                 {{-- Nome attività --}}
                 <div class="mb-3 form-group">
-                    <label class="d-block" for="activity_name">Nome ristorante: <span class="text-danger fw-bold">*</span></label>
+                    <label class="d-block" for="activity_name">Nome Ristorante: <span class="text-danger fw-bold">*</span></label>
     
                     <input class="@error('activity_name') is-invalid @enderror form-control"
                         value="{{ old('activity_name', $restaurant->activity_name) }}" maxlength="255" id="activity_name"
@@ -45,7 +45,7 @@
     
                 {{-- Nome proprietario --}}
                 <div class="mb-3 form-group">
-                    <label class="d-block" for="user_name">Inserisci il nome e cognome del proprietario: <span
+                    <label class="d-block" for="user_name">Inserisci il Nome e Cognome del proprietario: <span
                             class="text-danger">*</span></label>
     
                     <input class="@error('user_name') is-invalid @enderror form-control"
@@ -94,7 +94,7 @@
     
                 {{-- Img da aggiungere --}}
                 <div class="mb-3 form-group">
-                    <label for="dataFile" class="form-label">Scegli un'immagine da assegnare al tuo ristorante:</label>
+                    <label for="dataFile" class="form-label">Aggiorna l'immagine del tuo Ristorante:</label>
     
                     <input class="@error('img') is-invalid @enderror form-control" type="file"
                         id="img" name="img">
@@ -109,7 +109,7 @@
     
                 {{-- Immagine corrente --}}
                 @if ($restaurant->image != null)
-                    <div class="my-3">
+                    <div class="my-3 text-center">
                         <img style="width: 300px" src="/storage/{{ $restaurant->image }}"
                             alt="{{ $restaurant->activity_name }}">
                     </div>
@@ -120,24 +120,28 @@
                     <div class="form-group">
                         <input value="1" type="checkbox" name="remove_file" id="remove_file">
     
-                        <label for="remove_file" class="form-label">- Rimuovi immagine</label>
+                        <label for="remove_file" class="form-label">Oppure Rimuovila</label>
                     </div>
                 @endif
     
                 {{-- Tipi --}}
                 <div class="my-4 form-group">
                     <label class="d-block" for="types">Scegli il tipo:</label>
-    
-                    @foreach ($types as $type)
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="types[]" value="{{ $type->id }}"
-                                id="type-{{ $type->id }}" {{ $restaurant->types->contains($type->id) ? 'checked' : '' }}>
-    
-                            <label class="form-check-label" for="{{ $type->id }}">
-                                {{ $type->name }}
-                            </label>
-                        </div>
-                    @endforeach
+                    
+                    <div class="row pt-2 mx-5">
+                        @foreach ($types as $type)
+                            <div class="col-md-4 p-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="types[]" value="{{ $type->id }}"
+                                        id="type-{{ $type->id }}" {{ $restaurant->types->contains($type->id) ? 'checked' : '' }}>
+            
+                                    <label class="form-check-label" for="{{ $type->id }}">
+                                        {{ $type->name }}
+                                    </label>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
     
                 {{-- Descrizione --}}
@@ -145,9 +149,7 @@
                     <label class="d-block" for="description">Descrizione:</label>
     
                     <textarea cols="23" class="@error('description') is-invalid @enderror form-control" maxlength="4096" name="description"
-                        id="description" placeholder="Scrivi una descrizione">
-                                        {{ old('description', $restaurant->description) }}
-                                    </textarea>
+                        id="description" placeholder="Scrivi una descrizione">{{ old('description', $restaurant->description) }}</textarea>
     
                     {{-- Barra errore --}}
                     @error('description')
@@ -158,12 +160,9 @@
                 </div>
     
                 <div>
-                    <button type="submit" class="btn btn-success">Aggiorna attività</button>
+                    <button type="submit" class="btn btn-secondary text-light">Aggiorna Attività <i class="fa-solid fa-pencil"></i></button>
                 </div>
-                <br>
             </form>
-    
-            La dashboard è una pagina privata (protetta dal middleware)
         </div>
     </section>
 @endsection

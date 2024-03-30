@@ -4,8 +4,8 @@
 
 @section('main-content')
     <section class="container-form-section">
-        <div class="container-form w-75 px-5">
-            <h1 class="text-center text-light">CREA LA TUA ATTIVITA'</h1>
+        <div class="container-form card bg-light m-auto w-50 px-5 py-4">
+            <h1 class="text-center text-success">CREA LA TUA ATTIVITA'</h1>
 
             <p class="fw-bold my-3">I campi con <span class="text-danger fw-bold">*</span> sono obbligatori</p>
 
@@ -88,7 +88,7 @@
         
                 {{-- Img da aggiungere --}}
                 <div class="mb-3 form-group">
-                    <label for="img" class="form-label">Scegli un'immagine da assegnare al tuo ristorante:</label>
+                    <label for="img" class="form-label">Inserisci un'immagine del tuo Ristorante:</label>
         
                     <input class="form-control @error('img') is-invalid @enderror form-control" type="file" id="img"
                         name="img">
@@ -103,18 +103,22 @@
         
                 {{-- Tipi --}}
                 <div class="my-4 form-group">
-                    <label class="d-block" for="types">Scegli il tipo:</label>
-        
-                    @foreach ($types as $type)
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="types[]" value="{{ $type->id }}"
-                                id="type-{{ $type->id }}" {{ in_array($type->id, old('types', [])) ? 'checked' : '' }}>
-        
-                            <label class="form-check-label" for="{{ $type->id }}">
-                                {{ $type->name }}
-                            </label>
-                        </div>
-                    @endforeach
+                    <label class="d-block" for="types">Seleziona i tuoi tipi di Cucina:</label>
+
+                    <div class="row pt-2 mx-5">
+                        @foreach ($types as $type)
+                            <div class="col-md-4 p-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="types[]" value="{{ $type->id }}"
+                                        id="type-{{ $type->id }}" {{ in_array($type->id, old('types', [])) ? 'checked' : '' }}>
+                
+                                    <label class="form-check-label" for="{{ $type->id }}">
+                                        {{ $type->name }}
+                                    </label>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
         
                 {{-- Descrizione --}}
@@ -122,9 +126,7 @@
                     <label class="d-block" for="description">Descrizione:</label>
         
                     <textarea cols="23" class="form-control @error('description') is-invalid @enderror" maxlength="4096" name="description"
-                        id="description" placeholder="Scrivi una descrizione">
-                                        {{ old('description') }}
-                                    </textarea>
+                        id="description" placeholder="Scrivi una descrizione">{{ old('description') }}</textarea>
         
                     {{-- Barra errore --}}
                     @error('description')
@@ -135,12 +137,9 @@
                 </div>
         
                 <div>
-                    <button type="submit" class="btn btn-success">Aggiungi attività</button>
+                    <button type="submit" class="btn btn-secondary text-light">Crea Attività <i class="fa-solid fa-plus"></i></button>
                 </div>
-                <br>
             </form>
-        
-            La dashboard è una pagina privata (protetta dal middleware)
         </div>
     </section>
 
