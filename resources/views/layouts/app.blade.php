@@ -10,8 +10,9 @@
 
     <link rel="icon" href="{{ Vite::asset('resources/img/favicon.ico') }}" type="image/png">
 
-    <title>@yield('page-title') | {{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('page-title') | {{ config('app.name', 'Deliveboo') }}</title>
 
+    @vite(['resources/js/app.js'])
     <!-- Scripts -->
     @vite('resources/js/app.js')
 </head>
@@ -59,5 +60,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>

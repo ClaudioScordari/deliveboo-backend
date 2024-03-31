@@ -44,6 +44,14 @@
                                     <a href="{{ route('admin.plates.create') }}" class="btn text-light btn-secondary btn-lg w-50 m-auto">Nuovo Piatto <i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i></a>
                                 </div>
                             </div>
+                            <div class="col-md-6 text-center p-3">
+                                <div class="card bg-light p-3">
+                                    <p class="fw-bolder fs-3 text-success">
+                                        Guarda le tue Statistiche
+                                    </p>
+                                    <a href="{{ route('admin.stats.index') }}" class="btn text-light btn-secondary btn-lg w-50 m-auto">Statistiche <i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i></a>
+                                </div>
+                            </div>
                             <div class="col-12 text-center p-5 mt-5">
                                 <p>
                                     Oppure, se è il tuo primo accesso Crea il tuo Nuovo Ristorante!
