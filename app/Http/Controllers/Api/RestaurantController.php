@@ -3,19 +3,21 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-
 use App\Models\Restaurant;
-
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Response;
 
 class RestaurantController extends Controller
 {
+    // Visualizza tutti i ristoranti
     public function index()
     {
-        // Prendo il ristorate associato a quell'id
-        $restaurants = Restaurant::where('user_id', Auth::id())->get();
-
+        $restaurants = Restaurant::all();
         return response()->json($restaurants);
+    }
+
+    // Visualizza i dettagli di un singolo ristorante
+    public function show(Restaurant $restaurant)
+    {
+        return response()->json($restaurant);
     }
 }
