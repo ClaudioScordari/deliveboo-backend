@@ -11,6 +11,13 @@
                 <a href="{{ route('admin.plates.create') }}" class="btn btn-secondary text-light">Nuovo piatto <i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i></a>
             </div>
             <div class="row">
+
+                @if(session('error'))
+                    <div class="alert alert-danger">
+                        {{ session('error') }}
+                    </div>
+                @endif
+
                 @foreach ($plates as $plate)
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
