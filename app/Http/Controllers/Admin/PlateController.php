@@ -27,8 +27,16 @@ class PlateController extends Controller
         return view('admin.plates.index', compact('plates'));
     }
 
-    public function show(Plate $plate)
+    public function show($id)
     {
+        $plate = Plate::findOrFail($id);
+
+        // Verifica se l'utente attuale è il proprietario del ristorante a cui appartiene il piatto
+        if ($plate->restaurant->user_id !== auth()->id()) {
+            // Se non è il proprietario, reindirizza con un messaggio di errore
+            return redirect()->route('admin.restaurants.index')->with('error', 'Non sei autorizzato a visualizzare questa risorsa.');
+        }
+
         return view('admin.plates.show', compact('plate'));
     }
 
@@ -69,8 +77,16 @@ class PlateController extends Controller
         return redirect()->route('admin.plates.show', compact('plate'));
     }
 
-    public function edit(Plate $plate)
-    {
+    public function edit($id)
+    {       
+        $plate = Plate::findOrFail($id);
+
+        // Verifica se l'utente attuale è il proprietario del ristorante a cui appartiene il piatto
+        if ($plate->restaurant->user_id !== auth()->id()) {
+            // Se non è il proprietario, reindirizza con un messaggio di errore
+            return redirect()->route('admin.restaurants.index')->with('error', 'Non sei autorizzato a visualizzare questa risorsa.');
+        }
+
         return view('admin.plates.edit', compact('plate'));
     }
 

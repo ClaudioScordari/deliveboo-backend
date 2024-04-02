@@ -1,11 +1,18 @@
 @extends('layouts.app')
 
-@section('page-title', auth()->user()->restaurant->activity_name)
+@section('page-title', 'il mio ristorante')
 
 @section('main-content')
 <div class="container mt-2">
     <div class="row justify-content-center">
         <div class="col-md-8">
+
+            @if(session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+            @endif
+
             <div class="card">
                 @foreach ($restaurants as $restaurant)
                 <div class="card-header text-success text-center">
