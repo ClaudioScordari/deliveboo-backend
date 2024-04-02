@@ -38,6 +38,7 @@
                 <!-- Footer della Card -->
                 <div class="card-footer text-muted text-center">
                     <a href="{{ route('admin.orders.index') }}" class="btn btn-secondary text-light"><i class="fa-solid fa-left-long"></i> Torna agli ordini</a>
+                    <a href="{{ route('admin.orders.edit', $order->id) }}" class="btn btn-secondary text-light">Modifica Stato <i class="fa-solid fa-pencil"></i></a>
                 </div>
             </div>
         </div>

@@ -37,6 +37,30 @@ class OrderController extends Controller
         $order = Order::with('plates')->findOrFail($id);
         return view('admin.orders.show', compact('order'));
     }
+
+    public function edit($id)
+    {
+        $order = Order::findOrFail($id);
+
+        // Restituisci la vista con l'ordine da modificare
+        return view('admin.orders.edit', compact('order'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $order = Order::findOrFail($id);
+        
+        $validatedData = $request->validate([
+            'payment_status' => 'required|in:Completato,In Attesa,Fallito',
+        ]);
+        
+        // Aggiornamento dello stato dell'ordine
+        $order->update([
+            'payment_status' => $validatedData['payment_status'],
+        ]);
+        
+        return redirect()->route('admin.orders.index');
+    }
     
     public function getStatistics()
     {

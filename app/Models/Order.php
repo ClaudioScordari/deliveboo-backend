@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
+    protected $fillable = [
+        'payment_status'
+    ];
+
     use HasFactory;
 
     public function plates()
