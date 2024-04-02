@@ -40,11 +40,42 @@
                 <div class="card-footer text-center">
                     <a href="{{ route('admin.plates.index') }}" class="btn btn-secondary text-light"><i class="fa-solid fa-left-long"></i> Menù</a>
                     <a href="{{ route('admin.plates.edit', ['plate' => $plate->id]) }}" class="btn btn-secondary text-light">Modifica <i class="fa-solid fa-pencil"></i></a>
-                    <form class="d-inline" action="{{ route('admin.plates.destroy', ['plate' => $plate->id]) }}" method="POST">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-secondary text-light" onclick="return confirm('Sicuro di voler eliminare questo piatto?')">Elimina <i class="fa-solid fa-trash"></i></button>
-                    </form>
+
+                    {{-- Modal button --}}
+                    <button type="button" class="btn btn-secondary text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Elimina
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                        {{ $plate->name }}
+                                    </h1>
+                                    
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    Sicuro che vuoi eliminare il piatto?
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+
+                                    {{-- Form di eliminazione --}}
+                                    <form action="{{ route('admin.plates.destroy', ['plate' => $plate->id]) }}" method="POST" class="d-inline">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger text-light">Si, sono sicuro <i class="fa-solid fa-trash"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
