@@ -18,6 +18,11 @@ class Plate extends Model
 
     use HasFactory;
 
+    public function view(User $user, Plate $plate)
+    {
+        return $plate->restaurant->user_id === $user->id;
+    }
+
     public function orders()
     {
         return $this->belongsToMany(Order::class, 'order_plate')->withPivot('quantity');
