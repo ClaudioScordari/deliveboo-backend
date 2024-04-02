@@ -68,7 +68,7 @@
                                     </div>
 
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                        <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal"><i class="fa-solid fa-left-long"></i> Annulla</button>
 
                                         {{-- Form di eliminazione --}}
                                         <form action="{{ route('admin.restaurants.destroy', ['restaurant' => $restaurant->id]) }}" method="POST" class="d-inline">

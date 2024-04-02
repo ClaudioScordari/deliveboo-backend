@@ -164,9 +164,11 @@ class RestaurantController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Restaurant $restaurant)
+    public function destroy($id)
     {
-        // E poi elimino il progetto
+
+        $restaurant = Restaurant::findOrFail($id);
+    
         $restaurant->delete();
 
         return redirect()->route('admin.dashboard');

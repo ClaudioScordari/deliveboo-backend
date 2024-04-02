@@ -128,10 +128,12 @@ class PlateController extends Controller
         return redirect()->route('admin.plates.show', compact('plate'));
     }
 
-    public function destroy(Plate $plate)
+    public function destroy($id)
     {
+        $plate = Plate::findOrFail($id);
+    
         $plate->delete();
-
+    
         return redirect()->route('admin.plates.index');
     }
 }
