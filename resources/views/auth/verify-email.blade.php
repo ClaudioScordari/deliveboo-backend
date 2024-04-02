@@ -5,6 +5,19 @@
         <div class="container-form w-50 m-auto card p-5 mt-5 bg-light">
             <h1 class="text-center text-success">VERIFY EMAIL</h1>
 
+            {{-- Errors --}}
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>
+                                {{ $error }}
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             <div class="bg-secondary-subtle rounded p-3 m-2 text-center">
                 {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
             </div>

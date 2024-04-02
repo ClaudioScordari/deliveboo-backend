@@ -4,6 +4,19 @@
     <section class="container-form-section">
         <div class="container-form w-50 m-auto card p-5 mt-5 bg-light">
             <h1 class="text-center text-success">CONFIRM PASSWORD</h1>
+
+            {{-- Errors --}}
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>
+                                {{ $error }}
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             
             <div class="bg-secondary-subtle text-center rounded p-3 m-2">
                 {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}

@@ -5,6 +5,19 @@
         <div class="container-form w-50 m-auto card p-5 mt-5 bg-light">
             <h1 class="text-center text-success">REGISTER</h1>
 
+            {{-- Errors --}}
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>
+                                {{ $error }}
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             <form method="POST" action="{{ route('register') }}">
                 @csrf
         
