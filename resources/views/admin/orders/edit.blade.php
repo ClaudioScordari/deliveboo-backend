@@ -7,8 +7,6 @@
     <div class="container-form card bg-light m-auto w-50 px-5 py-4">
         <h1 class="text-center text-success">Modifica stato Pagamento</h1>
 
-        <p class="fw-bold my-3">I campi con <span class="text-danger fw-bold">*</span> sono obbligatori</p>
-    
         {{-- Errors --}}
         @if ($errors->any())
             <div class="alert alert-danger">

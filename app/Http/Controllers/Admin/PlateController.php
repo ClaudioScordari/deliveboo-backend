@@ -125,7 +125,7 @@ class PlateController extends Controller
             'image' => $imgPath,
         ]);
 
-        return redirect()->route('admin.plates.show', compact('plate'));
+        return redirect()->route('admin.plates.index', compact('plate'));
     }
 
     public function destroy($id)

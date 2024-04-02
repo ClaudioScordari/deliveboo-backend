@@ -32,11 +32,48 @@
                             @else
                                 <span class="text-danger"><del>Non Disponibile</del></span>
                             @endif
+                            <p>Ingredienti: {{ $plate->ingredients }}</p>
                             <p class="card-text mt-3">{{ $plate->description ?? 'Nessuna descrizione disponibile' }}</p>
                         </div>
                         
                         <div class="card-footer text-center">
-                            <a href="{{ route('admin.plates.show', ['plate' => $plate->id]) }}" class="btn btn-secondary text-light btn-sm">Info <i class="fa-solid fa-circle-info"></i></a>
+                            <a href="{{ route('admin.plates.edit', ['plate' => $plate->id]) }}" class="btn btn-secondary text-light">Modifica <i class="fa-solid fa-pencil"></i></a>
+
+                            {{-- Modal button --}}
+                            <button type="button" class="btn btn-secondary text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Elimina
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 text-success" id="exampleModalLabel">
+                                                {{ $plate->name }}
+                                            </h1>
+                                            
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            Vuoi davvero eliminare il Piatto?
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal"><i class="fa-solid fa-left-long"></i> Annulla</button>
+
+                                            {{-- Form di eliminazione --}}
+                                            <form action="{{ route('admin.plates.destroy', ['plate' => $plate->id]) }}" method="POST" class="d-inline">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-secondary text-light">Sì, sono sicuro <i class="fa-solid fa-trash"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

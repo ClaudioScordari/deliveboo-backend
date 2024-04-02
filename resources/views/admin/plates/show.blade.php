@@ -52,7 +52,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                    <h1 class="modal-title fs-5 text-success" id="exampleModalLabel">
                                         {{ $plate->name }}
                                     </h1>
                                     
@@ -60,17 +60,17 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    Sicuro che vuoi eliminare il piatto?
+                                    Vuoi davvero eliminare il Piatto?
                                 </div>
 
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal"><i class="fa-solid fa-left-long"></i> Annulla</button>
+                                    <button type="button" class="btn btn-success" data-bs-dismiss="modal"><i class="fa-solid fa-left-long"></i> Annulla</button>
 
                                     {{-- Form di eliminazione --}}
                                     <form action="{{ route('admin.plates.destroy', ['plate' => $plate->id]) }}" method="POST" class="d-inline">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger text-light">Si, sono sicuro <i class="fa-solid fa-trash"></i></button>
+                                        <button type="submit" class="btn btn-secondary text-light">Sì, sono sicuro <i class="fa-solid fa-trash"></i></button>
                                     </form>
                                 </div>
                             </div>
