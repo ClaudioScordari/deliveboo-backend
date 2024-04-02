@@ -172,15 +172,6 @@ class RestaurantController extends Controller
      */
     public function destroy(Restaurant $restaurant)
     {
-        /*
-            Se elimino il ristorante:
-            devo controllare se ha img associate, quindi
-            svuotare la riga della sua image se è piena
-        */
-        if ($restaurant->image != null) {
-            Storage::disk('public')->delete($restaurant->image);
-        }
-
         // E poi elimino il progetto
         $restaurant->delete();
 

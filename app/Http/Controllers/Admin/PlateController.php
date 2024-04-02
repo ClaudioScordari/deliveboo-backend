@@ -114,10 +114,6 @@ class PlateController extends Controller
 
     public function destroy(Plate $plate)
     {
-        if ($plate->image != null) {
-            Storage::disk('public')->delete($plate->image);
-        }
-
         $plate->delete();
 
         return redirect()->route('admin.plates.index');

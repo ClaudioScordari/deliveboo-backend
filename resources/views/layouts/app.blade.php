@@ -26,8 +26,14 @@
             <div class="list-group list-group-flush text-center">
                 @auth
                     <a href="{{ route('admin.dashboard') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Dashboard <i class="fa-solid fa-house"></i></a>
-                    <a href="{{ route('admin.restaurants.create') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Nuovo Ristorante <i class="fa-solid fa-plus"></i></a>
-                    <a href="{{ route('admin.restaurants.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Il mio Ristorante <i class="fa-solid fa-utensils"></i></a>
+                    
+                    {{-- Esiste un'istanza di restaurant con quell'ID? - Se no fammi creare il ristorante --}}
+                    @if(auth()->user()->restaurant?->id)
+                        <a href="{{ route('admin.restaurants.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Il mio Ristorante <i class="fa-solid fa-utensils"></i></a>
+                    @else
+                        <a href="{{ route('admin.restaurants.create') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Nuovo Ristorante <i class="fa-solid fa-plus"></i></a>
+                    @endif
+
                     <a href="{{ route('admin.plates.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Piatti <i class="fa-solid fa-bowl-food"></i></a>
                     <a href="{{ route('admin.orders.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Ordini <i class="fa-solid fa-receipt"></i></a>
                 @endauth
