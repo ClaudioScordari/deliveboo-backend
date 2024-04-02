@@ -52,7 +52,15 @@ class RestaurantController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(StoreRestaurantRequest $request)
-    {
+    {   
+        $user = Auth::user(); // Ottieni l'utente autenticato
+
+        // Controlla se l'utente ha già un ristorante
+        if ($user->restaurant) {
+            // Reindirizza con un messaggio di errore
+            return redirect()->back()->with('error', 'Hai già un ristorante associato al tuo account.');
+        }
+        
         // Prendere dati validati
         $validDatas = $request->validated();
 
