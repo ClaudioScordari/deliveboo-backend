@@ -50,7 +50,7 @@
                                         <p class="fw-bolder fs-3 text-success">
                                             Guarda le tue Statistiche
                                         </p>
-                                        <a href="{{ route('admin.stats.index') }}" class="btn text-light btn-secondary btn-lg w-50 m-auto">Statistiche <i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i></a>
+                                        <a href="{{ route('admin.stats.index') }}" class="btn text-light btn-secondary btn-lg w-50 m-auto">Statistiche <i class="fa-solid fa-chart-simple"></i></a>
                                     </div>
                                 </div>
                             </div>
