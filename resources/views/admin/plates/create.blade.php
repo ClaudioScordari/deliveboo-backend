@@ -63,7 +63,7 @@
                 <div class="mb-3 form-group">
                     <label class="d-block" for="ingredients">Ingredienti: <span class="text-danger">*</span></label>
 
-                    <textarea cols="23" class="form-control @error('ingredients') is-invalid @enderror" maxlength="4096" name="ingredients" id="ingredients" placeholder="Scrivi gli ingredienti">{{ old('ingredients') }}
+                    <textarea cols="23" class="form-control @error('ingredients') is-invalid @enderror" maxlength="4096" name="ingredients" id="ingredients" placeholder="Scrivi gli ingredienti" required>{{ old('ingredients') }}
                     </textarea>
 
                     {{-- Barra errore --}}

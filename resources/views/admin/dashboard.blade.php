@@ -11,6 +11,12 @@
                         Benvenuto, {{ Auth::user()->name }}! 
                     </h1>
 
+                    @if(session('error'))
+                        <div class="alert alert-danger">
+                            {{ session('error') }}
+                        </div>
+                    @endif
+
                     {{-- Fammi vedere le mie info solo se ho un ristorante associato --}}
                     @if (auth()->user()->restaurant?->id)  
                         <div>
@@ -59,10 +65,10 @@
                         </div>
                     @else
                         <div class="col-12 text-center p-5 mt-5">
-                            <p>
-                                Oppure, se è il tuo primo accesso Crea il tuo Nuovo Ristorante!
+                            <p class="fs-3 fw-bold text-success">
+                                Crea il tuo Nuovo Ristorante!
                             </p>
-                            <a href="{{ route('admin.restaurants.create') }}" class="btn text-light btn-secondary">Nuovo Ristorante <i class="fa-solid fa-plus"></i><i class="fa-solid fa-utensils"></i></a>
+                            <a href="{{ route('admin.restaurants.create') }}" class="btn text-light btn-secondary btn-lg">Nuovo Ristorante <i class="fa-solid fa-plus"></i><i class="fa-solid fa-utensils"></i></a>
                         </div>
                     @endif
                 </div>

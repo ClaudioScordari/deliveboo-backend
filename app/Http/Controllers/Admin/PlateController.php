@@ -84,7 +84,7 @@ class PlateController extends Controller
         // Verifica se l'utente attuale è il proprietario del ristorante a cui appartiene il piatto
         if ($plate->restaurant->user_id !== auth()->id()) {
             // Se non è il proprietario, reindirizza con un messaggio di errore
-            return redirect()->route('admin.plates.index')->with('error', 'Non sei autorizzato a visualizzare questa risorsa.');
+            return redirect()->route('admin.dashboard')->with('error', 'Non sei autorizzato a visualizzare questa risorsa.');
         }
 
         return view('admin.plates.edit', compact('plate'));
