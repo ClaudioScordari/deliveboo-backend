@@ -175,10 +175,9 @@ class RestaurantController extends Controller
         // E poi elimino il progetto
         $restaurant->delete();
 
-        return redirect()->route('admin.restaurants.index');
+        return redirect()->route('admin.dashboard');
     }
 }
-
 
 
 
