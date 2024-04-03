@@ -43,6 +43,9 @@ Route::name('api.')->group(function() {
     // Ristoranti cercati per tipi
     Route::get('/restaurants/search/{name}', [ApiRestaurantController::class, 'search']);
 
+    // Ricerca piatti
+    Route::get('/plates/search/{name}', [ApiPlateController::class, 'searchPlate']);
+
     Route::post('/orders', [ApiOrderController::class, 'store'])->name('orders.store');
 
 });

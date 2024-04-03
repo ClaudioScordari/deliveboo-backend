@@ -53,7 +53,7 @@ class RestaurantController extends Controller
             'results' => $restaurants,
         ]);
     }
-
+    
     // public function getDetailRestaurant($id){
     //     $restaurant = Restaurant::where('id', $id)->with('types', 'types')->first();
     //     if($restaurant->image) $restaurant->image = asset('storage/' . $restaurant->image) ;
