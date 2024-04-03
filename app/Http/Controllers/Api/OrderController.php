@@ -38,7 +38,6 @@ class OrderController extends Controller
         DB::beginTransaction();
         try {
             $order = new Order;
-            $order->restaurant_id = $request->restaurant_id;
             $order->name = $validated['name'];
             $order->phone = $validated['phone'];
             $order->address = $validated['address'];
