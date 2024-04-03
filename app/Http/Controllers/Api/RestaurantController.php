@@ -27,22 +27,20 @@ class RestaurantController extends Controller
     ]);
   }
 
-    public function getRestaurantByType($typeId)
-    {
-        // Trova il tipo corrispondente al nome fornito
-        $type = Type::firstOrFail($typeId);
-
-        // Prende array di id dei ristoranti
-        $restaurantIds = $type->restaurants->pluck('id')->toArray();
-
-        // Seleziona le istanze dei ristoranti
-        $restaurants = Restaurant::whereIn('id', $restaurantIds)->get();
-
-        return response()->json([
-            'success' => true,
-            'results' => $restaurants,
-        ]);
-    }
+  public function getRestaurantByType($typeId)
+  {
+      // Trova il tipo corrispondente all'ID fornito
+      $type = Type::findOrFail($typeId);
+  
+      // Ottieni i ristoranti associati a questo tipo
+      $restaurants = $type->restaurants;
+  
+      // Restituisci i ristoranti trovati come JSON
+      return response()->json([
+          'success' => true,
+          'results' => $restaurants,
+      ]);
+  }
 
     //   public function getDetailRestaurant($id){
     //     $restaurant = Restaurant::where('id', $id)->with('types', 'types')->first();
