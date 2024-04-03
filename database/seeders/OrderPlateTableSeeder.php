@@ -14,19 +14,25 @@ class OrderPlateTableSeeder extends Seeder
      */
     public function run()
     {
-        $orders = DB::table('orders')->get(); // Recupera tutti gli ordini con i loro dettagli
+        $orders = DB::table('orders')->get(); // Recupera tutti gli ordini
 
         foreach ($orders as $order) {
-            // Recupera i piatti per il ristorante specifico dell'ordine
-            $plates = DB::table('plates')
-                        ->where('restaurant_id', $order->restaurant_id)
-                        ->pluck('id');
-
-            // Decidi il numero di piatti per ordine
-            $platesToAttach = $plates->random(rand(1, 5))->unique();
+            // Per ogni ordine, selezioniamo un ristorante casualmente dai piatti disponibili
+            // Assumendo che ogni ordine possa avere piatti solo da un unico ristorante
+            $plates = DB::table('plates')->get(); // Recupera tutti i piatti
+            $platesGroupedByRestaurant = $plates->groupBy('restaurant_id'); // Raggruppa i piatti per ristorante
+            
+            // Seleziona un gruppo di piatti di un ristorante casualmente
+            $selectedPlatesGroup = $platesGroupedByRestaurant->random();
+            
+            // Ottieni ID dei piatti dal gruppo selezionato
+            $selectedPlateIds = $selectedPlatesGroup->pluck('id');
+            
+            // Seleziona un numero casuale di piatti da questo gruppo
+            $platesToAttach = $selectedPlateIds->random(rand(1, $selectedPlateIds->count()))->all();
 
             foreach ($platesToAttach as $plateId) {
-                // Assegna una quantità casuale per ogni piatto, es. tra 1 e 4
+                // Assegna una quantità casuale per ogni piatto selezionato
                 $quantity = rand(1, 4);
 
                 // Inserisci la relazione nella tabella pivot

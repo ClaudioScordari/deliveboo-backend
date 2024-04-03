@@ -4,7 +4,6 @@ return [
     //Restourant 1
 
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Rossi',
@@ -15,7 +14,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Francesca Bianchi',
@@ -26,7 +24,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Giovanni Romano',
@@ -37,7 +34,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessandra Russo',
@@ -48,7 +44,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Ferrari',
@@ -59,7 +54,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Sofia Martini',
@@ -70,7 +64,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Matteo Esposito',
@@ -81,7 +74,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Chiara Moretti',
@@ -92,7 +84,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Lorenzo Conti',
@@ -103,7 +94,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elena Barbieri',
@@ -114,7 +104,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Andrea Colombo',
@@ -125,7 +114,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giulia De Luca',
@@ -136,7 +124,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Sofia Martini',
@@ -147,7 +134,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Matteo Esposito',
@@ -158,7 +144,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 1,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Chiara Moretti',
@@ -172,7 +157,6 @@ return [
     // Restaurant 2
 
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Antonio Bianchi',
@@ -183,7 +167,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Laura Neri',
@@ -194,7 +177,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Sergio Gialli',
@@ -205,7 +187,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Carmela Rossi',
@@ -216,7 +197,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesco Verde',
@@ -227,7 +207,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Silvia Azzurri',
@@ -238,7 +217,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Luigi Marroni',
@@ -249,7 +227,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Anna Gialli',
@@ -260,7 +237,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Giorgio Blu',
@@ -271,7 +247,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elena Viola',
@@ -282,7 +257,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Valerio Rossi',
@@ -293,7 +267,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Isabella Neri',
@@ -304,7 +277,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgio Blu',
@@ -315,7 +287,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elena Viola',
@@ -326,7 +297,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 2,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Valerio Rossi',
@@ -338,9 +308,8 @@ return [
     ],
 
     // Restaurant 3
-
-    [
-        'restaurant_id' => 3,
+    
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Claudio Verdi',
@@ -350,8 +319,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Beatrice Bianco',
@@ -361,8 +329,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Federico Nero',
@@ -372,8 +339,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simona Rosso',
@@ -383,8 +349,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Daniele Giallo',
@@ -394,8 +359,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elisa Verde',
@@ -405,8 +369,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Marco Blu',
@@ -416,8 +379,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Sara Marrone',
@@ -427,8 +389,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Luigi Viola',
@@ -438,8 +399,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessia Grigio',
@@ -449,8 +409,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Roberto Celeste',
@@ -460,8 +419,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgia Rosa',
@@ -471,8 +429,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Daniele Giallo',
@@ -482,8 +439,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elisa Verde',
@@ -493,8 +449,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 3,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Blu',
@@ -507,8 +462,7 @@ return [
 
     // Restaurant 4
 
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Valentina Moro',
@@ -518,8 +472,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Nicola Bianchi',
@@ -529,8 +482,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Simone Rossi',
@@ -540,8 +492,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Laura Verdi',
@@ -551,8 +502,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marta Gialli',
@@ -562,8 +512,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giovanni Grigio',
@@ -573,8 +522,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Federica Azzurra',
@@ -584,8 +532,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alberto Neri',
@@ -595,8 +542,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Chiara Celeste',
@@ -606,8 +552,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Davide Marrone',
@@ -617,8 +562,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elisabetta Rosso',
@@ -628,8 +572,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Viola',
@@ -639,8 +582,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Nicola Bianchi',
@@ -650,8 +592,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Rossi',
@@ -661,8 +602,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 4,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Laura Verdi',
@@ -675,8 +615,7 @@ return [
 
     // Restaurant 5
 
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Sara Ricci',
@@ -686,8 +625,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Marco Taddei',
@@ -697,8 +635,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Giulia Fabbri',
@@ -708,8 +645,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luigi Pellegrini',
@@ -719,8 +655,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessandro Brambilla',
@@ -730,8 +665,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesca Cattaneo',
@@ -741,8 +675,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Stefano Moretti',
@@ -752,8 +685,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Daniela Russo',
@@ -763,8 +695,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Roberto Sartori',
@@ -774,8 +705,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simona Galli',
@@ -785,8 +715,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Bernardi',
@@ -796,8 +725,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elena Ferrari',
@@ -807,8 +735,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessandro Brambilla',
@@ -818,8 +745,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesca Cattaneo',
@@ -829,8 +755,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 5,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Stefano Moretti',
@@ -842,8 +767,7 @@ return [
     ],
 
     // Restaurant 6
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Martina Conti',
@@ -853,8 +777,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Giacomo Martelli',
@@ -864,8 +787,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Valeria Farina',
@@ -875,8 +797,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Davide Mancini',
@@ -886,8 +807,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elisabetta Ferrara',
@@ -897,8 +817,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Federico Naldi',
@@ -908,8 +827,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Simona Greco',
@@ -919,8 +837,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessio Bianco',
@@ -930,8 +847,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Giorgio Melone',
@@ -941,8 +857,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Marini',
@@ -952,8 +867,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Cristina Galli',
@@ -963,8 +877,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giuseppe Verdi',
@@ -974,8 +887,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessio Bianco',
@@ -985,8 +897,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgio Melone',
@@ -996,8 +907,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 6,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Marini',
@@ -1008,11 +918,9 @@ return [
         'created_at' => [],
     ],
 
-
     // Restaurant 7
 
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Lorenzo Caruso',
@@ -1022,8 +930,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Marta Ricci',
@@ -1033,8 +940,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Pietro Ferrari',
@@ -1044,8 +950,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Chiara Mazzini',
@@ -1055,8 +960,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Andrea Bellini',
@@ -1066,8 +970,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgia Vitali',
@@ -1077,8 +980,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Simone Rossi',
@@ -1088,8 +990,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elena Galli',
@@ -1099,8 +1000,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Marco Brunetti',
@@ -1110,8 +1010,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessia Conti',
@@ -1121,8 +1020,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Davide Mariani',
@@ -1132,8 +1030,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Serena De Luca',
@@ -1143,8 +1040,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgia Vitali',
@@ -1154,8 +1050,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 7,
+    [        
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Rossi',
@@ -1166,7 +1061,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 7,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elena Galli',
@@ -1180,7 +1074,6 @@ return [
     // Restaurant 8
 
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giulio De Angelis',
@@ -1191,7 +1084,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Caterina Fumagalli',
@@ -1202,7 +1094,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Andrea Bertoli',
@@ -1213,7 +1104,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Silvia Carbone',
@@ -1224,7 +1114,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Paolo Negrini',
@@ -1235,7 +1124,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elisa Martini',
@@ -1246,7 +1134,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Marco Valenti',
@@ -1257,7 +1144,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Sofia Galliani',
@@ -1268,7 +1154,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Luca Orsini',
@@ -1279,7 +1164,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Federica Sartori',
@@ -1290,7 +1174,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessandro Messina',
@@ -1301,7 +1184,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Chiara Lombardi',
@@ -1311,8 +1193,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 8,
+    [ 
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Federica Sartori',
@@ -1323,7 +1204,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessandro Messina',
@@ -1334,7 +1214,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 8,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Chiara Lombardi',
@@ -1348,7 +1227,6 @@ return [
     // Restaurant 9
 
     [
-        'restaurant_id' => 9,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Daniele Baroni',
@@ -1359,7 +1237,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 9,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Sara Colombo',
@@ -1369,8 +1246,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 9,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Giulio Ferrari',
@@ -1380,8 +1256,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 9,
+    [        
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Laura Bianchi',
@@ -1391,8 +1266,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 9,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Viscardi',
@@ -1402,8 +1276,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 9,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Chiara Mastroianni',
@@ -1413,8 +1286,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 9,
+    [   
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Antonio Russo',
@@ -1424,8 +1296,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 9,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elisa Monti',
@@ -1435,8 +1306,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 9,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Luca Martini',
@@ -1446,8 +1316,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 9,
+    [   
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesca Romano',
@@ -1457,8 +1326,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 9,
+    [      
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Greco',
@@ -1468,8 +1336,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 9,
+    [ 
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Valentina Serra',
@@ -1480,7 +1347,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 9,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Martini',
@@ -1491,7 +1357,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 9,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesca Romano',
@@ -1502,7 +1367,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 9,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Greco',
@@ -1516,7 +1380,6 @@ return [
     // Restaurant 10
 
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgia Lorenzi',
@@ -1527,7 +1390,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Matteo Giuliani',
@@ -1538,7 +1400,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Alessandra Amati',
@@ -1549,7 +1410,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luigi De Santis',
@@ -1560,7 +1420,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Sara Caputo',
@@ -1571,7 +1430,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesco Villa',
@@ -1581,8 +1439,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 10,
+    [        
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Claudia Marchetti',
@@ -1593,7 +1450,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Antonio Russo',
@@ -1604,7 +1460,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Elisa Ferretti',
@@ -1615,7 +1470,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Marini',
@@ -1626,7 +1480,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Bruni',
@@ -1637,7 +1490,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Laura Nobile',
@@ -1648,7 +1500,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Antonio Russo',
@@ -1659,7 +1510,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elisa Ferretti',
@@ -1670,7 +1520,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 10,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Marini',
@@ -1684,7 +1533,6 @@ return [
     // Restaurant 11 
 
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giuliana Moretti',
@@ -1695,7 +1543,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Roberto Serra',
@@ -1706,7 +1553,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Simona Bianchi',
@@ -1717,7 +1563,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Davide Gatti',
@@ -1728,7 +1573,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Lucia Ferraro',
@@ -1739,7 +1583,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Pirelli',
@@ -1750,7 +1593,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Elisabetta Mazza',
@@ -1761,7 +1603,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesco Medici',
@@ -1772,7 +1613,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Anna Ricci',
@@ -1783,7 +1623,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luigi Fontana',
@@ -1794,7 +1633,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Sofia Galli',
@@ -1805,7 +1643,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giacomo Rossi',
@@ -1816,7 +1653,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Pirelli',
@@ -1827,7 +1663,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elisabetta Mazza',
@@ -1838,7 +1673,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 11,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesco Medici',
@@ -1852,7 +1686,6 @@ return [
     // Restaurant 12
 
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Claudio Marchesi',
@@ -1863,7 +1696,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Alessia Bertoni',
@@ -1874,7 +1706,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Marco Valenti',
@@ -1885,7 +1716,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Serena Fumagalli',
@@ -1896,7 +1726,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Neri',
@@ -1907,7 +1736,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgia Palumbo',
@@ -1918,7 +1746,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Elena Grasso',
@@ -1929,7 +1756,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Conti',
@@ -1940,7 +1766,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Roberta Bianchi',
@@ -1951,7 +1776,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Andrea Mancini',
@@ -1962,7 +1786,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Valeria Rossi',
@@ -1973,7 +1796,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => "Giovanni D'Angelo",
@@ -1984,7 +1806,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elena Grasso',
@@ -1995,7 +1816,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Conti',
@@ -2006,7 +1826,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 12,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Roberta Bianchi',
@@ -2020,7 +1839,6 @@ return [
     // Restaurant 13
 
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simona Piras',
@@ -2031,7 +1849,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Davide Martelli',
@@ -2042,7 +1859,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Giulia Bianco',
@@ -2053,7 +1869,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Lorenzo Gatti',
@@ -2064,7 +1879,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessia Ferraro',
@@ -2075,7 +1889,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesco Mariani',
@@ -2086,7 +1899,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Elisabetta Costa',
@@ -2097,7 +1909,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgio Sala',
@@ -2108,7 +1919,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Carla Ricci',
@@ -2119,7 +1929,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Vitali',
@@ -2130,7 +1939,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Serena Rossi',
@@ -2141,7 +1949,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Andrea Belli',
@@ -2152,7 +1959,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgio Sala',
@@ -2163,7 +1969,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Carla Ricci',
@@ -2174,7 +1979,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 13,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Vitali',
@@ -2188,7 +1992,6 @@ return [
     // Restaurant 14
 
     [
-        'restaurant_id' => 14,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Claudio Verdi',
@@ -2199,7 +2002,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Giulia Neri',
@@ -2210,7 +2012,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Simone Bianchi',
@@ -2221,7 +2022,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessandro Martini',
@@ -2232,7 +2032,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Laura Rossi',
@@ -2243,7 +2042,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Gialli',
@@ -2254,7 +2052,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Elisa Ferrari',
@@ -2265,7 +2062,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Stefano Bianco',
@@ -2276,7 +2072,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Daniela Verde',
@@ -2287,7 +2082,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Moro',
@@ -2298,7 +2092,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Sara Colombo',
@@ -2308,8 +2101,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 14,
+    [ 
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giuseppe Mazzini',
@@ -2320,7 +2112,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Claudio Verdi',
@@ -2330,8 +2121,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 14,
+    [ 
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giulia Neri',
@@ -2342,7 +2132,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 14,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Bianchi',
@@ -2356,7 +2145,6 @@ return [
     // Restaurant 15
 
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Beatrice Ferrara',
@@ -2367,7 +2155,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Emanuele Russo',
@@ -2378,7 +2165,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Sofia Gallo',
@@ -2389,7 +2175,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessandro Conti',
@@ -2400,7 +2185,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgia Martini',
@@ -2411,7 +2195,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Bianchi',
@@ -2422,7 +2205,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Marco Neri',
@@ -2433,7 +2215,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Valentina Rossi',
@@ -2444,7 +2225,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Davide Greco',
@@ -2455,7 +2235,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Lombardo',
@@ -2466,7 +2245,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Laura Caputo',
@@ -2477,7 +2255,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Andrea Fiori',
@@ -2488,7 +2265,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Lombardo',
@@ -2499,7 +2275,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Laura Caputo',
@@ -2510,7 +2285,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 15,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Andrea Fiori',
@@ -2524,7 +2298,6 @@ return [
     // Restaurant 16
 
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Cristina Farina',
@@ -2535,7 +2308,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Giovanni Amato',
@@ -2545,8 +2317,7 @@ return [
         'plates' => [],
         'created_at' => [],
     ],
-    [
-        'restaurant_id' => 16,
+    [   
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Anna Ricci',
@@ -2557,7 +2328,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Bianchi',
@@ -2568,7 +2338,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Neri',
@@ -2579,7 +2348,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Sofia Verdi',
@@ -2590,7 +2358,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Elena Grasso',
@@ -2601,7 +2368,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Davide Ferraro',
@@ -2612,7 +2378,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Giorgia Martini',
@@ -2623,7 +2388,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Stefano Gialli',
@@ -2634,7 +2398,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesca Rossi',
@@ -2645,7 +2408,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giuseppe Bianco',
@@ -2656,7 +2418,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Davide Ferraro',
@@ -2667,7 +2428,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgia Martini',
@@ -2678,7 +2438,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 16,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Stefano Gialli',
@@ -2692,7 +2451,6 @@ return [
     // Restaurant 17
 
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Serena Loi',
@@ -2703,7 +2461,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Michele Ferri',
@@ -2714,7 +2471,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Anna Pirelli',
@@ -2725,7 +2481,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgio Brambilla',
@@ -2736,7 +2491,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Laura Moroni',
@@ -2747,7 +2501,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Carlo Rossi',
@@ -2758,7 +2511,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Roberta Gallo',
@@ -2769,7 +2521,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simona Marchetti',
@@ -2780,7 +2531,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Daniele Bianchi',
@@ -2791,7 +2541,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Valentina Serra',
@@ -2802,7 +2551,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Matteo Verdi',
@@ -2813,7 +2561,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elena Conti',
@@ -2824,7 +2571,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Laura Moroni',
@@ -2835,7 +2581,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Carlo Rossi',
@@ -2846,7 +2591,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 17,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Roberta Gallo',
@@ -2860,7 +2604,6 @@ return [
     // Restaurant 18
 
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesca Marino',
@@ -2871,7 +2614,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Antonio Grimaldi',
@@ -2882,7 +2624,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Giulia Bianco',
@@ -2893,7 +2634,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Savino',
@@ -2904,7 +2644,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elisa Martini',
@@ -2915,7 +2654,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Gentile',
@@ -2926,7 +2664,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Sara Ricci',
@@ -2937,7 +2674,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Davide Ferraro',
@@ -2948,7 +2684,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Lorenzo De Luca',
@@ -2959,7 +2694,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marta Ferrari',
@@ -2970,7 +2704,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Andrea Pellegrini',
@@ -2981,7 +2714,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgia Milano',
@@ -2992,7 +2724,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Sara Ricci',
@@ -3003,7 +2734,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Davide Ferraro',
@@ -3014,7 +2744,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 18,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Lorenzo De Luca',
@@ -3028,7 +2757,6 @@ return [
     // Restaurant 19
 
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elena Fabbri',
@@ -3039,7 +2767,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Paolo Bianchi',
@@ -3050,7 +2777,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Giorgia Moretti',
@@ -3061,7 +2787,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Andrea Conti',
@@ -3072,7 +2797,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Rossi',
@@ -3083,7 +2807,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Lucia Esposito',
@@ -3094,7 +2817,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Simone Ferrari',
@@ -3105,7 +2827,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Alessandro Greco',
@@ -3116,7 +2837,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Francesca Gallo',
@@ -3127,7 +2847,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giulia Martini',
@@ -3138,7 +2857,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Luca Sala',
@@ -3149,7 +2867,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Valeria Nobile',
@@ -3160,7 +2877,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Elena Fabbri',
@@ -3171,7 +2887,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Paolo Bianchi',
@@ -3182,7 +2897,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 19,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Giorgia Moretti',
@@ -3196,7 +2910,6 @@ return [
     // Restaurant 20
 
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Daniele Ricci',
@@ -3207,7 +2920,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Chiara Ferraro',
@@ -3218,7 +2930,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Luca Martini',
@@ -3229,7 +2940,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giorgia Bellini',
@@ -3240,7 +2950,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Simone Bianco',
@@ -3251,7 +2960,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Andrea Neri',
@@ -3262,7 +2970,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'In Attesa',
         'total_price' => null,
         'name' => 'Sara Colombo',
@@ -3273,7 +2980,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Marco Giordano',
@@ -3284,7 +2990,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Fallito',
         'total_price' => null,
         'name' => 'Laura Verdi',
@@ -3295,7 +3000,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesco Greco',
@@ -3306,7 +3010,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giulia Rossi',
@@ -3317,7 +3020,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Emanuele Fiori',
@@ -3328,7 +3030,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Francesco Greco',
@@ -3339,7 +3040,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Giulia Rossi',
@@ -3350,7 +3050,6 @@ return [
         'created_at' => [],
     ],
     [
-        'restaurant_id' => 20,
         'payment_status' => 'Completato',
         'total_price' => null,
         'name' => 'Emanuele Fiori',

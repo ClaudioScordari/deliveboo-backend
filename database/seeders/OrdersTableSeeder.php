@@ -22,7 +22,7 @@ class OrdersTableSeeder extends Seeder
             $randomPrice = rand(1000, 15000) / 100;
 
             $orderId = DB::table('orders')->insertGetId([
-                'restaurant_id' => $order['restaurant_id'],
+                //'restaurant_id' => $order['restaurant_id'],
                 'payment_status' => $order['payment_status'],
                 'total_price' => $randomPrice,
                 'name' => $order['name'],
@@ -34,7 +34,7 @@ class OrdersTableSeeder extends Seeder
             ]);
 
             // Per ogni ordine, aggiungi piatti coerenti con il ristorante
-            $restaurantPlates = DB::table('plates')->where('restaurant_id', $order['restaurant_id'])->pluck('id');
+            // DB::table('plates')->where('restaurant_id', $order['restaurant_id'])->pluck('id');
             foreach ($order['plates'] as $plate) {
                 DB::table('order_plate')->insert([
                     'order_id' => $orderId,

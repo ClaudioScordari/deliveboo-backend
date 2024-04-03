@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 // Models
 use App\Models\Order;
+use App\Models\Plate;
 
 // Request
 use App\Http\Requests\StoreOrderRequest;
@@ -24,12 +25,17 @@ class OrderController extends Controller
      */
     public function index()
     {
-    // Ottiene l'ID del ristorante dell'utente autenticato
-    $restaurantId = auth()->user()->restaurant->id;
-
-    // Ottiene gli ordini che appartengono al ristorante dell'utente autenticato
-    $orders = Order::where('restaurant_id', $restaurantId)->with('plates')->get();
-
+        // Ottiene l'ID del ristorante dell'utente autenticato
+        $restaurantId = auth()->user()->restaurant->id;
+    
+        // Ottiene gli ID dei piatti che appartengono al ristorante dell'utente autenticato
+        $plateIds = Plate::where('restaurant_id', $restaurantId)->pluck('id');
+    
+        // Ottiene gli ordini basati sui piatti che appartengono al ristorante dell'utente autenticato
+        $orders = Order::whereHas('plates', function ($query) use ($plateIds) {
+            $query->whereIn('plates.id', $plateIds);
+        })->with('plates')->get();
+    
         return view('admin.orders.index', compact('orders'));
     }
 
@@ -67,54 +73,33 @@ class OrderController extends Controller
     {
         // Ottiene l'ID del ristorante dell'utente autenticato
         $restaurantId = auth()->user()->restaurant->id;
+
+        // Ottiene gli ID dei piatti che appartengono al ristorante dell'utente autenticato
+        $plateIds = Plate::where('restaurant_id', $restaurantId)->pluck('id')->toArray();
+
+        // Numero di ordini che includono almeno un piatto del ristorante dell'utente autenticato
+        $ordersCount = Order::whereHas('plates', function ($query) use ($plateIds) {
+            // Assicura che l'ordine includa almeno uno dei piatti del ristorante specifico
+            $query->whereIn('plate_id', $plateIds);
+        })->count(); // Usa 'distinct()' per assicurarti di contare ogni ordine una sola volta
     
-        // Numero di ordini per il ristorante
-        $ordersCount = Order::where('restaurant_id', $restaurantId)->count();
-        
-        // Totale piatti ordinati per il ristorante
-        $totalPlates = DB::table('order_plate')
-                        ->join('orders', 'orders.id', '=', 'order_plate.order_id')
-                        ->where('orders.restaurant_id', $restaurantId)
-                        ->sum('order_plate.quantity');
-
-        // Piatti più ordinati per il ristorante
-        $popularPlates = DB::table('plates')
-                        ->join('order_plate', 'plates.id', '=', 'order_plate.plate_id')
-                        ->join('orders', 'orders.id', '=', 'order_plate.order_id')
-                        ->select('plates.name', DB::raw('count(order_plate.plate_id) as orders_count'))
-                        ->where('orders.restaurant_id', $restaurantId) // Filtra per il ristorante
-                        ->groupBy('plates.name')
-                        ->orderBy('orders_count', 'desc')
-                        //->take(5) // Prendi i primi 5 piatti più ordinati
-                        ->get();
- 
-        $labels = $popularPlates->pluck('name');
-        $data = $popularPlates->pluck('orders_count');
-
-
-        // Totale soldi guadagnati per il ristorante
-        $totalRevenue = Order::where('restaurant_id', $restaurantId)->sum('total_price');
-        
-        return view('admin.stats.index', compact('ordersCount', 'totalPlates', 'totalRevenue', 'labels', 'data'));
+        // Totale piatti ordinati e Piatti più ordinati per il ristorante
+        $totalPlates = 0;
+        $popularPlates = [];
+    
+        foreach ($plateIds as $plateId) {
+            $ordersForPlate = Order::whereHas('plates', function ($query) use ($plateId) {
+                $query->where('plates.id', $plateId);
+            })->get();
+    
+            $totalPlates += $ordersForPlate->sum(function ($order) use ($plateId) {
+                return $order->plates->where('id', $plateId)->first()->pivot->quantity;
+            });
+    
+            $popularPlates[$plateId] = $ordersForPlate->count();
+        }
+    
+        return view('admin.stats.index', compact('ordersCount', 'totalPlates'));
     }
-
-    public function getAnnualStatistics()
-    {
-        $currentYear = Carbon::now()->year;
-
-        // Numero di ordini nell'anno corrente
-        $ordersCount = Order::whereYear('created_at', $currentYear)->count();
-
-        // Totale piatti ordinati nell'anno corrente
-        $totalPlates = DB::table('order_plate')
-                        ->join('orders', 'orders.id', '=', 'order_plate.order_id')
-                        ->whereYear('orders.created_at', $currentYear)
-                        ->sum('quantity');
-
-        // Totale soldi guadagnati nell'anno corrente
-        $totalRevenue = Order::whereYear('created_at', $currentYear)->sum('total_price');
-
-        return view('admin.stats.index', compact('ordersCount', 'totalPlates', 'totalRevenue'));
-    }
-
+    
 }
