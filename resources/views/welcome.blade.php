@@ -13,22 +13,23 @@
                     </div>
                     <div>
                         <p class="text-center px-5 pb-1 mx-5">
-                            "Semplifica la gestione del tuo business di delivery oggi stesso! Iscriviti a <span class="text-success fw-bolder">Deliveboo</span> e ottieni accesso a strumenti potenti per migliorare l'efficienza, monitorare gli ordini e massimizzare i profitti. Unisciti a centinaia di ristoratori soddisfatti che hanno scelto la comodità e la precisione del nostro servizio. Registrati ora e trasforma la tua attività di delivery!"
+                            "Esegui la Registrazione su <span class="text-success fw-bolder">Deliveboo</span> e ottieni accesso a strumenti potenti per migliorare l'efficienza, monitorare gli ordini e massimizzare i profitti!"
                         </p>
                     </div>
                     <div class="text-center mb-3">
-                        <a href="{{ route('register') }}" class="btn text-light btn-secondary btn-lg">Unisciti alla Famiglia! <i class="fa-solid fa-user-group"></i></a>
-                    </div>
-                    <div class="text-center mb-3">
-                        <img src="{{ Vite::asset('resources/img/jumbotron.webp') }}" alt="Jumbotron" class="w-50">
+                        <a href="{{ route('register') }}" class="btn text-light btn-secondary btn-lg">Registrati! <i class="fa-solid fa-address-card"></i></a>
                     </div>
                     <div>
                         <p class="text-center px-5 pb-2 mx-5">
-                            "Oppure lasciati convinciere dagli altri nostri affezionati clienti!"
+                            "Oppure, se sei già nostro cliente effettua il login"
                         </p>
                     </div>
-                    <div class="text-center">
-                        <a href="{{ route('guest.restaurants.index') }}" class="btn text-light btn-secondary btn-lg">Esplora i Ristoranti <i class="fa-solid fa-utensils"></i></a>
+                    <div class="text-center mb-3">
+                        <a href="{{ route('login') }}" class="btn text-light btn-secondary btn-lg">Accedi <i class="fa-solid fa-right-to-bracket"></i></a>
+                    </div>
+
+                    <div class="text-center mb-3">
+                        <img src="{{ Vite::asset('resources/img/jumbotron.webp') }}" alt="Jumbotron" class="w-50">
                     </div>
                 </div>
             </div>
