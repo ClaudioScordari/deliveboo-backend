@@ -18,6 +18,14 @@
                     </div>
                 @endif
 
+                @if($plates->isEmpty())
+                    <div class="d-flex justify-content-center">
+                        <div class="alert alert-secondary w-50 text-center" role="alert">
+                            Nessun Piatto Presente.
+                        </div>
+                    </div>
+                @else
+
                 @foreach ($plates as $plate)
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
@@ -78,6 +86,7 @@
                     </div>
                 </div>
                 @endforeach
+                @endif
             </div>
         </div>
     </div>

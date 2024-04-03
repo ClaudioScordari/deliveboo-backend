@@ -24,7 +24,7 @@ class StoreRestaurantRequest extends FormRequest
     {
         return [
             'activity_name' => 'required|max:255', 
-            'VAT_number' => 'required|max:50|unique',Rule::unique('restaurants')->ignore($this->restaurant), 
+            'VAT_number' => 'required|max:50|unique:restaurants', 
             'address' => 'required|max:255', 
             'img' => 'nullable|image',
             'description' => 'nullable|max:4096',
