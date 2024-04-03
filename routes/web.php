@@ -66,7 +66,7 @@ Route::prefix('admin')
     // Route::resource('types', AdminTypeController::class);
 
     // Statistiche (protette)
-    Route::get('/statistics', [AdminOrderController::class, 'getStatistics'])->name('stats.index');
+    Route::get('/statistics', [AdminOrderController::class, 'showMonthlyStatistics'])->name('stats.index');
 
 });
 

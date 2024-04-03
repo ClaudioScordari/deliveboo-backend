@@ -1,69 +1,56 @@
 @extends('layouts.app')
 
+@section('page-title', 'Statistiche')
+
 @section('main-content')
 
     <div class="container mt-5">
-        <h1>Statistiche Ordini</h1>
-        <div class="mt-4">
-            <h2>Numero di ordini: {{ $ordersCount }}</h2>
-            <h2>Totale piatti ordinati: {{ $totalPlates }}</h2>
-            <canvas id="ordersChart"></canvas>
-            <canvas id="platesChart"></canvas>
-        </div>
+        <h1>Statistiche Ordini Mensili</h1>
+        <p>Numero totale di ordini: {{ $totalOrdersCount }}</p>
+        <canvas id="ordersChart"></canvas>
     </div>
-
+        
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Il tuo codice JavaScript per generare i grafici va qui
-            const ordersCount = @json($ordersCount);
-            const totalPlates = @json($totalPlates);
-            
-        // Grafico per il numero di ordini
-        const ctxOrders = document.getElementById('ordersChart').getContext('2d');
-        const ordersChart = new Chart(ctxOrders, {
-            type: 'bar',
-            data: {
-                labels: ['Ordini'],
-                datasets: [{
-                    label: 'Numero di Ordini',
-                    data: [ordersCount],
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                    borderColor: 'rgba(54, 162, 235, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
+            const months = @json($statistics['months']);
+            const ordersCount = @json($statistics['ordersCount']).map(Number); // Assicura che i dati siano numeri
         
-        // Grafico per il totale piatti ordinati
-        const ctxPlates = document.getElementById('platesChart').getContext('2d');
-        const platesChart = new Chart(ctxPlates, {
-            type: 'bar',
-            data: {
-                labels: ['Piatti'],
-                datasets: [{
-                    label: 'Totale Piatti Ordinati',
-                    data: [totalPlates],
-                    backgroundColor: 'rgba(255, 206, 86, 0.2)',
-                    borderColor: 'rgba(255, 206, 86, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
+            const ctx = document.getElementById('ordersChart').getContext('2d');
+            
+            const ordersChart = new Chart(ctx, {
+                type: 'line', // o 'bar' se preferisci un grafico a colonne
+                data: {
+                    labels: months,
+                    datasets: [{
+                        label: 'Numero di Ordini',
+                        data: ordersCount,
+                        fill: true,
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 5
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    },
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Statistiche Ordini Mensili'
+                        }
                     }
                 }
-            }
+            });
         });
-
-    });
     </script>
 @endsection
