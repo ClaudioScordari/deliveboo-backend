@@ -27,25 +27,22 @@ class RestaurantController extends Controller
     ]);
   }
 
-  public function getRestaurantByType(Request $request){
+    public function getRestaurantByType($typeId)
+    {
+        // Trova il tipo corrispondente al nome fornito
+        $type = Type::firstOrFail($typeId);
 
-    $validDatas = $request->validate([
-        'type' => 'required|string|in:Italiana,Cinese,Giapponese,Americana,Messicana,Indiana', 
-    ]);
+        // Prende array di id dei ristoranti
+        $restaurantIds = $type->restaurants->pluck('id')->toArray();
 
-    $type = $validDatas['type'];
+        // Seleziona le istanze dei ristoranti
+        $restaurants = Restaurant::whereIn('id', $restaurantIds)->get();
 
-    $typeId = Type::where('name', $type)->value('id');
-
-    $restaurants = Restaurant::whereHas('restaurant_type', function ($query) use ($typeId) {
-        $query->where('type_id', $typeId);
-    })->get();
-
-    return response()->json([
-        'success' => true,
-        'results' => $restaurants,
-    ]);
-  }
+        return response()->json([
+            'success' => true,
+            'results' => $restaurants,
+        ]);
+    }
 
     //   public function getDetailRestaurant($id){
     //     $restaurant = Restaurant::where('id', $id)->with('types', 'types')->first();
