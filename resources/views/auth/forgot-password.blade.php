@@ -4,19 +4,6 @@
     <section class="container-form-section">
         <div class="container-form w-50 m-auto card p-5 mt-5 bg-light">
             <h1 class="text-center text-success">FORGOT PASSWORD</h1>
-
-            {{-- Errors --}}
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>
-                                {{ $error }}
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
             
             <div class="bg-secondary-subtle text-center rounded p-3 m-2">
                 {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
@@ -32,6 +19,12 @@
                     </label>
                     <input class="form-control" type="email" id="email" name="email">
                 </div>
+                {{-- Barra errore --}}
+                @error('email')
+                    <div class="alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
         
                 <div>
                     <button class="btn text-light btn-secondary d-block" type="submit">

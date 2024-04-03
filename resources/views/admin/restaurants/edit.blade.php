@@ -8,19 +8,6 @@
             <h1 class="text-center text-success">MODIFICA L'ATTIVITA'</h1>
     
             <p class="fw-bold">I campi con <span class="text-danger fw-bold">*</span> sono obbligatori</p>
-
-            {{-- Errors --}}
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>
-                                {{ $error }}
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
     
             <form action="{{ route('admin.restaurants.update', ['restaurant' => $restaurant->id]) }}" method="POST"
                 enctype="multipart/form-data">
