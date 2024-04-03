@@ -8,9 +8,12 @@ use Illuminate\Http\Response;
 class TypeController extends Controller
 {
     // Visualizza tutte le tipologie di ristoranti
-    public function index()
-    {
+    public function index(){
         $types = Type::all();
-        return response()->json($types);
+    
+        return response()->json([
+            'success' => true,
+            'results' => $types,
+        ]);
     }
 }

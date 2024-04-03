@@ -23,15 +23,20 @@ Route::name('api.')->group(function() {
     Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
         return $request->user();
     });
-    // Rotta per ottenere tutti i ristoranti
-    Route::get('/restaurants', [ApiRestaurantController::class, 'index']);
 
-    // Rotta per ottenere i dettagli di un singolo ristorante
-    Route::get('/restaurants/{restaurant}', [ApiRestaurantController::class, 'show']);
-
-    // Rotta per ottenere i piatti di un singolo ristorante
-    Route::get('/restaurants/{restaurant}/plates', [ApiPlateController::class, 'showByRestaurant']);
+    // Rotta per ottenere tutti i ristoranti e il singolo ristorante
+    Route::resource('restaurants', ApiRestaurantController::class)->only(['index', 'show']);
 
     // Rotta per ottenere le tipologie di ristoranti
     Route::get('/types', [ApiTypeController::class, 'index']);
+
+    // Rotta per ottenere i piatti
+    Route::get('/plates', [ApiPlateController::class, 'index']);
+    
+    // Rotta per ottenere i piatti di un singolo ristorante
+    Route::get('/restaurants/{restaurant}/plates', [ApiPlateController::class, 'restaurantPlates']);
+
+    // Ristoranti cercati per tipi
+    // Route::get('/restaurants', [ApiRestaurantController::class, 'getRestaurantByType']);
+
 });

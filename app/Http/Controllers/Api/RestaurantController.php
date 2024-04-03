@@ -11,38 +11,45 @@ use App\Models\Plate;
 class RestaurantController extends Controller
 {
   public function index(){
-    $restaurants = Restaurant::with('types', 'plates')->get();
-    $types = Type::all();
-    $plates = Plate::all();
+    $restaurants = Restaurant::with('types', 'plates')->paginate(10);
 
-    return response()->json(compact('restaurants','types','plates'));
+    return response()->json([
+        'success' => true,
+        'results' => $restaurants,
+    ]);
   }
 
-  public function getAllTypes(){
-    $types = Type::all();
+  public function show(Restaurant $restaurant){
 
-    return response()->json(compact('types'));
-  }
-
-  public function getDetailRestaurant($id){
-    $restaurant = Restaurant::where('id', $id)->with('types', 'types')->first();
-    if($restaurant->image) $restaurant->image = asset('storage/' . $restaurant->image) ;
-        else{
-            $restaurant->image = asset('storage/not-found.png') ;
-        }
-
-    return response()->json($restaurant);
+    return response()->json([
+        'success' => true,
+        'results' => $restaurant,
+    ]);
   }
 
   public function getRestaurantByType($name){
     $restaurants = Type::where('name', $name)->with('restaurants')->paginate(5);
 
-    return response()->json($restaurants);
+    return response()->json([
+        'success' => true,
+        'results' => $restaurants,
+    ]);
   }
 
-  public function search($tosearch){
-    $restaurants = Restaurant::where('name','like',"%$tosearch%")->with('types', 'plates')->get();
+    //   public function getDetailRestaurant($id){
+    //     $restaurant = Restaurant::where('id', $id)->with('types', 'types')->first();
+    //     if($restaurant->image) $restaurant->image = asset('storage/' . $restaurant->image) ;
+    //         else{
+    //             $restaurant->image = asset('storage/not-found.png') ;
+    //         }
 
-    return response()->json($restaurants);
-  }
+    //     return response()->json($restaurant);
+    //   }
+
+
+    //   public function search($tosearch){
+    //     $restaurants = Restaurant::where('name','like',"%$tosearch%")->with('types', 'plates')->get();
+
+    //     return response()->json($restaurants);
+    //   }
 }

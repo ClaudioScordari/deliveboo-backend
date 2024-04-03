@@ -8,10 +8,23 @@ use Illuminate\Http\Response;
 
 class PlateController extends Controller
 {
+    public function index(){
+        $plates = Plate::all();
+    
+        return response()->json([
+            'success' => true,
+            'results' => $plates,
+        ]);
+    }
+
     // Visualizza i piatti di un singolo ristorante
-    public function showByRestaurant($restaurant)
+    public function restaurantPlates($restaurant)
     {
         $plates = Plate::where('restaurant_id', $restaurant)->get();
-        return response()->json($plates);
+
+        return response()->json([
+            'success' => true,
+            'results' => $plates
+        ]);
     }
 }
