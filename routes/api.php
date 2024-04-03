@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\RestaurantController as ApiRestaurantController;
 use App\Http\Controllers\Api\PlateController as ApiPlateController;
 use App\Http\Controllers\Api\TypeController as ApiTypeController;
+use App\Http\Controllers\Api\OrderController as ApiOrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,5 +39,7 @@ Route::name('api.')->group(function() {
 
     // Ristoranti cercati per tipi
     // Route::get('/restaurants', [ApiRestaurantController::class, 'getRestaurantByType']);
+
+    Route::post('/orders', [ApiOrderController::class, 'store'])->name('orders.store');
 
 });
