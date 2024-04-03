@@ -53,16 +53,13 @@ class OrderController extends Controller
             }
             // Assegna il total_price calcolato
             $order->total_price = $totalPrice;
-
-            $order->save();
-    
+   
             foreach ($validated['plates'] as $plateData) {
                 $plate = Plate::findOrFail($plateData['id']);
                 $order->plates()->attach($plate, ['quantity' => $plateData['quantity']]);
                 $totalPrice += $plate->price * $plateData['quantity'];
             }
-    
-            $order->total_price = $totalPrice;
+
             $order->save();
     
             DB::commit();
