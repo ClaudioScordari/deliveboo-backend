@@ -38,7 +38,7 @@ Route::name('api.')->group(function() {
     Route::get('/restaurants/{restaurant}/plates', [ApiPlateController::class, 'restaurantPlates']);
 
     // Ristoranti cercati per tipi
-    // Route::get('/restaurants', [ApiRestaurantController::class, 'getRestaurantByType']);
+    Route::get('/restaurants/by-type', [ApiRestaurantController::class, 'getRestaurantByType']);
 
     Route::post('/orders', [ApiOrderController::class, 'store'])->name('orders.store');
 

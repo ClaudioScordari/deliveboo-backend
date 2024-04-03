@@ -4,19 +4,6 @@
     <section class="container-form-section">
         <div class="container-form w-50 m-auto card p-5 mt-5 bg-light">
             <h1 class="text-center text-success">LOGIN</h1>
-
-            {{-- Errors --}}
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>
-                                {{ $error }}
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
             
             <form method="POST" action="{{ route('login') }}">
                 @csrf
@@ -28,6 +15,12 @@
                     </label>
                     <input placeholder="Email" class="form-control" type="email" id="email" name="email">
                 </div>
+                {{-- Barra errore --}}
+                @error('email')
+                    <div class="alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
         
                 <!-- Password -->
                 <div class="my-4 form-group">
@@ -36,6 +29,12 @@
                     </label>
                     <input placeholder="Password" class="form-control" type="password" id="password" name="password">
                 </div>
+                {{-- Barra errore --}}
+                @error('password')
+                    <div class="alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
         
                 <!-- Remember Me -->
                 <div class="mb-3 form-group">

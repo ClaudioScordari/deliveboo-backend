@@ -5,19 +5,6 @@
         <div class="container-form w-50 m-auto card p-5 mt-5 bg-light">
             <h1 class="text-center text-success">REGISTER</h1>
 
-            {{-- Errors --}}
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>
-                                {{ $error }}
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-
             <form method="POST" action="{{ route('register') }}">
                 @csrf
         
@@ -28,6 +15,12 @@
                     </label>
                     <input class="form-control" type="text" id="name" name="name">
                 </div>
+                {{-- Barra errore --}}
+                @error('name')
+                    <div class="alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
         
                 <!-- Email Address -->
                 <div class="mt-4 form-group">
@@ -36,6 +29,12 @@
                     </label>
                     <input class="form-control" type="email" id="email" name="email">
                 </div>
+                {{-- Barra errore --}}
+                @error('email')
+                    <div class="alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
         
                 <!-- Password -->
                 <div class="mt-4 form-group">
@@ -44,6 +43,12 @@
                     </label>
                     <input class="form-control" type="password" id="password" name="password">
                 </div>
+                {{-- Barra errore --}}
+                @error('password')
+                    <div class="alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
         
                 <!-- Confirm Password -->
                 <div class="mt-4 form-group">
@@ -52,6 +57,12 @@
                     </label>
                     <input class="form-control" type="password" id="password_confirmation" name="password_confirmation">
                 </div>
+                {{-- Barra errore --}}
+                @error('password_confirmation')
+                    <div class="alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
         
                 <div class="mt-3 form-group">
                     <a class="text-success" href="{{ route('login') }}">
