@@ -16,6 +16,7 @@ use App\Http\Requests\UpdateOrderRequest;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 class OrderController extends Controller
 {
     /**
@@ -95,6 +96,25 @@ class OrderController extends Controller
         $totalRevenue = Order::where('restaurant_id', $restaurantId)->sum('total_price');
         
         return view('admin.stats.index', compact('ordersCount', 'totalPlates', 'totalRevenue', 'labels', 'data'));
+    }
+
+    public function getAnnualStatistics()
+    {
+        $currentYear = Carbon::now()->year;
+
+        // Numero di ordini nell'anno corrente
+        $ordersCount = Order::whereYear('created_at', $currentYear)->count();
+
+        // Totale piatti ordinati nell'anno corrente
+        $totalPlates = DB::table('order_plate')
+                        ->join('orders', 'orders.id', '=', 'order_plate.order_id')
+                        ->whereYear('orders.created_at', $currentYear)
+                        ->sum('quantity');
+
+        // Totale soldi guadagnati nell'anno corrente
+        $totalRevenue = Order::whereYear('created_at', $currentYear)->sum('total_price');
+
+        return view('admin.stats.index', compact('ordersCount', 'totalPlates', 'totalRevenue'));
     }
 
 }

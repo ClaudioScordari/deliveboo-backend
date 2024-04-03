@@ -56,7 +56,7 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                        <h1 class="modal-title fs-5 text-success" id="exampleModalLabel">
                                             {{ $restaurant->activity_name }}
                                         </h1>
                                         
@@ -64,17 +64,17 @@
                                     </div>
 
                                     <div class="modal-body">
-                                        Sicuro che vuoi eliminare il ristorante?
+                                        Vuoi davvero eliminare il Ristorante?
                                     </div>
 
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal"><i class="fa-solid fa-left-long"></i> Annulla</button>
+                                        <button type="button" class="btn btn-success text-light" data-bs-dismiss="modal"><i class="fa-solid fa-left-long"></i> Annulla</button>
 
                                         {{-- Form di eliminazione --}}
                                         <form action="{{ route('admin.restaurants.destroy', ['restaurant' => $restaurant->id]) }}" method="POST" class="d-inline">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-danger text-light">Si, sono sicuro <i class="fa-solid fa-trash"></i></button>
+                                            <button type="submit" class="btn btn-secondary text-light">Sì, sono sicuro <i class="fa-solid fa-trash"></i></button>
                                         </form>
                                     </div>
                                 </div>

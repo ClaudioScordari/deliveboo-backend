@@ -17,6 +17,7 @@ use App\Http\Requests\UpdateRestaurantRequest;
 // Facades
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 class RestaurantController extends Controller
 {
     /**
@@ -137,6 +138,17 @@ class RestaurantController extends Controller
             // Mi riempio la var del percorso a null 
             $imgPath = null;
         }
+
+        // Controllo univocità della partita IVA escludendo l'ID corrente del ristorante
+        $vatExists = DB::table('restaurants')
+        ->where('VAT_number', $validDatas['VAT_number'])
+        ->where('id', '!=', $restaurant->id)
+        ->exists();
+
+        if ($vatExists) {
+        return back()->withErrors(['VAT_number' => 'La partita IVA inserita è già in uso.'])->withInput();
+        }
+
         
         // Faccio update della nuova istanza di restaurant
         $restaurant->update([

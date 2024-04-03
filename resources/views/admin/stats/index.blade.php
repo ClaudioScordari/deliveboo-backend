@@ -11,6 +11,7 @@
             <canvas id="ordersChart"></canvas>
             <canvas id="platesChart"></canvas>
             <canvas id="revenueChart"></canvas>
+            <canvas id="monthlyStatsChart"></canvas>
             <canvas id="popularPlatesChart"></canvas>
         </div>
     </div>
