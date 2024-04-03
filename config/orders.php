@@ -5,7 +5,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Rossi',
         'phone' => '02 1234567',
         'address' => 'Via dei Fiori 10, Milano',
@@ -15,7 +14,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Francesca Bianchi',
         'phone' => '02 9876543',
         'address' => 'Corso Vittorio Emanuele II, 45, Milano',
@@ -25,7 +23,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Giovanni Romano',
         'phone' => '02 3344556',
         'address' => 'Piazza Duomo, 1, Milano',
@@ -35,7 +32,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessandra Russo',
         'phone' => '02 8765432',
         'address' => 'Via Dante Alighieri, 20, Milano',
@@ -45,7 +41,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Ferrari',
         'phone' => '02 1122334',
         'address' => 'Via Montenapoleone, 15, Milano',
@@ -55,7 +50,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Sofia Martini',
         'phone' => '02 4455667',
         'address' => 'Corso Buenos Aires, 80, Milano',
@@ -65,7 +59,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Matteo Esposito',
         'phone' => '02 7788990',
         'address' => 'Via della Moscova, 25, Milano',
@@ -75,7 +68,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Chiara Moretti',
         'phone' => '02 3456789',
         'address' => 'Via Larga, 35, Milano',
@@ -85,7 +77,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Lorenzo Conti',
         'phone' => '02 8901234',
         'address' => 'Viale Abruzzi, 30, Milano',
@@ -95,7 +86,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elena Barbieri',
         'phone' => '02 4567890',
         'address' => 'Via Padova, 55, Milano',
@@ -105,7 +95,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Andrea Colombo',
         'phone' => '02 6789012',
         'address' => 'Corso Magenta, 70, Milano',
@@ -115,7 +104,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giulia De Luca',
         'phone' => '02 2345678',
         'address' => 'Piazza San Babila, 10, Milano',
@@ -125,7 +113,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Sofia Martini',
         'phone' => '02 4455667',
         'address' => 'Corso Buenos Aires, 80, Milano',
@@ -135,7 +122,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Matteo Esposito',
         'phone' => '02 7788990',
         'address' => 'Via della Moscova, 25, Milano',
@@ -145,7 +131,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Chiara Moretti',
         'phone' => '02 3456789',
         'address' => 'Via Larga, 35, Milano',
@@ -158,7 +143,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Antonio Bianchi',
         'phone' => '02 9988776',
         'address' => 'Via Torino, 22, Milano',
@@ -168,7 +152,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Laura Neri',
         'phone' => '02 8765432',
         'address' => 'Via Mercato, 12, Milano',
@@ -178,7 +161,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Sergio Gialli',
         'phone' => '02 5544332',
         'address' => 'Corso Como, 8, Milano',
@@ -188,7 +170,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Carmela Rossi',
         'phone' => '02 6677889',
         'address' => 'Via Monte Napoleone, 5, Milano',
@@ -198,7 +179,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesco Verde',
         'phone' => '02 2244668',
         'address' => 'Viale Monza, 30, Milano',
@@ -208,7 +188,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Silvia Azzurri',
         'phone' => '02 1231234',
         'address' => 'Piazzale Loreto, 7, Milano',
@@ -218,7 +197,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Luigi Marroni',
         'phone' => '02 9876543',
         'address' => 'Via Cenisio, 42, Milano',
@@ -228,7 +206,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Anna Gialli',
         'phone' => '02 3334445',
         'address' => 'Via Solferino, 18, Milano',
@@ -238,7 +215,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Giorgio Blu',
         'phone' => '02 4445556',
         'address' => 'Via Savona, 53, Milano',
@@ -248,7 +224,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elena Viola',
         'phone' => '02 5566778',
         'address' => 'Via Dante, 21, Milano',
@@ -258,7 +233,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Valerio Rossi',
         'phone' => '02 9988776',
         'address' => 'Corso Genova, 11, Milano',
@@ -268,7 +242,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Isabella Neri',
         'phone' => '02 2233445',
         'address' => "Piazza Sant'Ambrogio, 15, Milano",
@@ -278,7 +251,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgio Blu',
         'phone' => '02 4445556',
         'address' => 'Via Savona, 53, Milano',
@@ -288,7 +260,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elena Viola',
         'phone' => '02 5566778',
         'address' => 'Via Dante, 21, Milano',
@@ -298,7 +269,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Valerio Rossi',
         'phone' => '02 9988776',
         'address' => 'Corso Genova, 11, Milano',
@@ -311,7 +281,6 @@ return [
     
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Claudio Verdi',
         'phone' => '02 1472583',
         'address' => 'Piazza Gae Aulenti, 1, Milano',
@@ -321,7 +290,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Beatrice Bianco',
         'phone' => '02 3698521',
         'address' => 'Via Mecenate, 76, Milano',
@@ -331,7 +299,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Federico Nero',
         'phone' => '02 9638527',
         'address' => 'Viale Monza, 120, Milano',
@@ -341,7 +308,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simona Rosso',
         'phone' => '02 9517538',
         'address' => 'Corso Lodi, 42, Milano',
@@ -351,7 +317,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Daniele Giallo',
         'phone' => '02 1472589',
         'address' => 'Via Tortona, 22, Milano',
@@ -361,7 +326,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elisa Verde',
         'phone' => '02 7539514',
         'address' => 'Via Savona, 97, Milano',
@@ -371,7 +335,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Marco Blu',
         'phone' => '02 1597534',
         'address' => 'Corso San Gottardo, 15, Milano',
@@ -381,7 +344,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Sara Marrone',
         'phone' => '02 4561237',
         'address' => 'Via Palmanova, 67, Milano',
@@ -391,7 +353,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Luigi Viola',
         'phone' => '02 7531594',
         'address' => 'Piazza Cinque Giornate, 3, Milano',
@@ -401,7 +362,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessia Grigio',
         'phone' => '02 9513574',
         'address' => 'Via Cenisio, 34, Milano',
@@ -411,7 +371,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Roberto Celeste',
         'phone' => '02 8642135',
         'address' => 'Viale Zara, 58, Milano',
@@ -421,7 +380,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgia Rosa',
         'phone' => '02 9874563',
         'address' => 'Via Pompeo Mariani, 12, Milano',
@@ -431,7 +389,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Daniele Giallo',
         'phone' => '02 1472589',
         'address' => 'Via Tortona, 22, Milano',
@@ -441,7 +398,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elisa Verde',
         'phone' => '02 7539514',
         'address' => 'Via Savona, 97, Milano',
@@ -451,7 +407,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Blu',
         'phone' => '02 1597534',
         'address' => 'Corso San Gottardo, 15, Milano',
@@ -464,7 +419,6 @@ return [
 
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Valentina Moro',
         'phone' => '02 9101112',
         'address' => 'Via Pasquale Sottocorno, 25, Milano',
@@ -474,7 +428,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Nicola Bianchi',
         'phone' => '02 9134567',
         'address' => 'Via Victor Hugo, 4, Milano',
@@ -484,7 +437,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Simone Rossi',
         'phone' => '02 9876543',
         'address' => 'Corso Genova, 12, Milano',
@@ -494,7 +446,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Laura Verdi',
         'phone' => '02 9988776',
         'address' => "Piazza Sant'Eustorgio, 3, Milano",
@@ -504,7 +455,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marta Gialli',
         'phone' => '02 9246807',
         'address' => 'Via Pepe, 20, Milano',
@@ -514,7 +464,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giovanni Grigio',
         'phone' => '02 9246808',
         'address' => 'Viale Papiniano, 44, Milano',
@@ -524,7 +473,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Federica Azzurra',
         'phone' => '02 9246809',
         'address' => 'Via Savona, 10, Milano',
@@ -534,7 +482,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alberto Neri',
         'phone' => '02 9246810',
         'address' => 'Via Tortona, 22, Milano',
@@ -544,7 +491,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Chiara Celeste',
         'phone' => '02 9246811',
         'address' => 'Via Montenapoleone, 8, Milano',
@@ -554,7 +500,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Davide Marrone',
         'phone' => '02 9246812',
         'address' => 'Piazza Duomo, 21, Milano',
@@ -564,7 +509,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elisabetta Rosso',
         'phone' => '02 9246813',
         'address' => 'Corso Buenos Aires, 33, Milano',
@@ -574,7 +518,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Viola',
         'phone' => '02 9246814',
         'address' => 'Via Fauchè, 15, Milano',
@@ -584,7 +527,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Nicola Bianchi',
         'phone' => '02 9134567',
         'address' => 'Via Victor Hugo, 4, Milano',
@@ -594,7 +536,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Rossi',
         'phone' => '02 9876543',
         'address' => 'Corso Genova, 12, Milano',
@@ -604,7 +545,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Laura Verdi',
         'phone' => '02 9988776',
         'address' => "Piazza Sant'Eustorgio, 3, Milano",
@@ -617,7 +557,6 @@ return [
 
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Sara Ricci',
         'phone' => '02 4567890',
         'address' => 'Via Laghetto, 2, Milano',
@@ -627,7 +566,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Marco Taddei',
         'phone' => '02 1234567',
         'address' => 'Via Settembrini, 35, Milano',
@@ -637,7 +575,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Giulia Fabbri',
         'phone' => '02 7654321',
         'address' => 'Corso Magenta, 54, Milano',
@@ -647,7 +584,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luigi Pellegrini',
         'phone' => '02 9988776',
         'address' => 'Viale Monza, 120, Milano',
@@ -657,7 +593,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessandro Brambilla',
         'phone' => '02 1122334',
         'address' => 'Piazzale Loreto, 16, Milano',
@@ -667,7 +602,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesca Cattaneo',
         'phone' => '02 2233445',
         'address' => 'Via Cavour, 25, Milano',
@@ -677,7 +611,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Stefano Moretti',
         'phone' => '02 3344556',
         'address' => 'Via Solari, 40, Milano',
@@ -687,7 +620,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Daniela Russo',
         'phone' => '02 6677889',
         'address' => 'Via Savona, 11, Milano',
@@ -697,7 +629,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Roberto Sartori',
         'phone' => '02 5566778',
         'address' => 'Corso Lodi, 98, Milano',
@@ -707,7 +638,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simona Galli',
         'phone' => '02 1231234',
         'address' => 'Via Monti, 47, Milano',
@@ -717,7 +647,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Bernardi',
         'phone' => '02 9876543',
         'address' => 'Via Leopardi, 22, Milano',
@@ -727,7 +656,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elena Ferrari',
         'phone' => '02 2468101',
         'address' => 'Via Manzoni, 15, Milano',
@@ -737,7 +665,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessandro Brambilla',
         'phone' => '02 1122334',
         'address' => 'Piazzale Loreto, 16, Milano',
@@ -747,7 +674,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesca Cattaneo',
         'phone' => '02 2233445',
         'address' => 'Via Cavour, 25, Milano',
@@ -757,7 +683,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Stefano Moretti',
         'phone' => '02 3344556',
         'address' => 'Via Solari, 40, Milano',
@@ -769,7 +694,6 @@ return [
     // Restaurant 6
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Martina Conti',
         'phone' => '02 9876543',
         'address' => 'Via Washington, 77, Milano',
@@ -779,7 +703,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Giacomo Martelli',
         'phone' => '02 1122334',
         'address' => 'Corso Venezia, 56, Milano',
@@ -789,7 +712,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Valeria Farina',
         'phone' => '02 2233445',
         'address' => 'Piazza Firenze, 3, Milano',
@@ -799,7 +721,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Davide Mancini',
         'phone' => '02 3344556',
         'address' => 'Via Vincenzo Monti, 41, Milano',
@@ -809,7 +730,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elisabetta Ferrara',
         'phone' => '02 4455667',
         'address' => 'Via Volta, 22, Milano',
@@ -819,7 +739,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Federico Naldi',
         'phone' => '02 5566778',
         'address' => 'Via Solferino, 18, Milano',
@@ -829,7 +748,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Simona Greco',
         'phone' => '02 6677889',
         'address' => 'Via Manin, 8, Milano',
@@ -839,7 +757,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessio Bianco',
         'phone' => '02 7788990',
         'address' => 'Via Leopardi, 12, Milano',
@@ -849,7 +766,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Giorgio Melone',
         'phone' => '02 1122445',
         'address' => 'Via Corridoni, 15, Milano',
@@ -859,7 +775,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Marini',
         'phone' => '02 8899776',
         'address' => 'Corso di Porta Vittoria, 9, Milano',
@@ -869,7 +784,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Cristina Galli',
         'phone' => '02 9988776',
         'address' => 'Viale Abruzzi, 42, Milano',
@@ -879,7 +793,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giuseppe Verdi',
         'phone' => '02 3456789',
         'address' => 'Piazza Cinque Giornate, 5, Milano',
@@ -889,7 +802,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessio Bianco',
         'phone' => '02 7788990',
         'address' => 'Via Leopardi, 12, Milano',
@@ -899,7 +811,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgio Melone',
         'phone' => '02 1122445',
         'address' => 'Via Corridoni, 15, Milano',
@@ -909,7 +820,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Marini',
         'phone' => '02 8899776',
         'address' => 'Corso di Porta Vittoria, 9, Milano',
@@ -922,7 +832,6 @@ return [
 
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Lorenzo Caruso',
         'phone' => '02 4848484',
         'address' => 'Viale Monza, 14, Milano',
@@ -932,7 +841,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Marta Ricci',
         'phone' => '02 4848485',
         'address' => 'Via Padova, 33, Milano',
@@ -942,7 +850,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Pietro Ferrari',
         'phone' => '02 4848486',
         'address' => 'Corso Sempione, 27, Milano',
@@ -952,7 +859,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Chiara Mazzini',
         'phone' => '02 4848487',
         'address' => 'Piazza Napoli, 45, Milano',
@@ -962,7 +868,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Andrea Bellini',
         'phone' => '02 4848488',
         'address' => 'Via Tortona, 12, Milano',
@@ -972,7 +877,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgia Vitali',
         'phone' => '02 4848489',
         'address' => 'Via Savona, 52, Milano',
@@ -982,7 +886,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Simone Rossi',
         'phone' => '02 4848480',
         'address' => "Viale Beatrice d'Este, 20, Milano",
@@ -992,7 +895,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elena Galli',
         'phone' => '02 4848481',
         'address' => 'Via Corridoni, 22, Milano',
@@ -1002,7 +904,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Marco Brunetti',
         'phone' => '02 4848482',
         'address' => 'Corso Buenos Aires, 88, Milano',
@@ -1012,7 +913,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessia Conti',
         'phone' => '02 4848483',
         'address' => 'Via Cenisio, 34, Milano',
@@ -1022,7 +922,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Davide Mariani',
         'phone' => '02 4848484',
         'address' => 'Piazza Dergano, 5, Milano',
@@ -1032,7 +931,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Serena De Luca',
         'phone' => '02 4848485',
         'address' => 'Via Bovisasca, 17, Milano',
@@ -1042,7 +940,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgia Vitali',
         'phone' => '02 4848489',
         'address' => 'Via Savona, 52, Milano',
@@ -1052,7 +949,6 @@ return [
     ],
     [        
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Rossi',
         'phone' => '02 4848480',
         'address' => "Viale Beatrice d'Este, 20, Milano",
@@ -1062,7 +958,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elena Galli',
         'phone' => '02 4848481',
         'address' => 'Via Corridoni, 22, Milano',
@@ -1075,7 +970,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giulio De Angelis',
         'phone' => '02 2345678',
         'address' => 'Via Monte Rosa, 21, Milano',
@@ -1085,7 +979,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Caterina Fumagalli',
         'phone' => '02 8765432',
         'address' => 'Piazza Oberdan, 4, Milano',
@@ -1095,7 +988,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Andrea Bertoli',
         'phone' => '02 5647382',
         'address' => 'Corso Como, 10, Milano',
@@ -1105,7 +997,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Silvia Carbone',
         'phone' => '02 9988776',
         'address' => 'Via Varesina, 33, Milano',
@@ -1115,7 +1006,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Paolo Negrini',
         'phone' => '02 1122334',
         'address' => 'Via Fauchè, 15, Milano',
@@ -1125,7 +1015,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elisa Martini',
         'phone' => '02 2233445',
         'address' => 'Viale Monza, 120, Milano',
@@ -1135,7 +1024,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Marco Valenti',
         'phone' => '02 3344556',
         'address' => 'Via Ripamonti, 66, Milano',
@@ -1145,7 +1033,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Sofia Galliani',
         'phone' => '02 6677889',
         'address' => 'Piazza Napoli, 22, Milano',
@@ -1155,7 +1042,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Luca Orsini',
         'phone' => '02 5566778',
         'address' => 'Corso Lodi, 98, Milano',
@@ -1165,7 +1051,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Federica Sartori',
         'phone' => '02 1231234',
         'address' => 'Via Muratori, 8, Milano',
@@ -1175,7 +1060,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessandro Messina',
         'phone' => '02 9876543',
         'address' => 'Via Vespucci, 42, Milano',
@@ -1185,7 +1069,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Chiara Lombardi',
         'phone' => '02 2468101',
         'address' => 'Via Mazzini, 17, Milano',
@@ -1195,7 +1078,6 @@ return [
     ],
     [ 
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Federica Sartori',
         'phone' => '02 1231234',
         'address' => 'Via Muratori, 8, Milano',
@@ -1205,7 +1087,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessandro Messina',
         'phone' => '02 9876543',
         'address' => 'Via Vespucci, 42, Milano',
@@ -1215,7 +1096,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Chiara Lombardi',
         'phone' => '02 2468101',
         'address' => 'Via Mazzini, 17, Milano',
@@ -1228,7 +1108,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Daniele Baroni',
         'phone' => '02 9876543',
         'address' => 'Via Leopardi, 28, Milano',
@@ -1238,7 +1117,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Sara Colombo',
         'phone' => '02 1234567',
         'address' => "Piazza Sant'Ambrogio, 15, Milano",
@@ -1248,7 +1126,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Giulio Ferrari',
         'phone' => '02 2233445',
         'address' => 'Via Marghera, 22, Milano',
@@ -1258,7 +1135,6 @@ return [
     ],
     [        
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Laura Bianchi',
         'phone' => '02 3344556',
         'address' => 'Corso Buenos Aires, 33, Milano',
@@ -1268,7 +1144,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Viscardi',
         'phone' => '02 6677889',
         'address' => 'Viale Monza, 14, Milano',
@@ -1278,7 +1153,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Chiara Mastroianni',
         'phone' => '02 7788990',
         'address' => 'Via Pompeo Leoni, 5, Milano',
@@ -1288,7 +1162,6 @@ return [
     ],
     [   
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Antonio Russo',
         'phone' => '02 5566778',
         'address' => 'Via Coni Zugna, 50, Milano',
@@ -1298,7 +1171,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elisa Monti',
         'phone' => '02 1122334',
         'address' => 'Via Cesare da Sesto, 7, Milano',
@@ -1308,7 +1180,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Luca Martini',
         'phone' => '02 1231234',
         'address' => 'Via Solferino, 24, Milano',
@@ -1318,7 +1189,6 @@ return [
     ],
     [   
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesca Romano',
         'phone' => '02 9876543',
         'address' => 'Via Lagrange, 12, Milano',
@@ -1328,7 +1198,6 @@ return [
     ],
     [      
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Greco',
         'phone' => '02 2468101',
         'address' => 'Piazza Wagner, 1, Milano',
@@ -1338,7 +1207,6 @@ return [
     ],
     [ 
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Valentina Serra',
         'phone' => '02 1357911',
         'address' => 'Corso Lodi, 101, Milano',
@@ -1348,7 +1216,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Martini',
         'phone' => '02 1231234',
         'address' => 'Via Solferino, 24, Milano',
@@ -1358,7 +1225,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesca Romano',
         'phone' => '02 9876543',
         'address' => 'Via Lagrange, 12, Milano',
@@ -1368,7 +1234,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Greco',
         'phone' => '02 2468101',
         'address' => 'Piazza Wagner, 1, Milano',
@@ -1381,7 +1246,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgia Lorenzi',
         'phone' => '02 3456789',
         'address' => 'Via Belisario, 23, Milano',
@@ -1391,7 +1255,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Matteo Giuliani',
         'phone' => '02 9876543',
         'address' => 'Piazza Sempione, 8, Milano',
@@ -1401,7 +1264,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Alessandra Amati',
         'phone' => '02 1234567',
         'address' => 'Corso Magenta, 32, Milano',
@@ -1411,7 +1273,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luigi De Santis',
         'phone' => '02 2244668',
         'address' => 'Via Vittor Pisani, 12, Milano',
@@ -1421,7 +1282,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Sara Caputo',
         'phone' => '02 5566778',
         'address' => 'Viale Zara, 45, Milano',
@@ -1431,7 +1291,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesco Villa',
         'phone' => '02 6677889',
         'address' => 'Via Luigi Galvani, 8, Milano',
@@ -1441,7 +1300,6 @@ return [
     ],
     [        
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Claudia Marchetti',
         'phone' => '02 7788990',
         'address' => 'Corso di Porta Romana, 112, Milano',
@@ -1451,7 +1309,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Antonio Russo',
         'phone' => '02 9988776',
         'address' => 'Via Melchiorre Gioia, 55, Milano',
@@ -1461,7 +1318,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Elisa Ferretti',
         'phone' => '02 1122334',
         'address' => 'Piazza della Repubblica, 23, Milano',
@@ -1471,7 +1327,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Marini',
         'phone' => '02 2233445',
         'address' => 'Via Mercalli, 30, Milano',
@@ -1481,7 +1336,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Bruni',
         'phone' => '02 3344556',
         'address' => 'Via San Vittore, 40, Milano',
@@ -1491,7 +1345,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Laura Nobile',
         'phone' => '02 4455667',
         'address' => 'Corso Sempione, 72, Milano',
@@ -1501,7 +1354,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Antonio Russo',
         'phone' => '02 9988776',
         'address' => 'Via Melchiorre Gioia, 55, Milano',
@@ -1511,7 +1363,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elisa Ferretti',
         'phone' => '02 1122334',
         'address' => 'Piazza della Repubblica, 23, Milano',
@@ -1521,7 +1372,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Marini',
         'phone' => '02 2233445',
         'address' => 'Via Mercalli, 30, Milano',
@@ -1534,7 +1384,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giuliana Moretti',
         'phone' => '02 3456789',
         'address' => 'Via Archimede, 24, Milano',
@@ -1544,7 +1393,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Roberto Serra',
         'phone' => '02 9876543',
         'address' => 'Piazza Cinque Giornate, 12, Milano',
@@ -1554,7 +1402,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Simona Bianchi',
         'phone' => '02 1234567',
         'address' => 'Via Garibaldi, 5, Milano',
@@ -1564,7 +1411,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Davide Gatti',
         'phone' => '02 2244668',
         'address' => 'Viale Monza, 101, Milano',
@@ -1574,7 +1420,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Lucia Ferraro',
         'phone' => '02 6677889',
         'address' => 'Via Manzoni, 47, Milano',
@@ -1584,7 +1429,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Pirelli',
         'phone' => '02 7788990',
         'address' => 'Corso Venezia, 33, Milano',
@@ -1594,7 +1438,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Elisabetta Mazza',
         'phone' => '02 5566778',
         'address' => 'Via Romano, 12, Milano',
@@ -1604,7 +1447,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesco Medici',
         'phone' => '02 1122334',
         'address' => 'Piazza Duomo, 21, Milano',
@@ -1614,7 +1456,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Anna Ricci',
         'phone' => '02 1231234',
         'address' => 'Via Montenapoleone, 8, Milano',
@@ -1624,7 +1465,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luigi Fontana',
         'phone' => '02 2233445',
         'address' => 'Via della Spiga, 22, Milano',
@@ -1634,7 +1474,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Sofia Galli',
         'phone' => '02 3344556',
         'address' => 'Corso Buenos Aires, 55, Milano',
@@ -1644,7 +1483,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giacomo Rossi',
         'phone' => '02 4455667',
         'address' => "Viale Beatrice d'Este, 7, Milano",
@@ -1654,7 +1492,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Pirelli',
         'phone' => '02 7788990',
         'address' => 'Corso Venezia, 33, Milano',
@@ -1664,7 +1501,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elisabetta Mazza',
         'phone' => '02 5566778',
         'address' => 'Via Romano, 12, Milano',
@@ -1674,7 +1510,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesco Medici',
         'phone' => '02 1122334',
         'address' => 'Piazza Duomo, 21, Milano',
@@ -1687,7 +1522,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Claudio Marchesi',
         'phone' => '02 3456789',
         'address' => 'Via Boccaccio, 15, Milano',
@@ -1697,7 +1531,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Alessia Bertoni',
         'phone' => '02 9876543',
         'address' => 'Corso Genova, 44, Milano',
@@ -1707,7 +1540,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Marco Valenti',
         'phone' => '02 1234567',
         'address' => 'Piazza Castello, 22, Milano',
@@ -1717,7 +1549,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Serena Fumagalli',
         'phone' => '02 2244668',
         'address' => 'Via Moscova, 33, Milano',
@@ -1727,7 +1558,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Neri',
         'phone' => '02 6677889',
         'address' => 'Via Volturno, 5, Milano',
@@ -1737,7 +1567,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgia Palumbo',
         'phone' => '02 7788990',
         'address' => 'Viale Tibaldi, 48, Milano',
@@ -1747,7 +1576,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Elena Grasso',
         'phone' => '02 5566778',
         'address' => 'Corso Lodi, 101, Milano',
@@ -1757,7 +1585,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Conti',
         'phone' => '02 1122334',
         'address' => 'Via Mecenate, 77, Milano',
@@ -1767,7 +1594,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Roberta Bianchi',
         'phone' => '02 1231234',
         'address' => 'Via Marghera, 2, Milano',
@@ -1777,7 +1603,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Andrea Mancini',
         'phone' => '02 2233445',
         'address' => 'Piazza Oberdan, 3, Milano',
@@ -1787,7 +1612,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Valeria Rossi',
         'phone' => '02 3344556',
         'address' => 'Via Paolo Sarpi, 60, Milano',
@@ -1797,7 +1621,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => "Giovanni D'Angelo",
         'phone' => '02 4455667',
         'address' => 'Corso Sempione, 27, Milano',
@@ -1807,7 +1630,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elena Grasso',
         'phone' => '02 5566778',
         'address' => 'Corso Lodi, 101, Milano',
@@ -1817,7 +1639,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Conti',
         'phone' => '02 1122334',
         'address' => 'Via Mecenate, 77, Milano',
@@ -1827,7 +1648,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Roberta Bianchi',
         'phone' => '02 1231234',
         'address' => 'Via Marghera, 2, Milano',
@@ -1840,7 +1660,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simona Piras',
         'phone' => '02 3456789',
         'address' => 'Via Luigi Canonica, 45, Milano',
@@ -1850,7 +1669,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Davide Martelli',
         'phone' => '02 9876543',
         'address' => 'Corso San Gottardo, 22, Milano',
@@ -1860,7 +1678,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Giulia Bianco',
         'phone' => '02 1234567',
         'address' => "Via Melzi d'Eril, 10, Milano",
@@ -1870,7 +1687,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Lorenzo Gatti',
         'phone' => '02 2244668',
         'address' => 'Piazza Napoli, 32, Milano',
@@ -1880,7 +1696,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessia Ferraro',
         'phone' => '02 6677889',
         'address' => 'Via Savona, 57, Milano',
@@ -1890,7 +1705,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesco Mariani',
         'phone' => '02 7788990',
         'address' => 'Viale Monza, 140, Milano',
@@ -1900,7 +1714,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Elisabetta Costa',
         'phone' => '02 5566778',
         'address' => 'Via Cenisio, 78, Milano',
@@ -1910,7 +1723,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgio Sala',
         'phone' => '02 1122334',
         'address' => 'Corso Lodi, 123, Milano',
@@ -1920,7 +1732,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Carla Ricci',
         'phone' => '02 1231234',
         'address' => 'Via Pompeo Leoni, 43, Milano',
@@ -1930,7 +1741,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Vitali',
         'phone' => '02 2233445',
         'address' => 'Via Palermo, 21, Milano',
@@ -1940,7 +1750,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Serena Rossi',
         'phone' => '02 3344556',
         'address' => 'Piazzale Baracca, 7, Milano',
@@ -1950,7 +1759,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Andrea Belli',
         'phone' => '02 4455667',
         'address' => 'Via Morosini, 30, Milano',
@@ -1960,7 +1768,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgio Sala',
         'phone' => '02 1122334',
         'address' => 'Corso Lodi, 123, Milano',
@@ -1970,7 +1777,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Carla Ricci',
         'phone' => '02 1231234',
         'address' => 'Via Pompeo Leoni, 43, Milano',
@@ -1980,7 +1786,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Vitali',
         'phone' => '02 2233445',
         'address' => 'Via Palermo, 21, Milano',
@@ -1993,7 +1798,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Claudio Verdi',
         'phone' => '02 5467890',
         'address' => 'Via Forze Armate, 90, Milano',
@@ -2003,7 +1807,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Giulia Neri',
         'phone' => '02 5987654',
         'address' => 'Viale Umbria, 35, Milano',
@@ -2013,7 +1816,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Simone Bianchi',
         'phone' => '02 2345678',
         'address' => 'Corso Genova, 12, Milano',
@@ -2023,7 +1825,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessandro Martini',
         'phone' => '02 8877665',
         'address' => 'Piazza Firenze, 27, Milano',
@@ -2033,7 +1834,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Laura Rossi',
         'phone' => '02 6644223',
         'address' => 'Via Pasubio, 14, Milano',
@@ -2043,7 +1843,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Gialli',
         'phone' => '02 4455667',
         'address' => 'Via Solari, 40, Milano',
@@ -2053,7 +1852,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Elisa Ferrari',
         'phone' => '02 9988776',
         'address' => 'Via Savona, 52, Milano',
@@ -2063,7 +1861,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Stefano Bianco',
         'phone' => '02 1234567',
         'address' => 'Via Tortona, 22, Milano',
@@ -2073,7 +1870,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Daniela Verde',
         'phone' => '02 7654321',
         'address' => 'Corso Lodi, 101, Milano',
@@ -2083,7 +1879,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Moro',
         'phone' => '02 5566778',
         'address' => 'Via Montenapoleone, 8, Milano',
@@ -2093,7 +1888,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Sara Colombo',
         'phone' => '02 3344556',
         'address' => 'Piazza Duomo, 21, Milano',
@@ -2103,7 +1897,6 @@ return [
     ],
     [ 
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giuseppe Mazzini',
         'phone' => '02 2233445',
         'address' => 'Corso di Porta Ticinese, 99, Milano',
@@ -2113,7 +1906,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Claudio Verdi',
         'phone' => '02 5467890',
         'address' => 'Via Forze Armate, 90, Milano',
@@ -2123,7 +1915,6 @@ return [
     ],
     [ 
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giulia Neri',
         'phone' => '02 5987654',
         'address' => 'Viale Umbria, 35, Milano',
@@ -2133,7 +1924,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Bianchi',
         'phone' => '02 2345678',
         'address' => 'Corso Genova, 12, Milano',
@@ -2146,7 +1936,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Beatrice Ferrara',
         'phone' => '02 4567890',
         'address' => 'Via Leopardi, 8, Milano',
@@ -2156,7 +1945,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Emanuele Russo',
         'phone' => '02 9876543',
         'address' => 'Corso Magenta, 46, Milano',
@@ -2166,7 +1954,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Sofia Gallo',
         'phone' => '02 2345678',
         'address' => 'Via Montenapoleone, 19, Milano',
@@ -2176,7 +1963,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessandro Conti',
         'phone' => '02 8765432',
         'address' => 'Piazza Cadorna, 5, Milano',
@@ -2186,7 +1972,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgia Martini',
         'phone' => '02 5647382',
         'address' => 'Viale Abruzzi, 42, Milano',
@@ -2196,7 +1981,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Bianchi',
         'phone' => '02 9988776',
         'address' => 'Via Savona, 12, Milano',
@@ -2206,7 +1990,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Marco Neri',
         'phone' => '02 1122334',
         'address' => 'Via Coni Zugna, 34, Milano',
@@ -2216,7 +1999,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Valentina Rossi',
         'phone' => '02 2233445',
         'address' => 'Via Cesare Correnti, 22, Milano',
@@ -2226,7 +2008,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Davide Greco',
         'phone' => '02 3344556',
         'address' => 'Corso Buenos Aires, 33, Milano',
@@ -2236,7 +2017,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Lombardo',
         'phone' => '02 4455667',
         'address' => 'Via Settembrini, 50, Milano',
@@ -2246,7 +2026,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Laura Caputo',
         'phone' => '02 5566778',
         'address' => 'Piazza Cinque Giornate, 1, Milano',
@@ -2256,7 +2035,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Andrea Fiori',
         'phone' => '02 6677889',
         'address' => 'Via Mercato, 15, Milano',
@@ -2266,7 +2044,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Lombardo',
         'phone' => '02 4455667',
         'address' => 'Via Settembrini, 50, Milano',
@@ -2276,7 +2053,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Laura Caputo',
         'phone' => '02 5566778',
         'address' => 'Piazza Cinque Giornate, 1, Milano',
@@ -2286,7 +2062,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Andrea Fiori',
         'phone' => '02 6677889',
         'address' => 'Via Mercato, 15, Milano',
@@ -2299,7 +2074,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Cristina Farina',
         'phone' => '02 9876543',
         'address' => 'Via Monte Rosa, 76, Milano',
@@ -2309,7 +2083,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Giovanni Amato',
         'phone' => '02 1234567',
         'address' => 'Piazzale Loreto, 22, Milano',
@@ -2319,7 +2092,6 @@ return [
     ],
     [   
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Anna Ricci',
         'phone' => '02 2345678',
         'address' => 'Corso Buenos Aires, 101, Milano',
@@ -2329,7 +2101,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Bianchi',
         'phone' => '02 3456789',
         'address' => 'Via Brera, 32, Milano',
@@ -2339,7 +2110,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Neri',
         'phone' => '02 4567890',
         'address' => 'Via Morosini, 14, Milano',
@@ -2349,7 +2119,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Sofia Verdi',
         'phone' => '02 5678901',
         'address' => 'Viale Monza, 45, Milano',
@@ -2359,7 +2128,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Elena Grasso',
         'phone' => '02 6789012',
         'address' => 'Via Settembrini, 59, Milano',
@@ -2369,7 +2137,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Davide Ferraro',
         'phone' => '02 7890123',
         'address' => 'Piazza della Scala, 7, Milano',
@@ -2379,7 +2146,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Giorgia Martini',
         'phone' => '02 8901234',
         'address' => 'Via Dante, 21, Milano',
@@ -2389,7 +2155,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Stefano Gialli',
         'phone' => '02 9012345',
         'address' => 'Via Manzoni, 40, Milano',
@@ -2399,7 +2164,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesca Rossi',
         'phone' => '02 9123456',
         'address' => 'Via della Moscova, 60, Milano',
@@ -2409,7 +2173,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giuseppe Bianco',
         'phone' => '02 9234567',
         'address' => 'Corso di Porta Vittoria, 12, Milano',
@@ -2419,7 +2182,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Davide Ferraro',
         'phone' => '02 7890123',
         'address' => 'Piazza della Scala, 7, Milano',
@@ -2429,7 +2191,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgia Martini',
         'phone' => '02 8901234',
         'address' => 'Via Dante, 21, Milano',
@@ -2439,7 +2200,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Stefano Gialli',
         'phone' => '02 9012345',
         'address' => 'Via Manzoni, 40, Milano',
@@ -2452,7 +2212,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Serena Loi',
         'phone' => '02 1234567',
         'address' => 'Via Mazzini, 13, Milano',
@@ -2462,7 +2221,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Michele Ferri',
         'phone' => '02 2345678',
         'address' => 'Corso San Gottardo, 45, Milano',
@@ -2472,7 +2230,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Anna Pirelli',
         'phone' => '02 3456789',
         'address' => 'Piazza Napoli, 21, Milano',
@@ -2482,7 +2239,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgio Brambilla',
         'phone' => '02 4567890',
         'address' => 'Via Cesare Beccaria, 8, Milano',
@@ -2492,7 +2248,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Laura Moroni',
         'phone' => '02 5678901',
         'address' => 'Via Belisario, 22, Milano',
@@ -2502,7 +2257,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Carlo Rossi',
         'phone' => '02 6789012',
         'address' => 'Via Solferino, 34, Milano',
@@ -2512,7 +2266,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Roberta Gallo',
         'phone' => '02 7890123',
         'address' => 'Piazza Cinque Giornate, 17, Milano',
@@ -2522,7 +2275,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simona Marchetti',
         'phone' => '02 8901234',
         'address' => 'Via Mercalli, 12, Milano',
@@ -2532,7 +2284,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Daniele Bianchi',
         'phone' => '02 9012345',
         'address' => 'Via Leopardi, 27, Milano',
@@ -2542,7 +2293,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Valentina Serra',
         'phone' => '02 9123456',
         'address' => 'Corso Genova, 5, Milano',
@@ -2552,7 +2302,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Matteo Verdi',
         'phone' => '02 9234567',
         'address' => 'Via Tortona, 19, Milano',
@@ -2562,7 +2311,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elena Conti',
         'phone' => '02 9345678',
         'address' => 'Via Savona, 10, Milano',
@@ -2572,7 +2320,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Laura Moroni',
         'phone' => '02 5678901',
         'address' => 'Via Belisario, 22, Milano',
@@ -2582,7 +2329,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Carlo Rossi',
         'phone' => '02 6789012',
         'address' => 'Via Solferino, 34, Milano',
@@ -2592,7 +2338,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Roberta Gallo',
         'phone' => '02 7890123',
         'address' => 'Piazza Cinque Giornate, 17, Milano',
@@ -2605,7 +2350,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesca Marino',
         'phone' => '02 9876543',
         'address' => 'Via Vigevano, 22, Milano',
@@ -2615,7 +2359,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Antonio Grimaldi',
         'phone' => '02 2345678',
         'address' => 'Piazza Tricolore, 4, Milano',
@@ -2625,7 +2368,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Giulia Bianco',
         'phone' => '02 3456789',
         'address' => 'Via Monti, 8, Milano',
@@ -2635,7 +2377,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Savino',
         'phone' => '02 4567890',
         'address' => 'Corso Como, 10, Milano',
@@ -2645,7 +2386,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elisa Martini',
         'phone' => '02 5678901',
         'address' => 'Via Palermo, 5, Milano',
@@ -2655,7 +2395,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Gentile',
         'phone' => '02 6789012',
         'address' => 'Via Solferino, 18, Milano',
@@ -2665,7 +2404,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Sara Ricci',
         'phone' => '02 7890123',
         'address' => 'Via della Moscova, 33, Milano',
@@ -2675,7 +2413,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Davide Ferraro',
         'phone' => '02 8901234',
         'address' => 'Piazza della Repubblica, 12, Milano',
@@ -2685,7 +2422,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Lorenzo De Luca',
         'phone' => '02 9012345',
         'address' => 'Via Fatebenefratelli, 21, Milano',
@@ -2695,7 +2431,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marta Ferrari',
         'phone' => '02 9123456',
         'address' => 'Viale Monza, 120, Milano',
@@ -2705,7 +2440,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Andrea Pellegrini',
         'phone' => '02 9234567',
         'address' => 'Corso di Porta Romana, 104, Milano',
@@ -2715,7 +2449,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgia Milano',
         'phone' => '02 9345678',
         'address' => 'Via Cenisio, 77, Milano',
@@ -2725,7 +2458,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Sara Ricci',
         'phone' => '02 7890123',
         'address' => 'Via della Moscova, 33, Milano',
@@ -2735,7 +2467,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Davide Ferraro',
         'phone' => '02 8901234',
         'address' => 'Piazza della Repubblica, 12, Milano',
@@ -2745,7 +2476,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Lorenzo De Luca',
         'phone' => '02 9012345',
         'address' => 'Via Fatebenefratelli, 21, Milano',
@@ -2758,7 +2488,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elena Fabbri',
         'phone' => '02 9988776',
         'address' => 'Via Mercato, 3, Milano',
@@ -2768,7 +2497,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Paolo Bianchi',
         'phone' => '02 8866442',
         'address' => 'Viale Papiniano, 44, Milano',
@@ -2778,7 +2506,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Giorgia Moretti',
         'phone' => '02 7744553',
         'address' => 'Piazza Sant\'Ambrogio, 15, Milano',
@@ -2788,7 +2515,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Andrea Conti',
         'phone' => '02 6655443',
         'address' => 'Via Manzoni, 56, Milano',
@@ -2798,7 +2524,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Rossi',
         'phone' => '02 5533221',
         'address' => 'Corso Lodi, 98, Milano',
@@ -2808,7 +2533,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Lucia Esposito',
         'phone' => '02 1122334',
         'address' => 'Via Settala, 21, Milano',
@@ -2818,7 +2542,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Simone Ferrari',
         'phone' => '02 4433221',
         'address' => 'Via Vittorio Emanuele, 24, Milano',
@@ -2828,7 +2551,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Alessandro Greco',
         'phone' => '02 3344556',
         'address' => 'Via Sforza, 47, Milano',
@@ -2838,7 +2560,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Francesca Gallo',
         'phone' => '02 7788990',
         'address' => 'Piazza Duomo, 12, Milano',
@@ -2848,7 +2569,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giulia Martini',
         'phone' => '02 5566778',
         'address' => 'Via Visconti, 19, Milano',
@@ -2858,7 +2578,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Luca Sala',
         'phone' => '02 6688776',
         'address' => 'Corso Venezia, 33, Milano',
@@ -2868,7 +2587,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Valeria Nobile',
         'phone' => '02 9876543',
         'address' => 'Via Mazzini, 6, Milano',
@@ -2878,7 +2596,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Elena Fabbri',
         'phone' => '02 9988776',
         'address' => 'Via Mercato, 3, Milano',
@@ -2888,7 +2605,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Paolo Bianchi',
         'phone' => '02 8866442',
         'address' => 'Viale Papiniano, 44, Milano',
@@ -2898,7 +2614,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Giorgia Moretti',
         'phone' => '02 7744553',
         'address' => 'Piazza Sant\'Ambrogio, 15, Milano',
@@ -2911,7 +2626,6 @@ return [
 
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Daniele Ricci',
         'phone' => '02 9876543',
         'address' => 'Via Tortona, 37, Milano',
@@ -2921,7 +2635,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Chiara Ferraro',
         'phone' => '02 2345678',
         'address' => 'Corso Buenos Aires, 55, Milano',
@@ -2931,7 +2644,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Luca Martini',
         'phone' => '02 3456789',
         'address' => 'Piazza Duomo, 21, Milano',
@@ -2941,7 +2653,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giorgia Bellini',
         'phone' => '02 4567890',
         'address' => 'Via Corridoni, 12, Milano',
@@ -2951,7 +2662,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Simone Bianco',
         'phone' => '02 5678901',
         'address' => 'Viale Monza, 34, Milano',
@@ -2961,7 +2671,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Andrea Neri',
         'phone' => '02 6789012',
         'address' => 'Via Manzoni, 8, Milano',
@@ -2971,7 +2680,6 @@ return [
     ],
     [
         'payment_status' => 'In Attesa',
-        'total_price' => null,
         'name' => 'Sara Colombo',
         'phone' => '02 7890123',
         'address' => 'Corso Genova, 22, Milano',
@@ -2981,7 +2689,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Marco Giordano',
         'phone' => '02 8901234',
         'address' => 'Via Savona, 50, Milano',
@@ -2991,7 +2698,6 @@ return [
     ],
     [
         'payment_status' => 'Fallito',
-        'total_price' => null,
         'name' => 'Laura Verdi',
         'phone' => '02 9012345',
         'address' => 'Piazza Sant\'Ambrogio, 16, Milano',
@@ -3001,7 +2707,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesco Greco',
         'phone' => '02 9123456',
         'address' => 'Via Volta, 4, Milano',
@@ -3011,7 +2716,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giulia Rossi',
         'phone' => '02 9234567',
         'address' => 'Corso Como, 10, Milano',
@@ -3021,7 +2725,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Emanuele Fiori',
         'phone' => '02 9345678',
         'address' => 'Via Pasubio, 12, Milano',
@@ -3031,7 +2734,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Francesco Greco',
         'phone' => '02 9123456',
         'address' => 'Via Volta, 4, Milano',
@@ -3041,7 +2743,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Giulia Rossi',
         'phone' => '02 9234567',
         'address' => 'Corso Como, 10, Milano',
@@ -3051,7 +2752,6 @@ return [
     ],
     [
         'payment_status' => 'Completato',
-        'total_price' => null,
         'name' => 'Emanuele Fiori',
         'phone' => '02 9345678',
         'address' => 'Via Pasubio, 12, Milano',

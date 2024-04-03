@@ -28,8 +28,9 @@ class OrderPlateTableSeeder extends Seeder
             // Ottieni ID dei piatti dal gruppo selezionato
             $selectedPlateIds = $selectedPlatesGroup->pluck('id');
             
-            // Seleziona un numero casuale di piatti da questo gruppo
-            $platesToAttach = $selectedPlateIds->random(rand(1, $selectedPlateIds->count()))->all();
+            // Seleziona un numero casuale di piatti da questo gruppo, con un massimo di 5
+            $maxPlates = min(5, $selectedPlateIds->count());
+            $platesToAttach = $selectedPlateIds->random(rand(1, $maxPlates))->all();
 
             foreach ($platesToAttach as $plateId) {
                 // Assegna una quantità casuale per ogni piatto selezionato
