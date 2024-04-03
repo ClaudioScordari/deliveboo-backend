@@ -15,6 +15,7 @@ use App\Http\Requests\UpdatePlateRequest;
 
 // Facades
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
 
 class PlateController extends Controller
 {
@@ -130,6 +131,10 @@ class PlateController extends Controller
 
     public function destroy($id)
     {
+        Log::info("Tentativo di cancellare il piatto con ID: $id");
+
+        Log::info("Cancellazione del piatto con ID: {$id}");
+
         $plate = Plate::findOrFail($id);
     
         $plate->delete();
