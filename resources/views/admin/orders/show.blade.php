@@ -17,6 +17,7 @@
                     <p class="card-text"><strong>Nome Cliente:</strong> {{ $order->name }}</p>
                     <p class="card-text"><strong>Telefono:</strong> {{ $order->phone }}</p>
                     <p class="card-text"><strong>Indirizzo:</strong> {{ $order->address }}</p>
+                    <p class="card-text"><strong>Indirizzo:</strong> {{ $order->created_at }}</p>
                     <p class="card-text">
                         <strong>Stato Pagamento:</strong> 
                         @if($order->payment_status == 'Completato')
