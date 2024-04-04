@@ -19,11 +19,14 @@
 
         <canvas id="mostOrderedPlatesChart"></canvas>
 
+        <canvas id="mostOrderedPlatesLast30DaysChart"></canvas>
+
     </div>
         
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     // Grafico degli ordini
+    
     const ordersCtx = document.getElementById('ordersChart').getContext('2d');
     const ordersChart = new Chart(ordersCtx, {
         type: 'line',
@@ -45,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
-
+    
     // Grafico per ordini ultimo mese
     const ctx = document.getElementById('dailyOrdersChart').getContext('2d');
     const dailyOrdersChart = new Chart(ctx, {
@@ -63,18 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         options: {
             scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }],
-                xAxes: [{
-                    display: true,
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Giorno'
-                    }
-                }]
+                y: {
+                    beginAtZero: true
+                }
             },
             legend: {
                 display: true,
@@ -88,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
             maintainAspectRatio: true,
         }
     });
-
+    
     // Grafico dei guadagni nell'ultimo mese
     const dailyRevenueCtx = document.getElementById('dailyRevenueChart').getContext('2d');
     const dailyRevenueChart = new Chart(dailyRevenueCtx, {
@@ -168,6 +162,41 @@ document.addEventListener('DOMContentLoaded', function () {
             title: {
                 display: true,
                 text: 'Piatti più ordinati nell\'ultimo anno'
+            }
+        }
+    });
+
+    // Piatti più ordinati ultimo mese
+    var platesMonthCtx = document.getElementById('mostOrderedPlatesLast30DaysChart').getContext('2d');
+    var mostOrderedPlatesLast30DaysChart = new Chart(platesMonthCtx, {
+        type: 'pie',
+        data: {
+            labels: @json($mostOrderedPlatesLast30Days->pluck('name')),
+            datasets: [{
+                data: @json($mostOrderedPlatesLast30Days->pluck('total_ordered')),
+                backgroundColor: [
+                    // Colori per ogni segmento del grafico
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                ],
+                borderColor: [
+                    // Colori del bordo per ogni segmento
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Piatti più ordinati negli ultimi 30 giorni'
             }
         }
     });

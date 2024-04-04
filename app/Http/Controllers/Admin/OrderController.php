@@ -137,6 +137,24 @@ class OrderController extends Controller
         return $mostOrderedPlates;
     }
 
+    public function getMostOrderedPlatesLast30Days($restaurantId) {
+        $thirtyDaysAgo = Carbon::now()->subDays(29)->startOfDay();
+        $today = Carbon::now()->endOfDay();
+    
+        $mostOrderedPlatesData = DB::table('orders')
+            ->join('order_plate', 'orders.id', '=', 'order_plate.order_id')
+            ->join('plates', 'order_plate.plate_id', '=', 'plates.id')
+            ->select('plates.name', DB::raw('SUM(order_plate.quantity) as total_ordered'))
+            ->where('plates.restaurant_id', $restaurantId)
+            ->whereBetween('orders.created_at', [$thirtyDaysAgo, $today])
+            ->groupBy('plates.name')
+            ->orderBy('total_ordered', 'DESC')
+            ->limit(5)
+            ->get();
+    
+        return $mostOrderedPlatesData;
+    }
+
     public function showMonthlyStatistics()
     {
         $user = auth()->user();
@@ -147,6 +165,7 @@ class OrderController extends Controller
         $restaurantId = $user->restaurant->id;
         $statistics = $this->getMonthlyOrdersStatistics($restaurantId);
         $mostOrderedPlates = $this->getYearlyMostOrderedPlates($restaurantId);
+        $mostOrderedPlatesLast30Days = $this->getMostOrderedPlatesLast30Days($restaurantId);
 
         $plateNames = $mostOrderedPlates->pluck('name');
         $plateQuantities = $mostOrderedPlates->pluck('quantity_ordered');
@@ -227,6 +246,7 @@ class OrderController extends Controller
                                                 'plateData',
                                                 'plateNames', 
                                                 'plateQuantities',
+                                                'mostOrderedPlatesLast30Days',
                                             ));
     }
 
