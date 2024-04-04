@@ -42,7 +42,7 @@ class OrderController extends Controller
             $order->phone = $validated['phone'];
             $order->address = $validated['address'];
             $order->payment_status = $request->payment_status;
-
+    
             // Calcola il total_price
             $totalPrice = 0;
             foreach ($request->plates as $plate) {
@@ -51,16 +51,12 @@ class OrderController extends Controller
                     $totalPrice += $plateDetails->price * $plate['quantity'];
                 }
             }
-            // Assegna il total_price calcolato
             $order->total_price = $totalPrice;
-   
+            $order->save(); // Salva l'ordine prima di allegare i piatti
+    
             foreach ($validated['plates'] as $plateData) {
-                $plate = Plate::findOrFail($plateData['id']);
-                $order->plates()->attach($plate, ['quantity' => $plateData['quantity']]);
-                $totalPrice += $plate->price * $plateData['quantity'];
+                $order->plates()->attach($plateData['id'], ['quantity' => $plateData['quantity']]);
             }
-
-            $order->save();
     
             DB::commit();
             return response()->json(['message' => 'Ordine creato con successo', 'order' => $order], 201);
@@ -69,5 +65,4 @@ class OrderController extends Controller
             return response()->json(['message' => "Errore nella creazione dell'ordine", 'error' => $e->getMessage()], 500);
         }
     }
-
 }
