@@ -5,7 +5,7 @@
 @section('main-content')
 
     <div class="container mt-5">
-        <h1>Statistiche Ordini</h1>
+        <h1 class="text-success">Statistiche Ordini</h1>
         <p>Totale Ordini: <strong>{{ $totalOrders }}</strong></p>
         <canvas id="ordersChart"></canvas>
 
@@ -146,11 +146,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
+                    'rgba(230, 126, 34, 0.2)',
+                    'rgba(115, 168, 155, 0.2)',
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
+                    'rgba(230, 126, 34, 1)',
+                    'rgba(115, 168, 155, 1)',
                 ],
                 borderWidth: 1
             }]
@@ -180,12 +184,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
+                    'rgba(230, 126, 34, 0.2)',
+                    'rgba(115, 168, 155, 0.2)',
                 ],
                 borderColor: [
                     // Colori del bordo per ogni segmento
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(230, 126, 34, 1)',
+                    'rgba(115, 168, 155, 1)',
                 ],
                 borderWidth: 1
             }]
