@@ -8,8 +8,11 @@
         <h1>Statistiche Ordini</h1>
         <p>Totale Ordini: <strong>{{ $totalOrders }}</strong></p>
         <canvas id="ordersChart"></canvas>
-        <canvas id="lastMonthOrdersChart"></canvas>
-        <p>Totale Soldi Guadagnati: <strong>€{{ number_format($totalRevenue, 2) }}</strong></p>
+
+        <p>Ordini ultimi 30 giorni: <strong>{{ $orderCount }}</strong></p>
+        <canvas id="dailyOrdersChart"></canvas>
+
+        <p>Totale Soldi Guadagnati: <strong>{{ number_format($totalRevenue, 2) }}€</strong></p>
         <canvas id="revenueChart"></canvas>
     </div>
         
@@ -38,26 +41,46 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-        // Grafico per ordini ultimo mese
-        const lastMonthOrdersCtx = document.getElementById('lastMonthOrdersChart').getContext('2d');
-    const lastMonthOrdersChart = new Chart(lastMonthOrdersCtx, {
-        type: 'bar',
+    // Grafico per ordini ultimo mese
+    const ctx = document.getElementById('dailyOrdersChart').getContext('2d');
+    const dailyOrdersChart = new Chart(ctx, {
+        type: 'line',
         data: {
-            labels: ['Ultimo Mese'],
+            labels: @json($labels),
             datasets: [{
                 label: 'Numero di Ordini',
-                data: [{{ $lastMonthOrdersCount }}],
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 1
+                data: @json($ordersCountPerDay),
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1,
+                fill: false
             }]
         },
         options: {
             scales: {
-                y: {
-                    beginAtZero: true
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }],
+                xAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Giorno'
+                    }
+                }]
+            },
+            legend: {
+                display: true,
+                position: 'top',
+                labels: {
+                    fontColor: '#333',
+                    usePointStyle: true
                 }
-            }
+            },
+            responsive: true,
+            maintainAspectRatio: true,
         }
     });
 

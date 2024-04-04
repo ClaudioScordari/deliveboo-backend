@@ -115,12 +115,37 @@ class OrderController extends Controller
         $restaurantId = $user->restaurant->id;
         $statistics = $this->getMonthlyOrdersStatistics($restaurantId);
 
-        $lastMonthOrdersCount = Order::whereHas('plates', function ($query) use ($restaurantId) {
-            $query->where('restaurant_id', $restaurantId);
-        })
-        ->whereMonth('created_at', '=', Carbon::now()->subMonth()->month)
-        ->whereYear('created_at', '=', Carbon::now()->year)
-        ->count();
+        // Preparazione delle etichette per gli ultimi 30 giorni
+        $labels = collect(new \DatePeriod(
+            Carbon::now()->subDays(29),
+            new \DateInterval('P1D'),
+            Carbon::now()
+        ))->map(function ($date) {
+            return Carbon::instance($date)->format('Y-m-d');
+        });
+
+        // Ottiene il conteggio degli ordini per ogni giorno per il ristorante specifico
+        $today = Carbon::today();
+        $thirtyDaysAgo = $today->copy()->subDays(29);
+        
+        // Crea un array per le etichette e uno per i conteggi degli ordini
+        $labels = [];
+        $ordersCountPerDay = [];
+        
+        // Popola gli array con i dati per ogni giorno degli ultimi 30 giorni
+        for ($date = $thirtyDaysAgo; $date->lte($today); $date->addDay()) {
+            $formattedDate = $date->format('d M');
+            $labels[] = $formattedDate;
+        
+            // Calcola il conteggio degli ordini per quella data
+            $orderCount = Order::whereDate('created_at', $date)
+                                ->whereHas('plates', function ($query) use ($restaurantId) {
+                                    $query->where('plates.restaurant_id', $restaurantId);
+                                })
+                                ->count();
+        
+            $ordersCountPerDay[] = $orderCount;
+        }
 
         $totalOrders = Order::whereHas('plates', function($query) use ($restaurantId) {
             $query->where('restaurant_id', $restaurantId);
@@ -130,7 +155,7 @@ class OrderController extends Controller
             $query->where('restaurant_id', $restaurantId);
         })->sum('total_price');
 
-        return view('admin.stats.index', compact('statistics', 'totalOrders', 'totalRevenue', 'lastMonthOrdersCount'));
+        return view('admin.stats.index', compact('statistics', 'totalOrders', 'totalRevenue','labels', 'ordersCountPerDay', 'formattedDate', 'orderCount'));
     }
 
 }
