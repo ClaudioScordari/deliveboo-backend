@@ -16,6 +16,9 @@
         <canvas id="revenueChart"></canvas>
 
         <canvas id="dailyRevenueChart"></canvas>
+
+        <canvas id="mostOrderedPlatesChart"></canvas>
+
     </div>
         
 <script>
@@ -134,7 +137,40 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    
+    // piatti più ordinati
+    const platesCtx = document.getElementById('mostOrderedPlatesChart').getContext('2d');
+    const mostOrderedPlatesChart = new Chart(platesCtx, {
+        type: 'pie',
+        data: {
+            labels: @json($plateNames),
+            datasets: [{
+                data: @json($plateQuantities),
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    // Altri colori per i piatti
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    // Altri bordi per i piatti
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Piatti più ordinati nell\'ultimo anno'
+            }
+        }
+    });
 });
 
 </script>

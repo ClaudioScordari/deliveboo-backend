@@ -75,34 +75,66 @@ class OrderController extends Controller
         $months = [];
         $ordersCount = [];
         $revenuePerMonth = [];
+        $mostOrderedPlatesData = [];
     
         for ($i = 12; $i >= 0; $i--) {
             $date = Carbon::now()->subMonths($i);
             $monthName = $date->format('F Y');
-            $year = $date->format('Y');
-    
-            $orders = DB::table('orders')
-                        ->join('order_plate', 'orders.id', '=', 'order_plate.order_id')
-                        ->join('plates', 'order_plate.plate_id', '=', 'plates.id')
-                        ->where('plates.restaurant_id', $restaurantId)
-                        ->whereYear('orders.created_at', $year)
-                        ->whereMonth('orders.created_at', $date->month)
-                        ->select(DB::raw('count(distinct orders.id) as orderCount'), DB::raw('sum(total_price) as revenue'))
-                        ->first();
-
-             // Calcola la somma dei total_price per il mese corrente
-            $monthlyRevenue = Order::whereHas('plates', function ($query) use ($restaurantId) {
-                $query->where('plates.restaurant_id', $restaurantId);
-            })->whereYear('created_at', $year)
-            ->whereMonth('created_at', $date->month)
-            ->sum('total_price');
-    
+            
+            $monthlyOrders = Order::whereHas('plates', function ($query) use ($restaurantId) {
+                                $query->where('restaurant_id', $restaurantId);
+                            })
+                            ->whereYear('created_at', $date->format('Y'))
+                            ->whereMonth('created_at', $date->format('m'))
+                            ->get();
+            
+            $ordersCount[] = $monthlyOrders->count();
+            $revenuePerMonth[] = $monthlyOrders->sum('total_price');
             $months[] = $monthName;
-            $ordersCount[] = $orders->orderCount;
-            $revenuePerMonth[] = $monthlyRevenue;
+    
+            // Calcolo dei piatti più ordinati per il mese corrente
+            $platesCount = [];
+            foreach ($monthlyOrders as $order) {
+                foreach ($order->plates as $plate) {
+                    if (!array_key_exists($plate->id, $platesCount)) {
+                        $platesCount[$plate->id] = ['name' => $plate->name, 'count' => 0];
+                    }
+                    $platesCount[$plate->id]['count'] += 1; // Assumi che tu abbia una relazione many-to-many con 'quantity' nella tabella pivot
+                }
+            }
+    
+            // Ordina e prendi i primi 5 piatti per numero di ordini
+            usort($platesCount, function ($a, $b) {
+                return $b['count'] - $a['count'];
+            });
+            $mostOrderedPlatesData[] = array_slice($platesCount, 0, 5);
         }
     
-        return ['months' => $months, 'ordersCount' => $ordersCount, 'revenuePerMonth' => $revenuePerMonth];
+        return [
+            'months' => $months,
+            'ordersCount' => $ordersCount,
+            'revenuePerMonth' => $revenuePerMonth,
+            'mostOrderedPlatesData' => $mostOrderedPlatesData // Dati dei piatti più ordinati per ogni mese
+        ];
+    }
+
+    public function getYearlyMostOrderedPlates($restaurantId)
+    {
+        $fromDate = Carbon::now()->subYear()->startOfDay();
+        $toDate = Carbon::now()->endOfDay();
+
+        $mostOrderedPlates = Plate::where('restaurant_id', $restaurantId)
+                                ->whereHas('orders', function ($query) use ($fromDate, $toDate) {
+                                    $query->whereBetween('created_at', [$fromDate, $toDate]);
+                                })
+                                ->withCount(['orders as quantity_ordered' => function ($query) use ($fromDate, $toDate) {
+                                    $query->whereBetween('orders.created_at', [$fromDate, $toDate]);
+                                }])
+                                ->orderBy('quantity_ordered', 'desc')
+                                ->take(5) // Prendi i primi 5 piatti più ordinati
+                                ->get();
+
+        return $mostOrderedPlates;
     }
 
     public function showMonthlyStatistics()
@@ -114,6 +146,10 @@ class OrderController extends Controller
 
         $restaurantId = $user->restaurant->id;
         $statistics = $this->getMonthlyOrdersStatistics($restaurantId);
+        $mostOrderedPlates = $this->getYearlyMostOrderedPlates($restaurantId);
+
+        $plateNames = $mostOrderedPlates->pluck('name');
+        $plateQuantities = $mostOrderedPlates->pluck('quantity_ordered');
 
         // Preparazione delle etichette per gli ultimi 30 giorni
         $labels = collect(new \DatePeriod(
@@ -157,6 +193,20 @@ class OrderController extends Controller
             $revenuePerDay[] = $dailyRevenue;
         }
 
+        // Raccogliere dati per i piatti più ordinati
+        $mostOrderedPlates = Plate::where('restaurant_id', $restaurantId)
+        ->withCount(['orders as quantity_ordered' => function($query) {
+            $query->select(DB::raw("sum(order_plate.quantity) as quantity_ordered"));
+        }])
+        ->join('order_plate', 'plates.id', '=', 'order_plate.plate_id')
+        ->groupBy('plates.id', 'plates.name')
+        ->orderBy('quantity_ordered', 'DESC')
+        ->take(5) // Prendi i top 5 piatti più ordinati
+        ->get(['plates.name', 'quantity_ordered']);
+
+        $plateLabels = $mostOrderedPlates->pluck('name');
+        $plateData = $mostOrderedPlates->pluck('quantity_ordered');
+
         $totalOrders = Order::whereHas('plates', function($query) use ($restaurantId) {
             $query->where('restaurant_id', $restaurantId);
         })->count();
@@ -165,7 +215,19 @@ class OrderController extends Controller
             $query->where('restaurant_id', $restaurantId);
         })->sum('total_price');
 
-        return view('admin.stats.index', compact('statistics', 'totalOrders', 'totalRevenue','labels', 'ordersCountPerDay', 'formattedDate', 'orderCount', 'revenuePerDay'));
+        return view('admin.stats.index', compact('statistics', 
+                                                'totalOrders', 
+                                                'totalRevenue',
+                                                'labels', 
+                                                'ordersCountPerDay', 
+                                                'formattedDate', 
+                                                'orderCount', 
+                                                'revenuePerDay', 
+                                                'plateLabels', 
+                                                'plateData',
+                                                'plateNames', 
+                                                'plateQuantities',
+                                            ));
     }
 
 }
