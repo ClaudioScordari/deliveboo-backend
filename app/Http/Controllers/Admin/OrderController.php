@@ -73,50 +73,49 @@ class OrderController extends Controller
     {
         $months = [];
         $ordersCount = [];
+        $revenuePerMonth = [];
     
         for ($i = 11; $i >= 0; $i--) {
             $date = Carbon::now()->subMonths($i);
             $monthName = $date->format('F');
             $year = $date->format('Y');
     
-            $count = DB::table('orders')
-                ->join('order_plate', 'orders.id', '=', 'order_plate.order_id')
-                ->join('plates', 'order_plate.plate_id', '=', 'plates.id')
-                ->where('plates.restaurant_id', $restaurantId)
-                ->whereYear('orders.created_at', $year)
-                ->whereMonth('orders.created_at', $date->month)
-                ->count('orders.id');
+            $orders = DB::table('orders')
+                        ->join('order_plate', 'orders.id', '=', 'order_plate.order_id')
+                        ->join('plates', 'order_plate.plate_id', '=', 'plates.id')
+                        ->where('plates.restaurant_id', $restaurantId)
+                        ->whereYear('orders.created_at', $year)
+                        ->whereMonth('orders.created_at', $date->month)
+                        ->select(DB::raw('count(distinct orders.id) as orderCount'), DB::raw('sum(total_price) as revenue'))
+                        ->first();
     
             $months[] = $monthName;
-            $ordersCount[] = $count;
+            $ordersCount[] = $orders->orderCount;
+            $revenuePerMonth[] = $orders->revenue;
         }
     
-        return ['months' => $months, 'ordersCount' => $ordersCount];
+        return ['months' => $months, 'ordersCount' => $ordersCount, 'revenuePerMonth' => $revenuePerMonth];
     }
-
 
     public function showMonthlyStatistics()
     {
         $user = auth()->user();
-    
-        // Verifica se l'utente ha un ristorante e ottiene i piatti di quel ristorante
         if (!$user->restaurant) {
             return redirect()->route('admin.dashboard')->withErrors('Non hai un ristorante associato al tuo account.');
         }
-    
+
         $restaurantId = $user->restaurant->id;
         $statistics = $this->getMonthlyOrdersStatistics($restaurantId);
-    
-        // Ottieni gli ID dei piatti del ristorante dell'utente autenticato
-        $plateIds = Plate::where('restaurant_id', $restaurantId)->pluck('id')->toArray();
-    
-        // Calcola il numero totale di ordini che includono i piatti del ristorante
-        $totalOrdersCount = Order::whereHas('plates', function ($query) use ($plateIds) {
-            $query->whereIn('id', $plateIds);
+
+        $totalOrders = Order::whereHas('plates', function($query) use ($restaurantId) {
+            $query->where('restaurant_id', $restaurantId);
         })->count();
-    
-        // Passa i dati alla vista
-        return view('admin.stats.index', compact('statistics', 'totalOrdersCount'));
+
+        $totalRevenue = Order::whereHas('plates', function($query) use ($restaurantId) {
+            $query->where('restaurant_id', $restaurantId);
+        })->sum('total_price');
+
+        return view('admin.stats.index', compact('statistics', 'totalOrders', 'totalRevenue'));
     }
-    
+
 }
