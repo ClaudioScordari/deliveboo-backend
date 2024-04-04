@@ -47,12 +47,13 @@
                     </form>
                 </div>
                 @endauth
+
                 @guest
-                <a href="/" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Home <i class="fa-solid fa-house"></i></a>
-                    <a href="{{ route('guest.restaurants.index') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Ristoranti <i class="fa-solid fa-utensils"></i></a>
+                    <a href="/" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Home <i class="fa-solid fa-house"></i></a>
                     <a href="{{ route('login') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Login <i class="fa-solid fa-right-to-bracket"></i></a>
                     <a href="{{ route('register') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Register <i class="fa-solid fa-address-card"></i></a>
                 @endguest
+
             </div>
         </div>
 

@@ -30,6 +30,7 @@ use App\Http\Controllers\RestaurantController;
 // Al caricamento della pagina
 Route::get('/', [MainController::class, 'index'])->name('home');
 
+/*
 // Ristoranti (pubblici)
 Route::prefix('restaurants')->name('guest.restaurants.')->group(function () {
     Route::get('/', [GuestRestaurantController::class, 'index'])->name('index');
@@ -45,7 +46,7 @@ Route::prefix('restaurants')->name('guest.restaurants.')->group(function () {
     // Assicurati che questa rotta sia ancora logica con la tua nuova struttura
     Route::get('/plates/{plate}', [GuestPlateController::class, 'show'])->name('plates.show');
 });
-
+*/
 
 Route::prefix('admin')
     ->name('admin.')
