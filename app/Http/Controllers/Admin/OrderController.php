@@ -25,6 +25,7 @@ class OrderController extends Controller
      */
     public function index()
     {
+
         // Ottiene l'ID del ristorante dell'utente autenticato
         $restaurantId = auth()->user()->restaurant->id;
     
@@ -34,7 +35,7 @@ class OrderController extends Controller
         // Ottiene gli ordini basati sui piatti che appartengono al ristorante dell'utente autenticato
         $orders = Order::whereHas('plates', function ($query) use ($plateIds) {
             $query->whereIn('plates.id', $plateIds);
-        })->with('plates')->get();
+        })->with('plates')->orderBy('created_at', 'desc')->get();
     
         return view('admin.orders.index', compact('orders'));
     }
@@ -75,9 +76,9 @@ class OrderController extends Controller
         $ordersCount = [];
         $revenuePerMonth = [];
     
-        for ($i = 11; $i >= 0; $i--) {
+        for ($i = 12; $i >= 0; $i--) {
             $date = Carbon::now()->subMonths($i);
-            $monthName = $date->format('F');
+            $monthName = $date->format('F Y');
             $year = $date->format('Y');
     
             $orders = DB::table('orders')
@@ -88,10 +89,17 @@ class OrderController extends Controller
                         ->whereMonth('orders.created_at', $date->month)
                         ->select(DB::raw('count(distinct orders.id) as orderCount'), DB::raw('sum(total_price) as revenue'))
                         ->first();
+
+             // Calcola la somma dei total_price per il mese corrente
+            $monthlyRevenue = Order::whereHas('plates', function ($query) use ($restaurantId) {
+                $query->where('plates.restaurant_id', $restaurantId);
+            })->whereYear('created_at', $year)
+            ->whereMonth('created_at', $date->month)
+            ->sum('total_price');
     
             $months[] = $monthName;
             $ordersCount[] = $orders->orderCount;
-            $revenuePerMonth[] = $orders->revenue;
+            $revenuePerMonth[] = $monthlyRevenue;
         }
     
         return ['months' => $months, 'ordersCount' => $ordersCount, 'revenuePerMonth' => $revenuePerMonth];
@@ -107,6 +115,13 @@ class OrderController extends Controller
         $restaurantId = $user->restaurant->id;
         $statistics = $this->getMonthlyOrdersStatistics($restaurantId);
 
+        $lastMonthOrdersCount = Order::whereHas('plates', function ($query) use ($restaurantId) {
+            $query->where('restaurant_id', $restaurantId);
+        })
+        ->whereMonth('created_at', '=', Carbon::now()->subMonth()->month)
+        ->whereYear('created_at', '=', Carbon::now()->year)
+        ->count();
+
         $totalOrders = Order::whereHas('plates', function($query) use ($restaurantId) {
             $query->where('restaurant_id', $restaurantId);
         })->count();
@@ -115,7 +130,7 @@ class OrderController extends Controller
             $query->where('restaurant_id', $restaurantId);
         })->sum('total_price');
 
-        return view('admin.stats.index', compact('statistics', 'totalOrders', 'totalRevenue'));
+        return view('admin.stats.index', compact('statistics', 'totalOrders', 'totalRevenue', 'lastMonthOrdersCount'));
     }
 
 }

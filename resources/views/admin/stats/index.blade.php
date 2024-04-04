@@ -8,6 +8,7 @@
         <h1>Statistiche Ordini</h1>
         <p>Totale Ordini: <strong>{{ $totalOrders }}</strong></p>
         <canvas id="ordersChart"></canvas>
+        <canvas id="lastMonthOrdersChart"></canvas>
         <p>Totale Soldi Guadagnati: <strong>€{{ number_format($totalRevenue, 2) }}</strong></p>
         <canvas id="revenueChart"></canvas>
     </div>
@@ -37,6 +38,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+        // Grafico per ordini ultimo mese
+        const lastMonthOrdersCtx = document.getElementById('lastMonthOrdersChart').getContext('2d');
+    const lastMonthOrdersChart = new Chart(lastMonthOrdersCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Ultimo Mese'],
+            datasets: [{
+                label: 'Numero di Ordini',
+                data: [{{ $lastMonthOrdersCount }}],
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
     // Grafico dei guadagni
     const revenueCtx = document.getElementById('revenueChart').getContext('2d');
     const revenueChart = new Chart(revenueCtx, {
@@ -46,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
             datasets: [{
                 label: 'Guadagni Mensili',
                 data: @json($statistics['revenuePerMonth']),
-                backgroundColor: 'rgba(255, 206, 86, 0.2)',
-                borderColor: 'rgba(255, 206, 86, 1)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
                 borderWidth: 1
             }]
         },

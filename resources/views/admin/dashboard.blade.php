@@ -34,7 +34,7 @@
                                         <p class="fw-bolder fs-3 text-success">
                                             Verifica gli Ordini
                                         </p>
-                                        <a href="{{ route('admin.orders.index') }}" class="btn text-light btn-secondary btn-lg w-50 m-auto">Ordini <i class="fa-solid fa-receipt"></i></a>
+                                        <a href="{{ route('admin.orders.index', ['sort' => 'desc']) }}" class="btn text-light btn-secondary btn-lg w-50 m-auto">Ordini <i class="fa-solid fa-receipt"></i></a>
                                     </div>
                                 </div>
                                 <div class="col-md-6 text-center p-3">

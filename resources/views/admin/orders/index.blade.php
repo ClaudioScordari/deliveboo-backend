@@ -22,7 +22,7 @@
                     <th class="text-success" scope="col" style="width: 5%;">Totale</th>
                     <th class="text-success" scope="col" style="width: 10%;">Pagamento</th>
                     <th class="text-success" scope="col" style="width: 20%;">Piatti (Quantità)</th>
-                    <th class="text-success" scope="col" style="width: 15%;">Note</th>
+                    <th class="text-success" scope="col" style="width: 15%;">Data</th>
                     <th class="text-success" scope="col" style="width: 22%;">Azioni</th>
                 </tr>
             </thead>
@@ -39,7 +39,7 @@
                                 <div>{{ $plate->name }} (x{{ $plate->pivot->quantity }})</div>
                             @endforeach
                         </td>
-                        <td class="small">{{ $order->notes }}</td>
+                        <td class="small">{{ $order->created_at->format('d-m-Y') }}</td>
                         <td><a href="{{ route('admin.orders.show', $order->id) }}" class="btn btn-sm btn-secondary text-light">Info <i class="fa-solid fa-circle-info"></i></a></td>
                     </tr>
                 @endforeach
