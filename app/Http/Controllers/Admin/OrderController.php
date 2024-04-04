@@ -131,6 +131,7 @@ class OrderController extends Controller
         // Crea un array per le etichette e uno per i conteggi degli ordini
         $labels = [];
         $ordersCountPerDay = [];
+        $revenuePerDay = [];
         
         // Popola gli array con i dati per ogni giorno degli ultimi 30 giorni
         for ($date = $thirtyDaysAgo; $date->lte($today); $date->addDay()) {
@@ -145,6 +146,15 @@ class OrderController extends Controller
                                 ->count();
         
             $ordersCountPerDay[] = $orderCount;
+
+            // Calcola i guadagni per quella data
+            $dailyRevenue = Order::whereDate('created_at', $date)
+                                ->whereHas('plates', function ($query) use ($restaurantId) {
+                                    $query->where('plates.restaurant_id', $restaurantId);
+                                })
+                                ->sum('total_price');
+            
+            $revenuePerDay[] = $dailyRevenue;
         }
 
         $totalOrders = Order::whereHas('plates', function($query) use ($restaurantId) {
@@ -155,7 +165,7 @@ class OrderController extends Controller
             $query->where('restaurant_id', $restaurantId);
         })->sum('total_price');
 
-        return view('admin.stats.index', compact('statistics', 'totalOrders', 'totalRevenue','labels', 'ordersCountPerDay', 'formattedDate', 'orderCount'));
+        return view('admin.stats.index', compact('statistics', 'totalOrders', 'totalRevenue','labels', 'ordersCountPerDay', 'formattedDate', 'orderCount', 'revenuePerDay'));
     }
 
 }

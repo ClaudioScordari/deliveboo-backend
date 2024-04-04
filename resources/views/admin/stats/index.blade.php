@@ -14,6 +14,8 @@
 
         <p>Totale Soldi Guadagnati: <strong>{{ number_format($totalRevenue, 2) }}€</strong></p>
         <canvas id="revenueChart"></canvas>
+
+        <canvas id="dailyRevenueChart"></canvas>
     </div>
         
 <script>
@@ -84,9 +86,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Grafico dei guadagni
-    const revenueCtx = document.getElementById('revenueChart').getContext('2d');
-    const revenueChart = new Chart(revenueCtx, {
+    // Grafico dei guadagni nell'ultimo mese
+    const dailyRevenueCtx = document.getElementById('dailyRevenueChart').getContext('2d');
+    const dailyRevenueChart = new Chart(dailyRevenueCtx, {
         type: 'bar',
         data: {
             labels: @json($statistics['months']),
@@ -106,6 +108,33 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+
+    // Grafico dei guadagni
+    const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+    const revenueChart = new Chart(revenueCtx, {
+        type: 'line',
+        data: {
+            labels: @json($labels),
+            datasets: [{
+                label: 'Guadagni giornalieri',
+                data: @json($revenuePerDay),
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1,
+                fill: false
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            maintainAspectRatio: true,
+        }
+    });
+
+    
 });
 
 </script>
