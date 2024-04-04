@@ -40,11 +40,11 @@ Route::name('api.')->group(function() {
     // Ristoranti cercati per tipi
     Route::get('/restaurants/types/{typeId}', [ApiRestaurantController::class, 'getRestaurantByType']);
 
-    // Ristoranti cercati per tipi
+    // Ristoranti cercati per nome
     Route::get('/restaurants/search/{name}', [ApiRestaurantController::class, 'search']);
 
     // Ricerca piatti
-    Route::get('/plates/search/{name}', [ApiPlateController::class, 'searchPlate']);
+    Route::get('/plates/search/{name}', [ApiPlateController::class, 'search']);
 
     Route::post('/orders', [ApiOrderController::class, 'store'])->name('orders.store');
 

@@ -28,7 +28,7 @@ class PlateController extends Controller
         ]);
     }
 
-    public function searchPlate($name)
+    public function search($name)
     {
         $plates = Plate::where('name', 'like', "%" . $name . "%")->with('restaurant')->get();
 
