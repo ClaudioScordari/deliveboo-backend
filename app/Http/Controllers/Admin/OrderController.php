@@ -122,18 +122,17 @@ class OrderController extends Controller
     {
         $fromDate = Carbon::now()->subYear()->startOfDay();
         $toDate = Carbon::now()->endOfDay();
-
-        $mostOrderedPlates = Plate::where('restaurant_id', $restaurantId)
-                                ->whereHas('orders', function ($query) use ($fromDate, $toDate) {
-                                    $query->whereBetween('created_at', [$fromDate, $toDate]);
-                                })
-                                ->withCount(['orders as quantity_ordered' => function ($query) use ($fromDate, $toDate) {
-                                    $query->whereBetween('orders.created_at', [$fromDate, $toDate]);
-                                }])
-                                ->orderBy('quantity_ordered', 'desc')
-                                ->take(5) // Prendi i primi 5 piatti più ordinati
-                                ->get();
-
+    
+        $mostOrderedPlates = Plate::select('plates.*', DB::raw('SUM(order_plate.quantity) AS quantity_ordered'))
+                                    ->join('order_plate', 'plates.id', '=', 'order_plate.plate_id')
+                                    ->join('orders', 'order_plate.order_id', '=', 'orders.id')
+                                    ->where('plates.restaurant_id', $restaurantId)
+                                    ->whereBetween('orders.created_at', [$fromDate, $toDate])
+                                    ->groupBy('plates.id')
+                                    ->orderBy('quantity_ordered', 'desc')
+                                    ->take(5)
+                                    ->get();
+    
         return $mostOrderedPlates;
     }
 
@@ -166,9 +165,11 @@ class OrderController extends Controller
         $statistics = $this->getMonthlyOrdersStatistics($restaurantId);
         $mostOrderedPlates = $this->getYearlyMostOrderedPlates($restaurantId);
         $mostOrderedPlatesLast30Days = $this->getMostOrderedPlatesLast30Days($restaurantId);
-
-        $plateNames = $mostOrderedPlates->pluck('name');
-        $plateQuantities = $mostOrderedPlates->pluck('quantity_ordered');
+    
+        // Preparazione delle etichette e dei dati per la vista
+        // Assicurati di calcolare correttamente i dati e di convertirli in array se necessario
+        $plateNames = $mostOrderedPlates->pluck('name')->toArray();
+        $plateQuantities = $mostOrderedPlates->pluck('quantity_ordered')->toArray();
 
         // Preparazione delle etichette per gli ultimi 30 giorni
         $labels = collect(new \DatePeriod(
@@ -182,6 +183,8 @@ class OrderController extends Controller
         // Ottiene il conteggio degli ordini per ogni giorno per il ristorante specifico
         $today = Carbon::today();
         $thirtyDaysAgo = $today->copy()->subDays(29);
+        $startOfMonth = $today->copy()->startOfMonth();
+        $endOfMonth = $today->copy()->endOfMonth();
         
         // Crea un array per le etichette e uno per i conteggi degli ordini
         $labels = [];
@@ -234,6 +237,32 @@ class OrderController extends Controller
             $query->where('restaurant_id', $restaurantId);
         })->sum('total_price');
 
+        // Calcolo dei soldi guadagnati nell'ultimo mese
+        $monthlyRevenue = Order::whereHas('plates', function ($query) use ($restaurantId) {
+            $query->where('restaurant_id', $restaurantId);
+        })
+        ->whereBetween('created_at', [$startOfMonth, $endOfMonth])
+        ->sum('total_price');
+
+        // Calcolo del piatto più ordinato in generale
+        $mostOrderedPlateOverall = Plate::where('restaurant_id', $restaurantId)
+        ->withCount(['orders as orders_count' => function($query) {
+            $query->select(DB::raw("sum(quantity)"));
+        }])
+        ->orderBy('orders_count', 'DESC')
+        ->first();
+
+        // Calcolo del piatto più ordinato dell'ultimo mese
+        $mostOrderedPlateThisMonth = Plate::where('restaurant_id', $restaurantId)
+        ->whereHas('orders', function($query) use ($startOfMonth, $endOfMonth) {
+            $query->whereBetween('orders.created_at', [$startOfMonth, $endOfMonth]);
+        })
+        ->withCount(['orders as orders_count' => function($query) use ($startOfMonth, $endOfMonth) {
+            $query->select(DB::raw("sum(quantity)"))->whereBetween('orders.created_at', [$startOfMonth, $endOfMonth]);
+        }])
+        ->orderBy('orders_count', 'DESC')
+        ->first();
+
         return view('admin.stats.index', compact('statistics', 
                                                 'totalOrders', 
                                                 'totalRevenue',
@@ -247,6 +276,9 @@ class OrderController extends Controller
                                                 'plateNames', 
                                                 'plateQuantities',
                                                 'mostOrderedPlatesLast30Days',
+                                                'monthlyRevenue', 
+                                                'mostOrderedPlateOverall', 
+                                                'mostOrderedPlateThisMonth',
                                             ));
     }
 

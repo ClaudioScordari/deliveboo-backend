@@ -15,10 +15,13 @@
         <p>Totale Soldi Guadagnati: <strong>{{ number_format($totalRevenue, 2) }}€</strong></p>
         <canvas id="revenueChart"></canvas>
 
+        <p>Soldi guadagnati nell'ultimo mese: <strong>{{ number_format($monthlyRevenue, 2) }}€</strong></p>
         <canvas id="dailyRevenueChart"></canvas>
 
+        <p>Piatto più ordinato:  <strong>{{ $mostOrderedPlateOverall->name }}</strong>({{ $mostOrderedPlateOverall->orders_count }} ordini)</p>
         <canvas id="mostOrderedPlatesChart"></canvas>
 
+        <p>Piatto più ordinato dell'ultimo mese: <strong>{{ $mostOrderedPlateThisMonth->name }}</strong> ({{ $mostOrderedPlateThisMonth->orders_count }} ordini)</p>
         <canvas id="mostOrderedPlatesLast30DaysChart"></canvas>
 
     </div>
@@ -29,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     const ordersCtx = document.getElementById('ordersChart').getContext('2d');
     const ordersChart = new Chart(ordersCtx, {
-        type: 'line',
+        type: 'bar',
         data: {
             labels: @json($statistics['months']),
             datasets: [{
@@ -134,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // piatti più ordinati
     const platesCtx = document.getElementById('mostOrderedPlatesChart').getContext('2d');
     const mostOrderedPlatesChart = new Chart(platesCtx, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
             labels: @json($plateNames),
             datasets: [{
@@ -143,13 +146,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
-                    // Altri colori per i piatti
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
-                    // Altri bordi per i piatti
                 ],
                 borderWidth: 1
             }]
@@ -169,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Piatti più ordinati ultimo mese
     var platesMonthCtx = document.getElementById('mostOrderedPlatesLast30DaysChart').getContext('2d');
     var mostOrderedPlatesLast30DaysChart = new Chart(platesMonthCtx, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
             labels: @json($mostOrderedPlatesLast30Days->pluck('name')),
             datasets: [{
