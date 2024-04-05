@@ -33,7 +33,13 @@
                         @endforeach
                     </ul>
                     <p class="card-text"><strong>Prezzo Totale:</strong> {{ $order->total_price }} €</p>
-                    <p class="card-text"><strong>Note:</strong> {{ $order->notes }}</p>
+                    <p class="card-text"><strong>Note:</strong>
+                        @if ($order->notes != null)
+                        {{ $order->notes }}
+                        @else
+                            -
+                        @endif
+                    </p>
                 </div>
 
                 <!-- Footer della Card -->
