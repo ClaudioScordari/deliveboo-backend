@@ -3,29 +3,68 @@
 @section('page-title', 'Statistiche')
 
 @section('main-content')
-
-    <div class="container mt-5">
-        <h1 class="text-success">Statistiche Ordini</h1>
-        <p>Totale Ordini: <strong>{{ $totalOrders }}</strong></p>
-        <canvas id="ordersChart"></canvas>
-
-        <p>Ordini ultimi 30 giorni: <strong>{{ $orderCount }}</strong></p>
-        <canvas id="dailyOrdersChart"></canvas>
-
-        <p>Totale Soldi Guadagnati: <strong>{{ number_format($totalRevenue, 2) }}€</strong></p>
-        <canvas id="revenueChart"></canvas>
-
-        <p>Soldi guadagnati nell'ultimo mese: <strong>{{ number_format($monthlyRevenue, 2) }}€</strong></p>
-        <canvas id="dailyRevenueChart"></canvas>
-
-        <p>Piatto più ordinato:  <strong>{{ $mostOrderedPlateOverall->name }}</strong>({{ $mostOrderedPlateOverall->orders_count }} ordini)</p>
-        <canvas id="mostOrderedPlatesChart"></canvas>
-
-        <p>Piatto più ordinato dell'ultimo mese: <strong>{{ $mostOrderedPlateThisMonth->name }}</strong> ({{ $mostOrderedPlateThisMonth->orders_count }} ordini)</p>
-        <canvas id="mostOrderedPlatesLast30DaysChart"></canvas>
-
-    </div>
+    
+    <div class="container mt-4">
+        <h1 class="text-center text-success mb-4">Statistiche</h1>
         
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Totale Ordini <span class="card-text text-secondary"><strong>{{ $totalOrders }}</strong></span></h5>
+                        <canvas id="ordersChart"></canvas>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Ordini Ultimi 30 Giorni <span class="card-text text-secondary"><strong>{{ $totalOrdersLast30Days }}</strong></span></h5>
+                        <canvas id="dailyOrdersChart"></canvas>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Totale Guadagni <span class="card-text text-secondary"><strong>{{ number_format($totalRevenue, 2) }}€</strong></span></h5>
+                        <canvas id="dailyRevenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Totale Guadagni Ultimi 30 Giorni <span class="card-text text-secondary"><strong>{{ number_format($totalRevenueLast30Days, 2) }}€</strong></span></h5>
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Piatto Più Ordinato</h5>
+                        <p class="card-text text-success">{{ $mostOrderedPlateOverall->name }} - x<span class="text-secondary fw-bold">{{ $mostOrderedPlateOverall->orders_count }}</span></p>
+                        <canvas id="mostOrderedPlatesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Piatto Più Ordinato dell'Ultimo Mese</h5>
+                        <p class="card-text text-success">{{ $mostOrderedPlateThisMonth->name }} - x <span class="text-secondary fw-bold">{{ $mostOrderedPlateThisMonth->orders_count }}</span></p>
+                        <canvas id="mostOrderedPlatesLast30DaysChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     // Grafico degli ordini
