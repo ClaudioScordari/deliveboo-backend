@@ -8,7 +8,7 @@
         <h1 class="text-center text-success mb-4">Statistiche</h1>
         
         <div class="row g-4">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Totale Ordini <span class="card-text text-secondary"><strong>{{ $totalOrders }}</strong></span></h5>
@@ -17,7 +17,7 @@
                 </div>
             </div>
     
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Ordini Ultimi 30 Giorni <span class="card-text text-secondary"><strong>{{ $totalOrdersLast30Days }}</strong></span></h5>
@@ -26,7 +26,7 @@
                 </div>
             </div>
     
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Totale Guadagni <span class="card-text text-secondary"><strong>{{ number_format($totalRevenue, 2) }}€</strong></span></h5>
@@ -35,7 +35,7 @@
                 </div>
             </div>
     
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Totale Guadagni Ultimi 30 Giorni <span class="card-text text-secondary"><strong>{{ number_format($totalRevenueLast30Days, 2) }}€</strong></span></h5>
@@ -44,7 +44,7 @@
                 </div>
             </div>
     
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Piatto Più Ordinato</h5>
@@ -54,7 +54,7 @@
                 </div>
             </div>
     
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Piatto Più Ordinato dell'Ultimo Mese</h5>
