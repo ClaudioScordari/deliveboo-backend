@@ -64,7 +64,8 @@
                                     </div>
 
                                     <div class="modal-body">
-                                        Vuoi davvero eliminare il Ristorante?
+                                        Vuoi davvero eliminare il Ristorante? <br> 
+                                        Così perderai anche tutti i tuoi piatti!
                                     </div>
 
                                     <div class="modal-footer">
