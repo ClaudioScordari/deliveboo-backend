@@ -32,7 +32,7 @@ class UpdateRestaurantRequest extends FormRequest
             'address' => 'required|max:255', 
             'img' => 'nullable|image',
             'description' => 'nullable|max:4096',
-            'types' => 'nullable|array|exists:types,id',
+            'types' => 'required|array|exists:types,id',
             'remove_file' => 'nullable|boolean',
         ];
     }
