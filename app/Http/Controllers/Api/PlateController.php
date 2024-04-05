@@ -9,7 +9,11 @@ use Illuminate\Http\Response;
 class PlateController extends Controller
 {
     public function index(){
-        $plates = Plate::all();
+        $plates = Plate::all()->map(function ($plate) {
+            // Aggiunge l'URL completo all'immagine prima di restituire i dati
+            $plate->image = asset('storage/' . $plate->image);
+            return $plate;
+        });
     
         return response()->json([
             'success' => true,
@@ -20,7 +24,11 @@ class PlateController extends Controller
     // Visualizza i piatti di un singolo ristorante
     public function restaurantPlates($restaurant)
     {
-        $plates = Plate::where('restaurant_id', $restaurant)->get();
+        $plates = Plate::where('restaurant_id', $restaurant)->get()->map(function ($plate) {
+            // Aggiunge l'URL completo all'immagine prima di restituire i dati
+            $plate->image = asset('storage/' . $plate->image);
+            return $plate;
+        });
 
         return response()->json([
             'success' => true,
@@ -30,7 +38,11 @@ class PlateController extends Controller
 
     public function search($name)
     {
-        $plates = Plate::where('name', 'like', "%" . $name . "%")->with('restaurant')->get();
+        $plates = Plate::where('name', 'like', "%" . $name . "%")->with('restaurant')->get()->map(function ($plate) {
+            // Aggiunge l'URL completo all'immagine prima di restituire i dati
+            $plate->image = asset('storage/' . $plate->image);
+            return $plate;
+        });
 
         return response()->json([
             'success' => true,

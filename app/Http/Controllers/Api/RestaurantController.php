@@ -12,8 +12,16 @@ class RestaurantController extends Controller
 {
     public function index()
     {
-        $restaurants = Restaurant::with('types', 'plates')->paginate(10);
-
+        $restaurants = Restaurant::with(['types', 'plates'])->paginate(10);
+    
+        // Trasforma i ristoranti dopo la paginazione
+        foreach ($restaurants as $restaurant) {
+            $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : null;
+            foreach ($restaurant->plates as $plate) {
+                $plate->image = $plate->image ? asset('storage/' . $plate->image) : null;
+            }
+        }
+    
         return response()->json([
             'success' => true,
             'results' => $restaurants,
@@ -22,6 +30,11 @@ class RestaurantController extends Controller
 
     public function show(Restaurant $restaurant)
     {
+        $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : null;
+        
+        foreach ($restaurant->plates as $plate) {
+            $plate->image = $plate->image ? asset('storage/' . $plate->image) : null;
+        }
 
         return response()->json([
             'success' => true,
@@ -31,13 +44,12 @@ class RestaurantController extends Controller
 
     public function getRestaurantByType($typeId)
     {
-        // Trova il tipo corrispondente all'ID fornito
         $type = Type::findOrFail($typeId);
+        $restaurants = $type->restaurants->map(function ($restaurant) {
+            $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : null;
+            return $restaurant;
+        });
 
-        // Ottieni i ristoranti associati a questo tipo
-        $restaurants = $type->restaurants;
-
-        // Restituisci i ristoranti trovati come JSON
         return response()->json([
             'success' => true,
             'results' => $restaurants,
@@ -46,7 +58,14 @@ class RestaurantController extends Controller
 
     public function search($name)
     {
-        $restaurants = Restaurant::where('activity_name', 'like', "%" . $name . "%")->with('types', 'plates')->get();
+        $restaurants = Restaurant::where('activity_name', 'like', "%" . $name . "%")->with(['types', 'plates'])->get()->map(function ($restaurant) {
+            $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : null;
+            $restaurant->plates = $restaurant->plates->map(function ($plate) {
+                $plate->image = $plate->image ? asset('storage/' . $plate->image) : null;
+                return $plate;
+            });
+            return $restaurant;
+        });
 
         return response()->json([
             'success' => true,
