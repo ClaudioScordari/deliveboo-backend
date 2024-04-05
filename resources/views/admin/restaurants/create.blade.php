@@ -80,7 +80,7 @@
         
                 {{-- Tipi --}}
                 <div class="my-4 form-group">
-                    <label class="d-block" for="types">Seleziona i tuoi tipi di Cucina:</label>
+                    <label class="d-block" for="types">Seleziona i tuoi tipi di Cucina: <span class="text-danger">*</span></label>
 
                     <div class="row pt-2 mx-5">
                         @foreach ($types as $type)
@@ -95,6 +95,22 @@
                                 </div>
                             </div>
                         @endforeach
+
+                        {{-- Soluzione 1 --}}
+                        {{-- Barra errore --}}
+                        @error('types.*')  {{-- ho provato anche così 'types[*]' e 'types[]' ma niente, non si vede --}}
+                            <div class="alert alert-danger">
+                                {{ $message }}
+                            </div>
+                        @enderror 
+
+                        {{-- Soluzione 2 --}}
+                        {{-- Messaggio di errore personalizzato --}}
+                        @if ($errors->has('types') && count(old('types')) == 0)
+                            <div class="alert alert-danger">
+                                Devi selezionare almeno un tipo.
+                            </div>
+                        @endif
                     </div>
                 </div>
         
