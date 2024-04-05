@@ -184,6 +184,9 @@ class RestaurantController extends Controller
     {
 
         $restaurant = Restaurant::findOrFail($id);
+
+        // Elimino prima tutti i piatti associati
+        $restaurant->plates()->delete();
     
         $restaurant->delete();
 
