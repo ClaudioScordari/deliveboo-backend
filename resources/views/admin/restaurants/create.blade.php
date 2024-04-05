@@ -96,21 +96,13 @@
                             </div>
                         @endforeach
 
-                        {{-- Soluzione 1 --}}
                         {{-- Barra errore --}}
-                        @error('types.*')  {{-- ho provato anche così 'types[*]' e 'types[]' ma niente, non si vede --}}
+                        @error('types')
                             <div class="alert alert-danger">
                                 {{ $message }}
                             </div>
                         @enderror 
 
-                        {{-- Soluzione 2 --}}
-                        {{-- Messaggio di errore personalizzato --}}
-                        @if ($errors->has('types') && count(old('types')) == 0)
-                            <div class="alert alert-danger">
-                                Devi selezionare almeno un tipo.
-                            </div>
-                        @endif
                     </div>
                 </div>
         
