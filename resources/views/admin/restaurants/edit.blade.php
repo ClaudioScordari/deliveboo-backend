@@ -111,6 +111,13 @@
                                 </div>
                             </div>
                         @endforeach
+
+                        {{-- Barra errore --}}
+                        @error('types')
+                            <div class="alert alert-danger">
+                                {{ $message }}
+                            </div>
+                        @enderror
                     </div>
                 </div>
     
