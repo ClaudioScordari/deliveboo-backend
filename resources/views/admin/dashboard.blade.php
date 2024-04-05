@@ -21,32 +21,32 @@
                     @if (auth()->user()->restaurant?->id)  
                         <div>
                             <div class="row py-5">
-                                <div class="col-md-6 text-center p-3">
-                                    <div class="card bg-light p-3">
+                                <div class="col-lg-6 text-center p-3">
+                                    <div class="card bg-light p-3" style="height:180px">
                                         <p class="fw-bolder fs-3 text-success">
                                             Gestisci il tuo Ristorante
                                         </p>
                                         <a href="{{ route('admin.restaurants.index') }}" class="btn text-light btn-secondary btn-lg w-50 m-auto">Il mio Ristorante <i class="fa-solid fa-utensils"></i></a>
                                     </div>
                                 </div>
-                                <div class="col-md-6 text-center p-3">
-                                    <div class="card bg-light p-3">
+                                <div class="col-lg-6 text-center p-3">
+                                    <div class="card bg-light p-3" style="height:180px">
                                         <p class="fw-bolder fs-3 text-success">
                                             Verifica gli Ordini
                                         </p>
                                         <a href="{{ route('admin.orders.index', ['sort' => 'desc']) }}" class="btn text-light btn-secondary btn-lg w-50 m-auto">Ordini <i class="fa-solid fa-receipt"></i></a>
                                     </div>
                                 </div>
-                                <div class="col-md-6 text-center p-3">
-                                    <div class="card bg-light p-3">
+                                <div class="col-lg-6 text-center p-3">
+                                    <div class="card bg-light p-3" style="height:180px">
                                     <p class="fw-bolder fs-3 text-success">
                                         Controlla i tuoi Piatti
                                     </p>
                                     <a href="{{ route('admin.plates.index') }}" class="btn text-light btn-secondary btn-lg w-50 m-auto">Piatti <i class="fa-solid fa-bowl-food"></i></a>
                                     </div>
                                 </div>
-                                <div class="col-md-6 text-center p-3">
-                                    <div class="card bg-light p-3">
+                                <div class="col-lg-6 text-center p-3">
+                                    <div class="card bg-light p-3" style="height:180px">
                                         <p class="fw-bolder fs-3 text-success">
                                             Guarda le tue Statistiche
                                         </p>

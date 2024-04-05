@@ -5,8 +5,8 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <h1 class="text-center text-success ps-5">
+                    <div class="container d-flex align-items-center justify-content-center">
+                        <h1 class="text-center text-success ps-5 d-none d-md-block">
                             Benvenuto su
                         </h1>
                         <img src="{{ Vite::asset('resources/img/deliveboo.png') }}" alt="Jumbotron" class="h-25">

@@ -17,14 +17,17 @@
     <body class="d-flex">
         <!-- Sidebar -->
         <div class="bg-light text-success text-center p-3" id="sidebar-wrapper">
-            <div class="sidebar-heading">
+            <div class="sidebar-heading d-none d-md-block">
                 <img src="{{ Vite::asset('resources/img/deliveboo.png') }}" alt="deliveboo" class="w-100">
             </div>
+            <div class="sidebar-heading d-block d-md-none">
+                <i class="fa fa-bars" id="mobile-sidebar-toggle"></i>
+            </div>
             <div class="list-group list-group-flush">
-                <a href="/" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Home <i class="fa-solid fa-house"></i></a>
+                <a href="/" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Home</span> <i class="fa-solid fa-house"></i></a>
+                    <a href="{{ route('login') }}" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Login</span> <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="{{ route('register') }}" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Register</span> <i class="fa-solid fa-address-card"></i></a>
                 {{-- <a href="{{ route(guest.restaurants.index) }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Ristoranti <i class="fa-solid fa-utensils"></i></a> --}}
-                <a href="{{ route('login') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Login <i class="fa-solid fa-right-to-bracket"></i></a>
-                <a href="{{ route('register') }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Register <i class="fa-solid fa-address-card"></i></a>
             </div>
         </div>
     

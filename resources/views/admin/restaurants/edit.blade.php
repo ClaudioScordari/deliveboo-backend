@@ -80,7 +80,7 @@
                 {{-- Immagine corrente --}}
                 @if ($restaurant->image != null)
                     <div class="my-3 text-center">
-                        <img style="width: 300px" src="/storage/{{ $restaurant->image }}"
+                        <img class="w-50" src="/storage/{{ $restaurant->image }}"
                             alt="{{ $restaurant->activity_name }}">
                     </div>
                 @endif

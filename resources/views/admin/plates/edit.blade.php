@@ -77,7 +77,7 @@
             {{-- Immagine corrente --}}
             @if ($plate->image != null)
                 <div class="my-3 text-center">
-                    <img style="width: 300px" src="/storage/{{ $plate->image }}" alt="{{ $plate->name }}">
+                    <img class="w-50" src="/storage/{{ $plate->image }}" alt="{{ $plate->name }}">
                 </div>
             @endif
     
