@@ -29,7 +29,7 @@
             <div class="col-lg-6">
                 <div class="card text-center">
                     <div class="card-body">
-                        <h5 class="card-title text-success">Totale Guadagni <span class="card-text text-secondary"><strong>{{ number_format($totalRevenue, 2) }}€</strong></span></h5>
+                        <h5 class="card-title text-success">Totale Entrare <span class="card-text text-secondary"><strong>{{ number_format($totalRevenue, 2) }}€</strong></span></h5>
                         <canvas id="dailyRevenueChart"></canvas>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
             <div class="col-lg-6">
                 <div class="card text-center">
                     <div class="card-body">
-                        <h5 class="card-title text-success">Totale Guadagni Ultimi 30 Giorni <span class="card-text text-secondary"><strong>{{ number_format($totalRevenueLast30Days, 2) }}€</strong></span></h5>
+                        <h5 class="card-title text-success">Entrate Ultimi 30 Giorni <span class="card-text text-secondary"><strong>{{ number_format($totalRevenueLast30Days, 2) }}€</strong></span></h5>
                         <canvas id="revenueChart"></canvas>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
             <div class="col-lg-6">
                 <div class="card text-center">
                     <div class="card-body">
-                        <h5 class="card-title text-success">Piatto Più Ordinato dell'Ultimo Mese</h5>
+                        <h5 class="card-title text-success">Piatto Più Ordinato Ultimi 30 Giorni</h5>
                         <p class="card-text text-success">{{ $mostOrderedPlateThisMonth->name }} - x <span class="text-secondary fw-bold">{{ $mostOrderedPlateThisMonth->orders_count }}</span></p>
                         <canvas id="mostOrderedPlatesLast30DaysChart"></canvas>
                     </div>
@@ -75,11 +75,11 @@ document.addEventListener('DOMContentLoaded', function () {
         data: {
             labels: @json($statistics['months']),
             datasets: [{
-                label: 'Numero di Ordini',
+                label: 'Ordini',
                 data: @json($statistics['ordersCount']),
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
+                backgroundColor: 'rgba(255, 135, 50, 0.8)',
+                borderColor: 'rgba(255, 135, 50, 1)',
+                borderWidth: 3
             }]
         },
         options: {
@@ -98,12 +98,12 @@ document.addEventListener('DOMContentLoaded', function () {
         data: {
             labels: @json($labels),
             datasets: [{
-                label: 'Numero di Ordini',
+                label: 'Ordini',
                 data: @json($ordersCountPerDay),
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1,
-                fill: false
+                backgroundColor: 'rgba(255, 135, 50, 0.8)',
+                borderColor: 'rgba(255, 135, 50, 1)',
+                borderWidth: 3,
+                fill: true
             }]
         },
         options: {
@@ -132,11 +132,11 @@ document.addEventListener('DOMContentLoaded', function () {
         data: {
             labels: @json($statistics['months']),
             datasets: [{
-                label: 'Guadagni Mensili',
+                label: 'Entrate',
                 data: @json($statistics['revenuePerMonth']),
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
+                backgroundColor: 'rgba(255, 135, 50, 0.8)',
+                borderColor: 'rgba(255, 135, 50, 1)',
+                borderWidth: 3
             }]
         },
         options: {
@@ -155,12 +155,12 @@ document.addEventListener('DOMContentLoaded', function () {
         data: {
             labels: @json($labels),
             datasets: [{
-                label: 'Guadagni giornalieri',
+                label: 'Entrate',
                 data: @json($revenuePerDay),
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1,
-                fill: false
+                backgroundColor: 'rgba(255, 135, 50, 0.8)',
+                borderColor: 'rgba(255, 135, 50, 1)',
+                borderWidth: 3,
+                fill: true
             }]
         },
         options: {
@@ -182,20 +182,20 @@ document.addEventListener('DOMContentLoaded', function () {
             datasets: [{
                 data: @json($plateQuantities),
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(230, 126, 34, 0.2)',
-                    'rgba(115, 168, 155, 0.2)',
+                    'rgba(255, 135, 50, 0.8)',
+                    'rgba(80, 35, 20, 0.8)',
+                    'rgba(210, 188, 157, 0.8)',
+                    'rgba(170, 85, 35, 0.8)',
+                    'rgba(229, 161, 101, 0.8)',
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(230, 126, 34, 1)',
-                    'rgba(115, 168, 155, 1)',
+                    'rgba(255, 135, 50, 1)',
+                    'rgba (80, 35, 20, 1)',
+                    'rgba(210, 188, 157, 1)',
+                    'rgba(170, 85, 35, 1)',
+                    'rgba(229, 161, 101, 1)',
                 ],
-                borderWidth: 1
+                borderWidth: 3
             }]
         },
         options: {
@@ -220,21 +220,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 data: @json($mostOrderedPlatesLast30Days->pluck('total_ordered')),
                 backgroundColor: [
                     // Colori per ogni segmento del grafico
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(230, 126, 34, 0.2)',
-                    'rgba(115, 168, 155, 0.2)',
+                    'rgba(255, 135, 50, 0.8)',
+                    'rgba(80, 35, 20, 0.8)',
+                    'rgba(210, 188, 157, 0.8)',
+                    'rgba(170, 85, 35, 0.8)',
+                    'rgba(229, 161, 101, 0.8)',
                 ],
                 borderColor: [
                     // Colori del bordo per ogni segmento
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(230, 126, 34, 1)',
-                    'rgba(115, 168, 155, 1)',
+                    'rgba(255, 135, 50, 1)',
+                    'rgba(80, 35, 20, 1)',
+                    'rgba(210, 188, 157, 1)',
+                    'rgba(170, 85, 35, 1)',
+                    'rgba(229, 161, 101, 1)',
                 ],
-                borderWidth: 1
+                borderWidth: 3
             }]
         },
         options: {

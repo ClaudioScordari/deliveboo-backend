@@ -14,17 +14,17 @@
         </div>
     @else
         <div class="table-responsive-md">
-            <table class="table table-responsive-md table-sm table-hover">
+            <table class="table table-sm table-hover">
                 <thead>
                     <tr>
-                        <th class="text-success" scope="col" style="width: 12.5%;">Nome</th>
-                        <th class="text-success" scope="col" style="width: 12.5%;">Telefono</th>
-                        <th class="text-success" scope="col" style="width: 20%;">Indirizzo</th>
-                        <th class="text-success" scope="col" style="width: 5%;">Totale</th>
-                        <th class="text-success" scope="col" style="width: 10%;">Pagamento</th>
-                        <th class="text-success" scope="col" style="width: 22.5%;">Piatti (Quantità)</th>
-                        <th class="text-success" scope="col" style="width: 10%;">Data</th>
-                        <th class="text-success" scope="col" style="width: 12.5%;">Azioni</th>
+                        <th class="text-success" scope="col">Nome</th>
+                        <th class="text-success" scope="col">Telefono</th>
+                        <th class="text-success" scope="col">Indirizzo</th>
+                        <th class="text-success" scope="col">Totale</th>
+                        <th class="text-success" scope="col">Pagamento</th>
+                        <th class="text-success d-none d-lg-block" scope="col">Piatti (Quantità)</th>
+                        <th class="text-success" scope="col">Data</th>
+                        <th class="text-success" scope="col">Azioni</th>
                     </tr>
                 </thead>
                 <tbody class="table-group-divider">
@@ -35,7 +35,7 @@
                             <td class="small">{{ $order->address }}</td>
                             <td class="small">{{ $order->total_price }}€</td>
                             <td class="small">{{ $order->payment_status }}</td>
-                            <td class="small">
+                            <td class="small d-none d-lg-block">
                                 @foreach ($order->plates as $plate)
                                     <div>{{ $plate->name }} (x{{ $plate->pivot->quantity }})</div>
                                 @endforeach

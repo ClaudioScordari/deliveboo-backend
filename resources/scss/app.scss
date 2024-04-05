@@ -1,9 +1,10 @@
-$secondary: #EAA932;
+$success: #502314;
+$secondary: #FF8732;
 
 @import "~bootstrap/scss/bootstrap";
 
 #sidebar-wrapper {
-    height: 100vh;
+    height: 100%;
     width: 220px;
     position: fixed;
     z-index: 1000;
@@ -22,17 +23,13 @@ $secondary: #EAA932;
     width: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #sidebar-wrapper {
         width: 50px;
-        height: 100%;
-    }
-    #sidebar-wrapper.active {
-        width: 250px; /* O la larghezza che preferisci */
     }
 
-    #logout-wrapper {
-        position :relative
+    #sidebar-wrapper.active {
+        width: 250px;
     }
 
     #page-content-wrapper {
