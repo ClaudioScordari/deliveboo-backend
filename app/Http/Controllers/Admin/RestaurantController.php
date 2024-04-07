@@ -103,6 +103,10 @@ class RestaurantController extends Controller
     {
         $types = Type::all();
 
+        if ($restaurant->user_id !== auth()->id()) {
+            return redirect()->route('admin.dashboard')->with('error', 'Non sei autorizzato a visualizzare questa risorsa.');
+        }
+
         return view('admin.restaurants.edit', compact('restaurant', 'types'));
     }
 
@@ -180,6 +184,9 @@ class RestaurantController extends Controller
     {
 
         $restaurant = Restaurant::findOrFail($id);
+
+        // Elimino prima tutti i piatti associati
+        $restaurant->plates()->delete();
     
         $restaurant->delete();
 

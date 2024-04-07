@@ -80,7 +80,7 @@
         
                 {{-- Tipi --}}
                 <div class="my-4 form-group">
-                    <label class="d-block" for="types">Seleziona i tuoi tipi di Cucina:</label>
+                    <label class="d-block" for="types">Seleziona i tuoi tipi di Cucina: <span class="text-danger">*</span></label>
 
                     <div class="row pt-2 mx-5">
                         @foreach ($types as $type)
@@ -95,6 +95,13 @@
                                 </div>
                             </div>
                         @endforeach
+
+                        {{-- Barra errore --}}
+                        @error('types')
+                            <div class="alert alert-danger">
+                                {{ $message }}
+                            </div>
+                        @enderror 
                     </div>
                 </div>
         

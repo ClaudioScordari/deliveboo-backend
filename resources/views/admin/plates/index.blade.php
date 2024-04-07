@@ -27,7 +27,7 @@
                 @else
 
                 @foreach ($plates as $plate)
-                <div class="col-md-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card h-100">
                         @if($plate->image)
                             <img src="{{ asset('storage/' . $plate->image) }}" class="card-img-top" alt="{{ $plate->name }}">

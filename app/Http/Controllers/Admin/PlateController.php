@@ -42,8 +42,13 @@ class PlateController extends Controller
     }
 
     public function create()
-    {
-        return view('admin.plates.create');
+    {        
+        // Controlla se prima esiste un'istanza del ristorante
+        if (auth()->user()->restaurant?->id){
+            return view('admin.plates.create');
+        } else {
+            return redirect()->route('admin.dashboard')->with('error', 'Devi prima creare un ristorante.');
+        }
     }
 
     public function store(StorePlateRequest $request)
