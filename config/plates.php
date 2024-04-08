@@ -316,7 +316,7 @@ return [
         ],
         [
             'restaurant_id' => 4, 
-            'name' => 'Tacos Al Pastor', 
+            'name' => 'Tacos', 
             'description' => "È un piatto molto popolare e apprezzato per il suo sapore robusto e piccante, e la sua freschezza grazie all'aggiunta di ananas.", 
             'price' => 9.00, 
             'visible' => true, 
@@ -1629,15 +1629,6 @@ return [
             'visible' => true, 
             'ingredients' => 'Pollo, Salsa di Soia, Mirin, Zucchero, Sakè', 
             'image' => 'teriyaki-chicken.jpg',
-        ],
-        [
-            'restaurant_id' => 18, 
-            'name' => 'Pollo Kung Pao Azteca', 
-            'description' => 'Il contrasto tra la carne succosa e i broccoli croccanti, e per essere un piatto soddisfacente e salutare.', 
-            'price' => 10.99, 
-            'visible' => true, 
-            'ingredients' => 'Manzo, Broccoli, Aglio, Zenzero, Salsa di Soia', 
-            'image' => 'beef-and-broccoli.jpg'
         ],
 
             // Restaurant 19
