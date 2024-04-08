@@ -8,7 +8,7 @@
         <div class="col-12">
             <h1 class="text-center mb-3 text-success">I miei Piatti</h1>
             <div class="d-flex justify-content-end mb-4">
-                <a href="{{ route('admin.plates.create') }}" class="btn btn-secondary text-light">Nuovo piatto <i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i></a>
+                <a href="{{ route('admin.plates.create') }}" class="btn btn-secondary text-white">Nuovo piatto <i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i></a>
             </div>
             <div class="row">
 
@@ -44,11 +44,11 @@
                             <p class="card-text mt-3">{{ $plate->description ?? 'Nessuna descrizione disponibile' }}</p>
                         </div>
                         
-                        <div class="card-footer text-center">
-                            <a href="{{ route('admin.plates.edit', ['plate' => $plate->id]) }}" class="btn btn-secondary text-light">Modifica <i class="fa-solid fa-pencil"></i></a>
+                        <div class="card-footer bg-light text-center">
+                            <a href="{{ route('admin.plates.edit', ['plate' => $plate->id]) }}" class="btn btn-secondary text-white">Modifica <i class="fa-solid fa-pencil"></i></a>
                             
                             {{-- Bottone che apre il Modal specifico per il piatto --}}
-                            <button type="button" class="btn btn-secondary text-light" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $plate->id }}">
+                            <button type="button" class="btn btn-secondary text-white" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $plate->id }}">
                                 Elimina <i class="fa-solid fa-trash"></i>
                             </button>
                             
@@ -56,19 +56,19 @@
                             <div class="modal fade" id="deleteModal{{ $plate->id }}" tabindex="-1" aria-labelledby="deleteModalLabel{{ $plate->id }}" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
-                                        <div class="modal-header">
+                                        <div class="modal-header border-success bg-light">
                                             <h5 class="modal-title text-success" id="deleteModalLabel{{ $plate->id }}">Conferma Eliminazione</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             Vuoi davvero eliminare il Piatto {{ $plate->name }}?
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal"><i class="fa-solid fa-left-long"></i> Annulla</button>
+                                        <div class="modal-footer border-success bg-light">
+                                            <button type="button" class="btn btn-success text-white" data-bs-dismiss="modal"><i class="fa-solid fa-left-long"></i> Annulla</button>
                                             <form action="{{ route('admin.plates.destroy', $plate->id) }}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-secondary text-light">Sì, voglio Eliminarlo <i class="fa-solid fa-trash"></i></button>
+                                                <button type="submit" class="btn btn-secondary text-white">Sì, voglio Eliminarlo <i class="fa-solid fa-trash"></i></button>
                                             </form>
                                         </div>
                                     </div>

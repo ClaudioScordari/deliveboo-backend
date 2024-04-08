@@ -16,7 +16,7 @@
     </head>
     <body class="d-flex">
         <!-- Sidebar -->
-        <div class="bg-dark text-success text-center p-3" id="sidebar-wrapper">
+        <div class="bg-light text-success border-end border-success text-center p-3" id="sidebar-wrapper">
             <div class="sidebar-heading d-none d-md-block">
                 <img src="{{ Vite::asset('resources/img/deliveboo.png') }}" alt="deliveboo" class="w-100">
             </div>

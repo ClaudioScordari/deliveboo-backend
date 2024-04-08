@@ -9,7 +9,7 @@
         
         <div class="row g-4">
             <div class="col-lg-6">
-                <div class="card text-center">
+                <div class="card bg-light border-success text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Totale Ordini <span class="card-text text-secondary"><strong>{{ $totalOrders }}</strong></span></h5>
                         <canvas id="ordersChart"></canvas>
@@ -18,7 +18,7 @@
             </div>
     
             <div class="col-lg-6">
-                <div class="card text-center">
+                <div class="card bg-light border-success text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Ordini Ultimi 30 Giorni <span class="card-text text-secondary"><strong>{{ $totalOrdersLast30Days }}</strong></span></h5>
                         <canvas id="dailyOrdersChart"></canvas>
@@ -27,7 +27,7 @@
             </div>
     
             <div class="col-lg-6">
-                <div class="card text-center">
+                <div class="card bg-light border-success text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Totale Entrare <span class="card-text text-secondary"><strong>{{ number_format($totalRevenue, 2) }}€</strong></span></h5>
                         <canvas id="dailyRevenueChart"></canvas>
@@ -36,7 +36,7 @@
             </div>
     
             <div class="col-lg-6">
-                <div class="card text-center">
+                <div class="card bg-light border-success text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Entrate Ultimi 30 Giorni <span class="card-text text-secondary"><strong>{{ number_format($totalRevenueLast30Days, 2) }}€</strong></span></h5>
                         <canvas id="revenueChart"></canvas>
@@ -45,7 +45,7 @@
             </div>
     
             <div class="col-lg-6">
-                <div class="card text-center">
+                <div class="card bg-light border-success text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Piatto Più Ordinato</h5>
                         <p class="card-text text-success">{{ $mostOrderedPlateOverall->name }} - x<span class="text-secondary fw-bold">{{ $mostOrderedPlateOverall->orders_count }}</span></p>
@@ -55,7 +55,7 @@
             </div>
     
             <div class="col-lg-6">
-                <div class="card text-center">
+                <div class="card bg-light border-success text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Piatto Più Ordinato Ultimi 30 Giorni</h5>
                         <p class="card-text text-success">{{ $mostOrderedPlateThisMonth->name }} - x <span class="text-secondary fw-bold">{{ $mostOrderedPlateThisMonth->orders_count }}</span></p>

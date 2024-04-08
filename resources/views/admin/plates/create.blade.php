@@ -4,7 +4,7 @@
 
 @section('main-content')
     <section class="container-form-section">
-        <div class="container-form card bg-light m-auto w-50 px-5 py-4">
+        <div class="container-form card border-success bg-light m-auto w-50 px-5 py-4">
             <h1 class="text-center text-success">CREA UN NUOVO PIATTO</h1>
 
             <p class="fw-bold">I campi con <span class="text-danger fw-bold">*</span> sono obbligatori</p>
@@ -43,7 +43,7 @@
                 {{-- Visibile --}}
                 <div class="mb-3">
                     <input value="1" type="checkbox" name="visible" id="visible">
-                    <label for="visible" class="form-label"><span class="fw-bolder">Visibile?</span></label>
+                    <label for="visible" class="form-label"><span class="fw-bolder">Disponibile?</span></label>
                 </div>
 
                 {{-- Ingredienti --}}
@@ -93,7 +93,7 @@
                 </div>
 
                 <div>
-                    <button type="submit" class="btn btn-secondary text-light">Aggiungi piatto <i class="fa-solid fa-plus"></i></button>
+                    <button type="submit" class="btn btn-secondary text-white">Aggiungi piatto <i class="fa-solid fa-plus"></i></button>
                 </div>
                 <br>
             </form>

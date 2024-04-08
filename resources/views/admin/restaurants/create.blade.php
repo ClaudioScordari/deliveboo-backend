@@ -4,7 +4,7 @@
 
 @section('main-content')
     <section class="container-form-section">
-        <div class="container-form card bg-light m-auto w-50 px-5 py-4">
+        <div class="container-form card border-success bg-light m-auto w-50 px-5 py-4">
             <h1 class="text-center text-success">CREA LA TUA ATTIVITA'</h1>
 
             <p class="fw-bold my-3">I campi con <span class="text-danger fw-bold">*</span> sono obbligatori</p>
@@ -121,7 +121,7 @@
                 </div>
         
                 <div>
-                    <button type="submit" class="btn btn-secondary text-light">Crea Attività <i class="fa-solid fa-plus"></i></button>
+                    <button type="submit" class="btn btn-secondary text-white">Crea Attività <i class="fa-solid fa-plus"></i></button>
                 </div>
             </form>
         </div>

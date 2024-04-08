@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 p-3">
-                            <div class="card bg-light p-3">
+                            <div class="card bg-light border-success p-3">
                                 <p class="text-center px-5 mx-5 mb-3 my-auto">
                                     "Sei già nostro cliente? effettua il Login"
                                 </p>
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-center mb-3">
+                    <div class="text-center mt-3">
                         <img src="{{ Vite::asset('resources/img/jumbotron.png') }}" alt="Jumbotron" class="w-50 rounded">
                     </div>
                 </div>

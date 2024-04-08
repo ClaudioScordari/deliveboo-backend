@@ -4,7 +4,7 @@
 
 @section('main-content')
 <section class="container-form-section">
-    <div class="container-form card bg-light m-auto w-50 px-5 py-4">
+    <div class="container-form card border-success bg-light m-auto w-50 px-5 py-4">
         <h1 class="text-center text-success">Modifica stato Pagamento</h1>
 
         {{-- Errors --}}
@@ -43,7 +43,7 @@
             </div>
     
             <div>
-                <button type="submit" class="btn btn-secondary text-light">Aggiorna Stato <i class="fa-solid fa-pencil"></i></button>
+                <button type="submit" class="btn btn-secondary text-white">Aggiorna Stato <i class="fa-solid fa-pencil"></i></button>
             </div>
         </form>
     </div>

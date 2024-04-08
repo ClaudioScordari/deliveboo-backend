@@ -4,7 +4,7 @@
 
 @section('main-content')
 <section class="container-form-section">
-    <div class="container-form card bg-light m-auto w-50 px-5 py-4">
+    <div class="container-form card border-success bg-light m-auto w-50 px-5 py-4">
         <h1 class="text-center text-success">MODIFICA IL TUO PIATTO</h1>
 
         <p class="fw-bold my-3">I campi con <span class="text-danger fw-bold">*</span> sono obbligatori</p>
@@ -43,7 +43,7 @@
             {{-- Visibile --}}
             <div class="mb-3">
                 <input value="1" type="checkbox" name="visible" id="visible" {{ $plate->visible == 1 ? 'checked' : '' }}>
-                <label for="visible" class="form-label"><span class="fw-bolder">Visibile?</span></label>
+                <label for="visible" class="form-label"><span class="fw-bolder">Disponibile?</span></label>
             </div>
     
             {{-- Ingredienti --}}
@@ -77,7 +77,7 @@
             {{-- Immagine corrente --}}
             @if ($plate->image != null)
                 <div class="my-3 text-center">
-                    <img class="w-50" src="/storage/{{ $plate->image }}" alt="{{ $plate->name }}">
+                    <img class="w-50 rounded" src="/storage/{{ $plate->image }}" alt="{{ $plate->name }}">
                 </div>
             @endif
     
@@ -106,7 +106,7 @@
             </div>
     
             <div>
-                <button type="submit" class="btn btn-secondary text-light">Aggiorna Piatto <i class="fa-solid fa-pencil"></i></button>
+                <button type="submit" class="btn btn-secondary text-white">Aggiorna Piatto <i class="fa-solid fa-pencil"></i></button>
             </div>
         </form>
     </div>

@@ -4,7 +4,7 @@
 
 @section('main-content')
     <section class="container-form-section">
-        <div class="container-form bg-light m-auto w-50 px-5 py-4">
+        <div class="container-form card border-success bg-light m-auto w-50 px-5 py-4">
             <h1 class="text-center text-success">MODIFICA L'ATTIVITA'</h1>
     
             <p class="fw-bold">I campi con <span class="text-danger fw-bold">*</span> sono obbligatori</p>
@@ -80,7 +80,7 @@
                 {{-- Immagine corrente --}}
                 @if ($restaurant->image != null)
                     <div class="my-3 text-center">
-                        <img class="w-50" src="/storage/{{ $restaurant->image }}"
+                        <img class="w-50 rounded" src="/storage/{{ $restaurant->image }}"
                             alt="{{ $restaurant->activity_name }}">
                     </div>
                 @endif
@@ -137,7 +137,7 @@
                 </div>
     
                 <div>
-                    <button type="submit" class="btn btn-secondary text-light">Aggiorna Attività <i class="fa-solid fa-pencil"></i></button>
+                    <button type="submit" class="btn btn-secondary text-white">Aggiorna Attività <i class="fa-solid fa-pencil"></i></button>
                 </div>
             </form>
         </div>
