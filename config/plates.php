@@ -72,6 +72,24 @@ return [
             'ingredients' => 'Potate, Sale, Olio Vegetale',
             'image' => 'french-fries.jpg',
         ],
+        [
+            'restaurant_id' => 1, 
+            'name' => 'Cheeseburger La Dolce Vita', 
+            'description' => 'Viene apprezzato per il suo sapore succulento, la sua semplicità e la sua versatilità.', 
+            'price' => 11.00, 
+            'visible' => true, 
+            'ingredients' => 'Manzo, Formaggio, Lattuga, Pomodoro, Cipolla, Pane', 
+            'image' => 'cheeseburger.jpg'
+        ],
+        [
+            'restaurant_id' => 1, 
+            'name' => 'BBQ Ribs La Dolce Vita', 
+            'description' => 'Sono un piatto apprezzato per la loro bontà e versatilità, e sono una presenza fissa nei menu dei ristoranti barbecue in tutto il mondo.', 
+            'price' => 16.50, 
+            'visible' => true, 
+            'ingredients' => 'Costolette di Maiale, Salsa BBQ, Patate', 
+            'image' => 'bbq-ribs.jpg'
+        ],
     
         // Restaurant 2
         [
@@ -116,6 +134,24 @@ return [
             'visible' => true, 
             'ingredients' => 'Panna Liquida, Zucchero, Vaniglia, Gelatina in fogli', 
             'image' => 'panna-cotta.jpg',
+        ],
+        [
+            'restaurant_id' => 2, 
+            'name' => 'Sushi Misto del Borgo', 
+            'description' => 'È un piatto apprezzato per la sua freschezza, la sua presentazione artistica e la sua varietà di sapori e texture.', 
+            'price' => 15.00, 
+            'visible' => true, 
+            'ingredients' => 'Salmone, Tonno, Cetriolo, Riso, Alghe', 
+            'image' => 'sushi-platter.jpg'
+        ],
+        [
+            'restaurant_id' => 2, 
+            'name' => 'Ramen del Borgo', 
+            'description' => "Molto popolare e amato in Giappone e in tutto il mondo per la sua ricchezza di sapore, la sua versatilità e la sua capacità di riscaldare il corpo e l'anima.", 
+            'price' => 13.50, 
+            'visible' => true, 
+            'ingredients' => 'Brodo di Maiale, Noodle, Maiale, Uova, Cipollotto', 
+            'image' => 'ramen.jpg'
         ],
         [
             'restaurant_id' => 2, 
@@ -215,6 +251,24 @@ return [
             'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
             'image' => 'spring-rolls.jpg',
         ],
+        [
+            'restaurant_id' => 3,
+            'name' => 'Anatra alla Pechinese del Gondoliere',
+            'description' => "La sua preparazione richiede una tecnica particolare e è considerata un'arte culinaria.",
+            'price' => 25.99,
+            'visible' => true,
+            'ingredients' => 'Anatra, Pancake, Cipolle, Cetriolo, Salsa di Fagioli Dolci',
+            'image' => 'peking-duck.jpg',
+        ],
+        [
+            'restaurant_id' => 3,
+            'name' => 'Mapo Tofu del Gondoliere',
+            'description' => 'Il Mapo Tofu è amato in tutto il mondo per la sua complessità di sapori e la sua caldazza appagante.',
+            'price' => 14.99,
+            'visible' => true,
+            'ingredients' => 'Tofu, Macinato di Carne, Peperoncino del Sichuan, Fagioli Neri fermentati, Olio di Peperoncino',
+            'image' => 'mapo-tofu.jpg',
+        ],
 
         // Restaurant 4
         [
@@ -285,6 +339,24 @@ return [
             'price' => 12.50, 'visible' => true, 
             'ingredients' => 'Pesce, Lime, Cipolle, Coriandolo, Peperoncino', 
             'image' => 'ceviche.jpg',
+        ],
+        [
+            'restaurant_id' => 4, 
+            'name' => 'Fajitas', 
+            'description' => "Le Fajitas Tandoori offrono un'esplosione di sapori speziati e sono un'opzione deliziosa e unica per un pasto.", 
+            'price' => 13.95, 
+            'visible' => true, 
+            'ingredients' => 'Pollo, Peperoni, Cipolle, Spezie', 
+            'image' => 'fajitas.jpg',
+        ],
+        [
+            'restaurant_id' => 4,
+            'name' => 'Enchiladas Verdes',
+            'description' => 'Sono apprezzate per il loro sapore fresco e piccante, e rappresentano un piatto delizioso e appagante della cucina messicana.',
+            'price' => 12.99,
+            'visible' => true,
+            'ingredients' => 'Toritllas di Mais, Pollo, Salsa Tomatillo, Formaggio, Panna Acida, Fagioli',
+            'image' => 'enchiladas-verdes.jpg',
         ],
 
             // Restaurant 5
@@ -357,6 +429,24 @@ return [
             'visible' => true,
             'ingredients' => 'Pollo, Pomodori, Panna, Burro, Spezie',
             'image' => 'butter-chicken.jpg',
+        ],
+        [
+            'restaurant_id' => 5,
+            'name' => 'Palak Paneer del Giardino',
+            'description' => 'Ricco di sapore e molto apprezzato sia dagli amanti della cucina indiana che da chi cerca opzioni vegetariane.',
+            'price' => 13.99,
+            'visible' => true,
+            'ingredients' => 'Paneer, Spinaci, Aglio, Zenzero, Panna',
+            'image' => 'palak-paneer.jpg',
+        ],
+        [
+            'restaurant_id' => 5,
+            'name' => 'Chana Masala del Giardino',
+            'description' => 'Una scelta molto popolare sia per i vegetariani che per chi ama i piatti ricchi di sapore della cucina indiana.',
+            'price' => 11.99,
+            'visible' => true,
+            'ingredients' => 'Ceci, Cipolle, Pomodori, Spezie',
+            'image' => 'chana-masala.jpg',
         ],
 
         // Restaurant 6
@@ -679,8 +769,25 @@ return [
             'image' => 'chana-masala.jpg',
         ],
         [
+            'restaurant_id' => 9,
+            'name' => 'Pizza Margherita Bolliwood',
+            'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
+            'price' => 9.50, 'visible' => true,
+            'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
+            'image' => 'margherita-pizza.jpg'
+        ],
+        [
+            'restaurant_id' => 9,
+            'name' => 'Pasta alla Carbonara Bolliwood',
+            'description' => 'La carbonara è un piatto di pasta cremoso, ricco e pieno di sapore, un classico della cucina romana.',
+            'price' => 12.00,
+            'visible' => true,
+            'ingredients' => 'Spaghetti, Uova, Pecorino Romano, Guanciale, Pepe Nero',
+            'image' => 'pasta-carbonara.jpg'
+        ],
+        [
             'restaurant_id' => 9, 
-            'name' => 'Tiramisu Bolliwood', 
+            'name' => 'Tiramisù Bolliwood', 
             'description' => 'Classico dessert Italiano al gusto di caffè.', 
             'price' => 6.50, 'visible' => true, 
             'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
@@ -753,10 +860,28 @@ return [
         ],
         [
             'restaurant_id' => 10, 
+            'name' => 'Pollo Kung Pao Ganges', 
+            'description' => ' La combinazione di ingredienti freschi e spezie rende il pollo Kung Pao un piatto molto apprezzato sia in Cina che in molte cucine internazionali.',
+            'price' => 8.99,
+            'visible' => true, 
+            'ingredients' => 'Pollo, Arachidi, Zucchine, Peperoni, Salsa di Soia, Chili', 
+            'image' => 'kung-pao-chicken.jpg'
+        ],
+        [
+            'restaurant_id' => 10, 
+            'name' => 'Manzo e Broccoli Ganges', 
+            'description' => 'Il contrasto tra la carne succosa e i broccoli croccanti, e per essere un piatto soddisfacente e salutare.', 
+            'price' => 10.99, 
+            'visible' => true, 
+            'ingredients' => 'Manzo, Broccoli, Aglio, Zenzero, Salsa di Soia', 
+            'image' => 'beef-and-broccoli.jpg'
+        ],
+        [
+            'restaurant_id' => 10, 
             'name' => 'Involtini Primavera Ganges', 
-            'description' => 'Crispy rolls filled with vegetables and sometimes meat.', 
+            'description' => 'Sono un antipasto popolare in molti ristoranti cinesi e asiatici, amati per la loro croccantezza e il loro sapore fresco e delicato.', 
             'price' => 8.25, 'visible' => true, 
-            'ingredients' => 'Cabbage, carrot, bell peppers, chicken/shrimp', 
+            'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
             'image' => 'spring-rolls.jpg',
         ],
         [
@@ -827,6 +952,24 @@ return [
         ],
         [
             'restaurant_id' => 11, 
+            'name' => 'Tacos Al Pastor Tandoori', 
+            'description' => "È un piatto molto popolare e apprezzato per il suo sapore robusto e piccante, e la sua freschezza grazie all'aggiunta di ananas.", 
+            'price' => 9.00, 
+            'visible' => true, 
+            'ingredients' => 'Maiale, Ananas, Cipolla, Coriandolo, Tortillas di Mais', 
+            'image' => 'tacos-al-pastor.jpg'
+        ],
+        [
+            'restaurant_id' => 11, 
+            'name' => 'Guacamole Tandoori', 
+            'description' => "Noto per il suo sapore cremoso e fresco, derivato dall'avAnatrado, e per la sua versatilità in cucina.", 
+            'price' => 6.50, 
+            'visible' => true, 
+            'ingredients' => 'AvAnatrado, Cipolle, Pomodori, Lime, Coriandolo', 
+            'image' => 'guacamole.jpg'
+        ],
+        [
+            'restaurant_id' => 11, 
             'name' => 'Ceviche Tandoori', 
             'description' => ' È un piatto leggero e rinfrescante, perfetto per le giornate calde.', 
             'price' => 12.50, 'visible' => true, 
@@ -851,7 +994,6 @@ return [
             'ingredients' => 'Toritllas di Mais, Pollo, Salsa Tomatillo, Formaggio, Panna Acida, Fagioli',
             'image' => 'enchiladas-verdes.jpg',
         ],
-
 
         // Restaurant 12 
         [
@@ -1174,7 +1316,7 @@ return [
         ],
         [
             'restaurant_id' => 15,
-            'name' => 'Margherita Pizza Golden',
+            'name' => 'Pizza Margherita Golden',
             'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
             'price' => 9.50, 'visible' => true,
             'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
@@ -1191,11 +1333,29 @@ return [
         ],
         [
             'restaurant_id' => 15, 
-            'name' => 'Tiramisu Golden', 
+            'name' => 'Tiramisù Golden', 
             'description' => 'Classico dessert Italiano al gusto di caffè.', 
             'price' => 6.50, 'visible' => true, 
             'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
             'image' => 'tiramisu.jpg'
+        ],
+        [
+            'restaurant_id' => 15, 
+            'name' => 'Gnocchi Golden', 
+            'description' => 'Gli gnocchi di patate sono un piatto tradizionale italiano costituito da piccole palline di impasto di patate, farina e uova.', 
+            'price' => 11.00, 
+            'visible' => true, 
+            'ingredients' => 'Patate, Farina, Uova, Salvia, Burro', 
+            'image' => 'gnocchi.jpg'
+        ],
+        [
+            'restaurant_id' => 15, 
+            'name' => 'Panna Cotta Golden', 
+            'description' => 'È un dolce elegante e delicato, amato per la sua semplicità e il suo gusto delizioso.', 
+            'price' => 7.00, 
+            'visible' => true, 
+            'ingredients' => 'Panna Liquida, Zucchero, Vaniglia, Gelatina in fogli', 
+            'image' => 'panna-cotta.jpg',
         ],
 
         // Restaurant 16
@@ -1243,6 +1403,24 @@ return [
             'visible' => true,
             'ingredients' => 'Potate, Sale, Olio Vegetale',
             'image' => 'french-fries.jpg',
+        ],
+        [
+            'restaurant_id' => 16, 
+            'name' => 'Pollo Kung Pao Liberty', 
+            'description' => ' La combinazione di ingredienti freschi e spezie rende il pollo Kung Pao un piatto molto apprezzato sia in Cina che in molte cucine internazionali.',
+            'price' => 8.99,
+            'visible' => true, 
+            'ingredients' => 'Pollo, Arachidi, Zucchine, Peperoni, Salsa di Soia, Chili', 
+            'image' => 'kung-pao-chicken.jpg'
+        ],
+        [
+            'restaurant_id' => 16, 
+            'name' => 'Manzo e Broccoli Liberty', 
+            'description' => 'Il contrasto tra la carne succosa e i broccoli croccanti, e per essere un piatto soddisfacente e salutare.', 
+            'price' => 10.99, 
+            'visible' => true, 
+            'ingredients' => 'Manzo, Broccoli, Aglio, Zenzero, Salsa di Soia', 
+            'image' => 'beef-and-broccoli.jpg'
         ],
         [
             'restaurant_id' => 16, 
@@ -1343,6 +1521,24 @@ return [
             'ingredients' => 'Pesce, Lime, Cipolle, Coriandolo, Peperoncino', 
             'image' => 'ceviche.jpg',
         ],
+        [
+            'restaurant_id' => 17, 
+            'name' => 'Fajitas Route 66', 
+            'description' => "Le Fajitas Tandoori offrono un'esplosione di sapori speziati e sono un'opzione deliziosa e unica per un pasto.", 
+            'price' => 13.95, 
+            'visible' => true, 
+            'ingredients' => 'Pollo, Peperoni, Cipolle, Spezie', 
+            'image' => 'fajitas.jpg',
+        ],
+        [
+            'restaurant_id' => 17,
+            'name' => 'Enchiladas Verdes Route 66',
+            'description' => 'Sono apprezzate per il loro sapore fresco e piccante, e rappresentano un piatto delizioso e appagante della cucina messicana.',
+            'price' => 12.99,
+            'visible' => true,
+            'ingredients' => 'Toritllas di Mais, Pollo, Salsa Tomatillo, Formaggio, Panna Acida, Fagioli',
+            'image' => 'enchiladas-verdes.jpg',
+        ],
 
         // Restaurant 18
         [
@@ -1391,8 +1587,26 @@ return [
         ],
         [
             'restaurant_id' => 18, 
+            'name' => 'Sushi Misto Azteca', 
+            'description' => 'È un piatto apprezzato per la sua freschezza, la sua presentazione artistica e la sua varietà di sapori e texture.', 
+            'price' => 15.00, 
+            'visible' => true, 
+            'ingredients' => 'Salmone, Tonno, Cetriolo, Riso, Alghe', 
+            'image' => 'sushi-platter.jpg'
+        ],
+        [
+            'restaurant_id' => 18, 
+            'name' => 'Ramen Azteca', 
+            'description' => "Molto popolare e amato in Giappone e in tutto il mondo per la sua ricchezza di sapore, la sua versatilità e la sua capacità di riscaldare il corpo e l'anima.", 
+            'price' => 13.50, 
+            'visible' => true, 
+            'ingredients' => 'Brodo di Maiale, Noodle, Maiale, Uova, Cipollotto', 
+            'image' => 'ramen.jpg'
+        ],
+        [
+            'restaurant_id' => 18, 
             'name' => 'Katsu Curry Azteca', 
-            'description' => ' È un piatto apprezzato per la combinazione di croccantezza e sapore ricco della carne impanata e della salsa curry.',
+            'description' => 'È un piatto apprezzato per la combinazione di croccantezza e sapore ricco della carne impanata e della salsa curry.',
             'price' => 9.75,
             'visible' => true, 
             'ingredients' => 'Pollo, Pane Grattugiato, Curry, Riso', 
@@ -1415,6 +1629,15 @@ return [
             'visible' => true, 
             'ingredients' => 'Pollo, Salsa di Soia, Mirin, Zucchero, Sakè', 
             'image' => 'teriyaki-chicken.jpg',
+        ],
+        [
+            'restaurant_id' => 18, 
+            'name' => 'Pollo Kung Pao Azteca', 
+            'description' => 'Il contrasto tra la carne succosa e i broccoli croccanti, e per essere un piatto soddisfacente e salutare.', 
+            'price' => 10.99, 
+            'visible' => true, 
+            'ingredients' => 'Manzo, Broccoli, Aglio, Zenzero, Salsa di Soia', 
+            'image' => 'beef-and-broccoli.jpg'
         ],
 
             // Restaurant 19
@@ -1461,6 +1684,24 @@ return [
             'visible' => true,
             'ingredients' => 'Toritllas di Mais, Pollo, Salsa Tomatillo, Formaggio, Panna Acida, Fagioli',
             'image' => 'enchiladas-verdes.jpg',
+        ],
+        [
+            'restaurant_id' => 19, 
+            'name' => 'Pollo Kung Pao del Sol', 
+            'description' => ' La combinazione di ingredienti freschi e spezie rende il pollo Kung Pao un piatto molto apprezzato sia in Cina che in molte cucine internazionali.',
+            'price' => 8.99,
+            'visible' => true, 
+            'ingredients' => 'Pollo, Arachidi, Zucchine, Peperoni, Salsa di Soia, Chili', 
+            'image' => 'kung-pao-chicken.jpg'
+        ],
+        [
+            'restaurant_id' => 19, 
+            'name' => 'Manzo e Broccoli del Sol', 
+            'description' => 'Il contrasto tra la carne succosa e i broccoli croccanti, e per essere un piatto soddisfacente e salutare.', 
+            'price' => 10.99, 
+            'visible' => true, 
+            'ingredients' => 'Manzo, Broccoli, Aglio, Zenzero, Salsa di Soia', 
+            'image' => 'beef-and-broccoli.jpg'
         ],
         [
             'restaurant_id' => 19, 
@@ -1537,12 +1778,11 @@ return [
         ],
         [
             'restaurant_id' => 20,
-            'name' => 'Margherita Pizza Cactus',
+            'name' => 'Pizza Margherita Cactus',
             'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
             'price' => 9.50, 'visible' => true,
             'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
-            'image' => 'margherita-pizza.jpg',
-
+            'image' => 'margherita-pizza.jpg'
         ],
         [
             'restaurant_id' => 20,
@@ -1555,10 +1795,28 @@ return [
         ],
         [
             'restaurant_id' => 20, 
-            'name' => 'Tiramisu Cactus', 
+            'name' => 'Tiramisù Cactus', 
             'description' => 'Classico dessert Italiano al gusto di caffè.', 
             'price' => 6.50, 'visible' => true, 
             'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
             'image' => 'tiramisu.jpg'
+        ],
+        [
+            'restaurant_id' => 20, 
+            'name' => 'Gnocchi Cactus', 
+            'description' => 'Gli gnocchi di patate sono un piatto tradizionale italiano costituito da piccole palline di impasto di patate, farina e uova.', 
+            'price' => 11.00, 
+            'visible' => true, 
+            'ingredients' => 'Patate, Farina, Uova, Salvia, Burro', 
+            'image' => 'gnocchi.jpg'
+        ],
+        [
+            'restaurant_id' => 20, 
+            'name' => 'Panna Cotta Cactus', 
+            'description' => 'È un dolce elegante e delicato, amato per la sua semplicità e il suo gusto delizioso.', 
+            'price' => 7.00, 
+            'visible' => true, 
+            'ingredients' => 'Panna Liquida, Zucchero, Vaniglia, Gelatina in fogli', 
+            'image' => 'panna-cotta.jpg',
         ],
     ];

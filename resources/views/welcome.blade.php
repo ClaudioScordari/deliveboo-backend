@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-3">
-                        <img src="{{ Vite::asset('resources/img/jumbotron.png') }}" alt="Jumbotron" class="w-50 rounded">
+                        <img src="{{ Vite::asset('resources/img/jumbotron.png') }}" alt="Jumbotron" class="w-50 rounded border border-success">
                     </div>
                 </div>
             </div>
