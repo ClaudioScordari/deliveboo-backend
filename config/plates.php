@@ -6,7 +6,8 @@ return [
         'restaurant_id' => 1,
         'name' => 'Pizza Margherita La Dolce Vita',
         'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
-        'price' => 9.50, 'visible' => true,
+        'price' => 9.50, 
+        'visible' => true,
         'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
         'image' => 'margherita-pizza.jpg'
     ],
@@ -23,7 +24,8 @@ return [
         'restaurant_id' => 1, 
         'name' => 'Tiramisù La Dolce Vita', 
         'description' => 'Classico dessert Italiano al gusto di caffè.', 
-        'price' => 6.50, 'visible' => true, 
+        'price' => 6.50, 
+        'visible' => true, 
         'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
         'image' => 'tiramisu.jpg'
     ],
@@ -44,6 +46,24 @@ return [
         'visible' => true, 
         'ingredients' => 'Panna Liquida, Zucchero, Vaniglia, Gelatina in fogli', 
         'image' => 'panna-cotta.jpg',
+    ],
+    [
+        'restaurant_id' => 1,
+        'name' => 'Lasagna alla Bolognese La Dolce Vita',
+        'description' => 'Lasagna ricca e saporita con strati di pasta fresca, ragù alla bolognese, besciamella e parmigiano reggiano.',
+        'price' => 13.50,
+        'visible' => true,
+        'ingredients' => "Pasta all'uovo, Ragù di carne, Besciamella, Parmigiano Reggiano",
+        'image' => 'lasagna-bolognese.jpg'
+    ],  
+    [
+        'restaurant_id' => 1,
+        'name' => 'Risotto ai Funghi Porcini La Dolce Vita',
+        'description' => 'Cremoso risotto preparato con funghi porcini freschi, brodo vegetale e un tocco di parmigiano.',
+        'price' => 12.00,
+        'visible' => true,
+        'ingredients' => 'Riso Arborio, Funghi Porcini, Brodo vegetale, Parmigiano',
+        'image' => 'risotto-funghi.jpg'
     ],
     [
         'restaurant_id' => 1, 
@@ -96,7 +116,8 @@ return [
         'restaurant_id' => 2,
         'name' => 'Pizza Margherita del Borgo',
         'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
-        'price' => 9.50, 'visible' => true,
+        'price' => 9.50, 
+        'visible' => true,
         'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
         'image' => 'margherita-pizza.jpg'
     ],
@@ -113,7 +134,8 @@ return [
         'restaurant_id' => 2, 
         'name' => 'Tiramisù del Borgo', 
         'description' => 'Classico dessert Italiano al gusto di caffè.', 
-        'price' => 6.50, 'visible' => true, 
+        'price' => 6.50, 
+        'visible' => true, 
         'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
         'image' => 'tiramisu.jpg'
     ],
@@ -134,6 +156,24 @@ return [
         'visible' => true, 
         'ingredients' => 'Panna Liquida, Zucchero, Vaniglia, Gelatina in fogli', 
         'image' => 'panna-cotta.jpg',
+    ],
+    [
+        'restaurant_id' => 2,
+        'name' => 'Lasagna alla Bolognese del Borgo',
+        'description' => 'Lasagna ricca e saporita con strati di pasta fresca, ragù alla bolognese, besciamella e parmigiano reggiano.',
+        'price' => 13.50,
+        'visible' => true,
+        'ingredients' => "Pasta all'uovo, Ragù di carne, Besciamella, Parmigiano Reggiano",
+        'image' => 'lasagna-bolognese.jpg'
+    ],  
+    [
+        'restaurant_id' => 2,
+        'name' => 'Risotto ai Funghi Porcini del Borgo',
+        'description' => 'Cremoso risotto preparato con funghi porcini freschi, brodo vegetale e un tocco di parmigiano.',
+        'price' => 12.00,
+        'visible' => true,
+        'ingredients' => 'Riso Arborio, Funghi Porcini, Brodo vegetale, Parmigiano',
+        'image' => 'risotto-funghi.jpg'
     ],
     [
         'restaurant_id' => 2, 
@@ -186,7 +226,8 @@ return [
         'restaurant_id' => 3,
         'name' => 'Pizza Margherita del Gondoliere',
         'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
-        'price' => 9.50, 'visible' => true,
+        'price' => 9.50, 
+        'visible' => true,
         'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
         'image' => 'margherita-pizza.jpg'
     ],
@@ -203,7 +244,8 @@ return [
         'restaurant_id' => 3, 
         'name' => 'Tiramisù del Gondoliere', 
         'description' => 'Classico dessert Italiano al gusto di caffè.',  
-        'price' => 6.50, 'visible' => true, 
+        'price' => 6.50, 
+        'visible' => true, 
         'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
         'image' => 'tiramisu.jpg'
     ],
@@ -224,6 +266,24 @@ return [
         'visible' => true, 
         'ingredients' => 'Panna Liquida, Zucchero, Vaniglia, Gelatina in fogli', 
         'image' => 'panna-cotta.jpg',
+    ],
+    [
+        'restaurant_id' => 3,
+        'name' => 'Lasagna alla Bolognese del Gondoliere',
+        'description' => 'Lasagna ricca e saporita con strati di pasta fresca, ragù alla bolognese, besciamella e parmigiano reggiano.',
+        'price' => 13.50,
+        'visible' => true,
+        'ingredients' => "Pasta all'uovo, Ragù di carne, Besciamella, Parmigiano Reggiano",
+        'image' => 'lasagna-bolognese.jpg'
+    ],  
+    [
+        'restaurant_id' => 3,
+        'name' => 'Risotto ai Funghi Porcini del Gondoliere',
+        'description' => 'Cremoso risotto preparato con funghi porcini freschi, brodo vegetale e un tocco di parmigiano.',
+        'price' => 12.00,
+        'visible' => true,
+        'ingredients' => 'Riso Arborio, Funghi Porcini, Brodo vegetale, Parmigiano',
+        'image' => 'risotto-funghi.jpg'
     ],
     [
         'restaurant_id' => 3, 
@@ -247,7 +307,8 @@ return [
         'restaurant_id' => 3, 
         'name' => 'Involtini Primavera del Gondoliere', 
         'description' => 'Sono un antipasto popolare in molti ristoranti cinesi e asiatici, amati per la loro croccantezza e il loro sapore fresco e delicato.', 
-        'price' => 8.25, 'visible' => true, 
+        'price' => 8.25, 
+        'visible' => true, 
         'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
         'image' => 'spring-rolls.jpg',
     ],
@@ -275,7 +336,8 @@ return [
         'restaurant_id' => 4,
         'name' => 'Pizza Margherita',
         'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
-        'price' => 9.50, 'visible' => true,
+        'price' => 9.50, 
+        'visible' => true,
         'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
         'image' => 'margherita-pizza.jpg'
     ],
@@ -292,7 +354,8 @@ return [
         'restaurant_id' => 4, 
         'name' => 'Tiramisu', 
         'description' => 'Classico dessert Italiano al gusto di caffè.', 
-        'price' => 6.50, 'visible' => true, 
+        'price' => 6.50, 
+        'visible' => true, 
         'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
         'image' => 'tiramisu.jpg'
     ],
@@ -315,8 +378,26 @@ return [
         'image' => 'panna-cotta.jpg',
     ],
     [
+        'restaurant_id' => 4,
+        'name' => 'Lasagna alla Bolognese',
+        'description' => 'Lasagna ricca e saporita con strati di pasta fresca, ragù alla bolognese, besciamella e parmigiano reggiano.',
+        'price' => 13.50,
+        'visible' => true,
+        'ingredients' => "Pasta all'uovo, Ragù di carne, Besciamella, Parmigiano Reggiano",
+        'image' => 'lasagna-bolognese.jpg'
+    ],  
+    [
+        'restaurant_id' => 4,
+        'name' => 'Risotto ai Funghi Porcini',
+        'description' => 'Cremoso risotto preparato con funghi porcini freschi, brodo vegetale e un tocco di parmigiano.',
+        'price' => 12.00,
+        'visible' => true,
+        'ingredients' => 'Riso Arborio, Funghi Porcini, Brodo vegetale, Parmigiano',
+        'image' => 'risotto-funghi.jpg'
+    ],
+    [
         'restaurant_id' => 4, 
-        'name' => 'Tacos', 
+        'name' => 'Tacos al Pastor', 
         'description' => "È un piatto molto popolare e apprezzato per il suo sapore robusto e piccante, e la sua freschezza grazie all'aggiunta di ananas.", 
         'price' => 9.00, 
         'visible' => true, 
@@ -336,7 +417,8 @@ return [
         'restaurant_id' => 4, 
         'name' => 'Ceviche', 
         'description' => ' È un piatto leggero e rinfrescante, perfetto per le giornate calde.', 
-        'price' => 12.50, 'visible' => true, 
+        'price' => 12.50, 
+        'visible' => true, 
         'ingredients' => 'Pesce, Lime, Cipolle, Coriandolo, Peperoncino', 
         'image' => 'ceviche.jpg',
     ],
@@ -364,7 +446,8 @@ return [
         'restaurant_id' => 5,
         'name' => 'Pizza Margherita del Giardino',
         'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
-        'price' => 9.50, 'visible' => true,
+        'price' => 9.50, 
+        'visible' => true,
         'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
         'image' => 'margherita-pizza.jpg'
     ],
@@ -381,7 +464,8 @@ return [
         'restaurant_id' => 5, 
         'name' => 'Tiramisù del Giardino', 
         'description' => 'Classico dessert Italiano al gusto di caffè.',  
-        'price' => 6.50, 'visible' => true, 
+        'price' => 6.50, 
+        'visible' => true, 
         'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
         'image' => 'tiramisu.jpg'
     ],
@@ -402,6 +486,24 @@ return [
         'visible' => true, 
         'ingredients' => 'Panna Liquida, Zucchero, Vaniglia, Gelatina in fogli', 
         'image' => 'panna-cotta.jpg',
+    ],
+    [
+        'restaurant_id' => 5,
+        'name' => 'Lasagna alla Bolognese del Giardino',
+        'description' => 'Lasagna ricca e saporita con strati di pasta fresca, ragù alla bolognese, besciamella e parmigiano reggiano.',
+        'price' => 13.50,
+        'visible' => true,
+        'ingredients' => "Pasta all'uovo, Ragù di carne, Besciamella, Parmigiano Reggiano",
+        'image' => 'lasagna-bolognese.jpg'
+    ],  
+    [
+        'restaurant_id' => 5,
+        'name' => 'Risotto ai Funghi Porcini del Giardino',
+        'description' => 'Cremoso risotto preparato con funghi porcini freschi, brodo vegetale e un tocco di parmigiano.',
+        'price' => 12.00,
+        'visible' => true,
+        'ingredients' => 'Riso Arborio, Funghi Porcini, Brodo vegetale, Parmigiano',
+        'image' => 'risotto-funghi.jpg'
     ],
     [
         'restaurant_id' => 5, 
@@ -472,7 +574,8 @@ return [
         'restaurant_id' => 6, 
         'name' => 'Involtini Primavera Dragone Rosso', 
         'description' => 'Sono un antipasto popolare in molti ristoranti cinesi e asiatici, amati per la loro croccantezza e il loro sapore fresco e delicato.', 
-        'price' => 8.25, 'visible' => true, 
+        'price' => 8.25, 
+        'visible' => true, 
         'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
         'image' => 'spring-rolls.jpg',
     ],
@@ -493,6 +596,24 @@ return [
         'visible' => true,
         'ingredients' => 'Tofu, Macinato di Carne, Peperoncino del Sichuan, Fagioli Neri fermentati, Olio di Peperoncino',
         'image' => 'mapo-tofu.jpg',
+    ],
+    [
+        'restaurant_id' => 6,
+        'name' => 'Ravioli di Gamberi al Vapore Dragone Rosso',
+        'description' => 'Delicati ravioli al vapore ripieni di gamberi freschi e bambù, una pietanza classica della cucina dim sum.',
+        'price' => 10.50,
+        'visible' => true,
+        'ingredients' => 'Gamberi, Farina di grano, Bambù, Acqua',
+        'image' => 'har-gow.jpg'
+    ],
+    [
+        'restaurant_id' => 6,
+        'name' => 'Zuppa Agro Piccante Dragone Rosso',
+        'description' => 'Zuppa ricca e riscaldante con tofu, funghi, bambù e uova sbattute, condita con peperoncino e aceto nero per un perfetto equilibrio agro-piccante.',
+        'price' => 8.00,
+        'visible' => true,
+        'ingredients' => 'Tofu, Funghi, Bambù, Uova, Peperoncino, Aceto nero',
+        'image' => 'hot-and-sour-soup.jpg'
     ],
     [
         'restaurant_id' => 6, 
@@ -563,7 +684,8 @@ return [
         'restaurant_id' => 7, 
         'name' => 'Involtini Primavera della Lanterna', 
         'description' => 'Sono un antipasto popolare in molti ristoranti cinesi e asiatici, amati per la loro croccantezza e il loro sapore fresco e delicato.', 
-        'price' => 8.25, 'visible' => true, 
+        'price' => 8.25, 
+        'visible' => true, 
         'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
         'image' => 'spring-rolls.jpg',
     ],
@@ -584,6 +706,24 @@ return [
         'visible' => true,
         'ingredients' => 'Tofu, Macinato di Carne, Peperoncino del Sichuan, Fagioli Neri fermentati, Olio di Peperoncino',
         'image' => 'mapo-tofu.jpg',
+    ],
+    [
+        'restaurant_id' => 7,
+        'name' => 'Ravioli di Gamberi al Vapore della Lanterna',
+        'description' => 'Delicati ravioli al vapore ripieni di gamberi freschi e bambù, una pietanza classica della cucina dim sum.',
+        'price' => 10.50,
+        'visible' => true,
+        'ingredients' => 'Gamberi, Farina di grano, Bambù, Acqua',
+        'image' => 'har-gow.jpg'
+    ],
+    [
+        'restaurant_id' => 7,
+        'name' => 'Zuppa Agro Piccante della Lanterna',
+        'description' => 'Zuppa ricca e riscaldante con tofu, funghi, bambù e uova sbattute, condita con peperoncino e aceto nero per un perfetto equilibrio agro-piccante.',
+        'price' => 8.00,
+        'visible' => true,
+        'ingredients' => 'Tofu, Funghi, Bambù, Uova, Peperoncino, Aceto nero',
+        'image' => 'hot-and-sour-soup.jpg'
     ],
     [
         'restaurant_id' => 7, 
@@ -654,7 +794,8 @@ return [
         'restaurant_id' => 8, 
         'name' => 'Involtini Primavera Imperiale', 
         'description' => 'Sono un antipasto popolare in molti ristoranti cinesi e asiatici, amati per la loro croccantezza e il loro sapore fresco e delicato.', 
-        'price' => 8.25, 'visible' => true, 
+        'price' => 8.25, 
+        'visible' => true, 
         'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
         'image' => 'spring-rolls.jpg',
     ],
@@ -675,6 +816,24 @@ return [
         'visible' => true,
         'ingredients' => 'Tofu, Macinato di Carne, Peperoncino del Sichuan, Fagioli Neri fermentati, Olio di Peperoncino',
         'image' => 'mapo-tofu.jpg',
+    ],
+    [
+        'restaurant_id' => 8,
+        'name' => 'Ravioli di Gamberi al Vapore Imperiale',
+        'description' => 'Delicati ravioli al vapore ripieni di gamberi freschi e bambù, una pietanza classica della cucina dim sum.',
+        'price' => 10.50,
+        'visible' => true,
+        'ingredients' => 'Gamberi, Farina di grano, Bambù, Acqua',
+        'image' => 'har-gow.jpg'
+    ],
+    [
+        'restaurant_id' => 8,
+        'name' => 'Zuppa Agro Piccante Imperiale',
+        'description' => 'Zuppa ricca e riscaldante con tofu, funghi, bambù e uova sbattute, condita con peperoncino e aceto nero per un perfetto equilibrio agro-piccante.',
+        'price' => 8.00,
+        'visible' => true,
+        'ingredients' => 'Tofu, Funghi, Bambù, Uova, Peperoncino, Aceto nero',
+        'image' => 'hot-and-sour-soup.jpg'
     ],
     [
         'restaurant_id' => 8, 
@@ -770,9 +929,29 @@ return [
     ],
     [
         'restaurant_id' => 9,
+        'name' => 'Biryani di Agnello Bolliwood',
+        'description' => 'Riso basmati aromatico cotto con pezzi di agnello, yogurt, cipolle, erbe e una ricca miscela di spezie, guarnito con mandorle e coriandolo fresco.',
+        'price' => 15.50,
+        'visible' => true,
+        'ingredients' => 'Agnello, Riso basmati, Yogurt, Spezie indiane, Cipolle, Mandorle, Coriandolo',
+        'image' => 'lamb-biryani.jpg'
+    ],
+    [
+        'restaurant_id' => 9,
+        'name' => 'Rogan Josh Bolliwood',
+        'description' => 'Curry profondo e aromatico di agnello, cotto lentamente con yogurt, pomodori e una ricca miscela di spezie del Kashmir, servito con riso basmati o naan.',
+        'price' => 16.00,
+        'visible' => true,
+        'ingredients' => 'Agnello, Yogurt, Pomodori, Spezie del Kashmir, Riso basmati o Naan',
+        'image' => 'rogan-josh.jpg'
+    ],
+    [
+        'restaurant_id' => 9,
         'name' => 'Pizza Margherita Bolliwood',
-        'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
-        'price' => 9.50, 'visible' => true,
+        'description' => 
+        'Classica Pizza Margherita con mozzarella fresca e basilico.',
+        'price' => 9.50, 
+        'visible' => true,
         'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
         'image' => 'margherita-pizza.jpg'
     ],
@@ -789,7 +968,8 @@ return [
         'restaurant_id' => 9, 
         'name' => 'Tiramisù Bolliwood', 
         'description' => 'Classico dessert Italiano al gusto di caffè.', 
-        'price' => 6.50, 'visible' => true, 
+        'price' => 6.50, 
+        'visible' => true, 
         'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
         'image' => 'tiramisu.jpg'
     ],
@@ -859,6 +1039,24 @@ return [
         'image' => 'chana-masala.jpg',
     ],
     [
+        'restaurant_id' => 10,
+        'name' => 'Biryani di Agnello Ganges',
+        'description' => 'Riso basmati aromatico cotto con pezzi di agnello, yogurt, cipolle, erbe e una ricca miscela di spezie, guarnito con mandorle e coriandolo fresco.',
+        'price' => 15.50,
+        'visible' => true,
+        'ingredients' => 'Agnello, Riso basmati, Yogurt, Spezie indiane, Cipolle, Mandorle, Coriandolo',
+        'image' => 'lamb-biryani.jpg'
+    ],
+    [
+        'restaurant_id' => 10,
+        'name' => 'Rogan Josh Ganges',
+        'description' => 'Curry profondo e aromatico di agnello, cotto lentamente con yogurt, pomodori e una ricca miscela di spezie del Kashmir, servito con riso basmati o naan.',
+        'price' => 16.00,
+        'visible' => true,
+        'ingredients' => 'Agnello, Yogurt, Pomodori, Spezie del Kashmir, Riso basmati o Naan',
+        'image' => 'rogan-josh.jpg'
+    ],
+    [
         'restaurant_id' => 10, 
         'name' => 'Pollo Kung Pao Ganges', 
         'description' => ' La combinazione di ingredienti freschi e spezie rende il pollo Kung Pao un piatto molto apprezzato sia in Cina che in molte cucine internazionali.',
@@ -880,7 +1078,8 @@ return [
         'restaurant_id' => 10, 
         'name' => 'Involtini Primavera Ganges', 
         'description' => 'Sono un antipasto popolare in molti ristoranti cinesi e asiatici, amati per la loro croccantezza e il loro sapore fresco e delicato.', 
-        'price' => 8.25, 'visible' => true, 
+        'price' => 8.25, 
+        'visible' => true, 
         'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
         'image' => 'spring-rolls.jpg',
     ],
@@ -950,6 +1149,24 @@ return [
         'image' => 'chana-masala.jpg',
     ],
     [
+        'restaurant_id' => 11,
+        'name' => 'Biryani di Agnello Tandoori',
+        'description' => 'Riso basmati aromatico cotto con pezzi di agnello, yogurt, cipolle, erbe e una ricca miscela di spezie, guarnito con mandorle e coriandolo fresco.',
+        'price' => 15.50,
+        'visible' => true,
+        'ingredients' => 'Agnello, Riso basmati, Yogurt, Spezie indiane, Cipolle, Mandorle, Coriandolo',
+        'image' => 'lamb-biryani.jpg'
+    ],
+    [
+        'restaurant_id' => 11,
+        'name' => 'Rogan Josh Tandoori',
+        'description' => 'Curry profondo e aromatico di agnello, cotto lentamente con yogurt, pomodori e una ricca miscela di spezie del Kashmir, servito con riso basmati o naan.',
+        'price' => 16.00,
+        'visible' => true,
+        'ingredients' => 'Agnello, Yogurt, Pomodori, Spezie del Kashmir, Riso basmati o Naan',
+        'image' => 'rogan-josh.jpg'
+    ],
+    [
         'restaurant_id' => 11, 
         'name' => 'Tacos Al Pastor Tandoori', 
         'description' => "È un piatto molto popolare e apprezzato per il suo sapore robusto e piccante, e la sua freschezza grazie all'aggiunta di ananas.", 
@@ -971,7 +1188,8 @@ return [
         'restaurant_id' => 11, 
         'name' => 'Ceviche Tandoori', 
         'description' => ' È un piatto leggero e rinfrescante, perfetto per le giornate calde.', 
-        'price' => 12.50, 'visible' => true, 
+        'price' => 12.50, 
+        'visible' => true, 
         'ingredients' => 'Pesce, Lime, Cipolle, Coriandolo, Peperoncino', 
         'image' => 'ceviche.jpg',
     ],
@@ -1041,6 +1259,24 @@ return [
         'image' => 'teriyaki-chicken.jpg',
     ],
     [
+        'restaurant_id' => 12,
+        'name' => 'Tempura di Verdure e Gamberi Tokyo',
+        'description' => 'Leggera e croccante tempura fritta, con una selezione di verdure fresche e gamberi, servita con salsa dipping tempura.',
+        'price' => 15.50,
+        'visible' => true,
+        'ingredients' => 'Gamberi, Zucchine, Melanzane, Peperoni, Farina, Acqua frizzante, Salsa tempura',
+        'image' => 'vegetable-shrimp-tempura.jpg'
+    ],
+    [
+        'restaurant_id' => 12,
+        'name' => 'Takoyaki Tokyo',
+        'description' => 'Palline di pastella grigliate ripiene di polpo, condite con maionese giapponese, salsa takoyaki, bonito secco e alga aonori.',
+        'price' => 7.00,
+        'visible' => true,
+        'ingredients' => 'Polpo, Farina, Acqua, Maionese giapponese, Salsa takoyaki, Bonito secco, Aonori',
+        'image' => 'takoyaki.jpg'
+    ],
+    [
         'restaurant_id' => 12, 
         'name' => 'Pollo Kung Pao Tokyo', 
         'description' => 'Il contrasto tra la carne succosa e i broccoli croccanti, e per essere un piatto soddisfacente e salutare.', 
@@ -1062,7 +1298,8 @@ return [
         'restaurant_id' => 12, 
         'name' => 'Involtini Primavera Tokyo', 
         'description' => 'Sono un antipasto popolare in molti ristoranti cinesi e asiatici, amati per la loro croccantezza e il loro sapore fresco e delicato.', 
-        'price' => 8.25, 'visible' => true, 
+        'price' => 8.25, 
+        'visible' => true, 
         'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
         'image' => 'spring-rolls.jpg',
     ],
@@ -1132,6 +1369,24 @@ return [
         'image' => 'teriyaki-chicken.jpg',
     ],
     [
+        'restaurant_id' => 13,
+        'name' => 'Tempura di Verdure e Gamberi Zen',
+        'description' => 'Leggera e croccante tempura fritta, con una selezione di verdure fresche e gamberi, servita con salsa dipping tempura.',
+        'price' => 15.50,
+        'visible' => true,
+        'ingredients' => 'Gamberi, Zucchine, Melanzane, Peperoni, Farina, Acqua frizzante, Salsa tempura',
+        'image' => 'vegetable-shrimp-tempura.jpg'
+    ],
+    [
+        'restaurant_id' => 13,
+        'name' => 'Takoyaki Zen',
+        'description' => 'Palline di pastella grigliate ripiene di polpo, condite con maionese giapponese, salsa takoyaki, bonito secco e alga aonori.',
+        'price' => 7.00,
+        'visible' => true,
+        'ingredients' => 'Polpo, Farina, Acqua, Maionese giapponese, Salsa takoyaki, Bonito secco, Aonori',
+        'image' => 'takoyaki.jpg'
+    ],
+    [
         'restaurant_id' => 13, 
         'name' => 'Pollo Kung Pao Zen', 
         'description' => ' La combinazione di ingredienti freschi e spezie rende il pollo Kung Pao un piatto molto apprezzato sia in Cina che in molte cucine internazionali.',
@@ -1153,7 +1408,8 @@ return [
         'restaurant_id' => 13, 
         'name' => 'Involtini Primavera Zen', 
         'description' => 'Sono un antipasto popolare in molti ristoranti cinesi e asiatici, amati per la loro croccantezza e il loro sapore fresco e delicato.', 
-        'price' => 8.25, 'visible' => true, 
+        'price' => 8.25, 
+        'visible' => true, 
         'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
         'image' => 'spring-rolls.jpg',
     ],
@@ -1223,6 +1479,24 @@ return [
         'image' => 'teriyaki-chicken.jpg',
     ],
     [
+        'restaurant_id' => 14,
+        'name' => 'Tempura di Verdure e Gamberi Fuji',
+        'description' => 'Leggera e croccante tempura fritta, con una selezione di verdure fresche e gamberi, servita con salsa dipping tempura.',
+        'price' => 15.50,
+        'visible' => true,
+        'ingredients' => 'Gamberi, Zucchine, Melanzane, Peperoni, Farina, Acqua frizzante, Salsa tempura',
+        'image' => 'vegetable-shrimp-tempura.jpg'
+    ],
+    [
+        'restaurant_id' => 14,
+        'name' => 'Takoyaki Fuji',
+        'description' => 'Palline di pastella grigliate ripiene di polpo, condite con maionese giapponese, salsa takoyaki, bonito secco e alga aonori.',
+        'price' => 7.00,
+        'visible' => true,
+        'ingredients' => 'Polpo, Farina, Acqua, Maionese giapponese, Salsa takoyaki, Bonito secco, Aonori',
+        'image' => 'takoyaki.jpg'
+    ],
+    [
         'restaurant_id' => 14, 
         'name' => 'Pollo Kung Pao Fuji', 
         'description' => ' La combinazione di ingredienti freschi e spezie rende il pollo Kung Pao un piatto molto apprezzato sia in Cina che in molte cucine internazionali.',
@@ -1244,7 +1518,8 @@ return [
         'restaurant_id' => 14, 
         'name' => 'Involtini Primavera Fuji', 
         'description' => 'Sono un antipasto popolare in molti ristoranti cinesi e asiatici, amati per la loro croccantezza e il loro sapore fresco e delicato.', 
-        'price' => 8.25, 'visible' => true, 
+        'price' => 8.25, 
+        'visible' => true, 
         'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
         'image' => 'spring-rolls.jpg',
     ],
@@ -1315,9 +1590,28 @@ return [
     ],
     [
         'restaurant_id' => 15,
+        'name' => 'Cheesecake New York Style Golden',
+        'description' => 'Cremosa cheesecake al forno con base di biscotto croccante, servita con salsa di frutti di bosco.',
+        'price' => 6.50,
+        'visible' => true,
+        'ingredients' => 'Formaggio cremoso, Zucchero, Uova, Vaniglia, Biscotti, Burro, Salsa di frutti di bosco',
+        'image' => 'new-york-cheesecake.jpg'
+    ],
+    [
+        'restaurant_id' => 15,
+        'name' => 'Mac & Cheese Golden',
+        'description' => 'Cremoso e confortante Mac & Cheese, con una ricca salsa di formaggio cheddar fusa su pasta al dente, gratinato fino a ottenere una crosticina dorata e croccante.',
+        'price' => 9.00,
+        'visible' => true,
+        'ingredients' => 'Pasta, Formaggio Cheddar, Latte, Burro, Farina, Pane grattugiato',
+        'image' => 'mac-and-cheese.jpg'
+    ],
+    [
+        'restaurant_id' => 15,
         'name' => 'Pizza Margherita Golden',
         'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
-        'price' => 9.50, 'visible' => true,
+        'price' => 9.50, 
+        'visible' => true,
         'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
         'image' => 'margherita-pizza.jpg'
     ],
@@ -1334,7 +1628,8 @@ return [
         'restaurant_id' => 15, 
         'name' => 'Tiramisù Golden', 
         'description' => 'Classico dessert Italiano al gusto di caffè.', 
-        'price' => 6.50, 'visible' => true, 
+        'price' => 6.50, 
+        'visible' => true, 
         'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
         'image' => 'tiramisu.jpg'
     ],
@@ -1404,6 +1699,24 @@ return [
         'image' => 'french-fries.jpg',
     ],
     [
+        'restaurant_id' => 16,
+        'name' => 'Cheesecake New York Style Liberty',
+        'description' => 'Cremosa cheesecake al forno con base di biscotto croccante, servita con salsa di frutti di bosco.',
+        'price' => 6.50,
+        'visible' => true,
+        'ingredients' => 'Formaggio cremoso, Zucchero, Uova, Vaniglia, Biscotti, Burro, Salsa di frutti di bosco',
+        'image' => 'new-york-cheesecake.jpg'
+    ],
+    [
+        'restaurant_id' => 16,
+        'name' => 'Mac & Cheese Liberty',
+        'description' => 'Cremoso e confortante Mac & Cheese, con una ricca salsa di formaggio cheddar fusa su pasta al dente, gratinato fino a ottenere una crosticina dorata e croccante.',
+        'price' => 9.00,
+        'visible' => true,
+        'ingredients' => 'Pasta, Formaggio Cheddar, Latte, Burro, Farina, Pane grattugiato',
+        'image' => 'mac-and-cheese.jpg'
+    ],
+    [
         'restaurant_id' => 16, 
         'name' => 'Pollo Kung Pao Liberty', 
         'description' => ' La combinazione di ingredienti freschi e spezie rende il pollo Kung Pao un piatto molto apprezzato sia in Cina che in molte cucine internazionali.',
@@ -1425,7 +1738,8 @@ return [
         'restaurant_id' => 16, 
         'name' => 'Involtini Primavera Liberty', 
         'description' => 'Sono un antipasto popolare in molti ristoranti cinesi e asiatici, amati per la loro croccantezza e il loro sapore fresco e delicato.', 
-        'price' => 8.25, 'visible' => true, 
+        'price' => 8.25, 
+        'visible' => true, 
         'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
         'image' => 'spring-rolls.jpg',
     ],
@@ -1495,6 +1809,24 @@ return [
         'image' => 'french-fries.jpg',
     ],
     [
+        'restaurant_id' => 17,
+        'name' => 'Cheesecake New York Style Route 66',
+        'description' => 'Cremosa cheesecake al forno con base di biscotto croccante, servita con salsa di frutti di bosco.',
+        'price' => 6.50,
+        'visible' => true,
+        'ingredients' => 'Formaggio cremoso, Zucchero, Uova, Vaniglia, Biscotti, Burro, Salsa di frutti di bosco',
+        'image' => 'new-york-cheesecake.jpg'
+    ],
+    [
+        'restaurant_id' => 17,
+        'name' => 'Mac & Cheese Route 66',
+        'description' => 'Cremoso e confortante Mac & Cheese, con una ricca salsa di formaggio cheddar fusa su pasta al dente, gratinato fino a ottenere una crosticina dorata e croccante.',
+        'price' => 9.00,
+        'visible' => true,
+        'ingredients' => 'Pasta, Formaggio Cheddar, Latte, Burro, Farina, Pane grattugiato',
+        'image' => 'mac-and-cheese.jpg'
+    ],
+    [
         'restaurant_id' => 17, 
         'name' => 'Tacos Al Pastor Route 66', 
         'description' => "È un piatto molto popolare e apprezzato per il suo sapore robusto e piccante, e la sua freschezza grazie all'aggiunta di ananas.", 
@@ -1516,7 +1848,8 @@ return [
         'restaurant_id' => 17, 
         'name' => 'Ceviche Route 66', 
         'description' => ' È un piatto leggero e rinfrescante, perfetto per le giornate calde.', 
-        'price' => 12.50, 'visible' => true, 
+        'price' => 12.50, 
+        'visible' => true, 
         'ingredients' => 'Pesce, Lime, Cipolle, Coriandolo, Peperoncino', 
         'image' => 'ceviche.jpg',
     ],
@@ -1562,7 +1895,8 @@ return [
         'restaurant_id' => 18, 
         'name' => 'Ceviche Azteca', 
         'description' => ' È un piatto leggero e rinfrescante, perfetto per le giornate calde.', 
-        'price' => 12.50, 'visible' => true, 
+        'price' => 12.50, 
+        'visible' => true, 
         'ingredients' => 'Pesce, Lime, Cipolle, Coriandolo, Peperoncino', 
         'image' => 'ceviche.jpg',
     ],
@@ -1583,6 +1917,24 @@ return [
         'visible' => true,
         'ingredients' => 'Toritllas di Mais, Pollo, Salsa Tomatillo, Formaggio, Panna Acida, Fagioli',
         'image' => 'enchiladas-verdes.jpg',
+    ],
+    [
+        'restaurant_id' => 18,
+        'name' => 'Chiles en Nogada Azteca',
+        'description' => 'Peperoni poblano ripieni di un mix di carne tritata e frutta, ricoperti di una salsa di noce cremosa e decorati con semi di melograno, rappresentando i colori della bandiera messicana.',
+        'price' => 15.00,
+        'visible' => true,
+        'ingredients' => 'Peperoni Poblano, Carne tritata, Frutta, Salsa di noce, Semi di melograno',
+        'image' => 'chiles-en-nogada.jpg'
+    ],
+    [
+        'restaurant_id' => 18,
+        'name' => 'Pozole Rojo Azteca',
+        'description' => 'Tradizionale zuppa messicana con mais, carne di maiale, e un ricco brodo rosso aromatizzato con peperoncini e spezie, servito con ravanello, lattuga, cipolla, lime e tortillas.',
+        'price' => 10.00,
+        'visible' => true,
+        'ingredients' => 'Mais, Carne di maiale, Peperoncini, Ravanello, Lattuga, Cipolla, Lime, Tortillas',
+        'image' => 'pozole-rojo.jpg'
     ],
     [
         'restaurant_id' => 18, 
@@ -1653,7 +2005,8 @@ return [
         'restaurant_id' => 19, 
         'name' => 'Ceviche del Sol', 
         'description' => ' È un piatto leggero e rinfrescante, perfetto per le giornate calde.', 
-        'price' => 12.50, 'visible' => true, 
+        'price' => 12.50, 
+        'visible' => true, 
         'ingredients' => 'Pesce, Lime, Cipolle, Coriandolo, Peperoncino', 
         'image' => 'ceviche.jpg',
     ],
@@ -1674,6 +2027,24 @@ return [
         'visible' => true,
         'ingredients' => 'Toritllas di Mais, Pollo, Salsa Tomatillo, Formaggio, Panna Acida, Fagioli',
         'image' => 'enchiladas-verdes.jpg',
+    ],
+    [
+        'restaurant_id' => 19,
+        'name' => 'Chiles en Nogada del Sol',
+        'description' => 'Peperoni poblano ripieni di un mix di carne tritata e frutta, ricoperti di una salsa di noce cremosa e decorati con semi di melograno, rappresentando i colori della bandiera messicana.',
+        'price' => 15.00,
+        'visible' => true,
+        'ingredients' => 'Peperoni Poblano, Carne tritata, Frutta, Salsa di noce, Semi di melograno',
+        'image' => 'chiles-en-nogada.jpg'
+    ],
+    [
+        'restaurant_id' => 19,
+        'name' => 'Pozole Rojo del Sol',
+        'description' => 'Tradizionale zuppa messicana con mais, carne di maiale, e un ricco brodo rosso aromatizzato con peperoncini e spezie, servito con ravanello, lattuga, cipolla, lime e tortillas.',
+        'price' => 10.00,
+        'visible' => true,
+        'ingredients' => 'Mais, Carne di maiale, Peperoncini, Ravanello, Lattuga, Cipolla, Lime, Tortillas',
+        'image' => 'pozole-rojo.jpg'
     ],
     [
         'restaurant_id' => 19, 
@@ -1697,7 +2068,8 @@ return [
         'restaurant_id' => 19, 
         'name' => 'Involtini Primavera del Sol', 
         'description' => 'Sono un antipasto popolare in molti ristoranti cinesi e asiatici, amati per la loro croccantezza e il loro sapore fresco e delicato.', 
-        'price' => 8.25, 'visible' => true, 
+        'price' => 8.25, 
+        'visible' => true, 
         'ingredients' => 'Cavolo, Carote, Peperoni, Pollo', 
         'image' => 'spring-rolls.jpg',
     ],
@@ -1743,7 +2115,8 @@ return [
         'restaurant_id' => 20, 
         'name' => 'Ceviche Cactus', 
         'description' => ' È un piatto leggero e rinfrescante, perfetto per le giornate calde.', 
-        'price' => 12.50, 'visible' => true, 
+        'price' => 12.50, 
+        'visible' => true, 
         'ingredients' => 'Pesce, Lime, Cipolle, Coriandolo, Peperoncino', 
         'image' => 'ceviche.jpg',
     ],
@@ -1767,9 +2140,28 @@ return [
     ],
     [
         'restaurant_id' => 20,
+        'name' => 'Chiles en Nogada Cactus',
+        'description' => 'Peperoni poblano ripieni di un mix di carne tritata e frutta, ricoperti di una salsa di noce cremosa e decorati con semi di melograno, rappresentando i colori della bandiera messicana.',
+        'price' => 15.00,
+        'visible' => true,
+        'ingredients' => 'Peperoni Poblano, Carne tritata, Frutta, Salsa di noce, Semi di melograno',
+        'image' => 'chiles-en-nogada.jpg'
+    ],
+    [
+        'restaurant_id' => 20,
+        'name' => 'Pozole Rojo Cactus',
+        'description' => 'Tradizionale zuppa messicana con mais, carne di maiale, e un ricco brodo rosso aromatizzato con peperoncini e spezie, servito con ravanello, lattuga, cipolla, lime e tortillas.',
+        'price' => 10.00,
+        'visible' => true,
+        'ingredients' => 'Mais, Carne di maiale, Peperoncini, Ravanello, Lattuga, Cipolla, Lime, Tortillas',
+        'image' => 'pozole-rojo.jpg'
+    ],
+    [
+        'restaurant_id' => 20,
         'name' => 'Pizza Margherita Cactus',
         'description' => 'Classica Pizza Margherita con mozzarella fresca e basilico.',
-        'price' => 9.50, 'visible' => true,
+        'price' => 9.50, 
+        'visible' => true,
         'ingredients' => 'Pomodoro, Mozzarella, Basilico fresco',
         'image' => 'margherita-pizza.jpg'
     ],
@@ -1786,7 +2178,8 @@ return [
         'restaurant_id' => 20, 
         'name' => 'Tiramisù Cactus', 
         'description' => 'Classico dessert Italiano al gusto di caffè.', 
-        'price' => 6.50, 'visible' => true, 
+        'price' => 6.50, 
+        'visible' => true, 
         'ingredients' => 'Mascarpone, Caffè Espresso, Savoiardi, Cacao', 
         'image' => 'tiramisu.jpg'
     ],
