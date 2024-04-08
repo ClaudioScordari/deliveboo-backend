@@ -137,7 +137,7 @@ class OrderController extends Controller
     }
 
     public function getMostOrderedPlatesLast30Days($restaurantId) {
-        $thirtyDaysAgo = Carbon::now()->subDays(29)->startOfDay();
+        $thirtyDaysAgo = Carbon::now()->subDays(30)->startOfDay();
         $today = Carbon::now()->endOfDay();
     
         $mostOrderedPlatesData = DB::table('orders')
@@ -207,7 +207,7 @@ class OrderController extends Controller
 
         // Preparazione delle etichette per gli ultimi 30 giorni
         $labels = collect(new \DatePeriod(
-            Carbon::now()->subDays(29),
+            Carbon::now()->subDays(30),
             new \DateInterval('P1D'),
             Carbon::now()
         ))->map(function ($date) {
@@ -216,7 +216,7 @@ class OrderController extends Controller
 
         // Ottiene il conteggio degli ordini per ogni giorno per il ristorante specifico
         $today = Carbon::today();
-        $thirtyDaysAgo = $today->copy()->subDays(29);
+        $thirtyDaysAgo = $today->copy()->subDays(30);
         $startOfMonth = $today->copy()->startOfMonth();
         $endOfMonth = $today->copy()->endOfMonth();
         $startDate = Carbon::now()->subDays(30);

@@ -10,7 +10,7 @@ return [
         'VAT_number' => 'IT12345678901',
         'address' => 'Via Monte Bianco, 14, 20149 Milano, MI',
         'image' => 'restaurant1.jpg',
-        'description' => "Un angolo di paradiso culinario che offre classici della cucina romana in un'atmosfera accogliente e romantica.",
+        'description' => "Un angolo di paradiso culinario che offre classici della cucina italiana in un'atmosfera accogliente e romantica.",
     ],
     [
         'id' => 2,
@@ -46,7 +46,7 @@ return [
         'VAT_number' => 'IT99887766554',
         'address' => 'Via Marghera, 33, 20149 Milano, MI',
         'image' => 'restaurant5.jpg',
-        'description' => "Piatti toscani ricchi e robusti serviti in un giardino segreto, una piccola oasi di pace e sapori.",
+        'description' => "Piatti ricchi e robusti serviti in un giardino segreto milanese che ricorda la Toscana, una piccola oasi di pace e sapori.",
     ],
     [
         'id' => 6,

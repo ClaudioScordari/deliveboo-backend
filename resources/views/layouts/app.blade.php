@@ -39,8 +39,10 @@
                         <a href="{{ route('admin.plates.index') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Piatti</span> <i class="fa-solid fa-bowl-food"></i></a>
                         <a href="{{ route('admin.orders.index') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Ordini</span> <i class="fa-solid fa-receipt"></i></a>
                         <a href="{{ route('admin.stats.index') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Statistiche</span> <i class="fa-solid fa-chart-simple"></i></a>
+                        <a href="http://localhost:5174" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Front-Office</span> <i class="fa-solid fa-shop"></i></a>
                     @else
                         <a href="{{ route('admin.restaurants.create') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Nuovo Ristorante</span> <i class="fa-solid fa-plus"></i></a>
+                        <a href="http://localhost:5174" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Front-Office</span> <i class="fa-solid fa-shop"></i></a>
                     @endif
                 @endauth
                 @auth

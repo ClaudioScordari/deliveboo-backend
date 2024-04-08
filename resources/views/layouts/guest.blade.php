@@ -30,6 +30,7 @@
                 <a href="/" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Home</span> <i class="fa-solid fa-house"></i></a>
                     <a href="{{ route('login') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Login</span> <i class="fa-solid fa-right-to-bracket"></i></a>
                     <a href="{{ route('register') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Register</span> <i class="fa-solid fa-address-card"></i></a>
+                    <a href="http://localhost:5174" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Front-Office</span> <i class="fa-solid fa-shop"></i></a>
                 {{-- <a href="{{ route(guest.restaurants.index) }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Ristoranti <i class="fa-solid fa-utensils"></i></a> --}}
             </div>
         </div>
