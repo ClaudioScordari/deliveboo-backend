@@ -28,7 +28,7 @@
 
                 @foreach ($plates as $plate)
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
+                    <div class="card border-success h-100">
                         @if($plate->image)
                             <img src="{{ asset('storage/' . $plate->image) }}" class="card-img-top" alt="{{ $plate->name }}">
                         @endif
@@ -44,7 +44,7 @@
                             <p class="card-text mt-3">{{ $plate->description ?? 'Nessuna descrizione disponibile' }}</p>
                         </div>
                         
-                        <div class="card-footer bg-light text-center">
+                        <div class="card-footer border-success bg-light text-center">
                             <a href="{{ route('admin.plates.edit', ['plate' => $plate->id]) }}" class="btn btn-secondary text-white">Modifica <i class="fa-solid fa-pencil"></i></a>
                             
                             {{-- Bottone che apre il Modal specifico per il piatto --}}

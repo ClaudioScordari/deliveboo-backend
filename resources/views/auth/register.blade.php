@@ -2,7 +2,7 @@
 
 @section('main-content')
     <section class="container-form-section">
-        <div class="container-form w-50 m-auto card p-5 mt-5 bg-light">
+        <div class="container-form w-50 m-auto card border-success p-5 mt-5 bg-light">
             <h1 class="text-center text-success">REGISTER</h1>
 
             <form method="POST" action="{{ route('register') }}">

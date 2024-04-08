@@ -22,7 +22,7 @@
                         <div>
                             <div class="row py-5">
                                 <div class="col-lg-6 text-center p-3">
-                                    <div class="card bg-light p-3" style="height:180px">
+                                    <div class="card border-success bg-light p-3" style="height:180px">
                                         <p class="fw-bolder fs-3 text-success">
                                             Gestisci il tuo Ristorante
                                         </p>
@@ -30,7 +30,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 text-center p-3">
-                                    <div class="card bg-light p-3" style="height:180px">
+                                    <div class="card border-success bg-light p-3" style="height:180px">
                                         <p class="fw-bolder fs-3 text-success">
                                             Verifica gli Ordini
                                         </p>
@@ -38,7 +38,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 text-center p-3">
-                                    <div class="card bg-light p-3" style="height:180px">
+                                    <div class="card border-success bg-light p-3" style="height:180px">
                                     <p class="fw-bolder fs-3 text-success">
                                         Controlla i tuoi Piatti
                                     </p>
@@ -46,7 +46,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 text-center p-3">
-                                    <div class="card bg-light p-3" style="height:180px">
+                                    <div class="card border-success bg-light p-3" style="height:180px">
                                         <p class="fw-bolder fs-3 text-success">
                                             Guarda le tue Statistiche
                                         </p>
