@@ -1,6 +1,7 @@
 $success: #502314;
 $secondary: #FF8732;
-$danger: #FF8732;
+$info: #198754;
+$dark: #E7DED3;
 
 @import "~bootstrap/scss/bootstrap";
 
@@ -37,26 +38,3 @@ $danger: #FF8732;
         margin-left: 50px;
     }
 }
-
-/*
-main{
-    // ...
-    
-    // Form style
-    .container-form-section{
-        padding: 50px 0;
-        // debug
-        background-color: #D1E7DD;
-
-        .container-form{
-            width: 50%;
-            margin: 0 auto;
-            padding: 50px 30px;
-            background-color: #EAA932;
-            border-radius: 20px;
-            // debug
-            color: black;
-        }
-    }
-}
-*/

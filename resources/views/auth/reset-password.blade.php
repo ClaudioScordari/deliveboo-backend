@@ -54,7 +54,7 @@
                 @enderror
         
                 <div class="text-center">
-                    <button class="btn btn-secondary text-light d-block w-100" type="submit">
+                    <button class="btn btn-secondary text-white d-block w-100" type="submit">
                         Reset Password <i class="fa-solid fa-rotate-right"></i>
                     </button>
                 </div>

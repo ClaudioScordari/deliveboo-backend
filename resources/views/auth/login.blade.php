@@ -52,7 +52,7 @@
                         </a>
                     @endif
         
-                    <button class="btn text-light btn-secondary d-block mt-3" type="submit">
+                    <button class="btn text-white btn-secondary d-block mt-3" type="submit">
                         Login <i class="fa-solid fa-right-to-bracket"></i>
                     </button>
                 </div>

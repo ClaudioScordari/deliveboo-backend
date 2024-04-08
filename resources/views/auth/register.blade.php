@@ -69,7 +69,7 @@
                         {{ __('Already registered?') }}
                     </a>
         
-                    <button class="mt-3 btn btn-secondary text-light d-block" type="submit">
+                    <button class="mt-3 btn btn-secondary text-white d-block" type="submit">
                         Register <i class="fa-solid fa-address-card"></i>
                     </button>
                 </div>

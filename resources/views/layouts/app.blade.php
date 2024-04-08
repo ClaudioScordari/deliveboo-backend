@@ -18,35 +18,38 @@
 </head>
 <body class="d-flex">
     <!-- Sidebar -->
-    <div class="bg-light text-success text-center p-3" id="sidebar-wrapper">
+    <div class="bg-dark text-success text-center p-3" id="sidebar-wrapper">
         <div class="sidebar-heading d-none d-md-block">
             <img src="{{ Vite::asset('resources/img/deliveboo.png') }}" alt="deliveboo" class="w-100">
         </div>
         <div class="sidebar-heading d-block d-md-none">
-            <i class="fa fa-bars" id="mobile-sidebar-toggle"></i>
+            <img src="{{ Vite::asset('resources/img/deliveboo-icon.png') }}" alt="deliveboo" class="w-100">
         </div>
         <div>
             <div class="list-group list-group-flush text-center">
                 @auth
-                    <a href="{{ route('admin.dashboard') }}" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Dashboard</span> <i class="fa-solid fa-house"></i></a>
+                    <a href="{{ route('admin.dashboard') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Dashboard</span> <i class="fa-solid fa-house"></i></a>
                     
                     {{-- Esiste un'istanza di restaurant con quell'ID? - Se no fammi creare il ristorante --}}
                     @if(auth()->user()->restaurant?->id)
-                        <a href="{{ route('admin.restaurants.index') }}" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Il mio Ristorante</span> <i class="fa-solid fa-utensils"></i></a>
-                        <a href="{{ route('admin.plates.index') }}" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Piatti</span> <i class="fa-solid fa-bowl-food"></i></a>
-                        <a href="{{ route('admin.orders.index') }}" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Ordini</span> <i class="fa-solid fa-receipt"></i></a>
-                        <a href="{{ route('admin.stats.index') }}" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Statistiche</span> <i class="fa-solid fa-chart-simple"></i></a>
+                        <a href="{{ route('admin.restaurants.index') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Il mio Ristorante</span> <i class="fa-solid fa-utensils"></i></a>
+                        <a href="{{ route('admin.plates.index') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Piatti</span> <i class="fa-solid fa-bowl-food"></i></a>
+                        <a href="{{ route('admin.orders.index') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Ordini</span> <i class="fa-solid fa-receipt"></i></a>
+                        <a href="{{ route('admin.stats.index') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Statistiche</span> <i class="fa-solid fa-chart-simple"></i></a>
                     @else
-                        <a href="{{ route('admin.restaurants.create') }}" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Nuovo Ristorante</span> <i class="fa-solid fa-plus"></i></a>
+                        <a href="{{ route('admin.restaurants.create') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Nuovo Ristorante</span> <i class="fa-solid fa-plus"></i></a>
                     @endif
                 @endauth
                 @auth
                 <div id="logout-wrapper">
-                    <form method="POST" action="{{ route('logout') }}" class="bg-light my-3">
+                    <form method="POST" action="{{ route('logout') }}" class="my-3">
                         @csrf
-                        <button type="submit" class="btn btn-secondary text-light fw-bolder w-100">
-                           <span class="d-none d-md-inline">Log Out </span><i class="fa-solid fa-right-from-bracket"></i> 
+                        <button type="submit" class="btn btn-secondary text-white fw-bolder w-100 d-none d-md-inline">
+                           Log Out <i class="fa-solid fa-right-from-bracket"></i> 
                         </button>
+                        <a type="submit" class="text-secondary fw-bolder w-100 d-block d-md-none">
+                            <i class="fa-solid fa-right-from-bracket"></i> 
+                         </a>
                     </form>
                 </div>
                 @endauth

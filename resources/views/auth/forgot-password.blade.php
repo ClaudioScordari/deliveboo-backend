@@ -27,7 +27,7 @@
                 @enderror
         
                 <div>
-                    <button class="btn text-light btn-secondary d-block" type="submit">
+                    <button class="btn text-white btn-secondary d-block" type="submit">
                         Email Password Reset Link <i class="fa-solid fa-power-off"></i>
                     </button>
                 </div>

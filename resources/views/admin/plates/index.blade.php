@@ -36,7 +36,7 @@
                             <h5 class="card-title text-success">{{ $plate->name }}</h5>
                             <p>Prezzo: <span class="fw-bold">{{ number_format($plate->price, 2) }}€</span></p>
                             @if($plate->visible)
-                                <span class="text-success">Disponibile <i class="fa-solid fa-check"></i></span>
+                                <span class="text-info">Disponibile <i class="fa-solid fa-check"></i></span>
                             @else
                                 <span class="text-danger"><del>Non Disponibile</del></span>
                             @endif

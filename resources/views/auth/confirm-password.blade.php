@@ -27,7 +27,7 @@
                 @enderror
         
                 <div class="text-center">
-                    <button class="btn text-light btn-secondary" type="submit">
+                    <button class="btn text-white btn-secondary" type="submit">
                         Confirm <i class="fa-solid fa-check"></i>
                     </button>
                 </div>
