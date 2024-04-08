@@ -13,7 +13,7 @@
                     <label for="name">
                         Name
                     </label>
-                    <input class="form-control" type="text" id="name" name="name">
+                    <input class="form-control" type="text" id="name" name="name" autocomplete="on" >
                 </div>
                 {{-- Barra errore --}}
                 @error('name')

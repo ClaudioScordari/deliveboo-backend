@@ -13,8 +13,8 @@
             </div>
         </div>
     @else
-        <div class="table-responsive">
-            <table class="table table-sm table-light table-striped-columns table-hover table-bordered border-success">
+        <div class="table-responsive card p-1 border-success bg-success-subtle">
+            <table class="table table-sm table-light table-striped-columns table-hover table-bordered border-success my-auto">
                 <thead>
                     <tr>
                         <th class="text-success text-center align-middle" scope="col">Nome</th>

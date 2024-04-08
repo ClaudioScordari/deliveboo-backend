@@ -23,7 +23,7 @@
                     <label class="d-block" for="activity_name">Nome ristorante: <span class="text-danger">*</span></label>
         
                     <input class="form-control @error('activity_name') is-invalid @enderror" value="{{ old('activity_name') }}" maxlength="255"
-                        id="activity_name" name="activity_name" type="text" placeholder="Scrivi il nome..." required>
+                        id="activity_name" autocomplete="on" name="activity_name" type="text" placeholder="Scrivi il nome..." required>
         
                     {{-- Barra errore --}}
                     @error('name')
@@ -38,7 +38,7 @@
                     <label class="d-block" for="VAT_number">Partita IVA: <span class="text-danger">*</span></label>
         
                     <input class="form-control @error('VAT_number') is-invalid @enderror" value="{{ old('VAT_number') }}" maxlength="50"
-                        id="VAT_number" name="VAT_number" type="text" placeholder="Inserisci qui..." required>
+                        id="VAT_number" autocomplete="on" name="VAT_number" type="text" placeholder="Inserisci qui..." required>
         
                     {{-- Barra errore --}}
                     @error('VAT_number')
@@ -53,7 +53,7 @@
                     <label class="d-block" for="address">Indirizzo: <span class="text-danger">*</span></label>
         
                     <input class="form-control @error('address') is-invalid @enderror" value="{{ old('address') }}" maxlength="255"
-                        id="address" name="address" type="text" placeholder="Inserisci indirizzo..." required>
+                        id="address" autocomplete="on" name="address" type="text" placeholder="Inserisci indirizzo..." required>
         
                     {{-- Barra errore --}}
                     @error('address')
@@ -80,14 +80,14 @@
         
                 {{-- Tipi --}}
                 <div class="my-4 form-group">
-                    <label class="d-block" for="types">Seleziona i tuoi tipi di Cucina: <span class="text-danger">*</span></label>
+                    <span for="types">Seleziona i tuoi tipi di Cucina: <span class="text-danger">*</span></span>
 
                     <div class="row pt-2 mx-5">
                         @foreach ($types as $type)
                             <div class="col-md-4 p-2">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="types[]" value="{{ $type->id }}"
-                                        id="type-{{ $type->id }}" {{ in_array($type->id, old('types', [])) ? 'checked' : '' }}>
+                                        id="{{ $type->id }}" {{ in_array($type->id, old('types', [])) ? 'checked' : '' }}>
                 
                                     <label class="form-check-label" for="{{ $type->id }}">
                                         {{ $type->name }}
@@ -126,6 +126,5 @@
             </form>
         </div>
     </section>
-
 
 @endsection

@@ -219,7 +219,6 @@ document.addEventListener('DOMContentLoaded', function () {
             datasets: [{
                 data: @json($mostOrderedPlatesLast30Days->pluck('total_ordered')),
                 backgroundColor: [
-                    // Colori per ogni segmento del grafico
                     'rgba(255, 135, 50, 0.8)',
                     'rgba(80, 35, 20, 0.8)',
                     'rgba(210, 188, 157, 0.8)',
@@ -227,7 +226,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     'rgba(229, 161, 101, 0.8)',
                 ],
                 borderColor: [
-                    // Colori del bordo per ogni segmento
                     'rgba(255, 135, 50, 1)',
                     'rgba(80, 35, 20, 1)',
                     'rgba(210, 188, 157, 1)',

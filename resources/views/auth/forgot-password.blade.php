@@ -17,7 +17,7 @@
                     <label for="email">
                         Email
                     </label>
-                    <input class="form-control" type="email" id="email" name="email">
+                    <input class="form-control" type="email" id="email" name="email" autocomplete="on">
                 </div>
                 {{-- Barra errore --}}
                 @error('email')

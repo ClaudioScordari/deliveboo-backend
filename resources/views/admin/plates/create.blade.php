@@ -17,7 +17,7 @@
                     <label class="d-block" for="name">Nome: <span class="text-danger">*</span></label>
 
                     <input class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}"
-                        maxlength="255" id="name" name="name" type="text" placeholder="Nome del Piatto"
+                        autocomplete="on" maxlength="255" id="name" name="name" type="text" placeholder="Nome del Piatto"
                         required>
 
                     {{-- Barra errore --}}

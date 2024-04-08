@@ -19,9 +19,9 @@
                     <label class="d-block" for="activity_name">Nome Ristorante: <span class="text-danger fw-bold">*</span></label>
     
                     <input class="@error('activity_name') is-invalid @enderror form-control"
-                        value="{{ old('activity_name', $restaurant->activity_name) }}" maxlength="255" id="activity_name"
-                        name="activity_name" type="text" placeholder="Scrivi il nome..." required>
-    
+                    value="{{ old('activity_name', $restaurant->activity_name) }}" maxlength="255" id="activity_name"
+                    name="activity_name" type="text" placeholder="Scrivi il nome..." autocomplete="on" required>
+
                     {{-- Barra errore --}}
                     @error('activity_name')
                         <div class="alert alert-danger">
@@ -36,7 +36,7 @@
     
                     <input class="@error('VAT_number') is-invalid @enderror form-control"
                         value="{{ old('VAT_number', $restaurant->VAT_number) }}" maxlength="50" id="VAT_number"
-                        name="VAT_number" type="text" placeholder="Inserisci qui..." required>
+                        name="VAT_number" type="text" placeholder="Inserisci qui..." autocomplete="on" required>
     
                     {{-- Barra errore --}}
                     @error('VAT_number')
@@ -51,7 +51,7 @@
                     <label class="d-block" for="address">Indirizzo: <span class="text-danger fw-bold">*</span></label>
     
                     <input class="@error('address') is-invalid @enderror form-control" value="{{ old('address', $restaurant->address) }}"
-                        maxlength="255" id="address" name="address" type="text" placeholder="Inserisci indirizzo..."
+                        maxlength="255" id="address" name="address" type="text" autocomplete="on" placeholder="Inserisci indirizzo..."
                         required>
     
                     {{-- Barra errore --}}
@@ -64,11 +64,11 @@
     
                 {{-- Img da aggiungere --}}
                 <div class="mb-3 form-group">
-                    <label for="dataFile" class="form-label">Aggiorna l'immagine del tuo Ristorante:</label>
-    
+                    <label for="img" class="form-label">Aggiorna l'immagine del tuo Ristorante:</label>
+
                     <input class="@error('img') is-invalid @enderror form-control" type="file"
-                        id="img" name="img">
-    
+                    autocomplete="on" id="img" name="img">
+
                     {{-- Barra errore --}}
                     @error('img')
                         <div class="alert alert-danger">
@@ -80,8 +80,7 @@
                 {{-- Immagine corrente --}}
                 @if ($restaurant->image != null)
                     <div class="my-3 text-center">
-                        <img class="w-50 rounded" src="/storage/{{ $restaurant->image }}"
-                            alt="{{ $restaurant->activity_name }}">
+                        <img class="w-50 rounded" src="/storage/{{ $restaurant->image }}" alt="{{ $restaurant->activity_name }}">
                     </div>
                 @endif
     
@@ -96,7 +95,7 @@
     
                 {{-- Tipi --}}
                 <div class="my-4 form-group">
-                    <label class="d-block" for="types">Scegli il tipo:</label>
+                    <span>Scegli il tipo:</span>
                     
                     <div class="row pt-2 mx-5">
                         @foreach ($types as $type)
@@ -104,8 +103,8 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="types[]" value="{{ $type->id }}"
                                         id="type-{{ $type->id }}" {{ $restaurant->types->contains($type->id) ? 'checked' : '' }}>
-            
-                                    <label class="form-check-label" for="{{ $type->id }}">
+
+                                    <label class="form-check-label" for="type-{{ $type->id }}">
                                         {{ $type->name }}
                                     </label>
                                 </div>
@@ -120,7 +119,7 @@
                         @enderror
                     </div>
                 </div>
-    
+                    
                 {{-- Descrizione --}}
                 <div class="mb-3 form-group">
                     <label class="d-block" for="description">Descrizione:</label>

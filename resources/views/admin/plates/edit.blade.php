@@ -18,7 +18,7 @@
                 <label class="d-block" for="name">Nome Piatto: <span class="text-danger">*</span></label>
     
                 <input class="form-control @error('name') is-invalid @enderror" value="{{ old('name', $plate->name) }}" maxlength="255"
-                    id="name" name="name" type="text" placeholder="Nome del piatto..." required>
+                    autocomplete="on" id="name" name="name" type="text" placeholder="Nome del piatto..." required>
     
                 {{-- Barra errore --}}
                 @error('name')

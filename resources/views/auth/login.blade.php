@@ -13,7 +13,7 @@
                     <label for="email">
                         Email
                     </label>
-                    <input placeholder="Email" class="form-control" type="email" id="email" name="email">
+                    <input placeholder="Email" class="form-control" type="email" id="email" name="email" autocomplete="on" >
                 </div>
                 {{-- Barra errore --}}
                 @error('email')
@@ -27,7 +27,7 @@
                     <label for="password">
                         Password
                     </label>
-                    <input placeholder="Password" class="form-control" type="password" id="password" name="password">
+                    <input placeholder="Password" class="form-control" type="password" id="password" name="password" autocomplete="on" >
                 </div>
                 {{-- Barra errore --}}
                 @error('password')
