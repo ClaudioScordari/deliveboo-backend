@@ -1,9 +1,13 @@
 $success: #502314;
 $secondary: #FF8732;
 $info: #198754;
-$light: #F9F4ED;
+$light:#F9F4ED;
 
 @import "~bootstrap/scss/bootstrap";
+
+* {
+    font-family: "Alegreya Sans SC", sans-serif;
+}
 
 #sidebar-wrapper {
     height: 100%;
