@@ -83,17 +83,21 @@
                     <span for="types">Seleziona i tuoi tipi di Cucina: <span class="text-danger">*</span></span>
 
                     <div class="row pt-2 mx-5">
+                        @php $first = true; @endphp
+
                         @foreach ($types as $type)
                             <div class="col-md-4 p-2">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="types[]" value="{{ $type->id }}"
-                                        id="{{ $type->id }}" {{ in_array($type->id, old('types', [])) ? 'checked' : '' }}>
+                                        id="{{ $type->id }}" {{ in_array($type->id, old('types', [])) ? 'checked' : '' }} {{ $first ? 'required' : '' }}>
                 
                                     <label class="form-check-label" for="{{ $type->id }}">
                                         {{ $type->name }}
                                     </label>
                                 </div>
                             </div>
+
+                            @php $first = false; @endphp
                         @endforeach
 
                         {{-- Barra errore --}}

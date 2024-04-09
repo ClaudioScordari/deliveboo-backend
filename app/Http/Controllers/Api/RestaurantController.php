@@ -12,7 +12,7 @@ class RestaurantController extends Controller
 {
     public function index()
     {
-        $restaurants = Restaurant::with(['types', 'plates'])->paginate(10);
+        $restaurants = Restaurant::with(['types', 'plates'])->paginate(8);
     
         // Trasforma i ristoranti dopo la paginazione
         foreach ($restaurants as $restaurant) {
