@@ -102,7 +102,7 @@
                             <div class="col-md-4 p-2">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="types[]" value="{{ $type->id }}"
-                                        id="type-{{ $type->id }}" {{ $restaurant->types->contains($type->id) ? 'checked' : '' }}>
+                                        id="type-{{ $type->id }}" {{ $restaurant->types->contains($type->id) ? 'checked' : '' }} required>
 
                                     <label class="form-check-label" for="type-{{ $type->id }}">
                                         {{ $type->name }}
