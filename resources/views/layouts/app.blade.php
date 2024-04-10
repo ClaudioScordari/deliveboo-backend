@@ -46,7 +46,7 @@
 
                         <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
                             <a href="{{ route('admin.restaurants.index') }}" class="text-success fw-bolder text-decoration-none text-start">
-                                <i class="fa-solid fa-utensils"></i> <span class="ps-3">Il mio Ristorante</span>
+                                <i class="fa-solid fa-utensils"></i> <span class="ps-3">Ristorante</span>
                             </a>
                         </div>
                         <a href="{{ route('admin.restaurants.index') }}" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
