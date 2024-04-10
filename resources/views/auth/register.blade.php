@@ -70,7 +70,7 @@
                     </a>
         
                     <button class="mt-3 btn btn-secondary text-white d-block" type="submit">
-                        Register <i class="fa-solid fa-address-card"></i>
+                        <i class="fa-solid fa-address-card"></i> Register
                     </button>
                 </div>
             </form>

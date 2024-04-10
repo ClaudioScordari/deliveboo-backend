@@ -18,7 +18,7 @@
                                     "Esegui la Registrazione su <span class="text-success fw-bolder">Deliveboo</span>!"
                                 </p>
                                 <div class="text-center mb-3">
-                                    <a href="{{ route('register') }}" class="btn text-white btn-secondary btn-lg">Registrati! <i class="fa-solid fa-address-card"></i></a>
+                                    <a href="{{ route('register') }}" class="btn text-white btn-secondary btn-lg"><i class="fa-solid fa-address-card"></i> Registrati!</a>
                                 </div>
                             </div>
                         </div>
@@ -28,7 +28,7 @@
                                     "Sei già nostro cliente? effettua il Login"
                                 </p>
                                 <div class="text-center mb-3">
-                                    <a href="{{ route('login') }}" class="btn text-white btn-secondary btn-lg">Accedi <i class="fa-solid fa-right-to-bracket"></i></a>
+                                    <a href="{{ route('login') }}" class="btn text-white btn-secondary btn-lg"><i class="fa-solid fa-right-to-bracket"></i> Accedi</a>
                                 </div>
                             </div>
                         </div>

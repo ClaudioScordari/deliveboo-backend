@@ -8,7 +8,7 @@
         <div class="col-12">
             <h1 class="text-center mb-3 text-success">I miei Piatti</h1>
             <div class="d-flex justify-content-end mb-4">
-                <a href="{{ route('admin.plates.create') }}" class="btn btn-secondary text-white">Nuovo piatto <i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i></a>
+                <a href="{{ route('admin.plates.create') }}" class="btn btn-secondary text-white"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i> Nuovo piatto</a>
             </div>
             <div class="row">
 
@@ -45,11 +45,11 @@
                         </div>
                         
                         <div class="card-footer border-success bg-light text-center">
-                            <a href="{{ route('admin.plates.edit', ['plate' => $plate->id]) }}" class="btn btn-secondary text-white">Modifica <i class="fa-solid fa-pencil"></i></a>
+                            <a href="{{ route('admin.plates.edit', ['plate' => $plate->id]) }}" class="btn btn-secondary text-white"><i class="fa-solid fa-pencil"></i> Modifica</a>
                             
                             {{-- Bottone che apre il Modal specifico per il piatto --}}
                             <button type="button" class="btn btn-secondary text-white" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $plate->id }}">
-                                Elimina <i class="fa-solid fa-trash"></i>
+                                <i class="fa-solid fa-trash"></i> Elimina
                             </button>
                             
                             {{-- Modal specifico per il piatto --}}
@@ -68,7 +68,7 @@
                                             <form action="{{ route('admin.plates.destroy', $plate->id) }}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-secondary text-white">Sì, voglio Eliminarlo <i class="fa-solid fa-trash"></i></button>
+                                                <button type="submit" class="btn btn-secondary text-white"><i class="fa-solid fa-trash"></i> Sì, voglio Eliminarlo</button>
                                             </form>
                                         </div>
                                     </div>

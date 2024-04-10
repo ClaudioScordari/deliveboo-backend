@@ -42,13 +42,12 @@
 
                     <div class="card-footer border-success bg-light text-center">
                         {{-- <a href="{{ route('admin.restaurants.show', ['restaurant' => $restaurant->id]) }}" class="btn btn-secondary text-light">Info <i class="fa-solid fa-circle-info"></i></a> --}}
-                        <a href="{{ route('admin.plates.index', ['restaurant' => $restaurant->id]) }}" class="btn btn-secondary text-white">Menù <i class="fa-solid fa-book"></i></a>
-                        <a href="{{ route('admin.restaurants.edit', ['restaurant' => $restaurant->id]) }}" class="btn btn-secondary text-white">Modifica <i class="fa-solid fa-pencil"></i></a>
+                        <a href="{{ route('admin.plates.index', ['restaurant' => $restaurant->id]) }}" class="btn btn-secondary text-white"><i class="fa-solid fa-book"></i> Menù</a>
+                        <a href="{{ route('admin.restaurants.edit', ['restaurant' => $restaurant->id]) }}" class="btn btn-secondary text-white"><i class="fa-solid fa-pencil"></i> Modifica</a>
                         
                         {{-- Modal button --}}
                         <button type="button" class="btn btn-secondary text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Elimina
-                            <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-trash"></i> Elimina
                         </button>
                         
                         <!-- Modal -->
@@ -75,7 +74,7 @@
                                         <form action="{{ route('admin.restaurants.destroy', ['restaurant' => $restaurant->id]) }}" method="POST" class="d-inline">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-secondary text-white">Sì, sono sicuro <i class="fa-solid fa-trash"></i></button>
+                                            <button type="submit" class="btn btn-secondary text-white"><i class="fa-solid fa-trash"></i> Sì, sono sicuro</button>
                                         </form>
                                     </div>
                                 </div>

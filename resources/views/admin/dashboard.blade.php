@@ -26,7 +26,7 @@
                                         <p class="fw-bolder fs-3 text-success">
                                             Gestisci il tuo Ristorante
                                         </p>
-                                        <a href="{{ route('admin.restaurants.index') }}" class="btn text-white btn-secondary btn-lg w-50 m-auto">Il mio Ristorante <i class="fa-solid fa-utensils"></i></a>
+                                        <a href="{{ route('admin.restaurants.index') }}" class="btn text-white btn-secondary btn-lg w-50 m-auto"><i class="fa-solid fa-utensils"></i> Il mio Ristorante</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 text-center p-3">
@@ -34,7 +34,7 @@
                                         <p class="fw-bolder fs-3 text-success">
                                             Verifica gli Ordini
                                         </p>
-                                        <a href="{{ route('admin.orders.index', ['sort' => 'desc']) }}" class="btn text-white btn-secondary btn-lg w-50 m-auto">Ordini <i class="fa-solid fa-receipt"></i></a>
+                                        <a href="{{ route('admin.orders.index', ['sort' => 'desc']) }}" class="btn text-white btn-secondary btn-lg w-50 m-auto"><i class="fa-solid fa-receipt"></i> Ordini</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 text-center p-3">
@@ -42,7 +42,7 @@
                                     <p class="fw-bolder fs-3 text-success">
                                         Controlla i tuoi Piatti
                                     </p>
-                                    <a href="{{ route('admin.plates.index') }}" class="btn text-white btn-secondary btn-lg w-50 m-auto">Piatti <i class="fa-solid fa-bowl-food"></i></a>
+                                    <a href="{{ route('admin.plates.index') }}" class="btn text-white btn-secondary btn-lg w-50 m-auto"><i class="fa-solid fa-bowl-food"></i> Piatti</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 text-center p-3">
@@ -50,7 +50,7 @@
                                         <p class="fw-bolder fs-3 text-success">
                                             Guarda le tue Statistiche
                                         </p>
-                                        <a href="{{ route('admin.stats.index') }}" class="btn text-white btn-secondary btn-lg w-50 m-auto">Statistiche <i class="fa-solid fa-chart-simple"></i></a>
+                                        <a href="{{ route('admin.stats.index') }}" class="btn text-white btn-secondary btn-lg w-50 m-auto"><i class="fa-solid fa-chart-simple"></i> Statistiche</a>
                                     </div>
                                 </div>
                             </div>

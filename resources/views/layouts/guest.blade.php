@@ -27,10 +27,41 @@
                 <img src="{{ Vite::asset('resources/img/deliveboo-icon.png') }}" alt="deliveboo" class="w-100">
             </div>
             <div class="list-group list-group-flush">
-                <a href="/" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Home</span> <i class="fa-solid fa-house"></i></a>
-                    <a href="{{ route('login') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Login</span> <i class="fa-solid fa-right-to-bracket"></i></a>
-                    <a href="{{ route('register') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Register</span> <i class="fa-solid fa-address-card"></i></a>
-                    <a href="http://localhost:5174" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Front-Office</span> <i class="fa-solid fa-shop"></i></a>
+                <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                    <a href="/" class="text-success fw-bolder text-decoration-none text-start">
+                        <i class="fa-solid fa-house"></i> <span class="ps-3">Home</span>
+                    </a>
+                </div>
+                <a href="/" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+
+                <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                    <a href="{{ route('login') }}" class="text-success fw-bolder text-decoration-none text-start">
+                        <i class="fa-solid fa-right-to-bracket"></i> <span class="ps-3">Login</span>
+                    </a>
+                </div>
+                <a href="{{ route('login') }}" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </a>
+
+                <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                    <a href="{{ route('register') }}" class="text-success fw-bolder text-decoration-none text-start">
+                        <i class="fa-solid fa-address-card"></i> <span class="ps-3">Register</span>
+                    </a>
+                </div>
+                <a href="{{ route('register') }}" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                    <i class="fa-solid fa-address-card"></i>
+                </a>
+
+                <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                    <a href="http://localhost:5174" class="text-success fw-bolder text-decoration-none text-start">
+                        <i class="fa-solid fa-shop"></i> <span class="ps-3">Front-Office</span>
+                    </a>
+                </div>
+                <a href="http://localhost:5174" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                    <i class="fa-solid fa-shop"></i>
+                </a>
                 {{-- <a href="{{ route(guest.restaurants.index) }}" class="list-group-item list-group-item-action bg-light text-success fw-bolder">Ristoranti <i class="fa-solid fa-utensils"></i></a> --}}
             </div>
         </div>

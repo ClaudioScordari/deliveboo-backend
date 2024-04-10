@@ -106,7 +106,7 @@
             </div>
     
             <div>
-                <button type="submit" class="btn btn-secondary text-white">Aggiorna Piatto <i class="fa-solid fa-pencil"></i></button>
+                <button type="submit" class="btn btn-secondary text-white"><i class="fa-solid fa-pencil"></i> Aggiorna Piatto</button>
             </div>
         </form>
     </div>

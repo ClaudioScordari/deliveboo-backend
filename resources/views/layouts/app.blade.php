@@ -29,20 +29,83 @@
             <img src="{{ Vite::asset('resources/img/deliveboo-icon.png') }}" alt="deliveboo" class="w-100">
         </div>
         <div>
-            <div class="list-group list-group-flush text-center">
+            <div class="list-group list-group-flush">
                 @auth
-                    <a href="{{ route('admin.dashboard') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Dashboard</span> <i class="fa-solid fa-house"></i></a>
+                        <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                            <a href="{{ route('admin.dashboard') }}" class="text-success fw-bolder text-decoration-none text-start">
+                                <i class="fa-solid fa-house"></i> <span class="ps-3">Dashboard</span>
+                            </a>
+    
+                        </div>
+                        <a href="{{ route('admin.dashboard') }}" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
                     
                     {{-- Esiste un'istanza di restaurant con quell'ID? - Se no fammi creare il ristorante --}}
                     @if(auth()->user()->restaurant?->id)
-                        <a href="{{ route('admin.restaurants.index') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Il mio Ristorante</span> <i class="fa-solid fa-utensils"></i></a>
-                        <a href="{{ route('admin.plates.index') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Piatti</span> <i class="fa-solid fa-bowl-food"></i></a>
-                        <a href="{{ route('admin.orders.index') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Ordini</span> <i class="fa-solid fa-receipt"></i></a>
-                        <a href="{{ route('admin.stats.index') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Statistiche</span> <i class="fa-solid fa-chart-simple"></i></a>
-                        <a href="http://localhost:5174" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Front-Office</span> <i class="fa-solid fa-shop"></i></a>
+
+                        <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                            <a href="{{ route('admin.restaurants.index') }}" class="text-success fw-bolder text-decoration-none text-start">
+                                <i class="fa-solid fa-utensils"></i> <span class="ps-3">Il mio Ristorante</span>
+                            </a>
+                        </div>
+                        <a href="{{ route('admin.restaurants.index') }}" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                            <i class="fa-solid fa-utensils"></i>
+                        </a>
+
+                        <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                            <a href="{{ route('admin.plates.index') }}" class="text-success fw-bolder text-decoration-none text-start">
+                                <i class="fa-solid fa-bowl-food"></i> <span class="ps-3">Piatti</span>
+                            </a>
+                        </div>
+                        <a href="{{ route('admin.plates.index') }}" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                            <i class="fa-solid fa-bowl-food"></i>
+                        </a>
+
+                        <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                            <a href="{{ route('admin.orders.index') }}" class="text-success fw-bolder text-decoration-none text-start">
+                                <i class="fa-solid fa-receipt"></i> <span class="ps-3">Ordini</span>
+                            </a>
+                        </div>
+                        <a href="{{ route('admin.orders.index') }}" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                            <i class="fa-solid fa-receipt"></i>
+                        </a>
+
+                        <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                            <a href="{{ route('admin.stats.index') }}" class="text-success fw-bolder text-decoration-none text-start">
+                                <i class="fa-solid fa-chart-simple"></i> <span class="ps-3">Statistiche</span>
+                            </a>
+                        </div>
+                        <a href="{{ route('admin.stats.index') }}" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+
+                        <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                            <a href="http://localhost:5174" class="text-success fw-bolder text-decoration-none text-start">
+                                <i class="fa-solid fa-shop"></i> <span class="ps-3">Front-Office</span>
+                            </a>
+                        </div>
+                        <a href="http://localhost:5174" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                            <i class="fa-solid fa-shop"></i>
+                        </a>
                     @else
-                        <a href="{{ route('admin.restaurants.create') }}" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Nuovo Ristorante</span> <i class="fa-solid fa-plus"></i></a>
-                        <a href="http://localhost:5174" class="text-success fw-bolder border-bottom border-success py-3 text-decoration-none"><span class="d-none d-md-inline">Front-Office</span> <i class="fa-solid fa-shop"></i></a>
+                        <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                            <a href="{{ route('admin.restaurants.create') }}" class="text-success fw-bolder text-decoration-none text-start">
+                                <i class="fa-solid fa-plus"></i> <span class="ps-3">Nuovo Ristorante</span>
+                            </a>
+                        </div>
+                        <a href="{{ route('admin.restaurants.create') }}" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+
+                        <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                            <a href="http://localhost:5174" class="text-success fw-bolder text-decoration-none text-start">
+                                <i class="fa-solid fa-shop"></i> <span class="ps-3">Front-Office</span>
+                            </a>
+                        </div>
+                        <a href="http://localhost:5174" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                            <i class="fa-solid fa-shop"></i>
+                        </a>
                     @endif
                 @endauth
                 @auth
@@ -50,7 +113,7 @@
                     <form method="POST" action="{{ route('logout') }}" class="my-3">
                         @csrf
                         <button type="submit" class="btn btn-secondary text-white fw-bolder w-100 d-none d-md-inline">
-                           Log Out <i class="fa-solid fa-right-from-bracket"></i> 
+                            <i class="fa-solid fa-right-from-bracket"></i> Log Out
                         </button>
                         <a type="submit" class="text-secondary fw-bolder w-100 d-block d-md-none">
                             <i class="fa-solid fa-right-from-bracket"></i> 
@@ -60,9 +123,41 @@
                 @endauth
 
                 @guest
-                    <a href="/" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Home</span> <i class="fa-solid fa-house"></i></a>
-                    <a href="{{ route('login') }}" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Login</span> <i class="fa-solid fa-right-to-bracket"></i></a>
-                    <a href="{{ route('register') }}" class="bg-light text-success fw-bolder border-bottom py-3 text-decoration-none"><span class="d-none d-md-inline">Register</span> <i class="fa-solid fa-address-card"></i></a>
+                    <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                        <a href="/" class="text-success fw-bolder text-decoration-none text-start">
+                            <i class="fa-solid fa-house"></i> <span class="ps-3">Home</span>
+                        </a>
+                    </div>
+                    <a href="/" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+
+                    <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                        <a href="{{ route('login') }}" class="text-success fw-bolder text-decoration-none text-start">
+                            <i class="fa-solid fa-right-to-bracket"></i> <span class="ps-3">Login</span>
+                        </a>
+                    </div>
+                    <a href="{{ route('login') }}" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </a>
+
+                    <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                        <a href="{{ route('register') }}" class="text-success fw-bolder text-decoration-none text-start">
+                            <i class="fa-solid fa-address-card"></i> <span class="ps-3">Register</span>
+                        </a>
+                    </div>
+                    <a href="{{ route('register') }}" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                        <i class="fa-solid fa-address-card"></i>
+                    </a>
+
+                    <div class="border-bottom border-success py-3 ps-3 text-start d-none d-md-inline">
+                        <a href="http://localhost:5174" class="text-success fw-bolder text-decoration-none text-start">
+                            <i class="fa-solid fa-shop"></i> <span class="ps-3">Front-Office</span>
+                        </a>
+                    </div>
+                    <a href="http://localhost:5174" class="text-success fw-bolder text-decoration-none text-start d-block d-md-none border-bottom border-success py-3">
+                        <i class="fa-solid fa-shop"></i>
+                    </a>
                 @endguest
 
             </div>

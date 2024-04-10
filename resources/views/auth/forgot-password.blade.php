@@ -28,7 +28,7 @@
         
                 <div>
                     <button class="btn text-white btn-secondary d-block" type="submit">
-                        Email Password Reset Link <i class="fa-solid fa-power-off"></i>
+                        <i class="fa-solid fa-power-off"></i> Email Password Reset Link
                     </button>
                 </div>
             </form>

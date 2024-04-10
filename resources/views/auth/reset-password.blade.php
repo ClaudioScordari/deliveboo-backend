@@ -55,7 +55,7 @@
         
                 <div class="text-center">
                     <button class="btn btn-secondary text-white d-block w-100" type="submit">
-                        Reset Password <i class="fa-solid fa-rotate-right"></i>
+                        <i class="fa-solid fa-rotate-right"></i> Reset Password
                     </button>
                 </div>
             </form>

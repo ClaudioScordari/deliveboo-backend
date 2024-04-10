@@ -93,7 +93,7 @@
                 </div>
 
                 <div>
-                    <button type="submit" class="btn btn-secondary text-white">Aggiungi piatto <i class="fa-solid fa-plus"></i></button>
+                    <button type="submit" class="btn btn-secondary text-white"><i class="fa-solid fa-plus"></i> Aggiungi piatto</button>
                 </div>
                 <br>
             </form>

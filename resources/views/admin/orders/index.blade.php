@@ -41,7 +41,7 @@
                                 @endforeach
                             </td>
                             <td class="small text-center align-middle">{{ $order->created_at->format('d-m-Y') }}</td>
-                            <td class="small text-center align-middle"><a href="{{ route('admin.orders.show', $order->id) }}" class="btn btn-sm btn-secondary text-white">Info <i class="fa-solid fa-circle-info"></i></a></td>
+                            <td class="small text-center align-middle"><a href="{{ route('admin.orders.show', $order->id) }}" class="btn btn-sm btn-secondary text-white"><i class="fa-solid fa-circle-info"></i> Info</a></td>
                         </tr>
                     @endforeach
                 </tbody>

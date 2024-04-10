@@ -43,7 +43,7 @@
             </div>
     
             <div>
-                <button type="submit" class="btn btn-secondary text-white">Aggiorna Stato <i class="fa-solid fa-pencil"></i></button>
+                <button type="submit" class="btn btn-secondary text-white"><i class="fa-solid fa-pencil"></i> Aggiorna Stato</button>
             </div>
         </form>
     </div>
