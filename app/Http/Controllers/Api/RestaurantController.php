@@ -12,7 +12,7 @@ class RestaurantController extends Controller
 {
     public function index()
     {
-        $restaurants = Restaurant::with(['types', 'plates'])->paginate(6);
+        $restaurants = Restaurant::with(['types', 'plates'])->get();
 
         // Trasforma i ristoranti dopo la paginazione
         foreach ($restaurants as $restaurant) {
@@ -65,9 +65,6 @@ class RestaurantController extends Controller
 
         // Rimuovere eventuali duplicati di ristoranti
         $restaurants = $restaurants->unique();
-
-        // Paginazione dei ristoranti
-        $restaurants = $restaurants->paginate(6);
 
         // Trasformiamo la collezione dei risultati per includere l'URL dell'immagine se disponibile
         $restaurants->getCollection()->transform(function ($restaurant) {
