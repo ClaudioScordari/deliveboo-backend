@@ -19,8 +19,8 @@ use App\Http\Controllers\Api\OrderController as ApiOrderController;
 |
 */
 
-Route::name('api.')->group(function() {
-    
+Route::name('api.')->group(function () {
+
     Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
         return $request->user();
     });
@@ -33,12 +33,12 @@ Route::name('api.')->group(function() {
 
     // Rotta per ottenere i piatti
     Route::get('/plates', [ApiPlateController::class, 'index']);
-    
+
     // Rotta per ottenere i piatti di un singolo ristorante
     Route::get('/restaurants/{restaurant}/plates', [ApiPlateController::class, 'restaurantPlates']);
 
     // Ristoranti cercati per tipi
-    Route::get('/restaurants/types/{typeId}', [ApiRestaurantController::class, 'getRestaurantByType']);
+    Route::get('/restaurants/types', [ApiRestaurantController::class, 'getRestaurantByType']);
 
     // Ristoranti cercati per nome
     Route::get('/restaurants/search/{name}', [ApiRestaurantController::class, 'search']);
