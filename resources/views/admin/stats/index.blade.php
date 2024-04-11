@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 ],
                 borderColor: [
                     'rgba(255, 135, 50, 1)',
-                    'rgba (80, 35, 20, 1)',
+                    'rgba(80, 35, 20, 1)',
                     'rgba(210, 188, 157, 1)',
                     'rgba(170, 85, 35, 1)',
                     'rgba(229, 161, 101, 1)',

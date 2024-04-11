@@ -142,23 +142,52 @@
                     <button type="submit" class="btn btn-secondary text-white"><i class="fa-solid fa-pencil"></i> Aggiorna
                         Attività</button>
                 </div>
+
+                <!-- Modale di Validazione -->
+                <div class="modal" id="validationModal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header border-success bg-light">
+                            <h5 class="modal-title text-success">Attenzione!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            Devi almeno inserire una tipologia di Ristorante!
+                        </div>
+                        <div class="modal-footer border-success bg-light">
+                            <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Chiudi</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
             </form>
         </div>
     </section>
 
     <script>
+
+        // Cattura a sottomissione del form
         document.getElementById('restaurantForm').addEventListener('submit', function(event) {
-            let checkboxes = document.getElementsByClassName('type-checkbox');
 
-            let checked = Array.from(checkboxes).some(function(checkbox) {
-                return checkbox.checked;
-            });
+        // Seleziono tutte le checkbox
+        let checkboxes = document.getElementsByClassName('type-checkbox');
 
-            if (!checked) {
-                event.preventDefault();
-                alert('Devi selezionare almeno un tipo di cucina!');
-                return false;
-            }
+        // Riempio il valore di checked a true se un elemento dell'array è stato selezionato
+        let checked = Array.from(checkboxes).some(function(checkbox) {
+
+            // Restituisce true o false
+            return checkbox.checked;
         });
+
+        // Se true scatta l'alert
+        if (!checked) {
+            event.preventDefault();
+            $('#validationModal').modal('show');
+            //alert('Devi selezionare almeno un tipo di cucina!');
+            return false;
+        }
+        });
+        
     </script>
 @endsection
