@@ -31,6 +31,8 @@
                     <div class="card border-success h-100">
                         @if($plate->image)
                             <img src="{{ asset('storage/' . $plate->image) }}" class="card-img-top" alt="{{ $plate->name }}">
+                        @else
+                            <img src="{{ Vite::asset('resources/img/not-found.png') }}" alt="not-found" class="img-fluid rounded-start h-100">
                         @endif
                         <div class="card-body">
                             <h5 class="card-title text-success">{{ $plate->name }}</h5>

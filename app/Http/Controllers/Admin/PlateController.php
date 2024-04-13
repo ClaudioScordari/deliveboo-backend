@@ -80,7 +80,7 @@ class PlateController extends Controller
             'description' => $validDatas['description'],
         ]);
 
-        return redirect()->route('admin.plates.show', compact('plate'));
+        return redirect()->route('admin.plates.index', compact('plate'));
     }
 
     public function edit($id)
