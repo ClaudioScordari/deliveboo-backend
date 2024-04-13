@@ -45,6 +45,7 @@
                                         <span class="text-muted">Nessuna tipologia specificata</span>
                                     @endforelse
                                 </div>
+                                <p class="card-text"><span class="fw-bolder"> Indirizzo: </span>{{ $restaurant->address }}</p>
                                 <p class="card-text"><small class="text-muted">P.IVA: {{ $restaurant->VAT_number }}</small></p>
                             </div>
                             <!-- Bottoni in basso -->

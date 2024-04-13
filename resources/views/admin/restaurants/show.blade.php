@@ -28,6 +28,7 @@
                         @endforelse
                     </div>
                     <p>{{ $restaurant->description }}</p>
+                    <p class="card-text"><span class="fw-bolder"> Indirizzo: </span>{{ $restaurant->address }}</p>
                     <p><span class="fw-bolder">P.IVA:</span> {{ $restaurant->VAT_number }}</p>
                 </div>
                 <div class="card-footer text-center">
