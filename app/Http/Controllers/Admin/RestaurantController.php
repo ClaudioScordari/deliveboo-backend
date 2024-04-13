@@ -184,11 +184,11 @@ class RestaurantController extends Controller
     {
 
         $restaurant = Restaurant::findOrFail($id);
+    
+        $restaurant->delete();
 
         // Elimino prima tutti i piatti associati
         $restaurant->plates()->delete();
-    
-        $restaurant->delete();
 
         return redirect()->route('admin.dashboard');
     }
