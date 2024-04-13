@@ -168,7 +168,7 @@
 
     <!-- Page Content -->
     <div id="page-content-wrapper" class="w-100">
-        <main class="container py-4">
+        <main class="container">
             @yield('main-content')
         </main>
     </div>
