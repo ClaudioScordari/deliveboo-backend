@@ -31,7 +31,7 @@
                             </div>
 
                             <!-- Testo a destra -->
-                            <div class="col-md-8 d-flex flex-column py-3">
+                            <div class="col-md-8 d-flex flex-column py-3 px-3">
                                 <div class="card-body">
                                     <h2 class="card-title text-success fw-bold">{{ $restaurant->activity_name }}</h2>
                                     <p class="card-text fw-bolder">Proprietario: <span class="text-success">{{ $restaurant->user->name }}</span></p>
