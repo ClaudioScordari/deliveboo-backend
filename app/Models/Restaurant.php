@@ -8,6 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 // Traits
 use Illuminate\Database\Eloquent\SoftDeletes;
 
+/**
+ * Class Restaurant
+ *
+ * @property int $id
+ * @property string $activity_name
+ * @property string $VAT_number
+ * @property string $address
+ * @property string|null $image
+ * @property string $description
+ * @property-read Collection|Plate[] $plates
+ */
+
 class Restaurant extends Model
 {   
     use SoftDeletes;

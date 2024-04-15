@@ -13,15 +13,14 @@ class RestaurantController extends Controller
     public function index()
     {
         $restaurants = Restaurant::with(['types', 'plates'])->get();
-
-        // Trasforma i ristoranti dopo la paginazione
+    
         foreach ($restaurants as $restaurant) {
-            $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : null;
+            $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : asset('storage/restaurant-not-found.png'); // Fornisci un'immagine di default
             foreach ($restaurant->plates as $plate) {
-                $plate->image = $plate->image ? asset('storage/' . $plate->image) : null;
+                $plate->image = $plate->image ? asset('storage/' . $plate->image) : asset('storage/plate-not-found.png'); // Fornisci un'immagine di default per i piatti
             }
         }
-
+    
         return response()->json([
             'success' => true,
             'results' => $restaurants,
@@ -30,10 +29,10 @@ class RestaurantController extends Controller
 
     public function show(Restaurant $restaurant)
     {
-        $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : null;
+        $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : asset('storage/restaurant-not-found.png'); // Fornisci un'immagine di default
 
         foreach ($restaurant->plates as $plate) {
-            $plate->image = $plate->image ? asset('storage/' . $plate->image) : null;
+            $plate->image = $plate->image ? asset('storage/' . $plate->image) : asset('storage/plate-not-found.png'); // Fornisci un'immagine di default per i piatti
         }
 
         return response()->json([
@@ -68,7 +67,7 @@ class RestaurantController extends Controller
 
         // Trasformiamo la collezione dei risultati per includere l'URL dell'immagine se disponibile
         $restaurants->getCollection()->transform(function ($restaurant) {
-            $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : null;
+            $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : asset('storage/restaurant-not-found.png'); // Fornisci un'immagine di default
             return $restaurant;
         });
 
@@ -82,9 +81,9 @@ class RestaurantController extends Controller
     public function search($name)
     {
         $restaurants = Restaurant::where('activity_name', 'like', "%" . $name . "%")->with(['types', 'plates'])->get()->map(function ($restaurant) {
-            $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : null;
+            $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : asset('storage/restaurant-not-found.png'); // Fornisci un'immagine di default
             $restaurant->plates = $restaurant->plates->map(function ($plate) {
-                $plate->image = $plate->image ? asset('storage/' . $plate->image) : null;
+                $plate->image = $plate->image ? asset('storage/' . $plate->image) : asset('storage/plate-not-found.png'); // Fornisci un'immagine di default per i piatti
                 return $plate;
             });
             return $restaurant;
