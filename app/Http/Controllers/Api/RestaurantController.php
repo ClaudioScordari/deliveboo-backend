@@ -12,12 +12,14 @@ class RestaurantController extends Controller
 {
     public function index()
     {
-        $restaurants = Restaurant::with(['types', 'plates'])->get();
+        $restaurants = Restaurant::with(['types', 'plates' => function ($query) {
+            $query->where('visible', true); // Carica solo piatti visibili
+        }])->get();
     
         foreach ($restaurants as $restaurant) {
-            $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : asset('storage/restaurant-not-found.png'); // Fornisci un'immagine di default
+            $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : asset('storage/restaurant-not-found.png');
             foreach ($restaurant->plates as $plate) {
-                $plate->image = $plate->image ? asset('storage/' . $plate->image) : asset('storage/plate-not-found.png'); // Fornisci un'immagine di default per i piatti
+                $plate->image = $plate->image ? asset('storage/' . $plate->image) : asset('storage/plate-not-found.png');
             }
         }
     
@@ -26,15 +28,18 @@ class RestaurantController extends Controller
             'results' => $restaurants,
         ]);
     }
-
+    
     public function show(Restaurant $restaurant)
     {
-        $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : asset('storage/restaurant-not-found.png'); // Fornisci un'immagine di default
-
+        $restaurant->load(['plates' => function ($query) {
+            $query->where('visible', true); // Carica solo piatti visibili
+        }]);
+    
+        $restaurant->image = $restaurant->image ? asset('storage/' . $restaurant->image) : asset('storage/restaurant-not-found.png');
         foreach ($restaurant->plates as $plate) {
-            $plate->image = $plate->image ? asset('storage/' . $plate->image) : asset('storage/plate-not-found.png'); // Fornisci un'immagine di default per i piatti
+            $plate->image = $plate->image ? asset('storage/' . $plate->image) : asset('storage/plate-not-found.png');
         }
-
+    
         return response()->json([
             'success' => true,
             'results' => $restaurant,
