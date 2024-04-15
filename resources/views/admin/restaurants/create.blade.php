@@ -3,7 +3,7 @@
 @section('page-title', 'Crea un ristorante')
 
 @section('main-content')
-    <section class="container-form-section">
+    <section class="container-form-section p-5">
         <div class="container-form card border-success bg-light m-auto w-50 px-5 py-4">
             <h1 class="text-center text-success">CREA LA TUA ATTIVITA'</h1>
 

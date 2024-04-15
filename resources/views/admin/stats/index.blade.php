@@ -4,7 +4,7 @@
 
 @section('main-content')
     
-    <div class="container mt-4">
+    <div class="container mt-4 p-3">
         <h1 class="text-center text-success mb-4">Statistiche</h1>
         
         <div class="row g-4">
@@ -48,21 +48,30 @@
                 <div class="card bg-light border-success text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Piatto Più Ordinato</h5>
-                        <p class="card-text text-success">{{ $mostOrderedPlateOverall->name }} - x<span class="text-secondary fw-bold">{{ $mostOrderedPlateOverall->orders_count }}</span></p>
+                        @if($mostOrderedPlateOverall && $mostOrderedPlateOverall->orders_count > 0)
+                            <p class="card-text text-success">{{ $mostOrderedPlateOverall->name }} - x{{ $mostOrderedPlateOverall->orders_count }}</p>
+                        @else
+                            <p class="card-text text-secondary fw-bolder">Nessun dato disponibile per il piatto più ordinato</p>
+                        @endif
                         <canvas id="mostOrderedPlatesChart"></canvas>
                     </div>
                 </div>
             </div>
-    
+            
             <div class="col-lg-6">
                 <div class="card bg-light border-success text-center">
                     <div class="card-body">
                         <h5 class="card-title text-success">Piatto Più Ordinato Ultimi 30 Giorni</h5>
-                        <p class="card-text text-success">{{ $mostOrderedPlateThisMonth->name }} - x <span class="text-secondary fw-bold">{{ $mostOrderedPlateThisMonth->orders_count }}</span></p>
+                        @if($mostOrderedPlateThisMonth && $mostOrderedPlateThisMonth->orders_count > 0)
+                            <p class="card-text text-success">{{ $mostOrderedPlateThisMonth->name }} - x{{ $mostOrderedPlateThisMonth->orders_count }}</p>
+                        @else
+                            <p class="card-text text-secondary fw-bolder">Nessun dato disponibile per gli ultimi 30 giorni</p>
+                        @endif
                         <canvas id="mostOrderedPlatesLast30DaysChart"></canvas>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 <script>

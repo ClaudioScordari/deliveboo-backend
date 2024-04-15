@@ -15,7 +15,7 @@
                         <div class="col-md-6 p-3">
                             <div class="card bg-light border-success p-3">
                                 <p class="text-center px-5 mx-5 mb-3 my-auto">
-                                    "Esegui la Registrazione su <span class="text-success fw-bolder">Deliveboo</span>!"
+                                    "Esegui la Registrazione su <span class="text-success fw-bolder">Eatoon</span>!"
                                 </p>
                                 <div class="text-center mb-3">
                                     <a href="{{ route('register') }}" class="btn text-white btn-secondary btn-lg"><i class="fa-solid fa-address-card"></i> Registrati!</a>

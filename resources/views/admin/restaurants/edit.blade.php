@@ -3,7 +3,7 @@
 @section('page-title', 'Modifica il ristorante ' . $restaurant->activity_name)
 
 @section('main-content')
-    <section class="container-form-section">
+    <section class="container-form-section p-5">
         <div class="container-form card border-success bg-light m-auto w-50 px-5 py-4">
             <h1 class="text-center text-success">MODIFICA L'ATTIVITA'</h1>
 

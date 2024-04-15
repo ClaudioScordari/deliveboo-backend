@@ -3,7 +3,7 @@
 @section('page-title', 'Crea un piatto')
 
 @section('main-content')
-    <section class="container-form-section">
+    <section class="container-form-section p-5">
         <div class="container-form card border-success bg-light m-auto w-50 px-5 py-4">
             <h1 class="text-center text-success">CREA UN NUOVO PIATTO</h1>
 
@@ -33,7 +33,7 @@
                     <label for="price" class="form-label">Prezzo: <span class="text-danger">*</span></label>
 
                     <input type="number" min="0" step="0.01" name="price" id="price" class="form-control"
-                        value="{{ old('price') }}" placeholder="Prezzo" required>
+                        value="{{ old('price') }}" placeholder="Prezzo" max="1000" required>
 
                     @error('price')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -50,8 +50,7 @@
                 <div class="mb-3 form-group">
                     <label class="d-block" for="ingredients">Ingredienti: <span class="text-danger">*</span></label>
 
-                    <textarea cols="23" class="form-control @error('ingredients') is-invalid @enderror" maxlength="4096" name="ingredients" id="ingredients" placeholder="Scrivi gli ingredienti" required>{{ old('ingredients') }}
-                    </textarea>
+                    <textarea cols="23" class="form-control @error('ingredients') is-invalid @enderror" maxlength="4096" name="ingredients" id="ingredients" placeholder="Scrivi gli ingredienti" required>{{ old('ingredients') }}</textarea>
 
                     {{-- Barra errore --}}
                     @error('ingredients')
@@ -80,9 +79,7 @@
                 <div class="mb-3 form-group">
                     <label class="d-block" for="description">Descrizione:</label>
 
-                    <textarea cols="23" class="form-control @error('description') is-invalid @enderror" maxlength="4096" name="description" id="description" placeholder="Scrivi una descrizione">
-                        {{ old('description') }}
-                    </textarea>
+                    <textarea cols="23" class="form-control @error('description') is-invalid @enderror" maxlength="4096" name="description" id="description" placeholder="Scrivi una descrizione">{{ old('description') }}</textarea>
 
                     {{-- Barra errore --}}
                     @error('description')

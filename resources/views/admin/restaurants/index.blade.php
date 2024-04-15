@@ -3,8 +3,11 @@
 @section('page-title', 'Il mio ristorante')
 
 @section('main-content')
+
 <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+
     <div class="row justify-content-center w-100">
+
         <div class="col-md-12">
 
             @if(session('error'))
@@ -21,7 +24,7 @@
                             @if ($restaurant->image)
                                 <img src="{{ asset('storage/' . $restaurant->image) }}" class="img-fluid rounded-start h-100" alt="Immagine di {{ $restaurant->activity_name }}">
                             @else
-                                <img src="{{ Vite::asset('resources/img/not-found.png') }}" alt="not-found" class="img-fluid rounded-start h-100">
+                                <img src="{{ Vite::asset('resources/img/restaurant-not-found.png') }}" alt="not-found" class="img-fluid rounded-start h-100">
                             @endif
                         </div>
 
