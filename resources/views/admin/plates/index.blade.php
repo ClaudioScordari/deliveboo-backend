@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', 'Tutti i miei piatti')
+@section('page-title', 'I miei Piatti')
 
 @section('main-content')
 <div class="container mt-4">

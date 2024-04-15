@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', 'Crea un piatto')
+@section('page-title', 'Crea un Piatto')
 
 @section('main-content')
     <section class="container-form-section p-5">

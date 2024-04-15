@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', 'Il mio ristorante')
+@section('page-title', 'Ristorante')
 
 @section('main-content')
 

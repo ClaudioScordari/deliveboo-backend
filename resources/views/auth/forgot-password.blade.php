@@ -1,5 +1,7 @@
 @extends('layouts.guest')
 
+@section('page-title', 'Password Dimenticata?')
+
 @section('main-content')
     <section class="container-form-section">
         <div class="container-form w-50 m-auto card border-success p-5 mt-5 bg-light">
