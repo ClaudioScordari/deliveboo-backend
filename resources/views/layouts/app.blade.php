@@ -14,7 +14,7 @@
 
     <link rel="icon" href="{{ Vite::asset('resources/img/favicon.ico') }}" type="image/png">
 
-    <title>@yield('page-title') | {{ config('app.name', 'Deliveboo') }}</title>
+    <title>@yield('page-title') | {{ config('app.name', 'Eatoon') }}</title>
 
     @vite(['resources/js/app.js'])
     <!-- Scripts -->
