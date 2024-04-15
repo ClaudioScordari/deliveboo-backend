@@ -43,7 +43,7 @@
             {{-- Visibile --}}
             <div class="mb-3">
                 <input value="1" type="checkbox" name="visible" id="visible" {{ $plate->visible == 1 ? 'checked' : '' }}>
-                <label for="visible" class="form-label"><span class="fw-bolder">Disponibile?</span></label>
+                <label for="visible" class="form-label">Disponibile?</label>
             </div>
     
             {{-- Ingredienti --}}

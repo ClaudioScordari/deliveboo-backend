@@ -42,8 +42,8 @@
 
                 {{-- Visibile --}}
                 <div class="mb-3">
-                    <input value="1" type="checkbox" name="visible" id="visible">
-                    <label for="visible" class="form-label"><span class="fw-bolder">Disponibile?</span></label>
+                    <input value="1" type="checkbox" name="visible" id="visible" checked>
+                    <label for="visible" class="form-label">Disponibile?</label>
                 </div>
 
                 {{-- Ingredienti --}}
