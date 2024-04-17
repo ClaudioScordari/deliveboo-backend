@@ -60,9 +60,12 @@ Route::prefix('admin')
 
     // Piatti (protetti)
     Route::resource('plates', AdminPlateController::class);
-
+    
+    
     // Ordini (protetti)
     Route::resource('orders', AdminOrderController::class);
+
+    Route::post('/plates/restore/{id}', [AdminPlateController::class, 'restore'])->name('plates.restore');
     
     // Route::resource('types', AdminTypeController::class);
 
@@ -70,5 +73,7 @@ Route::prefix('admin')
     Route::get('/statistics', [AdminOrderController::class, 'showMonthlyStatistics'])->name('stats.index');
 
 });
+
+
 
 require __DIR__.'/auth.php';

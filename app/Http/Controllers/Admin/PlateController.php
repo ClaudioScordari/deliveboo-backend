@@ -25,7 +25,8 @@ class PlateController extends Controller
         $restaurantId = auth()->user()->restaurant->id;
         
         $plates = Plate::where('restaurant_id', $restaurantId)->get();
-        return view('admin.plates.index', compact('plates'));
+        $deletedPlates = Plate::onlyTrashed()->where('restaurant_id', $restaurantId)->get();
+        return view('admin.plates.index', compact('plates','deletedPlates'));
     }
 
     public function show($id)
@@ -146,5 +147,21 @@ class PlateController extends Controller
     
         return redirect()->route('admin.plates.index');
     }
-}
 
+    public function showDeletedItems()
+    {
+        $deletedPlates = Plate::onlyTrashed()->get();
+        return view('admin.plates.index', compact('deletedPlates'));
+    }
+
+    public function restore($id)
+    {
+        $plate = Plate::onlyTrashed()->where('id', $id)->first();
+        if ($plate) {
+            $plate->restore();
+            return redirect()->route('admin.plates.index')->with('success', 'Piatto ripristinato con successo!');
+        } else {
+            return back()->with('error', 'Piatto non trovato.');
+        }
+    }
+}

@@ -8,7 +8,40 @@
         <div class="col-12">
             <h1 class="text-center mb-3 text-success">I miei Piatti</h1>
             <div class="d-flex justify-content-end mb-4">
-                <a href="{{ route('admin.plates.create') }}" class="btn btn-secondary text-white"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i> Nuovo piatto</a>
+                <a href="{{ route('admin.plates.create') }}" class="btn btn-secondary text-white me-3"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-bowl-food"></i> Nuovo piatto</a>
+                <button type="button" class="btn btn-secondary text-white" data-bs-toggle="modal" data-bs-target="#deletedItemsModal">
+                    <i class="fa-solid fa-recycle"></i> ripristina piatti
+                </button>
+            </div>
+
+
+
+            <!-- Modale per gli elementi cancellati -->
+            <div class="modal fade" id="deletedItemsModal" tabindex="-1" aria-labelledby="deletedItemsModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content border-success">
+                        <div class="modal-header bg-light border-success">
+                            <h5 class="modal-title text-success" id="deletedItemsModalLabel">Piatti Cancellati</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            @forelse ($deletedPlates as $plate)
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    {{ $plate->name }}
+                                    <form method="POST" action="{{ route('admin.plates.restore', $plate->id) }}">
+                                        @csrf
+                                        <button type="submit" class="btn btn-success"> <i class="fa-solid fa-recycle"></i> Ripristina</button>
+                                    </form>
+                                </div>
+                            @empty
+                                <p>Nessun piatto eliminato da mostrare.</p>
+                            @endforelse
+                        </div>
+                        <div class="modal-footer bg-light border-success">
+                            <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal"><i class="fa-solid fa-x"></i> Chiudi</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
 

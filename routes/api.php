@@ -49,5 +49,5 @@ Route::name('api.')->group(function () {
     Route::post('/orders', [ApiOrderController::class, 'store'])->name('orders.store');
 
     // Braintree
-    Route::get('/braintree/token', 'BraintreeController@token');
+    // Route::get('/braintree/token', 'BraintreeController@token');
 });
