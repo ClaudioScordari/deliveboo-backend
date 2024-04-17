@@ -33,7 +33,7 @@
                 <label for="price" class="form-label">Prezzo: <span class="text-danger">*</span></label>
     
                 <input type="number" min="0" step="0.01" name="price" id="price" class="form-control"
-                    value="{{ old('price', $plate->price) }}" placeholder="Prezzo" required>
+                    value="{{ old('price', $plate->price) }}" placeholder="Prezzo" max="1000" required>
     
                 @error('price')
                     <div class="alert alert-danger">{{ $message }}</div>

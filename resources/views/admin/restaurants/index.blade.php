@@ -22,16 +22,16 @@
                     <div class="card border-success mb-3 bg-light">
                         <div class="row g-0">
                             <!-- Immagine a sinistra -->
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 @if ($restaurant->image)
-                                    <img src="{{ asset('storage/' . $restaurant->image) }}" class="img-fluid rounded-start h-100 border-end border-success" alt="Immagine di {{ $restaurant->activity_name }}">
+                                    <img src="{{ asset('storage/' . $restaurant->image) }}" class="img-fluid rounded-start h-100 w-100 border-end border-success" alt="Immagine di {{ $restaurant->activity_name }}">
                                 @else
-                                    <img src="{{ Vite::asset('resources/img/restaurant-not-found.png') }}" class="img-fluid rounded-start h-100 border-end border-success" alt="not-found">
+                                    <img src="{{ Vite::asset('resources/img/restaurant-not-found.png') }}" class="img-fluid rounded-start h-100 w-100 border-end border-success" alt="not-found">
                                 @endif
                             </div>
 
                             <!-- Testo a destra -->
-                            <div class="col-md-8 d-flex flex-column py-3 px-3">
+                            <div class="col-lg-8 d-flex flex-column py-3 px-3">
                                 <div class="card-body">
                                     <h2 class="card-title text-success fw-bold">{{ $restaurant->activity_name }}</h2>
                                     <p class="card-text fw-bolder">Proprietario: <span class="text-success">{{ $restaurant->user->name }}</span></p>

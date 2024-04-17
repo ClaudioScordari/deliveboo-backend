@@ -3,8 +3,8 @@
 @section('page-title', 'Modifica stato Pagamento')
 
 @section('main-content')
-<section class="container-form-section">
-    <div class="container-form card border-success bg-light m-auto w-50 px-5 py-4">
+<section class="container-form-section mt-4">
+    <div class="container-form card border-success bg-light m-auto w-75 px-5 py-4">
         <h1 class="text-center text-success">Modifica stato Pagamento</h1>
 
         {{-- Errors --}}
@@ -24,10 +24,10 @@
             @csrf
             @method('PUT')
             
-            <div class="mb-3 form-group">
+            <div class="mb-3 form-group text-center">
                 {{-- Stato Pagamento --}}
                 <label for="payment_status">Stato del Pagamento:</label>
-                <select name="payment_status" id="payment_status" class="form-control w-50">
+                <select name="payment_status" id="payment_status" class="form-control w-75 mx-auto">
                     <option value="Completato" {{ $order->payment_status == 'Completato' ? 'selected' : '' }}>Completato</option>
                     <option value="In Attesa" {{ $order->payment_status == 'In Attesa' ? 'selected' : '' }}>In Attesa</option>
                     <option value="Fallito" {{ $order->payment_status == 'Fallito' ? 'selected' : '' }}>Fallito</option>
@@ -42,7 +42,7 @@
                 @enderror
             </div>
     
-            <div>
+            <div class="text-center">
                 <button type="submit" class="btn btn-secondary text-white"><i class="fa-solid fa-pencil"></i> Aggiorna Stato</button>
             </div>
         </form>
