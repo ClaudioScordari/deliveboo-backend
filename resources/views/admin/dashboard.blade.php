@@ -31,18 +31,18 @@
                                 </div>
                                 <div class="col-lg-6 text-center p-3">
                                     <div class="card border-success bg-light p-3" style="min-height:180px">
-                                        <p class="fw-bolder fs-3 text-success">
-                                            Verifica gli Ordini
-                                        </p>
-                                        <a href="{{ route('admin.orders.index', ['sort' => 'desc']) }}" class="btn text-white btn-secondary btn-lg w-50 m-auto"><i class="fa-solid fa-receipt"></i> Ordini</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 text-center p-3">
-                                    <div class="card border-success bg-light p-3" style="min-height:180px">
                                     <p class="fw-bolder fs-3 text-success">
                                         Controlla i tuoi Piatti
                                     </p>
                                     <a href="{{ route('admin.plates.index') }}" class="btn text-white btn-secondary btn-lg w-50 m-auto"><i class="fa-solid fa-bowl-food"></i> Piatti</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 text-center p-3">
+                                    <div class="card border-success bg-light p-3" style="min-height:180px">
+                                        <p class="fw-bolder fs-3 text-success">
+                                            Verifica gli Ordini
+                                        </p>
+                                        <a href="{{ route('admin.orders.index', ['sort' => 'desc']) }}" class="btn text-white btn-secondary btn-lg w-50 m-auto"><i class="fa-solid fa-receipt"></i> Ordini</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 text-center p-3">
